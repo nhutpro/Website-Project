@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhutpro/Website-Project.git"
+  },
+  "author": "13 team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhutpro/Website-Project/issues"
+  },
+  "homepage": "https://github.com/nhutpro/Website-Project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
