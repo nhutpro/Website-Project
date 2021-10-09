@@ -1,0 +1,32 @@
+.grid {
+    display:block;
+   
+    width: 100%;
+}
+.grid.width{
+    max-width: Calc(100% - 200px);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4;
+    margin-right: -4;
+    
+}
+.col {
+    padding: 0px 4px;
+}
+.col-1 {
+    flex: 0 0 8.3333%;
+    max-width: 8.3333%;
+}
+.col-2 {
+    flex: 0 0 16.3333%;
+    max-width: 16.3333%;
+}
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
