@@ -1,7 +1,7 @@
-const loginControler = require('../app/controllers/LoginController')
-const loginrouter = require('./login')
+const phoneControler = require('../app/controllers/PhoneController')
+const phonerouter = require('./phone')
 function route(app){
-    app.use('/login',loginrouter)
+    app.use('/phone',phonerouter)
     app.get('/', (req,res)=>{
       res.render('home')
     })

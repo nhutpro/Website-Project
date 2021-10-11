@@ -15,6 +15,10 @@ html {
 }
 header {
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
  
 }
 .header-container {
@@ -94,7 +98,42 @@ footer{
 }
 .container {
     height: 100rem;
+    margin-top: 5.7rem;
 }
 .footer-icon {
+    font-size: 4rem;
+    padding: 2rem;
+    color: #fff;
+}
+.container-home {
+    background: url('/image/backgroud-iphone.jpeg') no-repeat top center / cover;
+    height: 100rem;
+}
+.item-img{
+    width: 100%;
+}
+.listitem{
+    margin-top: 1rem;
+    margin-top: 8rem;
+}
+.item {
+    box-shadow: 0 0 11px 5px rgb(0 0 0 / 10%);
+}
+.item-des{
+    padding: 2rem 2rem;
+    
+}
+.item-name{
     font-size: 2rem;
+    
+}
+.item-sub {
+    font-size: 2rem;
+    color: red;
+     margin-top: 1rem;
+}
+.item-price {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
 }

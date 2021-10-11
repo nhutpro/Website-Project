@@ -1,11 +1,11 @@
 const items = require('../models/Item')
 
-class LoginController {
+class PhoneController {
     index(req, res,next) {
     items.find({})
         .then(items => {
             items = items.map((item) => item.toObject())
-            res.render('home',{items})
+            res.render('phone',{items})
         }
         )
         .catch(next)
@@ -14,4 +14,4 @@ class LoginController {
        res.send('home' + req.params.id);
    }
 }
-module.exports = new LoginController ;
+module.exports = new PhoneController ;
