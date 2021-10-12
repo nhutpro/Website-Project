@@ -1,16 +1,20 @@
 <div class="grid width">
     <div class="listitem row">
         {{#each items}}
-        <div class="item col-2">
-            <img src="/image/phonex.jpg" alt="Anh iphonex" class="item-img">
-            <div class="item-des">
-                <p class="item-name">{{this.name}}</p>
-                <p class="item-sub">{{this.description}}</p>
-                <strong class="item-price">{{this.price}}₫</strong>
+            <div class="item col-2">
+                <img
+                    src="image/phonex.jpg"
+                    alt="Anh iphonex"
+                    class="item-img"
+                />
+                <div class="item-des">
+                    <p class="item-name">{{this.name}}</p>
+                    <p class="item-sub">{{this.description}}</p>
+                    <strong class="item-price">{{this.price}}₫</strong>
+                </div>
             </div>
-        </div>
         {{/each}}
-        
+
     </div>
-    
+
 </div>

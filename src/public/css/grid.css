@@ -1,9 +1,9 @@
 .grid {
-    display:block;
-   
+    display: block;
+
     width: 100%;
 }
-.grid.width{
+.grid.width {
     max-width: Calc(100% - 200px);
     margin: 0 auto;
 }
@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     margin-left: -4;
     margin-right: -4;
-    
 }
 .col {
     padding: 0px 4px;
