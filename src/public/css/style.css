@@ -38,7 +38,7 @@ header {
     text-decoration: none;
     font-size: 2rem;
 
-    padding: 4px 5px;
+    padding: 4px 16px;
     border-radius: 14px;
 }
 .header-item > a:hover {
@@ -46,16 +46,15 @@ header {
 }
 
 .logo-team {
-    font-family: Akronim;
-    font-size: 2.6rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
     text-shadow: 0 0 2px 5px #fff;
 }
 .team-num {
     color: yellow;
     margin-right: 0.5rem;
-    padding: 0.05rem 0.6rem;
+    padding: 0.5rem 1rem;
     border-radius: 1.2rem;
-    font-size: 2.6rem;
     border: 1px solid yellow;
 }
 .header-item {
