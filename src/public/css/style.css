@@ -91,7 +91,8 @@ footer {
     color: #fff;
 }
 .container-home {
-    background: url("/image/backgroud-iphone.jpeg") no-repeat top center / cover;
+    background: url("/image/background-iphone.jpeg") no-repeat top center /
+        cover;
     height: 100rem;
 }
 .item-img {
