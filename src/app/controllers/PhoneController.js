@@ -1,3 +1,4 @@
+const { mutipleMongooseToObject } = require("../../util/mongoose");
 const items = require("../models/Item");
 
 class PhoneController {
@@ -5,13 +6,18 @@ class PhoneController {
         items
             .find({})
             .then((items) => {
-                items = items.map((item) => item.toObject());
-                res.render("phone", { items });
+
+                res.render("phone", {
+                    items: mutipleMongooseToObject(items)
+                });
+
             })
             .catch(next);
+
     }
     show(req, res) {
         res.send("home" + req.params.id);
     }
+
 }
 module.exports = new PhoneController();

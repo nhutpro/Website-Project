@@ -5,6 +5,7 @@
     "main": "src/index.js",
     "scripts": {
         "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss/phone.scss src/public/css/phone.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -20,10 +21,11 @@
     "dependencies": {
         "express": "^4.17.1",
         "express-handlebars": "^5.3.4",
-        "mongoose": "^6.0.9"
+        "mongoose": "^6.0.12"
     },
     "devDependencies": {
         "morgan": "^1.10.0",
-        "nodemon": "^2.0.13"
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.14"
     }
 }

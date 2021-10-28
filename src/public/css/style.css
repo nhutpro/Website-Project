@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     display: block;
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     background-color: black;
     position: fixed;
@@ -15,6 +17,7 @@ header {
     right: 0;
     left: 0;
 }
+
 .header-container {
     display: flex;
     color: #fff;
@@ -22,8 +25,9 @@ header {
     align-items: center;
     padding: 1rem 0rem;
 }
-.header-logo {
-}
+
+.header-logo {}
+
 .header-logo a {
     color: yellow;
     text-transform: none;
@@ -32,16 +36,16 @@ header {
     text-shadow: 0 0 2px 5px yellow;
 }
 
-.header-item > a {
+.header-item>a {
     color: #fff;
     text-transform: none;
     text-decoration: none;
     font-size: 2rem;
-
     padding: 4px 16px;
     border-radius: 14px;
 }
-.header-item > a:hover {
+
+.header-item>a:hover {
     border: 1px solid #fff;
 }
 
@@ -50,6 +54,7 @@ header {
     font-size: 2.8rem;
     text-shadow: 0 0 2px 5px #fff;
 }
+
 .team-num {
     color: yellow;
     margin-right: 0.5rem;
@@ -57,17 +62,20 @@ header {
     border-radius: 1.2rem;
     border: 1px solid yellow;
 }
-.header-item {
-}
+
+.header-item {}
+
 .header-input-container {
     position: relative;
 }
+
 .header-input {
     border-radius: 0.2rem;
     border-radius: 1.2rem;
     border: none;
     font-size: 2rem;
 }
+
 .header-search-icon {
     position: absolute;
     top: 0.4rem;
@@ -75,47 +83,57 @@ header {
     color: #000;
     font-size: 1.7rem;
 }
+
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
 }
+
 .container {
     height: 100rem;
     margin-top: 5.7rem;
 }
+
 .footer-icon {
     font-size: 4rem;
     padding: 2rem;
     color: #fff;
 }
+
 .container-home {
-    background: url("/image/background-iphone.jpeg") no-repeat top center /
-        cover;
+    background: url("/image/background-iphone.jpeg") no-repeat top center / cover;
     height: 100rem;
 }
+
 .item-img {
     width: 100%;
 }
+
 .listitem {
     margin-top: 1rem;
     margin-top: 8rem;
 }
+
 .item {
     box-shadow: 0 0 11px 5px rgb(0 0 0 / 10%);
 }
+
 .item-des {
     padding: 2rem 2rem;
 }
+
 .item-name {
     font-size: 2rem;
 }
+
 .item-sub {
     font-size: 2rem;
     color: red;
     margin-top: 1rem;
 }
+
 .item-price {
     display: block;
     font-size: 2rem;
