@@ -8,6 +8,7 @@ html {
     display: block;
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 500;
 }
 
 .header-container {
@@ -85,6 +87,7 @@ header {
 }
 
 footer {
+    margin-top: 3rem;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -92,19 +95,13 @@ footer {
 }
 
 .container {
-    height: 100rem;
-    margin-top: 5.7rem;
+    margin-top: 6.2rem;
 }
 
 .footer-icon {
     font-size: 4rem;
     padding: 2rem;
     color: #fff;
-}
-
-.container-home {
-    background: url("/image/background-iphone.jpeg") no-repeat top center / cover;
-    height: 100rem;
 }
 
 .item-img {
