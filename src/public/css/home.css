@@ -5,14 +5,23 @@
 .glide__slide--active {
     z-index: 1;
 }
+body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.landing-page > * {
+    scroll-snap-align: start;
+    max-height: calc(100vh - 6.2rem);
+}
 /* Hero */
-
 .hero,
 .hero .glide__slides {
+    height: calc(100vh - 6.2rem);
     font-size: 1.5rem;
     position: relative;
     width: 100%;
-    height: 90vh;
 }
 .hero .glide__bullet {
     border: none;
@@ -117,20 +126,22 @@
     color: black;
 }
 
-/* Spotlight */
+/* Spotlight and Discount*/
 
-.spotlight-container {
+section {
     margin-top: 6rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.spotlight-container h1 {
+.section-title {
+    text-transform: capitalize;
     font-size: 3rem;
 }
 
-.spotlight-container .glide__nav {
+section .glide__nav {
     height: 2.7rem;
     margin-top: 2rem;
     margin-left: auto;
@@ -141,22 +152,42 @@
     justify-content: space-evenly;
 }
 
-.spotlight-container .glide__nav .title {
+section .glide__nav .title {
     color: black;
     font-size: 1.7rem;
     font-weight: bold;
+    z-index: 1;
+    position: relative;
 }
-.spotlight-container .glide__nav .title:hover {
+section .glide__nav .title::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.25s ease-in-out;
+    z-index: -1;
+}
+
+section .glide__nav .title:hover::after {
     cursor: pointer;
-    border-bottom: 3px solid black;
+    width: 100%;
+    left: 0;
 }
-.spotlight-container .glide__nav .glide__bullet--active {
-    border-bottom: 3px solid black;
+
+section .glide__nav .glide__bullet--active::after {
+    width: 100%;
+    left: 0;
+    height: 3px;
+    background-color: black;
+    bottom: -5px;
 }
 
 .spotlight {
-    width: 80%;
-    margin-top: 4rem;
+    width: 75%;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
