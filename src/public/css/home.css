@@ -153,6 +153,7 @@ section .glide__nav {
 }
 
 section .glide__nav .title {
+    cursor: pointer;
     color: black;
     font-size: 1.7rem;
     font-weight: bold;
@@ -172,7 +173,6 @@ section .glide__nav .title::after {
 }
 
 section .glide__nav .title:hover::after {
-    cursor: pointer;
     width: 100%;
     left: 0;
 }
