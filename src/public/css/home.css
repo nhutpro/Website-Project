@@ -5,7 +5,9 @@
 .glide__slide--active {
   z-index: 1;
 }
-
+.landing-page > :nth-child(odd) {
+  background-color: #f5f5f5;
+}
 /* Hero */
 .hero,
 .hero .glide__slides {
@@ -101,7 +103,7 @@
   margin-top: 1rem;
   padding: 1.2rem 3.5rem;
   border: 2px solid black;
-  border-radius: 2rem;
+  border-radius: 100vh;
   transition: all 0.3s ease-in-out;
 }
 
@@ -118,8 +120,8 @@
 /* Spotlight and Discount*/
 
 section {
-  margin-top: 6rem;
-  margin-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
