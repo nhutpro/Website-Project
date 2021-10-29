@@ -133,11 +133,10 @@ header {
 }
 
 footer {
-  margin-top: 3rem;
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .footer-icon-container {
   display: flex;
