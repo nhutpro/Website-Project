@@ -86,6 +86,13 @@ header {
   display: flex;
   position: relative;
 }
+.searchbox__submit:hover .far.fa-search,
+.searchbox__submit .fas.fa-search {
+  display: none;
+}
+.searchbox__submit:hover .fas.fa-search {
+  display: inline;
+}
 .searchbox__input {
   height: 2.8rem;
   width: 0rem;
