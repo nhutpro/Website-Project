@@ -142,8 +142,8 @@ section .glide__nav {
   align-items: center;
   justify-content: center;
 }
-section .glide__nav .title {
-  margin-left: 3rem;
+section .glide__nav .title + .title {
+  margin-left: 5rem;
 }
 section .glide__nav .title {
   cursor: pointer;

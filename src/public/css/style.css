@@ -46,7 +46,7 @@ header {
 .header__utility .icon {
   color: #fff;
   text-transform: none;
-  font-size: 2rem;
+  font-size: 2.1rem;
   padding: 4px 16px;
 }
 .header__utility .icon:hover .regular,
@@ -134,9 +134,9 @@ header {
 /* Footer */
 footer {
   background-color: #000;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2.5rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -161,10 +161,9 @@ footer {
 
 .footer__social .icon {
   font-size: 4rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer__copyright {
-  color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   grid-area: copyright;
