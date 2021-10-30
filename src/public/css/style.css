@@ -23,7 +23,7 @@ a:hover,
 a:visited {
   text-decoration: none;
 }
-
+/* Header */
 header {
   background-color: black;
   top: 0;
@@ -131,27 +131,53 @@ header {
   border-bottom: 1px solid white;
   transition: all 0.25s ease-in-out;
 }
-
+/* Footer */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'logo copyright'
+    'social copyright';
 }
-.footer-icon-container {
+.footer__logo {
+  justify-content: center;
+  display: flex;
+  grid-area: logo;
+}
+.footer__social {
+  grid-area: social;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-icon-container a + a {
+.footer__social a + a {
   margin-left: 2rem;
 }
 
-.footer-icon {
+.footer__social .icon {
   font-size: 4rem;
   color: #fff;
 }
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  grid-area: copyright;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer__copyright img {
+  margin-bottom: 1rem;
+  width: 7rem;
+}
 
+/* Item */
 .item-img {
   width: 100%;
 }

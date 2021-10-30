@@ -18,12 +18,15 @@
 }
 .hero .glide__bullet {
   border: none;
-  margin-left: 8px;
+
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 4rem;
   height: 1rem;
   box-shadow: 1px 1px 5px #888888;
+}
+.hero .glide__bullet + .glide__bullet {
+  margin-left: 1rem;
 }
 .hero .glide__bullet--active {
   background-color: white;
@@ -119,7 +122,7 @@
 
 /* Spotlight and Discount*/
 
-section {
+section:not(:first-child) {
   padding-top: 6rem;
   padding-bottom: 10rem;
   display: flex;
@@ -139,7 +142,7 @@ section .glide__nav {
   align-items: center;
   justify-content: center;
 }
-section .glide__nav .title + .title {
+section .glide__nav .title {
   margin-left: 3rem;
 }
 section .glide__nav .title {
