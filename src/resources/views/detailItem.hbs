@@ -1,0 +1,227 @@
+<div class='detailItem-container'>
+	<ul class='path'>
+		<li>
+			<a href='/'>
+				<i class='fas fa-home path-icon-home'></i>
+				<span>Trang Chủ</span>
+
+			</a>
+		</li>
+		{{#each path}}
+			<li>
+				<i class='fas fa-greater-than path-icon-next'></i>
+			</li>
+			<li>
+				<a href={{this.href}}>
+
+					<span>{{this.name}}</span>
+
+				</a>
+			</li>
+		{{/each}}
+
+	</ul>
+	<div class='detailItem-main-container'>
+		<p class='item-name'>{{item.name}}</p>
+		<div class='detailIitem-main row'>
+
+			<div class='detailItem-img col-4'>
+
+				<div class='swiper-container'>
+					<div
+						style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff'
+						class='swiper mySwiper2'
+					>
+						<div class='swiper-wrapper'>
+							{{#each item.image}}
+								<div class='swiper-slide'>
+									<img src={{this}} />
+								</div>
+							{{/each}}
+						</div>
+						<div class='swiper-icon-prev'>
+							<i class='fas fa-less-than'></i>
+						</div>
+						<div class='swiper-icon-next'>
+							<i class='fas fa-greater-than'></i>
+						</div>
+
+					</div>
+
+					<div thumbsSlider='' class='swiper mySwiper'>
+						<div class='swiper-wrapper'>
+							{{#each item.image}}
+								<div class='swiper-slide'>
+									<img src={{this}} />
+								</div>
+							{{/each}}
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- start option -->
+			<div class='detailItem-option col-4'>
+				{{!  start price}}
+				<p class='price-container'>
+					<span class='new-price'>20.500.000 ₫</span>
+					<span class='old-price'>22.000.000 ₫</span>
+				</p>
+				{{!  end price}}
+				{{!  start capacity-option}}
+				<ul class='capacity-option row'>
+					<li class='col-4'>
+						<a href='#'>
+							<p class='capacity-option-detail'>256&nbsp;GB</p>
+							<p class='capacity-option-price'>20.000.000&nbsp;₫</p>
+						</a>
+					</li>
+
+				</ul>
+				{{!  end capacity-option}}
+				{{!  start color-option}}
+				<div class='color-option'>
+					<p style='margin-bottom: 10px; font-weight: bold;'>Chọn Màu </p>
+					<ul class='color-detail row'>
+						{{#each color}}
+							<li class='col-4'>
+								<a class='color-detail-item row'>
+									<div class='col-3'>
+										<img
+											class='color-detail-item-img'
+											src={{this.image}}
+											alt='puple_color'
+										/>
+									</div>
+									<p>
+										<strong
+											class='color-detail-item-color'
+										>{{this.name}}</strong>
+										<span class='color-detail-item-price'>{{this.price}}</span>
+									</p>
+								</a>
+							</li>
+						{{/each}}
+
+					</ul>
+
+				</div>
+				{{!  end color-option}}
+				<button class='buy-button'>Mua Ngay</button>
+			</div>
+			<!-- end option -->
+			<div class='detailItem-about col-4'>
+
+				<ul class='detailItem-about-container'>
+					<li class='detailItem-about-item'>
+						<p>Thông Tin Máy</p>
+					</li>
+					<li class='detailItem-about-item row'>
+						<div class='detailItem-about-icon'>
+							<i class='fas fa-mobile-alt'></i>
+						</div>
+						<p class='detailItem-about-des'>Máy mới 100% , chính hãng Apple Việt
+							Nam. CellphoneS hiện là đại lý bán lẻ uỷ quyền iPhone chính hãng
+							VN/A của Apple Việt Nam</p>
+					</li>
+					<li class='detailItem-about-item row'>
+						<div class='detailItem-about-icon'>
+							<i class='fas fa-mobile-alt'></i>
+						</div>
+						<p class='detailItem-about-des'>Thân máy, cáp USB-C to Lightning,
+							sách HDSD</p>
+					</li>
+					<li class='detailItem-about-item row'>
+						<div class='detailItem-about-icon'>
+							<i class='fas fa-shield-virus'></i>
+						</div>
+						<p class='detailItem-about-des'>Bảo hành 12 tháng tại trung tâm bảo
+							hành chính hãng Apple Việt Nam. 1 ĐỔI 1 trong 30 ngày nếu có lỗi
+							phần cứng nhà sản xuất. Gia hạn bảo hành thời gian giãn cách</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+	<div class='detailItem-sub'>
+		{{! start same items }}
+		<div class='same-item'>
+			<p class='same-item-title'>Sản Phẩm Tương Tự</p>
+			<div class='swiper mySwiper3'>
+				<div class='swiper-wrapper'>
+					<div class='swiper-slide'>
+						<a href='#'>
+							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
+						</a>
+					</div>
+					<div class='swiper-slide'>
+						<a href='#'>
+							<img src='/image/iphone/iphone11/iphone11_white.jpg' />
+						</a>
+					</div>
+					<div class='swiper-slide'>
+						<a href=''>
+							<img src='/image/iphone/iphone11/iphone11_red.jpg' />
+						</a>
+					</div>
+					<div class='swiper-slide'>
+						<a href=''>
+							<img src='/image/iphone/iphone11/iphone11_purple.jpg' />
+						</a>
+					</div>
+					<div class='swiper-slide'>
+						<a href=''>
+							<img src='/image/iphone/iphone11/iphone11_yellow.jpg' />
+						</a>
+					</div>
+				</div>
+				<div class='swiper-button-prev'></div>
+				<div class='swiper-button-next'></div>
+
+			</div>
+
+		</div>
+		{{! end same items }}
+		<div class='rate-technicalInfo'>
+			<div class='rate'>
+
+			</div>
+			<div class='technicalInfo'>
+				<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
+				<ul class='technicalInfo-list'>
+					<li class='technicalInfo-item br-gray'>
+						<p>Kích Thước</p>
+						<p>10.2 inches</p>
+					</li>
+					<li class='technicalInfo-item'>
+						<p>Kích Thước</p>
+						<p>10.2 inches</p>
+					</li>
+					<li class='technicalInfo-item br-gray'>
+						<p>Kích Thước</p>
+						<p>10.2 inches</p>
+					</li>
+					<li class='technicalInfo-item'>
+						<p>Kích Thước</p>
+						<p>10.2 inches</p>
+					</li>
+					<li class='technicalInfo-item br-gray'>
+						<p>Kích Thước</p>
+						<p>10.2 inches</p>
+					</li>
+
+				</ul>
+				<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
+			</div>
+		</div>
+	</div>
+	<!-- Swiper JS -->
+	<script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+
+	<!-- Initialize Swiper -->
+
+	<script src='/javs/detailItem.js'></script>
+
+</div>

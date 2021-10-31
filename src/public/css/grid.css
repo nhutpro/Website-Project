@@ -1,6 +1,5 @@
 .grid {
     display: block;
-
     width: 100%;
 }
 .grid.width {
@@ -28,4 +27,8 @@
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
+}
+.col-4 {
+    flex:0 0 33.3333%;
+    max-width: 33.3333%;
 }

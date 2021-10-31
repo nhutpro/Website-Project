@@ -1,29 +1,30 @@
 {
-    "name": "website",
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/index.js",
-    "scripts": {
-        "start": "nodemon --inspect src/index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nhutpro/Website-Project.git"
-    },
-    "author": "13 team",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/nhutpro/Website-Project/issues"
-    },
-    "homepage": "https://github.com/nhutpro/Website-Project#readme",
-    "dependencies": {
-        "express": "^4.17.1",
-        "express-handlebars": "^5.3.4",
-        "mongoose": "^6.0.9"
-    },
-    "devDependencies": {
-        "morgan": "^1.10.0",
-        "nodemon": "^2.0.13"
-    }
+	"name": "website",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "nodemon --inspect src/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nhutpro/Website-Project.git"
+	},
+	"author": "13 team",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nhutpro/Website-Project/issues"
+	},
+	"homepage": "https://github.com/nhutpro/Website-Project#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-handlebars": "^5.3.4",
+		"mongoose": "^6.0.9",
+		"prettier": "^2.4.1"
+	},
+	"devDependencies": {
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.13"
+	}
 }
