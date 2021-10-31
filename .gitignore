@@ -1,2 +1,6 @@
 node_modules/
+<<<<<<< HEAD
 .vscode/
+=======
+scss/
+>>>>>>> 37e517a938f1f79c632669ad25cbcc3562479ba4

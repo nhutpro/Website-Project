@@ -1,17 +1,23 @@
-const items = require('../models/Item');
+const { mutipleMongooseToObject } = require("../../util/mongoose");
+const items = require("../models/Item");
 
 class PhoneController {
-	index(req, res, next) {
-		items
-			.find({})
-			.then((items) => {
-				items = items.map((item) => item.toObject());
-				res.send(items);
-			})
-			.catch(next);
-	}
-	showItem(req, res) {
-		res.send('home ' + req.query.hai + req.query.name);
-	}
+    index(req, res, next) {
+        items
+            .find({})
+            .then((items) => {
+
+                res.render("phone", {
+                    items: mutipleMongooseToObject(items)
+                });
+
+            })
+            .catch(next);
+
+    }
+    show(req, res) {
+        res.send("home" + req.params.id);
+    }
+
 }
 module.exports = new PhoneController();
