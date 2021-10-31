@@ -7,44 +7,44 @@
         </div>
         <ul class="block-content">
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Tất cả</span>
             </label>
           </li>
 
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Apple</span>
             </label>
           </li>
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Samsung</span>
             </label>
           </li>
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Vsmart</span>
             </label>
           </li>
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Oppo</span>
             </label>
           </li>
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Xiaomi</span>
             </label>
           </li>
           <li>
-            <input type="checkbox">
+            <input type="checkbox" />
             <label for="">
               <span>Realme</span>
             </label>
@@ -57,42 +57,42 @@
           <h3>Mức giá</h3>
         </div>
         <ul class="block-content">
-            <li>
-              <input type="checkbox">
-              <label for="">
-                <span>Tất cả</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label for="">
-                <span>Dưới 2 triệu</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label for="">
-                <span>Từ 2 đến 5 triệu</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label for="">
-                <span>Từ 5 đến 14 triệu</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label for="">
-                <span>Trên 14 triệu</span>
-              </label>
-            </li>
-            
+          <li>
+            <input type="checkbox" />
+            <label for="">
+              <span>Tất cả</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label for="">
+              <span>Dưới 2 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label for="">
+              <span>Từ 2 đến 5 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label for="">
+              <span>Từ 5 đến 14 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label for="">
+              <span>Trên 14 triệu</span>
+            </label>
+          </li>
+
         </ul>
       </div>
     </div>
     <div class="list-products">
-      {{!-- <form action="">
+      {{! <form action="">
         <div class="item">
           <label for="sort-by">Sắp xếp theo</label>
           <select name="sort-by" id="sort-by">
@@ -108,15 +108,15 @@
             </select>
           </div>
         </div>
-      </form> --}}
+      </form> }}
       <div class="product-layout">
         {{#each items}}
-        <div class="product">
-          <div class="img-container">
-            
-            <img src="{{this.image}}" alt="picture about mobile phone">
-          
-            {{!-- <div class="addCart">
+          <div class="product">
+            <div class="img-container">
+
+              <img src="{{this.image}}" alt="picture about mobile phone" />
+
+              {{! <div class="addCart">
               <i class="fas fa-shopping-cart">
 
               </i>
@@ -124,64 +124,62 @@
             </div>
             <div class="heart">
               <i class="far fa-heart"></i>
-            </div> --}}
-          </div>
-          <div class="info-product">
-            <div class="product-name">
-              <a href="#"><h3>{{this.name}}</h3></a>
+            </div> }}
             </div>
-            <div class="rom">
-              <div class="item active">
-                <strong>64GB </strong>
+            <div class="info-product">
+              <div class="product-name">
+                <a href="#"><h3>{{this.name}}</h3></a>
               </div>
-              <div class="item">
-                <strong>128GB</strong>
+              <div class="rom">
+                <div class="item active">
+                  <strong>64GB </strong>
+                </div>
+                <div class="item">
+                  <strong>128GB</strong>
+                </div>
+                <div class="item">
+                  <strong>256GB</strong>
+                </div>
               </div>
-              <div class="item">
-                <strong>256GB</strong>
+              <div class="price">
+                <span>{{this.price.text}}</span>
               </div>
-            </div>
-            <div class="price">
-              <span>{{this.price.text}}</span>
-            </div>
-            <div class="config">
-              <div class="config-param">
-                <span data-title="CPU">
-                  
-                  
-                 <p>
-                    <i class="fad fa-microchip"></i>
-                    {{this.configuration.chip}}
-                 </p> 
-                </span>
-                <span data-title="Màn hình">
-                  
-                 <p>
-                    <i class="fad fa-mobile"></i>
-                    {{this.configuration.screen}}
-                 </p> 
-                </span>
-                <span data-title="RAM">
-                  
-                 <p>
-                    <i class="fad fa-memory"></i>
-                    {{this.configuration.ram}}
-                 </p> 
-                </span>
+              <div class="config">
+                <div class="config-param">
+                  <span data-title="CPU">
 
+                    <p>
+                      <i class="fad fa-microchip"></i>
+                      {{this.configuration.chip}}
+                    </p>
+                  </span>
+                  <span data-title="Màn hình">
 
+                    <p>
+                      <i class="fad fa-mobile"></i>
+                      {{this.configuration.screen}}
+                    </p>
+                  </span>
+                  <span data-title="RAM">
+
+                    <p>
+                      <i class="fad fa-memory"></i>
+                      {{this.configuration.ram}}
+                    </p>
+                  </span>
+
+                </div>
+              </div>
+              <div class="product-btn">
+                <a href="#" class="btn btn-buy btn-sm">
+                  <p>MUA NGAY</p>
+                </a>
+                <a href="#" class="btn btn-addCart btn-sm">
+                  <p>THÊM VÀO GIỎ</p></a>
               </div>
             </div>
-            <div class="product-btn">
-              <a href="#" class="btn btn-buy  btn-sm">
-               <p>MUA NGAY</p> 
-              </a>
-              <a href="#" class="btn btn-addCart  btn-sm">
-                <p>THÊM VÀO GIỎ</p></a>
-            </div>
+
           </div>
-        
-        </div>
         {{/each}}
       </div>
       <ul class="pagination">
@@ -192,8 +190,4 @@
       </ul>
     </div>
   </div>
-<<<<<<< HEAD
-=======
-</div>
->>>>>>> 59a1218 (minor changes)
 </section>
