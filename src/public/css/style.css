@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: Lato;
-  src: url('/font/LatoRegular.ttf');
+  src: url("/font/LatoRegular.ttf");
 }
 @font-face {
   font-family: Lato;
-  src: url('/font/LatoBold.ttf');
+  src: url("/font/LatoBold.ttf");
   font-weight: bold;
 }
 html {
@@ -49,6 +49,25 @@ header {
   font-size: 2.1rem;
   padding: 4px 16px;
 }
+.header__links > a {
+  position: relative;
+  z-index: 1;
+}
+.header__links > a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0.5rem;
+  background-color: white;
+  left: 50%;
+  bottom: -1.27rem;
+  transition: all 0.25s ease-in-out;
+  z-index: -1;
+}
+.header__links > a:hover::after {
+  width: 100%;
+  left: 0;
+}
 .header__utility .icon:hover .regular,
 .header__utility .fill-in {
   display: none;
@@ -57,25 +76,7 @@ header {
 .header__utility .icon:hover .fill-in {
   display: inline;
 }
-.header__links > a {
-  position: relative;
-  z-index: 1;
-}
-.header__links > a::after {
-  position: absolute;
-  content: '';
-  width: 0%;
-  height: 5px;
-  background-color: white;
-  left: 50%;
-  bottom: -1.175rem;
-  transition: all 0.25s ease-in-out;
-  z-index: -1;
-}
-.header__links > a:hover::after {
-  width: 100%;
-  left: 0;
-}
+
 .header__utility {
   display: flex;
   align-items: center;
@@ -141,8 +142,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    'logo copyright'
-    'social copyright';
+    "logo copyright"
+    "social copyright";
 }
 .footer__logo {
   justify-content: center;
