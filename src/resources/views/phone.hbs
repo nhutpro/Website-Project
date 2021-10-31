@@ -1,73 +1,195 @@
-<div class="products-layout container">
-  <div class="col-1-of-4">
-    <div>
-      <div class="block-title">
-        <h3>Thể loại</h3>
-      </div>
-      <ul class="block-content">
-        <li>
-          <input type="checkbox" name="id">
-          <label for="">
-            <span>Apple</span>
-            <small>(12)</small>
-          </label>
-        </li>
-        <li>
-          <input type="checkbox" name="id">
-          <label for="">
-            <span>SamSung</span>
-            <small>(33)</small>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="block-title">
-        <h3>Mức giá</h3>
+<section class="section products">
+  <div class="products-layout container">
+    <div class="filter">
+      <div>
+        <div class="block-title">
+          <h3>Thương hiệu</h3>
+        </div>
+        <ul class="block-content">
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Tất cả</span>
+            </label>
+          </li>
 
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Apple</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Samsung</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Vsmart</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Oppo</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Xiaomi</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label for="">
+              <span>Realme</span>
+            </label>
+          </li>
+        </ul>
       </div>
-      <ul class="block-content">
-        <li>
-          <input type="checkbox" name="id">
-          <label for="">
-            <span>Trên 30 triệu</span>
-            <small>(10)</small>
-          </label>
-        </li>
-        <li>
-          <input type="checkbox" name="" id="">
-          <label for="">
-            <span>Từ 20 đến 30 triệu</span>
-            <small>(55)</small>
-          </label>
-        </li>
+
+      <div>
+        <div class="block-title">
+          <h3>Mức giá</h3>
+        </div>
+        <ul class="block-content">
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span>Tất cả</span>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span>Dưới 2 triệu</span>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span>Từ 2 đến 5 triệu</span>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span>Từ 5 đến 14 triệu</span>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span>Trên 14 triệu</span>
+              </label>
+            </li>
+            
+        </ul>
+      </div>
+    </div>
+    <div class="list-products">
+      {{!-- <form action="">
+        <div class="item">
+          <label for="sort-by">Sắp xếp theo</label>
+          <select name="sort-by" id="sort-by">
+            <option value="title" selected ="selected">Tên</option>
+            <option value="number">Giá</option>
+
+          </select>
+          <div class="item">
+            <label for="order-by">Thứ tự</label>
+            <select name="order-by" id="sort-by">
+              <option value="ASC" selected="selected">Thấp đến cao</option>
+              <option value="DSC" selected="selected">Cao xuống thấp</option>
+            </select>
+          </div>
+        </div>
+      </form> --}}
+      <div class="product-layout">
+        {{#each items}}
+        <div class="product">
+          <div class="img-container">
+            
+            <img src="{{this.image}}" alt="picture about mobile phone">
+          
+            {{!-- <div class="addCart">
+              <i class="fas fa-shopping-cart">
+
+              </i>
+              
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div> --}}
+          </div>
+          <div class="info-product">
+            <div class="product-name">
+              <a href="#"><h3>{{this.name}}</h3></a>
+            </div>
+            <div class="rom">
+              <div class="item active">
+                <strong>64GB </strong>
+              </div>
+              <div class="item">
+                <strong>128GB</strong>
+              </div>
+              <div class="item">
+                <strong>256GB</strong>
+              </div>
+            </div>
+            <div class="price">
+              <span>{{this.price.text}}</span>
+            </div>
+            <div class="config">
+              <div class="config-param">
+                <span data-title="CPU">
+                  
+                  
+                 <p>
+                    <i class="fad fa-microchip"></i>
+                    {{this.configuration.chip}}
+                 </p> 
+                </span>
+                <span data-title="Màn hình">
+                  
+                 <p>
+                    <i class="fad fa-mobile"></i>
+                    {{this.configuration.screen}}
+                 </p> 
+                </span>
+                <span data-title="RAM">
+                  
+                 <p>
+                    <i class="fad fa-memory"></i>
+                    {{this.configuration.ram}}
+                 </p> 
+                </span>
+
+
+              </div>
+            </div>
+            <div class="product-btn">
+              <a href="#" class="btn btn-buy  btn-sm">
+               <p>MUA NGAY</p> 
+              </a>
+              <a href="#" class="btn btn-addCart  btn-sm">
+                <p>THÊM VÀO GIỎ</p></a>
+            </div>
+          </div>
+        
+        </div>
+        {{/each}}
+      </div>
+      <ul class="pagination">
+        <span>1</span>
+        <span>2</span>
+        <span class="icon">...</span>
+        <span class="last">Last</span>
       </ul>
     </div>
   </div>
-  <div class="col-3-of4">
-    <div class="product-layout">
-      <div class="product">
-        <div class="img-container">
-          <img src="./image/cutedog.jpg" alt="">
-          <div class="addCart">
-            <i class="fas fa-shopping-cart">
-            </i>
-          </div>
-          <ul class="side-icon">
-            <span > <i class="fas fa-search"></i></span>
-            <span > <i class="fas fa-heart"></i></span>
-            <span > <i class="fas fa-sliders-h"></i></span>
-          </ul>
-        </div>
-        <div class="bottom">
-          <a href="#"  >Iphone 13 Pro Max</a>
-          <div class="price">
-            <span>$999</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
 </section>

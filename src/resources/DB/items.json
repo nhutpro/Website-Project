@@ -1,0 +1,134 @@
+[{
+  "_id": {
+    "$oid": "6177c83ae9dc5ffcb205216e"
+  },
+  "name": "Iphone 13",
+  "type": "phone",
+  "price": {
+    "num": "30000000",
+    "text": "30.000.000đ"
+  },
+  "description": "A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip. Exceptional durability. And a huge leap in battery life.\nLet’s Pro.",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg",
+  "brand": "Apple",
+  "configuration": {
+    "ram": "4GB",
+    "rom": "256GB",
+    "chip": "A13 Bionic",
+    "screen": "6.1\""
+  }
+},{
+  "_id": {
+    "$oid": "61780ea89336970722428f9a"
+  },
+  "name": "SamSung Galaxy Note 20 Ultra",
+  "description": "SnapDraon 888, màn hình ultra led",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
+  "brand": "Samsung",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "256GB",
+    "chip": "Exynos 990",
+    "screen": "6.9\""
+  },
+  "price": {
+    "num": "19999000",
+    "text": "19.999.000đ"
+  },
+  "type": "phone"
+},{
+  "_id": {
+    "$oid": "617bf2fd3d1a83c6b7061739"
+  },
+  "name": "Vsmart Aris",
+  "type": "phone",
+  "price": {
+    "num": "4990000",
+    "text": "4.990.000đ"
+  },
+  "description": "Phiên bản Vsmart Aris 8GB-128GB mang đến cho người dùng dung lượng RAM và bộ nhớ trong lớn hơn, bạn sẽ có một chiếc điện thoại chạy siêu mượt, thiết kế thời trang, camera đẳng cấp.\n\n",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/11/5/637401687179661931_vsmart-aris-xanh-dd.png",
+  "brand": "Vsmart",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "128GB",
+    "chip": "Snapdragon 730",
+    "screen": "6.39\""
+  }
+},{
+  "_id": {
+    "$oid": "617c14e13d1a83c6b706173c"
+  },
+  "name": "SamSung Galaxy Note 20 Ultra",
+  "description": "SnapDraon 888, màn hình ultra led",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
+  "brand": "Samsung",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "256GB",
+    "chip": "Exynos 990",
+    "screen": "6.9\""
+  },
+  "price": {
+    "num": "19999000",
+    "text": "19.999.000đ"
+  },
+  "type": "phone"
+},{
+  "_id": {
+    "$oid": "617c14e43d1a83c6b706173d"
+  },
+  "name": "SamSung Galaxy Note 20 Ultra",
+  "description": "SnapDraon 888, màn hình ultra led",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
+  "brand": "Samsung",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "256GB",
+    "chip": "Exynos 990",
+    "screen": "6.9\""
+  },
+  "price": {
+    "num": "19999000",
+    "text": "19.999.000đ"
+  },
+  "type": "phone"
+},{
+  "_id": {
+    "$oid": "617c14e83d1a83c6b706173e"
+  },
+  "name": "SamSung Galaxy Note 20 Ultra",
+  "description": "SnapDraon 888, màn hình ultra led",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
+  "brand": "Samsung",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "256GB",
+    "chip": "Exynos 990",
+    "screen": "6.9\""
+  },
+  "price": {
+    "num": "19999000",
+    "text": "19.999.000đ"
+  },
+  "type": "phone"
+},{
+  "_id": {
+    "$oid": "617c14eb3d1a83c6b706173f"
+  },
+  "name": "SamSung Galaxy Note 20 Ultra",
+  "description": "SnapDraon 888, màn hình ultra led",
+  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
+  "brand": "Samsung",
+  "configuration": {
+    "ram": "8GB",
+    "rom": "256GB",
+    "chip": "Exynos 990",
+    "screen": "6.9\""
+  },
+  "price": {
+    "num": "19999000",
+    "text": "19.999.000đ"
+  },
+  "type": "phone"
+}]
