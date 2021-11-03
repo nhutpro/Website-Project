@@ -114,9 +114,11 @@
         {{#each items}}
           <div class="product">
             <div class="img-container">
-
-              <img src="{{this.image}}" alt="picture about mobile phone" />
-
+             <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+                <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
+             </a>
+              
+             
               {{! <div class="addCart">
               <i class="fas fa-shopping-cart">
 
@@ -129,21 +131,23 @@
             </div>
             <div class="info-product">
               <div class="product-name">
-                <a href="#"><h3>{{this.name}}</h3></a>
+                <a href="/phone"><h3>{{this.name}}</h3></a>
               </div>
-              <div class="rom">
-                <div class="item active">
+              {{!-- <div class="rom"> 
+                
+                <div class="item  " onclick="ChangeRom('{{this.name}}',this)">
                   <strong>64GB </strong>
                 </div>
-                <div class="item">
+                <div class="item" onclick="ChangeRom('{{this.name}}',this)">
                   <strong>128GB</strong>
                 </div>
-                <div class="item">
+                <div class="item active" onclick="ChangeRom('{{this.name}}',this)">
                   <strong>256GB</strong>
                 </div>
-              </div>
+
+              </div> --}}
               <div class="price">
-                <span>{{this.price.text}}</span>
+                <span>{{this.slug.[0].color.[0].price}}đ</span>
               </div>
               <div class="config">
                 <div class="config-param">
@@ -151,21 +155,30 @@
 
                     <p>
                       <i class="fad fa-microchip"></i>
-                      {{this.configuration.chip}}
+                      {{this.techInfo.[2].infoDetail.[0].infoNum}}
                     </p>
                   </span>
                   <span data-title="Màn hình">
 
                     <p>
                       <i class="fad fa-mobile"></i>
-                      {{this.configuration.screen}}
+                      {{this.techInfo.[0].infoDetail.[0].infoNum}}
                     </p>
                   </span>
                   <span data-title="RAM">
 
                     <p>
                       <i class="fad fa-memory"></i>
-                      {{this.configuration.ram}}
+                      {{this.techInfo.[3].infoDetail.[0].infoNum}}
+                    </p>
+                  </span>
+
+                  <span data-title="ROM">
+                    <p>
+                      <i class="fad fa-compact-disc"></i>
+                      {{this.slug.[0].detail}}
+
+
                     </p>
                   </span>
 
@@ -191,4 +204,5 @@
       </ul>
     </div>
   </div>
+  <script src='js/phone.js'></script>
 </section>
