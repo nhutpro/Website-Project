@@ -49,14 +49,6 @@ header {
   font-size: 2.1rem;
   padding: 4px 16px;
 }
-.header__utility .icon:hover .regular,
-.header__utility .fill-in {
-  display: none;
-}
-
-.header__utility .icon:hover .fill-in {
-  display: inline;
-}
 .header__links > a {
   position: relative;
   z-index: 1;
@@ -76,6 +68,15 @@ header {
   width: 100%;
   left: 0;
 }
+.header__utility .icon:hover .regular,
+.header__utility .fill-in {
+  display: none;
+}
+
+.header__utility .icon:hover .fill-in {
+  display: inline;
+}
+
 .header__utility {
   display: flex;
   align-items: center;
