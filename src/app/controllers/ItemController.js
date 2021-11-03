@@ -27,9 +27,9 @@ class ItemController {
 							color: mainItem[0].color,
 						});
 					})
-					.catch();
+					.catch(next);
 			})
-			.catch();
+			.catch(next);
 
 		/*
 		items
