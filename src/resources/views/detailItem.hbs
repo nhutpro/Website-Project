@@ -66,18 +66,35 @@
 			<div class='detailItem-option col-4'>
 				{{!  start price}}
 				<p class='price-container'>
-					<span class='new-price'>20.500.000 ₫</span>
-					<span class='old-price'>22.000.000 ₫</span>
+					<span class='new-price'></span>
+					<span class='old-price'></span>
 				</p>
 				{{!  end price}}
 				{{!  start capacity-option}}
-				<ul class='capacity-option row'>
-					<li class='col-4'>
-						<a href='#'>
-							<p class='capacity-option-detail'>256&nbsp;GB</p>
-							<p class='capacity-option-price'>20.000.000&nbsp;₫</p>
-						</a>
-					</li>
+				<ul class='capacity-option'>
+					{{#each item.options}}
+						{{#if (foo this.detail ../capacity)}}
+							<li>
+								<a href='{{this.path}} ' class='capacity-option-item active'>
+									<p class='capacity-option-detail'>{{this.detail}}</p>
+									<p class='capacity-option-price'>{{this.color.0.price}}
+									</p>
+								</a>
+
+							</li>
+						{{else}}
+
+							<li>
+								<a href='{{this.path}} ' class='capacity-option-item'>
+									<p class='capacity-option-detail'>{{this.detail}}</p>
+									<p class='capacity-option-price'>{{this.color.0.price}}
+									</p>
+								</a>
+
+							</li>
+						{{/if}}
+
+					{{/each}}
 
 				</ul>
 				{{!  end capacity-option}}
@@ -86,13 +103,13 @@
 					<p style='margin-bottom: 10px; font-weight: bold;'>Chọn Màu </p>
 					<ul class='color-detail row'>
 						{{#each color}}
-							<li class='col-4'>
-								<a class='color-detail-item row'>
+							<li class='col-4' >
+								<a class='color-detail-item row' stock="{{this.number}}">
 									<div class='col-3'>
 										<img
 											class='color-detail-item-img'
-											src={{this.image}}
-											alt='puple_color'
+											src=" {{this.image}}"
+											alt="color {{this.name}}"
 										/>
 									</div>
 									<p>
@@ -190,35 +207,73 @@
 			<div class='rate'>
 
 			</div>
-			<div class='technicalInfo'>
+			<div>
+				<div class='technicalInfo'>
+			
 				<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
-				<ul class='technicalInfo-list'>
-					<li class='technicalInfo-item br-gray'>
-						<p>Kích Thước</p>
-						<p>10.2 inches</p>
+				<ul class='technicalInfo-list' >
+					{{#each demoinfo }}
+					{{#if (isEven @index) }}
+					<li class='technicalInfo-item br-gray '>
+						<p>{{this.infoName}}</p>
+						<p>{{this.infoNum}}</p>
 					</li>
-					<li class='technicalInfo-item'>
-						<p>Kích Thước</p>
-						<p>10.2 inches</p>
+					{{else}}
+					<li class='technicalInfo-item '>
+						<p>{{this.infoName}}</p>
+						<p>{{this.infoNum}}</p>
 					</li>
-					<li class='technicalInfo-item br-gray'>
-						<p>Kích Thước</p>
-						<p>10.2 inches</p>
-					</li>
-					<li class='technicalInfo-item'>
-						<p>Kích Thước</p>
-						<p>10.2 inches</p>
-					</li>
-					<li class='technicalInfo-item br-gray'>
-						<p>Kích Thước</p>
-						<p>10.2 inches</p>
-					</li>
-
+					{{/if}}
+					{{/each}}
+				
+	
 				</ul>
 				<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
+				<div class="modal-container">
+						<div class="modal">
+			<div class="modal-title">
+				<p >Thông số kỹ thuật</p>
+				<button>
+					<i class="far fa-times-circle"></i>
+					<span>Đóng</span></button>
 			</div>
+		
+		<div class="modal-main">
+			{{#each item.techInfo}}
+				<div class="modal-main-item">
+					<p class='TechnicalInfo-title'>{{this.infoType}}</p>
+				
+
+				<ul class='technicalInfo-list'>
+				{{#each this.infoDetail}}
+				{{#if (isEven @index) }}
+				<li class="technicalInfo-item br-gray" >
+					<p>{{this.infoName}}</p>
+					<p>{{this.infoNum}}</p>
+				</li>
+				{{else}}
+				<li class="technicalInfo-item " >
+					<p>{{this.infoName}}</p>
+					<p>{{this.infoNum}}</p>
+				</li>
+				{{/if}}
+				{{/each}}
+			</ul>
+
+				</div>
+				{{/each}}
+				
+		</div>
+		</div>
+		
+	</div>
+			</div>
+
+			</div>
+			
 		</div>
 	</div>
+	
 	<!-- Swiper JS -->
 	<script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
 

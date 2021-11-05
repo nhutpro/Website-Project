@@ -17,6 +17,16 @@ app.engine(
 	'hbs',
 	handlebars({
 		extname: '.hbs',
+		helpers: {
+			foo: (a, b) => {
+				if (a == b) return true;
+				else return false;
+			},
+			isEven: (number) => {
+				if (number % 2 === 0) return true;
+				else return false;
+			},
+		},
 	})
 );
 app.set('view engine', 'hbs');

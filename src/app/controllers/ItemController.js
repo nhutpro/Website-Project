@@ -6,13 +6,21 @@ class ItemController {
 		let type = param.slice(0, param.search('-'));
 		let capacity = param.slice(param.search('-') + 1, param.length);
 		items
-			.find({ slug: type })
+			.aggregate([
+				{ $match: { slug: type } },
+				{
+					$lookup: {
+						from: 'options',
+						localField: 'slug',
+						foreignField: 'slug',
+						as: 'options',
+					},
+				},
+			])
 			.then((items) => {
 				options
 					.find({ detail: capacity })
 					.then((options) => {
-						items = items.map((item) => item.toObject());
-						options = options.map((option) => option.toObject());
 						let path = [
 							{ name: 'Điện Thoại', href: '/phone' },
 							{ name: 'Apple', href: '/phone/Apple' },
@@ -21,32 +29,29 @@ class ItemController {
 						let mainItem = options.filter((option) => {
 							return (option.detail = capacity);
 						});
+						let item = items[0];
+						let techinfo = item.techInfo;
+						let demoinfo = [];
+						let i = 0;
+						for (let infoItem of techinfo) {
+							for (let detailInfoItem of infoItem.infoDetail) {
+								demoinfo.push(detailInfoItem);
+								i++;
+								if (i === 12) break;
+							}
+						}
+
 						res.render('detailItem', {
 							path: path,
-							item: items[0],
+							item: item,
 							color: mainItem[0].color,
+							capacity: capacity,
+							demoinfo: demoinfo,
 						});
 					})
 					.catch(next);
 			})
 			.catch(next);
-
-		/*
-		items
-			.find({ slug: req.params.slug.slice(0,reqparams.slug.search('-')) })
-			.then((items) => {
-				items = items.map((item) => item.toObject());
-				let path = [
-					{ name: 'Điện Thoại', href: '/phone' },
-					{ name: 'Apple', href: '/phone/Apple' },
-					{ name: items[0].name, href: '/phone/Apple/' + items[0].name },
-				];
-				res.render('detailItem', {
-					item: items[0],
-					path: path,
-				}); 
-			})
-			.catch(next);*/
 	}
 }
 module.exports = new ItemController();

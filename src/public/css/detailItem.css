@@ -1,8 +1,22 @@
 .detailItem-container {
 	height: 1000rem;
 }
+.active {
+	border: 1px solid #ff0000 !important;
+}
+.disabled {
+	/*	border: rgba(0, 0, 0, 0.3) !important; */
+	color: rgba(0, 0, 0, 0.3) !important;
+}
+
 .br-gray {
-	background-color: #ccc !important;
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.open {
+	display: flex !important;
+}
+.close {
+	display: none !important;
 }
 .path {
 	box-shadow: 0 0 1.2rem rgb(0 0 0 / 40%);
@@ -189,13 +203,16 @@
 }
 
 .detailItem-option .capacity-option {
-	flex-wrap: wrap;
-	margin-bottom: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
 }
 .detailItem-option .capacity-option li {
 	list-style-type: none;
 	text-align: center;
 	padding-right: 10px;
+	display: block;
 }
 .detailItem-option .capacity-option li a {
 	display: block;
@@ -209,6 +226,9 @@
 }
 .detailItem-option .capacity-option .capacity-option-detail {
 	font-weight: bold;
+}
+.detailItem-option .color-option {
+	margin-top: 2rem;
 }
 .detailItem-option .color-option li {
 	padding-right: 1rem;
@@ -310,7 +330,7 @@
 	padding: 1rem 1rem;
 	border-radius: 2rem;
 	display: inline-block;
-	height: 30rem;
+	flex-grow: 0;
 	overflow: hidden;
 }
 .detailItem-sub .technicalInfo .TechnicalInfo-title {
@@ -323,7 +343,8 @@
 	overflow: hidden;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.detailItem-sub .technicalInfo .technicalInfo-item {
+.detailItem-sub .technicalInfo .technicalInfo-item,
+.modal-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	column-gap: 2rem;
@@ -338,4 +359,52 @@
 	box-shadow: rgb(60 64 67 / 10%) 0px 0px 2px 0px,
 		rgb(60 64 67 / 15%) 0px 0px 6px 2px;
 	margin-top: 2rem;
+}
+.detailItem-sub .modal-container {
+	position: fixed;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+.detailItem-sub .modal {
+	background-color: #fff;
+	width: 60rem;
+	border-radius: 1rem;
+	overflow: hidden;
+
+	margin-top: 2rem;
+}
+.detailItem-sub .modal-title {
+	background-color: rgba(0, 0, 0, 0.8);
+
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+}
+.detailItem-sub .modal-title p,
+.detailItem-sub .modal-title i,
+.detailItem-sub .modal-title span {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #fff;
+}
+.detailItem-sub .modal-title button {
+	background: none;
+	border: none;
+}
+.detailItem-sub .modal-title button :hover {
+	cursor: pointer;
+}
+.detailItem-sub .modal .modal-main {
+	padding: 0 1rem 1rem 1rem;
+}
+.detailItem-sub .modal-main-item {
+	margin-top: 1rem;
 }
