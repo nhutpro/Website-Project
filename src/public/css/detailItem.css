@@ -176,6 +176,7 @@
 	padding: 2rem 3rem 2rem 1rem;
 	border-radius: 50%;
 	display: none;
+	transition: transform ease 1s;
 	animation: nextIcon ease-in 0.25s;
 }
 
@@ -188,6 +189,7 @@
 	padding: 2rem 1rem 2rem 3rem;
 	border-radius: 50%;
 	display: none;
+	transition: transform ease 1s;
 	animation: preIcon ease-in 0.25s;
 }
 .detailItem-container .swiper-icon-next i,
@@ -195,15 +197,24 @@
 	font-weight: 700;
 	color: #fff;
 }
+.detailItem-container .swiper-icon-next:hover,
+.detailItem-container .swiper-icon-prev:hover {
+	cursor: pointer;
+}
 .detailItem-container .mySwiper .swiper-slide-thumb-active {
 	border: 1px solid #ff0000;
 }
-
-.detailItem-container .swiper-slide img {
+.detailItem-container .mySwiper .detailItem-container .swiper-slide img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: fill;
+}
+.mySwiper2 .swiper-button-disabled,
+.mySwiper3 .swiper-button-disabled {
+	opacity: 0.5;
+	cursor: default !important;
+	transform: scale(50%);
 }
 .detailItem-option {
 	font-size: 1.8rem;
@@ -376,9 +387,51 @@
 .detailItem-sub .mySwiper3 img {
 	width: 80%;
 	margin: 0 auto;
-	height: 15rem;
+	height: 80%;
 }
-
+.detailItem-sub .mySwiper3:hover .same-swiper-icon-next {
+	display: block;
+}
+.detailItem-sub .mySwiper3:hover .same-swiper-icon-prev {
+	display: block;
+}
+.detailItem-sub .same-item {
+	display: relative;
+}
+.detailItem-sub .mySwiper3 .same-swiper-icon-prev {
+	position: absolute;
+	top: 14rem;
+	left: 5px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 1.5rem 1.5rem;
+	border-radius: 50%;
+	display: none;
+	transition: transform ease 1s;
+	animation: navSameSide ease 0.5s;
+}
+.detailItem-sub .mySwiper3 .same-swiper-icon-next {
+	position: absolute;
+	top: 14rem;
+	right: 5px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 1.5rem 1.5rem;
+	border-radius: 50%;
+	display: none;
+	transition: transform ease 1s;
+	animation: navSameSide ease 0.5s;
+}
+.detailItem-sub .mySwiper3 .same-swiper-icon-prev i,
+.detailItem-sub .mySwiper3 .same-swiper-icon-next i {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+.detailItem-sub .mySwiper3 .same-swiper-icon-prev:hover,
+.detailItem-sub .mySwiper3 .same-swiper-icon-next:hover {
+	cursor: pointer;
+}
 .detailItem-sub .rate-technicalInfo {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -456,7 +509,6 @@
 }
 .detailItem-sub .modal-title {
 	background-color: rgba(0, 0, 0, 0.8);
-
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 1rem;
@@ -520,5 +572,13 @@
 	to {
 		transform: translateY(0);
 		opacity: 1;
+	}
+}
+@keyframes navSameSide {
+	from {
+		transform: scale(10%);
+	}
+	to {
+		transform: scale(100%);
 	}
 }

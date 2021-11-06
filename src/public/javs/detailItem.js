@@ -15,15 +15,15 @@ var swiper2 = new Swiper(".mySwiper2", {
 	},
 });
 
-var swiper = new Swiper(".mySwiper3", {
+var swiper3 = new Swiper(".mySwiper3", {
 	slidesPerView: 5,
 	spaceBetween: 0,
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".same-swiper-icon-next",
+		prevEl: ".same-swiper-icon-prev",
 	},
 });
-
+swiper3.slideTo(1);
 // start solve user choose a color //
 const colorLsk = document.querySelectorAll(".color-detail-item");
 let availableLsk = [];
