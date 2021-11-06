@@ -1,12 +1,30 @@
-.detailItem-container {
-	height: 1000rem;
-}
 .active {
 	border: 1px solid #ff0000 !important;
 }
+.active:after {
+	content: "";
+	width: 15px;
+	height: 10px;
+	border-radius: 1rem 0 0.5rem 0;
+	background: #d70018;
+	background-image: url(/image/iphone/checkmark.svg);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #ffffff;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+}
+
 .disabled {
 	/*	border: rgba(0, 0, 0, 0.3) !important; */
-	color: rgba(0, 0, 0, 0.3) !important;
+
+	border: 1px solid #ccc !important;
+	opacity: 0.6;
+}
+.disabled:hover {
+	cursor: default !important;
 }
 
 .br-gray {
@@ -84,7 +102,6 @@
 }
 
 .detailItem-container .swiper-slide {
-	text-align: center;
 	font-size: 18px;
 	background: #fff;
 
@@ -152,24 +169,26 @@
 }
 .detailItem-container .swiper-icon-next {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	z-index: 2;
 	right: -2.8rem;
 	background-color: rgba(0, 0, 0, 0.4);
 	padding: 2rem 3rem 2rem 1rem;
 	border-radius: 50%;
 	display: none;
+	animation: nextIcon ease-in 0.25s;
 }
 
 .detailItem-container .swiper-icon-prev {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	z-index: 2;
 	left: -2.8rem;
 	background-color: rgba(0, 0, 0, 0.4);
 	padding: 2rem 1rem 2rem 3rem;
 	border-radius: 50%;
 	display: none;
+	animation: preIcon ease-in 0.25s;
 }
 .detailItem-container .swiper-icon-next i,
 .swiper-icon-prev i {
@@ -211,10 +230,9 @@
 .detailItem-option .capacity-option li {
 	list-style-type: none;
 	text-align: center;
-	padding-right: 10px;
 	display: block;
 }
-.detailItem-option .capacity-option li a {
+.detailItem-option .capacity-option .capacity-option-item {
 	display: block;
 	text-decoration: none;
 	color: #000;
@@ -223,6 +241,7 @@
 	font-size: 1.2rem;
 	border-radius: 1rem;
 	max-height: 5rem;
+	position: relative;
 }
 .detailItem-option .capacity-option .capacity-option-detail {
 	font-weight: bold;
@@ -231,16 +250,23 @@
 	margin-top: 2rem;
 }
 .detailItem-option .color-option li {
-	padding-right: 1rem;
 	list-style-type: none;
-	margin-top: 1rem;
 }
-
+.detailItem-option .color-detail {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
 .detailItem-option .color-detail .color-detail-item {
 	border: 1px solid #000;
 	padding: 1rem 0;
 	max-height: 5rem;
 	border-radius: 1rem;
+	position: relative;
+}
+.detailItem-option .color-detail .color-detail-item:hover {
+	cursor: pointer;
 }
 .detailItem-option .color-option .color-detail-item-img {
 	width: 26px;
@@ -266,6 +292,14 @@
 	background-color: #000;
 	font-weight: bold;
 	margin-top: 2rem;
+	border: none;
+	transition: transform ease 0.2s;
+}
+.detailItem-option .buy-button:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	cursor: pointer;
+	transform: scale(102%);
 }
 .detailItem-about {
 	padding-left: 1rem;
@@ -297,30 +331,61 @@
 	max-width: 90%;
 	text-align: justify;
 }
-
+.detailItem-sub .mySwiper3 {
+	height: 300px;
+}
 .detailItem-sub .mySwiper3 .swiper-slide {
-	padding: 1rem;
+	padding: 1rem 0.5rem;
+	display: block;
 }
 
-.detailItem-sub .mySwiper3 a {
-	padding: 10px;
+.detailItem-sub .mySwiper3 .slide-item-info {
+	padding-left: 1rem;
+	margin-top: 2rem;
+}
+.detailItem-sub .mySwiper3 .slide-item-info p {
+	margin-top: 2rem;
+	font-size: 1.4rem;
+}
+.detailItem-sub .swiper3-item-newPrice {
+	color: red;
+}
+.detailItem-sub .swiper3-item-oldPrice {
+	text-decoration: line-through;
+}
+.detailItem-sub .mySwiper3 .swiper-slide .sameItemImg {
+	display: block;
+	padding-top: 2rem;
+}
+.detailItem-sub .mySwiper3 .swiper3-item-name {
+	color: #000;
+	font-weight: bold;
+}
+.detailItem-sub .swiper3-slide-item {
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
 	border-radius: 2rem;
+	text-align: none;
+	transition: transform ease 0.2s;
+}
+.swiper3-slide-item:hover {
+	transform: scale(102%);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 .detailItem-sub .mySwiper3 img {
-	width: 200x;
-	height: 200px;
-	object-fit: fill;
+	width: 80%;
+	margin: 0 auto;
+	height: 15rem;
 }
+
 .detailItem-sub .rate-technicalInfo {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	column-gap: 2rem;
 }
 .detailItem-sub .rate-technicalInfo .rate {
-	height: 100rem;
+	height: 80rem;
 }
 .detailItem-sub .rate-technicalInfo .technicalInfo {
 	font-size: 1.4rem;
@@ -360,6 +425,13 @@
 		rgb(60 64 67 / 15%) 0px 0px 6px 2px;
 	margin-top: 2rem;
 }
+.detailItem-sub .technicalInfo .technicalInfo-btn:hover {
+	font-weight: bold;
+	box-shadow: rgb(60 64 67 / 30%) 0px 0px 2px 0px,
+		rgb(60 64 67 / 35%) 0px 0px 6px 2px;
+	cursor: pointer;
+}
+
 .detailItem-sub .modal-container {
 	position: fixed;
 	display: none;
@@ -378,8 +450,9 @@
 	width: 60rem;
 	border-radius: 1rem;
 	overflow: hidden;
-
+	position: relative;
 	margin-top: 2rem;
+	animation: modal ease 1s;
 }
 .detailItem-sub .modal-title {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -405,6 +478,47 @@
 .detailItem-sub .modal .modal-main {
 	padding: 0 1rem 1rem 1rem;
 }
+.detailItem-sub .modal .modal-close-btn {
+	background-color: #000;
+	color: #fff;
+	position: absolute;
+	right: 1rem;
+	margin-top: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	display: block;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 10px;
+}
 .detailItem-sub .modal-main-item {
 	margin-top: 1rem;
+}
+
+@keyframes nextIcon {
+	from {
+		transform: translateX(10px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes preIcon {
+	from {
+		transform: translateX(-10px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes modal {
+	from {
+		transform: translateY(-100px);
+		opacity: 0.5;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
