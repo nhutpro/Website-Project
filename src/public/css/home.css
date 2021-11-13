@@ -5,13 +5,13 @@
 .glide__slide--active {
   z-index: 1;
 }
-.landing-page > :nth-child(odd) {
+.landing-page > section:nth-child(odd) {
   background-color: #f5f5f5;
 }
 /* Hero */
 .hero,
 .hero .glide__slides {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 12.75rem);
   font-size: 1.5rem;
   position: relative;
   width: 100%;
@@ -86,15 +86,15 @@
   flex: 0 0 50%;
 }
 .glide__slides .slide_1 {
-  background: url('/image/landing_page/slide1/img1.jpg') no-repeat center /
+  background: url("/image/landing_page/slide1/img1.jpg") no-repeat center /
     cover;
 }
 .glide__slides .slide_2 {
-  background: url('/image/landing_page/slide1/img2.webp') no-repeat center /
+  background: url("/image/landing_page/slide1/img2.webp") no-repeat center /
     cover;
 }
 .glide__slides .slide_3 {
-  background: url('/image/landing_page/slide1/img3.jpg') no-repeat center /
+  background: url("/image/landing_page/slide1/img3.jpg") no-repeat center /
     cover;
 }
 .hero__btn {
@@ -123,8 +123,8 @@
 /* Spotlight and Discount*/
 
 section:not(:first-child) {
-  padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -155,7 +155,7 @@ section .glide__nav .title {
 }
 section .glide__nav .title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0%;
   height: 3px;
   background-color: black;
@@ -268,7 +268,7 @@ section .glide__nav .glide__bullet--active::after {
 }
 .spotlight__item button::after {
   border-radius: 2rem;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   position: absolute;
@@ -282,4 +282,8 @@ section .glide__nav .glide__bullet--active::after {
 }
 .spotlight__item button:hover::after {
   transform: scaleX(1);
+}
+.header__spacer,
+.footer__spacer {
+  background-color: #f5f5f5;
 }
