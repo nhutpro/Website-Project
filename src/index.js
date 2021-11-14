@@ -45,6 +45,9 @@ app.engine(
 				}).format(price);
 				return price;
 			},
+			firstName: (fullName) => {
+				return fullName.split(" ").splice(-1).join(" ");
+			},
 		},
 	})
 );

@@ -1,13 +1,107 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .checkout-page {
-  max-width: 100rem;
-  background-color: red;
+  display: flex;
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
 }
-.cart-container {
-  float: left;
-  width: 30%;
-  max-width: 20rem;
+.box {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.box__heading {
+  display: flex;
+  padding: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-bottom: 1px solid #000;
+  align-items: center;
+}
+.box__heading span {
+  margin-right: 1rem;
+  font-size: 2.1rem;
+  border-radius: 50%;
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 3.2rem;
+}
+.box__heading h2 {
+  font-size: 2.2rem;
+}
+.cart-container {
+  width: 30%;
   margin-right: 2rem;
+}
+.cart {
+  padding: 2rem 2rem 0;
+}
+.cart__item {
+  display: table;
+}
+.cart__item:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+.cart__item > * {
+  padding-bottom: 1.5rem;
+  vertical-align: middle;
+  display: table-cell;
+}
+.cart__item + .cart__item {
+  padding-top: 1.5rem;
+}
+.item__detail > *:not(:first-child) {
+  margin-top: 1rem;
+}
+.item__image img {
+  width: 17rem;
+}
+.item__detail {
+  font-size: 1.3rem;
+}
+.detail__product-options {
+  margin-bottom: 1rem;
+}
+.detail__product-options > * {
+  display: inline-block;
+}
+.detail__product-options .RAM {
+  margin-right: 1rem;
+}
+.detail__quantity input {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 4rem;
+  height: 2.5rem;
+}
+.detail__quantity button {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.delivery-info {
+  flex: 1 1 auto;
+}
+.user-information {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

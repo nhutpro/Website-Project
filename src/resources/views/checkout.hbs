@@ -1,21 +1,87 @@
 <link rel="stylesheet" href="css/checkout.css">
 <section class="checkout-page">
   <aside class="box cart-container">
-    <h2 class="box__heading">
+    <div class="box__heading">
       <span>1</span>
-      giỏ hàng
-    </h2>
-    <div class="basket">
-
+      <h2>giỏ hàng</h2>
     </div>
+    <ul class="cart">
+      {{#each itemList}}
+      <li class="cart__item">
+        <div class="item__image">
+          <a href="/{{this.optionID.item.type}}/{{this.optionID.slug}}-{{this.optionID.detail}}">
+            <img src="{{this.optionID.color.[0].image}}" alt="{{this.optionID.item.name}}">
+          </a>
+        </div>
+        <div class="item__detail">
+          <h2 class="detail__product-name">
+            {{this.optionID.item.name}}
+          </h2>
+          <div class="detail__item-price">{{this.optionID.color.[0].price}} <u>đ</u></div>
+          <ul class="detail__product-options">
+            <li class="RAM">
+              RAM: {{this.optionID.detail}}
+            </li>
+            <li class="color">
+              Màu: {{this.color}}
+            </li>
+          </ul>
+
+          <div class="detail__quantity">
+            <button class="increase-item"><i class="fal fa-minus"></i></button>
+            <input name="quantity" type="number" size="4" maxlength="12" min="0" value="{{this.num}}">
+            <button class="decrease-item"><i class="fal fa-plus"></i></button>
+          </div>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
     <div class="total">
 
     </div>
   </aside>
   <div class="box delivery-info">
-    <h2 class="box__heading">
+    <div class="box__heading">
       <span>2</span>
-      thông tin
-    </h2>
+      <h2>thông tin vận chuyển</h2>
+    </div>
+    <div class="user-information">
+      <h3 class="greeting">xin chào {{firstName userInfo.name}}</h3>
+      <h3 class="sub-heading">hãy chắc chắn rằng thông tin vận chuyển của bạn là chính xác</h3>
+      <form method="POST" action="">
+        <div class="form-group">
+          <label for="fullName">họ và tên</label>
+          <input type="text" id="fullName" value="{{userInfo.name}}" placeholder="Nhập họ và tên">
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">số điện thoại</label>
+          <input type="tel" id="phoneNumber" value="{{userInfo.phone}}" placeholder="Nhập số điện thoại">
+        </div>
+        <div class=" form-group">
+          <label for="provice/city">tỉnh/thành phố
+          </label>
+          <input type="text" id="provice/city" value="{{userInfo.address.[0]}}"
+            placeholder="Nhập tên tỉnh hoặc thành phố">
+        </div>
+        <div class="form-group">
+          <label for="district">quận/huyện
+          </label>
+          <input type="text" id="district" value="{{userInfo.address.[1]}}" placeholder="Nhập tên quận hoặc huyện">
+        </div>
+        <div class="form-group">
+          <label for="sub-district">phường/xã
+          </label>
+          <input type="text" id="sub-district" value="{{userInfo.address.[2]}}" placeholder="Nhập tên phường hoặc xã">
+        </div>
+        <div class="form-group">
+          <label for="house-number">số nhà, toà nhà, tên đường
+          </label>
+          <input type="text" id="house-number" value="{{userInfo.address.[3]}}"
+            placeholder="Nhập số nhà, toà nhà, tên đường" aria-describedby="home-number-help">
+          <small id="home-number-help">VD: 24 Toà nhà 3 Dương Kỳ Hiệp</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
