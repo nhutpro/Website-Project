@@ -7,8 +7,10 @@
     <link rel="shortcut icon" href="/image/13team.ico" type="image/x-icon">
     <link rel="icon" href="/image/13team.ico" type="image/x-icon">
     {{!-- Fonts Awsome --}}
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet"
       type="text/css" />
+      
     {{!-- Style --}}
    
     <link rel="stylesheet" href="/css/style.css">
@@ -28,6 +30,119 @@
       <footer>
         {{>footer}}
       </footer>
+      {{! start modal }}
+    	<div class="account-modal-container">
+		<div class="account-modal">
+      {{!-- login form --}}
+			<form  class="login-form" action="/ahihi" onsubmit="false">
+        <button class="modal-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="heading">Đăng Nhập</h2>
+				<div class="form-row">
+						<i class="fas fa-envelope"></i>
+					<input id="login-mail" type="text" placeholder="Nhập Email" />
+				</div>
+				<div class="form-row">
+					<i class="fas fa-key"></i>
+					<input id="login-password" type="password"  placeholder="Mật Khẩu" />
+           <i class="fas fa-eye-slash cover-icon"></i>
+				</div>
+        <p class="pw-forget forward-FindAccount">Quên mật khẩu ?</p>
+				<input type="submit" class="login-submit submit-btn" value="Đăng Nhập"/>
+        <button class="form-change-btn forward-SignUp">Đăng kí </button>
+			</form>
+      {{!-- end login form --}}
+      {{!-- signup form --}}
+     	<form  class="signUp-form " action="/ahihi" onsubmit="false">
+        <button class="modal-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="heading">Đăng Kí</h2>
+         <p class="notify display-none">Vui lòng kiểm tra email và nhập mã xác thực bên dưới</p>
+        <div class="display-block">
+				<div class="form-row">
+				  <i class="fas fa-user-alt"></i>
+          	<input type="text"  placeholder="Họ Và Tên" />
+				</div>
+				<div class="form-row">
+					<i class="fas fa-mobile-alt"></i>
+					<input type="text"  placeholder="Số Điện Thoại" />
+				</div>
+        <div class="form-row">
+					<i class="fas fa-envelope"></i>
+					<input type="text"  placeholder="Email" />
+				</div>
+        <div class="form-row">
+					<i class="fas fa-key"></i>
+					<input type="password"  placeholder="Mật Khẩu" />
+          <i class="fas fa-eye-slash cover-icon"></i>
+				</div>
+         <div class="form-row">
+					<i class="fas fa-key"></i>
+					<input type="password"  placeholder="Xác nhận mật Khẩu" />
+          <i class="fas fa-eye-slash cover-icon"></i>
+				</div>
+          	<input type="submit" class="login-submit submit-btn" value="Đăng Kí"/>
+        </div>
+        <div class="display-none">
+          <div class="form-row">
+					<input type="code"  placeholder="Nhập mã xác thực" />
+				</div>
+          <input type="submit" class="login-submit submit-btn" value="Xác Nhận"/>
+        </div>
+
+            <button class="icon form-change-btn forward-login">Quay Lại Đăng Nhập </button>
+			</form>
+  {{!-- end signup form --}}
+  {{!-- find account --}}
+   	<form  class="find-account-form" action="#" onsubmit="false">
+        <button class="modal-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="heading">Khôi Phục Tài Khoản</h2>
+
+
+        <div class="verify-email ">
+          <div class="form-row">
+					<i class="fas fa-envelope"></i>
+					<input id="email-verify" type="text" placeholder="Nhập Email" />
+          <button class="get-code-btn">Lấy Mã</button>
+				</div>
+				<div class="form-row">
+					<input type="code"  placeholder="Nhập mã xác thực" />
+				</div>
+        <input type="submit" class="login-submit submit-btn" value="Xác Nhận"/>
+
+        </div>
+
+
+
+        <div class="change-password display-none">
+           <div class="form-row">
+					<i class="fas fa-key"></i>
+					<input type="password"  placeholder="Mật Khẩu Mới" />
+          <i class="fas fa-eye-slash cover-icon"></i>
+				</div>
+         <div class="form-row">
+					<i class="fas fa-key"></i>
+					<input type="password"  placeholder="Xác nhận mật Khẩu" />
+          <i class="fas fa-eye-slash cover-icon"></i>
+        
+				</div>
+           
+            <input type="submit" class="login-submit submit-btn" value="Khôi Phục"/>
+        </div>
+        <button class="icon form-change-btn forward-login">Quay Lại Đăng Nhập </button>
+			
+			</form>
+  {{!-- end findaccount --}}
+		</div>
+	</div>
+
+	<script src="/javs/HeFo.js">
+	</script>
+  	{{! end modal }}
     </div>
   </body>
 </html>

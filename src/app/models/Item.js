@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const Item = new Schema({
@@ -10,4 +10,4 @@ const Item = new Schema({
 	techInfo: Array,
 });
 
-module.exports = mongoose.model('Item', Item);
+module.exports = mongoose.model("Item", Item);

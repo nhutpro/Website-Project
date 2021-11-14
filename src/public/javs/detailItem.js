@@ -61,7 +61,7 @@ function clickColor(clickedColor) {
 	getPrice(clickedColor);
 	transSlide(clickedColor);
 }
-console.log(colorLsk);
+
 for (let item of colorLsk) {
 	if (item.getAttribute("stock") === "0") {
 		item.classList.add("disabled");
@@ -101,3 +101,25 @@ modalOpenBtn.addEventListener("click", (e) => {
 	modal.style.display = "flex";
 });
 //end solve user see technical infomation //
+//start fetch //
+function solve() {
+	fetch("http://localhost:3000/account/login", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			username: "TranNhut",
+			password: "aihii",
+		}),
+	})
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data);
+		})
+		.catch((err) => console.log(err));
+}
+const account = document.querySelectorAll("header .icon")[2];
+account.addEventListener("click", solve);
+console.log(account);
+//end fetch//

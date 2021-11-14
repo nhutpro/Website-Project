@@ -1,6 +1,6 @@
-const { mutipleMongooseToObject } = require('../../util/mongoose');
-const items = require('../models/Item');
-const options = require('../models/Option');
+const { mutipleMongooseToObject } = require("../../util/mongoose");
+const items = require("../models/Item");
+const options = require("../models/Option");
 class PhoneController {
 	index(req, res, next) {
 		items
@@ -12,15 +12,15 @@ class PhoneController {
 			.aggregate([
 				{
 					$lookup: {
-						from: 'options',
-						localField: 'slug',
-						foreignField: 'slug',
-						as: 'slug',
+						from: "options",
+						localField: "slug",
+						foreignField: "slug",
+						as: "slug",
 					},
 				},
 			])
 			.then((items) => {
-				res.render('phone', {
+				res.render("phone", {
 					items: items,
 				});
 			})
@@ -28,7 +28,7 @@ class PhoneController {
 			.catch(next);
 	}
 	show(req, res) {
-		res.send('home' + req.params.id);
+		res.send("home" + req.params.id);
 	}
 }
 module.exports = new PhoneController();

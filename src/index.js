@@ -1,22 +1,34 @@
-const express = require('express');
-const morgan = require('morgan');
-const handlebars = require('express-handlebars');
-const path = require('path');
+const express = require("express");
+const morgan = require("morgan");
+const handlebars = require("express-handlebars");
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+const path = require("path");
 const app = express();
 const port = 3000;
-const route = require('./routes');
-const db = require('./config/db');
+const route = require("./routes");
+const db = require("./config/db");
 db.connect();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.json({ limit: "1mb" }));
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(
+	session({
+		resave: true,
+		saveUninitialized: true,
+		secret: "secret",
+	})
+);
 //HTTP logger
-app.use(morgan('combined'));
+app.use(morgan("combined"));
 
 //Template engine
 app.engine(
-	'hbs',
+	"hbs",
 	handlebars({
-		extname: '.hbs',
+		extname: ".hbs",
 		helpers: {
 			foo: (a, b) => {
 				if (a == b) return true;
@@ -26,15 +38,21 @@ app.engine(
 				if (number % 2 === 0) return true;
 				else return false;
 			},
+			currentChange: (price) => {
+				price = new Intl.NumberFormat("vi-VN", {
+					style: "currency",
+					currency: "VND",
+				}).format(price);
+				return price;
+			},
 		},
 	})
 );
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources', 'views'));
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "resources", "views"));
 
 //route//;
 route(app);
-
 app.listen(port, () => {
 	console.log(`App listening at http://localhost:${port}`);
 });
