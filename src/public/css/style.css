@@ -25,12 +25,23 @@ a:hover,
 a:visited {
 	text-decoration: none;
 }
+.spacer {
+	aspect-ratio: 1000/100;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 /* Header */
 header {
 	background-color: black;
 	top: 0;
 	right: 0;
 	left: 0;
+}
+.header__spacer {
+	aspect-ratio: 1000/50;
+	background-image: url("/image/waveheader.svg");
 }
 
 .header-container {
@@ -59,12 +70,13 @@ header {
 	position: absolute;
 	content: "";
 	width: 0%;
-	height: 0.5rem;
+	height: 0.4rem;
 	background-color: white;
 	left: 50%;
-	bottom: -1.27rem;
+	bottom: -1rem;
 	transition: all 0.25s ease-in-out;
 	z-index: -1;
+	border-radius: 100vh;
 }
 .header__links > a:hover::after {
 	width: 100%;
@@ -146,6 +158,9 @@ footer {
 	grid-template-areas:
 		"logo copyright"
 		"social copyright";
+}
+.footer__spacer {
+	background-image: url("/image/wavefooter.svg");
 }
 .footer__logo {
 	justify-content: center;

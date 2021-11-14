@@ -1,0 +1,13 @@
+.checkout-page {
+  max-width: 100rem;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-container {
+  float: left;
+  width: 30%;
+  max-width: 20rem;
+  background-color: white;
+  margin-right: 2rem;
+}

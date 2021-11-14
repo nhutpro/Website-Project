@@ -4,5 +4,6 @@ const itemController = require("../app/controllers/ItemController");
 const phoneController = require("../app/controllers/PhoneController");
 
 router.get("/:slug", itemController.detailItem);
+// router.get("/:slug", phoneController.index);
 router.get("/", phoneController.index);
 module.exports = router;

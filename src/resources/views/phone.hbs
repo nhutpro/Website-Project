@@ -6,46 +6,47 @@
         <div class="block-title">
           <h3>Thương hiệu</h3>
         </div>
-        <ul class="block-content">
+        <ul class="block-content filter-brand">
           <li>
-            <input type="checkbox" />
-            <label for="">
+
+            <input type="checkbox" id="checkAllBrand" checked />
+            <label for="checkAllbrand">
               <span>Tất cả</span>
             </label>
           </li>
 
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="apple" />
             <label for="">
               <span>Apple</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="samsung" />
             <label for="">
               <span>Samsung</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="vsmart" />
             <label for="">
               <span>Vsmart</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="oppo" />
             <label for="">
               <span>Oppo</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="xiaomi" />
             <label for="">
               <span>Xiaomi</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Brandids[]" value="realme" />
             <label for="">
               <span>Realme</span>
             </label>
@@ -59,31 +60,31 @@
         </div>
         <ul class="block-content">
           <li>
-            <input type="checkbox" />
-            <label for="">
+            <input type="checkbox" id="checkAllPrice" />
+            <label for="checkAllPrice">
               <span>Tất cả</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Priceids[]" value="duoi-2-trieu" />
             <label for="">
               <span>Dưới 2 triệu</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Priceids[]" value="tu-2-5-trieu" />
             <label for="">
               <span>Từ 2 đến 5 triệu</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Priceids[]" value="tu-5-14-trieu" />
             <label for="">
               <span>Từ 5 đến 14 triệu</span>
             </label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input type="checkbox" name="Priceids[]" value="tren-14-trieu" />
             <label for="">
               <span>Trên 14 triệu</span>
             </label>
@@ -97,7 +98,7 @@
         <div class="item">
           <label for="sort-by">Sắp xếp theo</label>
           <select name="sort-by" id="sort-by">
-            <option value="title" selected ="selected">Tên</option>
+            <option value="title" selected="selected">Tên</option>
             <option value="number">Giá</option>
 
           </select>
@@ -112,88 +113,91 @@
       </form> }}
       <div class="product-layout">
         {{#each items}}
-          <div class="product">
-            <div class="img-container">
-             <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
-                <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
-             </a>
-              
-             
-              {{! <div class="addCart">
+        <div class="product">
+          <div class="img-container">
+            <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+              <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
+            </a>
+
+
+            {{! <div class="addCart">
               <i class="fas fa-shopping-cart">
 
               </i>
-              
+
             </div>
             <div class="heart">
               <i class="far fa-heart"></i>
             </div> }}
-            </div>
-            <div class="info-product">
-              <div class="product-name">
-                <a href="/phone"><h3>{{this.name}}</h3></a>
-              </div>
-              {{!-- <div class="rom"> 
-                
-                <div class="item  " onclick="ChangeRom('{{this.name}}',this)">
-                  <strong>64GB </strong>
-                </div>
-                <div class="item" onclick="ChangeRom('{{this.name}}',this)">
-                  <strong>128GB</strong>
-                </div>
-                <div class="item active" onclick="ChangeRom('{{this.name}}',this)">
-                  <strong>256GB</strong>
-                </div>
-
-              </div> --}}
-              <div class="price">
-                <span>{{this.slug.[0].color.[0].price}}đ</span>
-              </div>
-              <div class="config">
-                <div class="config-param">
-                  <span data-title="CPU">
-
-                    <p>
-                      <i class="fad fa-microchip"></i>
-                      {{this.techInfo.[2].infoDetail.[0].infoNum}}
-                    </p>
-                  </span>
-                  <span data-title="Màn hình">
-
-                    <p>
-                      <i class="fad fa-mobile"></i>
-                      {{this.techInfo.[0].infoDetail.[0].infoNum}}
-                    </p>
-                  </span>
-                  <span data-title="RAM">
-
-                    <p>
-                      <i class="fad fa-memory"></i>
-                      {{this.techInfo.[3].infoDetail.[0].infoNum}}
-                    </p>
-                  </span>
-
-                  <span data-title="ROM">
-                    <p>
-                      <i class="fad fa-compact-disc"></i>
-                      {{this.slug.[0].detail}}
-
-
-                    </p>
-                  </span>
-
-                </div>
-              </div>
-              <div class="product-btn">
-                <a href="#" class="btn btn-buy btn-sm">
-                  <p>MUA NGAY</p>
-                </a>
-                <a href="#" class="btn btn-addCart btn-sm">
-                  <p>THÊM VÀO GIỎ</p></a>
-              </div>
-            </div>
-
           </div>
+          <div class="info-product">
+            <div class="product-name">
+              <a href="/phone">
+                <h3>{{this.name}}</h3>
+              </a>
+            </div>
+            {{!-- <div class="rom">
+
+              <div class="item  " onclick="ChangeRom('{{this.name}}',this)">
+                <strong>64GB </strong>
+              </div>
+              <div class="item" onclick="ChangeRom('{{this.name}}',this)">
+                <strong>128GB</strong>
+              </div>
+              <div class="item active" onclick="ChangeRom('{{this.name}}',this)">
+                <strong>256GB</strong>
+              </div>
+
+            </div> --}}
+            <div class="price">
+              <span>{{this.slug.[0].color.[0].price}}đ</span>
+            </div>
+            <div class="config">
+              <div class="config-param">
+                <span data-title="CPU">
+
+                  <p>
+                    <i class="fad fa-microchip"></i>
+                    {{this.techInfo.[2].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+                <span data-title="Màn hình">
+
+                  <p>
+                    <i class="fad fa-mobile"></i>
+                    {{this.techInfo.[0].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+                <span data-title="RAM">
+
+                  <p>
+                    <i class="fad fa-memory"></i>
+                    {{this.techInfo.[3].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+
+                <span data-title="ROM">
+                  <p>
+                    <i class="fad fa-compact-disc"></i>
+                    {{this.slug.[0].detail}}
+
+
+                  </p>
+                </span>
+
+              </div>
+            </div>
+            <div class="product-btn">
+              <a href="#" class="btn btn-buy btn-sm">
+                <p>MUA NGAY</p>
+              </a>
+              <a href="#" class="btn btn-addCart btn-sm">
+                <p>THÊM VÀO GIỎ</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
         {{/each}}
       </div>
       <ul class="pagination">

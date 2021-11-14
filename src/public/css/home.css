@@ -5,13 +5,13 @@
 .glide__slide--active {
 	z-index: 1;
 }
-.landing-page > :nth-child(odd) {
+.landing-page > section:nth-child(odd) {
 	background-color: #f5f5f5;
 }
 /* Hero */
 .hero,
 .hero .glide__slides {
-	height: calc(100vh - 5rem);
+	height: calc(100vh - 12.75rem);
 	font-size: 1.5rem;
 	position: relative;
 	width: 100%;
@@ -123,8 +123,8 @@
 /* Spotlight and Discount*/
 
 section:not(:first-child) {
-	padding-top: 6rem;
-	padding-bottom: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -282,4 +282,8 @@ section .glide__nav .glide__bullet--active::after {
 }
 .spotlight__item button:hover::after {
 	transform: scaleX(1);
+}
+.header__spacer,
+.footer__spacer {
+	background-color: #f5f5f5;
 }

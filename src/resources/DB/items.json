@@ -1,134 +1,589 @@
 [{
   "_id": {
-    "$oid": "6177c83ae9dc5ffcb205216e"
+    "$oid": "615e9a23704e955f7ebb33b0"
   },
-  "name": "Iphone 13",
+  "name": "Iphone X VN Chính Hãng",
   "type": "phone",
-  "price": {
-    "num": "30000000",
-    "text": "30.000.000đ"
-  },
-  "description": "A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip. Exceptional durability. And a huge leap in battery life.\nLet’s Pro.",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg",
-  "brand": "Apple",
-  "configuration": {
-    "ram": "4GB",
-    "rom": "256GB",
-    "chip": "A13 Bionic",
-    "screen": "6.1\""
-  }
+  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
+  "image": [
+    "/image/iphone/iphone11/iphone11_black.jpg",
+    "/image/iphone/iphone11/iphone11_white.jpg",
+    "/image/iphone/iphone11/iphone11_red.jpg",
+    "/image/iphone/iphone11/iphone11_purple.jpg",
+    "/image/iphone/iphone11/iphone11_yellow.jpg"
+  ],
+  "slug": "iphone11",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "OLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "2778 x 1284 pixel"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "A15 Bionic"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "A15 Bionic"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "16GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple",
+  "test": [
+    {
+      "price": "5"
+    }
+  ]
 },{
   "_id": {
-    "$oid": "61780ea89336970722428f9a"
+    "$oid": "61888834ba06602efa085d28"
   },
-  "name": "SamSung Galaxy Note 20 Ultra",
-  "description": "SnapDraon 888, màn hình ultra led",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
-  "brand": "Samsung",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "256GB",
-    "chip": "Exynos 990",
-    "screen": "6.9\""
-  },
-  "price": {
-    "num": "19999000",
-    "text": "19.999.000đ"
-  },
-  "type": "phone"
-},{
-  "_id": {
-    "$oid": "617bf2fd3d1a83c6b7061739"
-  },
-  "name": "Vsmart Aris",
+  "name": "Samsung Galaxy A72",
   "type": "phone",
-  "price": {
-    "num": "4990000",
-    "text": "4.990.000đ"
-  },
-  "description": "Phiên bản Vsmart Aris 8GB-128GB mang đến cho người dùng dung lượng RAM và bộ nhớ trong lớn hơn, bạn sẽ có một chiếc điện thoại chạy siêu mượt, thiết kế thời trang, camera đẳng cấp.\n\n",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/11/5/637401687179661931_vsmart-aris-xanh-dd.png",
-  "brand": "Vsmart",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "128GB",
-    "chip": "Snapdragon 730",
-    "screen": "6.39\""
-  }
+  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
+  "image": [
+    "/image/samsung/galaxya72/galaxya72_black.jpg",
+    "/image/samsung/galaxya72/galaxya72_blue.jpg",
+    "/image/samsung/galaxya72/galaxya72_purple.jpg",
+    "/image/samsung/galaxya72/galaxya72_white.jpg"
+  ],
+  "slug": "galaxya72",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Super AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 pixels (FullHD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 720G (8 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 720G (8 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
 },{
   "_id": {
-    "$oid": "617c14e13d1a83c6b706173c"
+    "$oid": "61888fd5ba06602efa085d36"
   },
-  "name": "SamSung Galaxy Note 20 Ultra",
-  "description": "SnapDraon 888, màn hình ultra led",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
-  "brand": "Samsung",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "256GB",
-    "chip": "Exynos 990",
-    "screen": "6.9\""
-  },
-  "price": {
-    "num": "19999000",
-    "text": "19.999.000đ"
-  },
-  "type": "phone"
+  "name": "Iphone X VN Chính Hãng",
+  "type": "phone",
+  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
+  "image": [
+    "/image/iphone/iphone11/iphone11_black.jpg",
+    "/image/iphone/iphone11/iphone11_white.jpg",
+    "/image/iphone/iphone11/iphone11_red.jpg",
+    "/image/iphone/iphone11/iphone11_purple.jpg",
+    "/image/iphone/iphone11/iphone11_yellow.jpg"
+  ],
+  "slug": "iphone11",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "OLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "2778 x 1284 pixel"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "A15 Bionic"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "A15 Bionic"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "16GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
 },{
   "_id": {
-    "$oid": "617c14e43d1a83c6b706173d"
+    "$oid": "61888fd8ba06602efa085d37"
   },
-  "name": "SamSung Galaxy Note 20 Ultra",
-  "description": "SnapDraon 888, màn hình ultra led",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
-  "brand": "Samsung",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "256GB",
-    "chip": "Exynos 990",
-    "screen": "6.9\""
-  },
-  "price": {
-    "num": "19999000",
-    "text": "19.999.000đ"
-  },
-  "type": "phone"
+  "name": "Samsung Galaxy A72",
+  "type": "phone",
+  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
+  "image": [
+    "/image/samsung/galaxya72/galaxya72_black.jpg",
+    "/image/samsung/galaxya72/galaxya72_blue.jpg",
+    "/image/samsung/galaxya72/galaxya72_purple.jpg",
+    "/image/samsung/galaxya72/galaxya72_white.jpg"
+  ],
+  "slug": "galaxya72",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Super AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 pixels (FullHD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 720G (8 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 720G (8 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
 },{
   "_id": {
-    "$oid": "617c14e83d1a83c6b706173e"
+    "$oid": "61888fdcba06602efa085d38"
   },
-  "name": "SamSung Galaxy Note 20 Ultra",
-  "description": "SnapDraon 888, màn hình ultra led",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
-  "brand": "Samsung",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "256GB",
-    "chip": "Exynos 990",
-    "screen": "6.9\""
-  },
-  "price": {
-    "num": "19999000",
-    "text": "19.999.000đ"
-  },
-  "type": "phone"
+  "name": "Iphone X VN Chính Hãng",
+  "type": "phone",
+  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
+  "image": [
+    "/image/iphone/iphone11/iphone11_black.jpg",
+    "/image/iphone/iphone11/iphone11_white.jpg",
+    "/image/iphone/iphone11/iphone11_red.jpg",
+    "/image/iphone/iphone11/iphone11_purple.jpg",
+    "/image/iphone/iphone11/iphone11_yellow.jpg"
+  ],
+  "slug": "iphone11",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "OLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "2778 x 1284 pixel"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "A15 Bionic"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "A15 Bionic"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "16GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
 },{
   "_id": {
-    "$oid": "617c14eb3d1a83c6b706173f"
+    "$oid": "61888fe0ba06602efa085d39"
   },
-  "name": "SamSung Galaxy Note 20 Ultra",
-  "description": "SnapDraon 888, màn hình ultra led",
-  "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg",
-  "brand": "Samsung",
-  "configuration": {
-    "ram": "8GB",
-    "rom": "256GB",
-    "chip": "Exynos 990",
-    "screen": "6.9\""
+  "name": "Samsung Galaxy A72",
+  "type": "phone",
+  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
+  "image": [
+    "/image/samsung/galaxya72/galaxya72_black.jpg",
+    "/image/samsung/galaxya72/galaxya72_blue.jpg",
+    "/image/samsung/galaxya72/galaxya72_purple.jpg",
+    "/image/samsung/galaxya72/galaxya72_white.jpg"
+  ],
+  "slug": "galaxya72",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.7 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Super AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 pixels (FullHD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 720G (8 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 720G (8 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
+},{
+  "_id": {
+    "$oid": "618947e5d4eb20eba625d93e"
   },
-  "price": {
-    "num": "19999000",
-    "text": "19.999.000đ"
-  },
-  "type": "phone"
+  "name": "Xiaomi Mi 11 Lite 5G",
+  "type": "phone",
+  "description": "Mi 11 Lite 5G và 4G là bộ đôi vừa được Xiaomi trình làng. So sánh nhanh thì cả hai máy sở hữu cùng kích thước màn hình, thông số cụm camera sau và dung lượng pin. Nhưng bên cạnh đó thì phiên bản 5G vẫn còn một số điểm khác biệt so với bản 4G.",
+  "image": [
+    "/image/xiaomi/mi11/mi11_blue.jpg",
+    "/image/xiaomi/mi11/mi11_yellow.jpg",
+    "/image/xiaomi/mi11/mi11_black.jpg"
+  ],
+  "slug": "mi11",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.55 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 pixels (FullHD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 780G (5 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 780G (5 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "16GB"
+        }
+      ]
+    }
+  ],
+  "brand": "xiaomi"
 }]
