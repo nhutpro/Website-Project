@@ -26,6 +26,9 @@ app.engine(
         if (number % 2 === 0) return true;
         else return false;
       },
+      firstName: (fullName) => {
+        return fullName.split(" ").splice(-1).join(" ");
+      },
     },
   })
 );
