@@ -26,9 +26,11 @@
     <header>
       {{>header}}
     </header>
+    <div class="spacer header__spacer"></div>
     <div class="container grid">
       {{{body}}}
     </div>
+    <div class="spacer footer__spacer"></div>
     <footer>
       {{>footer}}
     </footer>
@@ -134,7 +136,6 @@
 
           <button class="icon form-change-btn forward-login">Quay Lại Đăng Nhập </button>
         </form>
-
         {{!-- end signup form --}}
         {{!-- find account --}}
         <form class="find-account-form" action="#" onsubmit="false">
