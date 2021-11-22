@@ -1,4 +1,5 @@
 const cart = require("../models/Cart");
+const util = require("../../util/mongoose");
 const ID = "617eb09800e1ef444ae6d3eb"; //userID của người dùng đã đăng nhập
 class CheckoutController {
   index(req, res, next) {
@@ -15,7 +16,7 @@ class CheckoutController {
       })
       .then((data) => {
         // lọc chỉ lấy option có màu trùng đúng với color
-        data = data.map((items) => items.toObject());
+        data = util.mutipleMongooseToObject(data);
         let result = data[0];
         for (let item of result.list) {
           item.optionID.color = item.optionID.color.filter((color) => {
@@ -28,7 +29,7 @@ class CheckoutController {
           itemList: result.list,
           userInfo: result.userID,
         });
-        // res.json(result);
+        // res.send(result);
       })
       .catch(next);
   }

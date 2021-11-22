@@ -228,8 +228,16 @@ footer {
 	margin-top: 1rem;
 }
 /* start css modal */
+.invalid {
+	border-bottom: 1px solid red !important;
+}
 .account-modal-container {
 	font-size: 1.4rem;
+}
+.account-modal-container .error-message {
+	color: red;
+	font-size: 1.4rem;
+	margin-top: 3px;
 }
 .account-modal-container .heading {
 	font-size: 2rem;
@@ -368,6 +376,9 @@ footer {
 .account-modal-container .signUp-form {
 	display: none;
 }
+.account-modal-container .signUp-form-confirm {
+	display: none;
+}
 .account-modal-container .signUp-form .account-row {
 	display: grid;
 	grid-template-columns: 1fr 20fr;
@@ -392,6 +403,9 @@ footer {
 .account-modal-container .find-account-form {
 	display: none;
 }
+.account-modal-container .find-account-form-change {
+	display: none;
+}
 .account-modal-container .find-account-form .get-code-btn {
 	background-color: transparent;
 	border-radius: 1rem;
@@ -399,12 +413,13 @@ footer {
 	padding: 0.2rem 0.5rem;
 	color: #fff;
 	border: 1px solid #ccc;
+	margin-bottom: 1px;
 }
 .account-modal-container .find-account-form .get-code-btn:hover {
 	cursor: pointer;
 	box-shadow: inset 0 0 5px #ccc;
 }
-.account-modal-container .find-account-form #email-verify {
+.account-modal-container .find-account-form #recovery-email {
 	width: 75%;
 }
 /* end find-account-form */
