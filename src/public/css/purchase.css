@@ -1,0 +1,117 @@
+html {
+  background-color: rgb(233, 230, 230);
+}
+.container {
+  margin-left: 10em;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  /* background-color: teal; */
+  justify-items: center;
+}
+.status_menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.status_menu a {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  padding: 1.5rem;
+}
+.search {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.searchTerm {
+  border: 3px solid #868686;
+  border-right: none;
+  width: 100%;
+}
+.searchButton {
+  width: 5rem;
+  height: 5rem;
+  border: solid #868686;
+  background: #868686;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.products {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: white;
+}
+.brand_status {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.brand_status p {
+  font-size: 1.5rem;
+}
+
+.name_price {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 1rem 0 1rem 0;
+}
+.img_name {
+  display: flex;
+  flex-direction: row;
+}
+.img_name img {
+  width: 10rem;
+  height: 10rem;
+}
+.name_num {
+  padding-left: 1rem;
+}
+.name {
+  font-size: 3rem;
+}
+.num {
+  font-size: 2rem;
+}
+
+.single_product .price {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+.price_one_product {
+  font-size: 1.3rem;
+}
+.price {
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgb(116, 114, 114);
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
