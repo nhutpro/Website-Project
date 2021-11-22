@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const user = require("../models/Users");
+const user = require("../models/User");
 var recoveryCode = 9450;
 var confirmCode;
 var emailRecovery = "tnhut803@gmail.com";
