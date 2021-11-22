@@ -1,3 +1,4 @@
+const session = require("express-session");
 const nodemailer = require("nodemailer");
 const { find } = require("../models/User");
 const user = require("../models/User");
@@ -28,7 +29,9 @@ class AccountController {
 	register(req, res, next) {
 		console.log(req.body);
 		user.find({ email: req.body.email }).then((users) => {
-			if (users.lenth !== 0) {
+			console.log(users);
+			console.log(user.length);
+			if (users.length !== 0) {
 				res.send({
 					status: "false",
 					message: "Email Đã Được Sử Dụng",
@@ -81,7 +84,6 @@ class AccountController {
 		user
 			.find({ email: email })
 			.then((users) => {
-				console.log(users);
 				if (users.length === 0) {
 					res.send({
 						status: "false",
@@ -96,10 +98,14 @@ class AccountController {
 								err: "password",
 								message: "Mật Khẩu Không Chính Xác",
 							});
-						else
+						else {
 							res.send({
 								status: "true",
 							});
+							req.session.user = users[0];
+							console.log("user id la: ");
+							console.log(req.session.user);
+						}
 					});
 				}
 			})
