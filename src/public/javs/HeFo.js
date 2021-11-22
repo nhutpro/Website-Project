@@ -155,8 +155,9 @@ function signUpSubmit(data) {
 		},
 		body: JSON.stringify(data),
 	})
+		.then((res) => res.json())
 		.then((res) => {
-			if (res) {
+			if (res.status === "true") {
 				signUpForm.reset();
 				signUpForm.style.display = "none";
 				signUpFormConfirm.style.display = "block";
@@ -197,13 +198,16 @@ function signUpSubmit(data) {
 					},
 				});
 				//end solve signUp confirm
+			} else {
+				input = document.querySelector(".signUp-form #signUp-email");
+				errSever(input, res.message);
 			}
 		})
 		.catch((error) => {
 			console.log(error);
 		});
 }
-//start solve submit signUp form //
+//end solve submit signUp form //
 //start check valid sign up form//
 Validator({
 	form: ".signUp-form",
@@ -238,9 +242,20 @@ function loginSubmit(data) {
 		},
 		body: JSON.stringify(data),
 	})
+		.then((res) => res.json())
 		.then((res) => {
-			if (res) {
+			if (res.status === "true") {
+				console.log(res);
 				document.querySelector(".login-form .modal-close-btn").click();
+			} else {
+				console.log(res);
+				if (res.err === "email") {
+					input = document.querySelector(".login-form #login-mail");
+					errSever(input, res.message);
+				} else {
+					input = document.querySelector(".login-form #login-password");
+					errSever(input, res.message);
+				}
 			}
 		})
 		.catch((res) => {});

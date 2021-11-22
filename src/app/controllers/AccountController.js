@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const { find } = require("../models/User");
 const user = require("../models/User");
 var recoveryCode = 9450;
 var confirmCode;
@@ -25,10 +26,24 @@ function sendMail(desMail, Message) {
 }
 class AccountController {
 	register(req, res, next) {
-		confirmCode = sendMail(req.body.email, "Mã Xác Thực gmail của bạn là :");
-		console.log(confirmCode);
-		res.send(true);
+		console.log(req.body);
+		user.find({ email: req.body.email }).then((users) => {
+			if (users.lenth !== 0) {
+				res.send({
+					status: "false",
+					message: "Email Đã Được Sử Dụng",
+				});
+			} else {
+				res.send({ status: "true" });
+				confirmCode = sendMail(
+					req.body.email,
+					"Mã Xác Thực gmail của bạn là :"
+				);
+				console.log(confirmCode);
+			}
+		});
 	}
+
 	registerConfirm(req, res, next) {
 		if (req.body.code === `${confirmCode}`) {
 			user
@@ -63,17 +78,29 @@ class AccountController {
 		let email = loginInfo.email;
 		let password = loginInfo.password;
 		console.log([email, password]);
-		users
-			.find({ email: email, password: password })
+		user
+			.find({ email: email })
 			.then((users) => {
-				if (users.length !== 1) {
+				console.log(users);
+				if (users.length === 0) {
 					res.send({
-						login: false,
-						user: "",
+						status: "false",
+						err: "email",
+						message: "Email Không Tồn Tại Vui Lòng Đăng Kí Tài Khoản",
 					});
 				} else {
-					res.send(true);
-					req.session.user = users[0];
+					user.find({ email: email, password: password }).then((users) => {
+						if (users.length === 0)
+							res.send({
+								status: "false",
+								err: "password",
+								message: "Mật Khẩu Không Chính Xác",
+							});
+						else
+							res.send({
+								status: "true",
+							});
+					});
 				}
 			})
 			.catch(next);
