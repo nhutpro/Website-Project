@@ -81,12 +81,7 @@
       ]
     }
   ],
-  "brand": "apple",
-  "test": [
-    {
-      "price": "5"
-    }
-  ]
+  "brand": "apple"
 },{
   "_id": {
     "$oid": "61888834ba06602efa085d28"
