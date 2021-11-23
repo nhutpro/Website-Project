@@ -17,17 +17,21 @@ class PurchaseController {
                 }
 
             })
+
             .then((data) => {
                 data = util.mutipleMongooseToObject(data);
-                let result = data[0];
-                for (let item of result.list) {
-                    item.optionID.color = item.optionID.color.filter((color) => {
-                        return color.name === item.color;
-                    });
+
+                for (let result of data) {
+                    for (let item of result.list) {
+                        item.optionID.color = item.optionID.color.filter((color) => {
+                            return color.name === item.color;
+                        });
+                    }
                 }
 
+
                 res.render("purchase", {
-                    itemList: result.list,
+                    // itemList: result.list,
                     purchase: data,
                     // userInfo: result.userID,
                 });

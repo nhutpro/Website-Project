@@ -19,10 +19,12 @@ const Purchase = new Schema(
 				color: String,
 				// image: String,
 				// price: Number,
+
 			},
 		],
 		status: String,
 		date: Date,
+
 	},
 	{ collection: "purchases" }
 );

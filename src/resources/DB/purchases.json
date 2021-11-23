@@ -8,26 +8,22 @@
         "$oid": "617e49bd00e1ef444ae6d39e"
       },
       "num": 1,
-      "color": "Đỏ",
-      "date": {
-        "$date": "2021-11-21T17:00:00Z"
-      },
-      "status": "Đang giao"
+      "color": "Đỏ"
     },
     {
       "optionID": {
         "$oid": "617e5bf000e1ef444ae6d3af"
       },
       "num": 1,
-      "color": "Vàng",
-      "date": {
-        "$date": "2021-11-21T17:00:00Z"
-      },
-      "status": "Đang giao"
+      "color": "Vàng"
     }
   ],
+  "date": {
+    "$date": "2021-11-21T17:00:00Z"
+  },
+  "status": "Đang giao",
   "userID": {
-    "$oid": "617eb09800e1ef444ae6d3eb"
+    "$oid": "61989c8c0aeccd72724b4abd"
   }
 },{
   "_id": {
@@ -39,35 +35,27 @@
         "$oid": "617e5bf000e1ef444ae6d3af"
       },
       "num": 1,
-      "color": "Tím",
-      "date": {
-        "$date": "2021-11-19T17:00:00Z"
-      },
-      "status": "Đã giao"
+      "color": "Tím"
     },
     {
       "optionID": {
         "$oid": "61894807d4eb20eba625d941"
       },
       "num": 2,
-      "color": "Vàng",
-      "date": {
-        "$date": "2021-11-19T17:00:00Z"
-      },
-      "status": "Đã giao"
+      "color": "Vàng"
     },
     {
       "optionID": {
         "$oid": "618889c8ba06602efa085d2b"
       },
       "num": 2,
-      "color": "Trắng",
-      "date": {
-        "$date": "2021-11-19T17:00:00Z"
-      },
-      "status": "Đã giao"
+      "color": "Trắng"
     }
   ],
+  "date": {
+    "$date": "2021-11-19T17:00:00Z"
+  },
+  "status": "Đã giao",
   "userID": {
     "$oid": "61989c8c0aeccd72724b4abd"
   }
