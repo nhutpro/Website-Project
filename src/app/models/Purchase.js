@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-const user = require("../models/User");
-const option = require("../models/Option");
+const user = require("./User");
+const option = require("./Option");
+
 const Schema = mongoose.Schema;
-const Cart = new Schema(
+const Purchase = new Schema(
 	{
 		userID: {
 			type: mongoose.Schema.Types.ObjectId,
@@ -18,9 +19,13 @@ const Cart = new Schema(
 				color: String,
 				// image: String,
 				// price: Number,
+
 			},
 		],
+		status: String,
+		date: Date,
+
 	},
-	{ collection: "carts" }
+	{ collection: "purchases" }
 );
-module.exports = mongoose.model("Cart", Cart);
+module.exports = mongoose.model("Purchase", Purchase);

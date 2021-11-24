@@ -48,6 +48,9 @@ app.engine(
 			firstName: (fullName) => {
 				return fullName.split(" ").splice(-1).join(" ");
 			},
+			totalPrice: (price, num) => {
+				return price * num;
+			},
 		},
 	})
 );
