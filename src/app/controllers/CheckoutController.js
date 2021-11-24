@@ -1,6 +1,6 @@
 const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
-const ID = "617eb09800e1ef444ae6d3eb"; //userID của người dùng đã đăng nhập
+const ID = "6183af961471cfc8166fe492"; //userID của người dùng đã đăng nhập
 class CheckoutController {
   index(req, res, next) {
     cart
@@ -28,6 +28,7 @@ class CheckoutController {
         result.userID.address = result.userID.address.split(", ").reverse();
         // render màn hình
         res.render("checkout", {
+          error: false,
           itemList: result.list,
           userInfo: result.userID,
           subTotal: subTotal,
@@ -35,7 +36,11 @@ class CheckoutController {
         });
         // res.send(result);
       })
-      .catch(next);
+      .catch((err) => {
+        res.render("checkout", {
+          error: true,
+        });
+      });
   }
 }
 module.exports = new CheckoutController();

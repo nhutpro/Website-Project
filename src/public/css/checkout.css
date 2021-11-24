@@ -11,6 +11,7 @@ input[type="number"] {
 }
 
 .checkout-page {
+  justify-content: center;
   align-items: flex-start;
   display: flex;
   width: 120rem;
@@ -18,7 +19,6 @@ input[type="number"] {
   margin-right: auto;
 }
 .box {
-  display: inline-block;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   border: 1px solid black;
@@ -50,19 +50,24 @@ input[type="number"] {
 
 /* cart and totals */
 .cart-container {
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 30%;
   margin-right: 2rem;
 }
 .cart {
-  height: calc(41rem - 2px);
+  max-height: calc(41rem + 1px);
   overflow-y: auto;
   padding: 2rem 2rem 0;
 }
 .cart__item {
+  overflow: hidden;
   display: table;
 }
 .cart__item:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid black;
 }
 .cart__item:not(:first-child) {
   padding-top: 1.5rem;
@@ -76,7 +81,7 @@ input[type="number"] {
   margin-top: 1rem;
 }
 .item__image img {
-  width: 17rem;
+  height: 17rem;
 }
 .item__detail {
   font-size: 1.3rem;
@@ -102,11 +107,14 @@ input[type="number"] {
   background-color: white;
   height: 2.8rem;
   width: 2.8rem;
-  transition: all 0.2s ease-in;
+  transition: all 0.15s ease-in;
 }
 .detail__quantity button:hover {
-  border: 2px solid;
-  background-color: whitesmoke;
+  background-color: black;
+  color: white;
+}
+.detail__quantity button:active {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /* order summary */
 .order,
@@ -131,7 +139,7 @@ input[type="number"] {
 }
 .user-information {
   margin: 6rem 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -139,7 +147,7 @@ input[type="number"] {
 }
 .user-information form {
   position: relative;
-  width: 60%;
+  width: 65%;
 }
 .user-information .form-group {
   position: relative;
@@ -150,7 +158,7 @@ input[type="number"] {
   margin: 0 1.5rem;
   padding: 0 1rem;
   width: auto;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.5625;
   background: #fff;
   position: absolute;
@@ -163,7 +171,7 @@ input[type="number"] {
 .form-group input {
   border: 0.1rem solid black;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   height: 5.5rem;
   width: 100%;
   padding: 0rem 1.25rem;
@@ -174,7 +182,7 @@ input[type="number"] {
 .form-group input:focus ~ label,
 .form-group input:not(:placeholder-shown):not(:focus) ~ label {
   top: -1.2rem;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   opacity: 1;
 }
 .user-information button[type="submit"] {
@@ -208,4 +216,54 @@ input[type="number"] {
 }
 .user-information button[type="submit"]:hover:after {
   transform: scaleX(1);
+}
+
+/* empty cart */
+.error {
+  position: relative;
+  margin-top: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error .fa-shopping-cart {
+  font-size: 20rem;
+}
+.error .fa-sad-tear {
+  position: absolute;
+  top: 4rem;
+  right: 50%;
+  transform: translate(75%, 0);
+  font-size: 6rem;
+}
+.error__title {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.error__subtitle,
+.error__button {
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.error__button {
+  box-sizing: initial;
+  color: black;
+  margin-top: 2.4rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.error__button:hover {
+  border: 3px solid black;
+  font-weight: bold;
+  padding: calc(1rem - 1.5px) calc(2rem - 1.5px);
+  color: white;
+  background-color: black;
+}
+.error__button:active {
+  background-color: rgba(0, 0, 0, 0.8);
 }

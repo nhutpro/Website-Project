@@ -30,10 +30,12 @@
     <div class="container grid">
       {{{body}}}
     </div>
+    {{#unless error}}
     <div class="spacer footer__spacer"></div>
     <footer>
       {{>footer}}
     </footer>
+    {{/unless}}
     {{! start modal }}
     <div class="account-modal-container">
       <div class="account-modal">
