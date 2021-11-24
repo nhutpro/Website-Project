@@ -19,7 +19,7 @@ Forms.forEach((item) => {
 });
 /*end preven default event form */
 
-/*start open account form */
+/*start solve account icon */
 const loginForm = document.querySelector(".account-modal .login-form");
 const signUpForm = document.querySelector(".account-modal .signUp-form");
 const signUpFormConfirm = document.querySelector(
@@ -32,16 +32,63 @@ const findAccountFormChange = document.querySelector(
 	".account-modal .find-account-form-change"
 );
 
-const accountIcon = document.querySelector("header .icon.account");
+const accountIcon = document.querySelector("header .account");
+const accountOptions = document.querySelector("header .account__options");
 const accountModal = document.querySelector(".account-modal-container");
-accountIcon.addEventListener("click", (e) => {
+const signOutBtn = document.querySelector("header .account #signOut");
+signOutBtn.addEventListener("click", (e) => {
+	e.stopPropagation();
+	signOut();
+	fetch("http://localhost:3000/account/signout", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
+});
+function mouseOver() {
+	accountOptions.style.display = "block";
+}
+function logIn(name) {
+	const userName = document.querySelector(
+		"header .account__options li:first-child h2"
+	);
+	userName.innerText = name;
+	accountIcon.addEventListener("mouseover", mouseOver);
+	accountIcon.addEventListener("mouseout", (e) => {
+		accountOptions.style.display = "none";
+	});
+	accountIcon.removeEventListener("click", openModal);
+}
+
+function openModal() {
 	accountModal.style.display = "flex";
 	loginForm.style.display = "block";
 	signUpForm.style.display = "none";
 	findAccountForm.style.display = "none";
 	resetModal();
-});
-/*end account form */
+}
+function signOut() {
+	accountIcon.addEventListener("click", openModal);
+	accountIcon.removeEventListener("mouseover", mouseOver);
+}
+
+fetch("http://localhost:3000/account/login/user", {
+	method: "GET",
+	headers: {
+		"Content-Type": "application/json",
+	},
+})
+	.then((res) => res.json())
+	.then((res) => {
+		if (res.status == "true") {
+			logIn(res.name);
+		} else {
+			signOut();
+		}
+	});
+/* end solve icon account */
+
 /*start function reset modal */
 function resetModal() {
 	var errorMessages = document.querySelectorAll(
@@ -63,7 +110,7 @@ function resetModal() {
 			.setAttribute("class", "fas fa-eye-slash cover-icon");
 	}
 }
-/*end function resen modal  */
+/*end function reset modal  */
 
 /*start close account form */
 const accountFormCloseBtns = document.querySelectorAll(
@@ -245,10 +292,9 @@ function loginSubmit(data) {
 		.then((res) => res.json())
 		.then((res) => {
 			if (res.status === "true") {
-				console.log(res);
 				document.querySelector(".login-form .modal-close-btn").click();
+				logIn(res.name);
 			} else {
-				console.log(res);
 				if (res.err === "email") {
 					input = document.querySelector(".login-form #login-mail");
 					errSever(input, res.message);
