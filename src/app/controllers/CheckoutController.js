@@ -1,12 +1,12 @@
 const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
 var ID = ""; //userID of logged-in user
-ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
+// ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
 class CheckoutController {
   index(req, res, next) {
     // ID = req.session.user._id;
     cart
-      .find({ userID: ID })
+      .find({ userID: req.session.user._id })
       .populate("userID", "email address phone name")
       .populate("list.optionID", "detail color.name color.image color.price")
       .populate({
@@ -30,7 +30,7 @@ class CheckoutController {
         // render màn hình
         res.render("checkout", {
           itemList: result.list,
-          emptyCart: !0,
+          emptyCart: !result.list.length,
           userInfo: result.userID,
           subTotal: subTotal,
           total: subTotal + 30000,
@@ -47,7 +47,7 @@ class CheckoutController {
     cart
       .updateOne(
         {
-          userID: ID,
+          userID: req.session.user._id,
           "list.optionID": req.body.itemID,
         },
         { $inc: { "list.$.num": 1 } }
@@ -59,7 +59,7 @@ class CheckoutController {
     cart
       .updateOne(
         {
-          userID: ID,
+          userID: req.session.user._id,
           "list.optionID": req.body.itemID,
         },
         { $inc: { "list.$.num": -1 } }
@@ -71,7 +71,7 @@ class CheckoutController {
     cart
       .updateOne(
         {
-          userID: ID,
+          userID: req.session.user._id,
         },
         { $pull: { list: { optionID: req.params.id } } }
       )
