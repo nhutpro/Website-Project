@@ -258,7 +258,7 @@ function loginSubmit(data) {
 				}
 			}
 		})
-		.catch((res) => {});
+		.catch((res) => { });
 }
 //end solve submit login form//
 Validator({
