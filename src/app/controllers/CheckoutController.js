@@ -1,5 +1,6 @@
 const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
+const purchase = require("../models/Purchase");
 var ID = ""; //userID of logged-in user
 // ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
 class CheckoutController {
@@ -76,6 +77,23 @@ class CheckoutController {
         { $pull: { list: { optionID: req.params.id } } }
       )
       .then(() => res.redirect("back"))
+      .catch(next);
+  }
+  purchaseCart(req, res, next) {
+    cart
+      .find({ userID: "6183af961471cfc8166fe492" })
+      .then((data) => {
+        var currentDate = new Date();
+        data = util.mutipleMongooseToObject(data);
+        data = data[0];
+        data.status = "Đang giao";
+        data.date = currentDate;
+        // res.send(data);
+        const p = new purchase(data);
+        p.save()
+          .then(() => res.redirect("/purchase"))
+          .catch(next);
+      })
       .catch(next);
   }
 }
