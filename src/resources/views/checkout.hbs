@@ -1,6 +1,15 @@
-
 <link rel="stylesheet" href="css/checkout.css">
 <section class="checkout-page">
+  {{#if error}}
+  <div class="error">
+    <i class="fal fa-shopping-cart "></i>
+    <i class="fas fa-sad-tear "></i>
+    <h2 class="error__title">có vẻ giỏ hàng của bạn đang trống</h2>
+    <h3 class="error__subtitle">hãy tiếp tục mua sắm để có thể thanh toán</h3>
+    <a href="/phone" class="error__button">mua sắm ngay</a>
+  </div>
+
+  {{else}}
   <aside class="box cart-container">
     <div class="box__heading">
       <span>1</span>
@@ -18,7 +27,7 @@
           <h2 class="detail__product-name">
             {{this.optionID.item.name}}
           </h2>
-          <div class="detail__item-price">{{this.optionID.color.[0].price}} <u>đ</u></div>
+          <div class="detail__item-price">{{currentChange this.optionID.color.[0].price}}</div>
           <ul class="detail__product-options">
             <li class="RAM">
               RAM: {{this.optionID.detail}}
@@ -37,8 +46,21 @@
       </li>
       {{/each}}
     </ul>
+    <div class="order ">
+      <dl class="order__summary sub-total">
+        <dt class="order__summary--label">giỏ hàng</dt>
+        <dd class="order__summary--decription">{{currentChange subTotal}}</dd>
+      </dl>
+      <dl class="order__summary shipping-fee">
+        <dt class="order__summary--label">phí vận chuyển</dt>
+        <dd class="order__summary--decription">{{currentChange 30000}}</dd>
+      </dl>
+    </div>
     <div class="total">
-
+      <dl class="order__summary">
+        <dt class="order__summary--label">tổng cộng</dt>
+        <dd class="order__summary--decription">{{currentChange total}}</dd>
+      </dl>
     </div>
   </aside>
   <div class="box delivery-info">
@@ -47,42 +69,43 @@
       <h2>thông tin vận chuyển</h2>
     </div>
     <div class="user-information">
-      <h3 class="greeting">xin chào {{firstName userInfo.name}}</h3>
+      <h2 class="greeting">xin chào {{firstName userInfo.name}}</h2>
       <h3 class="sub-heading">hãy chắc chắn rằng thông tin vận chuyển của bạn là chính xác</h3>
       <form method="POST" action="">
         <div class="form-group">
+          <input type="text" id="fullName" value="{{userInfo.name}}" placeholder=" ">
           <label for="fullName">họ và tên</label>
-          <input type="text" id="fullName" value="{{userInfo.name}}" placeholder="Nhập họ và tên">
         </div>
         <div class="form-group">
+          <input type="tel" id="phoneNumber" value="{{userInfo.phone}}" placeholder=" ">
           <label for="phoneNumber">số điện thoại</label>
-          <input type="tel" id="phoneNumber" value="{{userInfo.phone}}" placeholder="Nhập số điện thoại">
         </div>
         <div class=" form-group">
+          <input type="text" id="provice/city" value="{{userInfo.address.[0]}}" placeholder=" ">
           <label for="provice/city">tỉnh/thành phố
           </label>
-          <input type="text" id="provice/city" value="{{userInfo.address.[0]}}"
-            placeholder="Nhập tên tỉnh hoặc thành phố">
         </div>
         <div class="form-group">
+          <input type="text" id="district" value="{{userInfo.address.[1]}}" placeholder=" ">
           <label for="district">quận/huyện
           </label>
-          <input type="text" id="district" value="{{userInfo.address.[1]}}" placeholder="Nhập tên quận hoặc huyện">
         </div>
         <div class="form-group">
+          <input type="text" id="sub-district" value="{{userInfo.address.[2]}}" placeholder=" ">
           <label for="sub-district">phường/xã
           </label>
-          <input type="text" id="sub-district" value="{{userInfo.address.[2]}}" placeholder="Nhập tên phường hoặc xã">
         </div>
         <div class="form-group">
+          <input type="text" id="house-number" value="{{userInfo.address.[3]}}" placeholder=" "
+            placeholder=" Nhập số nhà, toà nhà, tên đường" aria-describedby="home-number-help">
           <label for="house-number">số nhà, toà nhà, tên đường
           </label>
-          <input type="text" id="house-number" value="{{userInfo.address.[3]}}"
-            placeholder="Nhập số nhà, toà nhà, tên đường" aria-describedby="home-number-help">
           <small id="home-number-help">VD: 24 Toà nhà 3 Dương Kỳ Hiệp</small>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Thanh toán</button>
       </form>
     </div>
   </div>
+  {{/if}}
 </section>
+<script src="/js/checkout.js"></script>

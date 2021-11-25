@@ -25,14 +25,17 @@
     <header>
       {{>header}}
     </header>
+    
     <div class="spacer header__spacer"></div>
     <div class="container grid">
       {{{body}}}
     </div>
+    {{#unless error}}
     <div class="spacer footer__spacer"></div>
     <footer>
       {{>footer}}
     </footer>
+    {{/unless}}
     {{! start modal }}
     <div class="account-modal-container">
       <div class="account-modal">
@@ -115,7 +118,7 @@
           </div>
           <button class="icon form-change-btn forward-login">Quay Lại Đăng Nhập </button>
         </form>
-        {{!-- ahihi --}}
+        {{!--  --}}
         <form class="signUp-form-confirm">
           <button class="modal-close-btn">
             <i class="fas fa-times"></i>
@@ -199,6 +202,8 @@
         {{!-- end findaccount --}}
       </div>
     </div>
+   
+    
     <script src="/javs/validator.js"></script>
     <script src="/javs/HeFo.js">
     </script>

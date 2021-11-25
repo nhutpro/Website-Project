@@ -99,11 +99,13 @@ class AccountController {
 								message: "Mật Khẩu Không Chính Xác",
 							});
 						else {
+							req.session.user = users[0];
+							req.session.save();
+							console.log("user id la: ");
 							res.send({
+								name: `${req.session.user.name}`,
 								status: "true",
 							});
-							req.session.user = users[0];
-							console.log("user id la: ");
 							console.log(req.session.user);
 						}
 					});
@@ -112,8 +114,13 @@ class AccountController {
 			.catch(next);
 	}
 	user(req, res, next) {
-		if (typeof req.session.user == "undefined") console.log("ok r bro");
-		else console.log("nguvkl");
+		if (typeof req.session.user == "undefined") {
+			res.send({
+				status: "false",
+			});
+		} else {
+			res.send({ name: `${req.session.user.name}`, status: "true" });
+		}
 		console.log(req.session.user);
 	}
 	recovery(req, res, next) {
@@ -156,6 +163,9 @@ class AccountController {
 					status: "false",
 				});
 			});
+	}
+	signOut(req, res, next) {
+		req.session.destroy();
 	}
 }
 module.exports = new AccountController();

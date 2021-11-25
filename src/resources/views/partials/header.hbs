@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="header__utility">
-		<div class="searchbox">
+		<div class="searchbox icon">
 			<button class="searchbox__submit">
 				<i class="far fa-search"></i>
 				<i class="fas fa-search"></i>
@@ -44,10 +44,6 @@
 			<input class="searchbox__input" type="text" name="search" placeholder="Tìm kiếm" />
 		</div>
 
-		<a href="" class="icon">
-			<i class="far fa-heart regular"></i>
-			<i class="fas fa-heart fill-in"></i>
-		</a>
 		<a href="/checkout" class="icon">
 			<i class="far fa-shopping-bag regular"></i>
 			<i class="fas fa-shopping-bag fill-in"></i>
@@ -55,7 +51,51 @@
 		<div class="icon account" login="false" id="">
 			<i class="far fa-user-alt regular"></i>
 			<i class="fas fa-user-alt fill-in"></i>
+
+			<ul class="account__options ">
+				<li>
+					<h2></h2>
+				</li>
+				<hr>
+				<li>
+					<a href="#">
+						<div class="icon__head__container">
+							<i class="fas fa-cog"></i>
+						</div>
+						<p>Cập Nhật Thông Tin</p>
+						<div class="icon__foot__container">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon__head__container">
+							<i class="fas fa-history"></i>
+						</div>
+						<p>Lịch Sử Mua Hàng</p>
+						<div class="icon__foot__container">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</a>
+				</li>
+
+				<li id="signOut">
+					<a href="/">
+						<div class="icon__head__container">
+							<i class="fas fa-sign-out-alt"></i>
+						</div>
+						<p>Đăng Xuất</p>
+						<div class="icon__foot__container display-none">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+
 		</div>
+
 
 	</div>
 

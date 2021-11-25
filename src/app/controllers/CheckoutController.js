@@ -1,6 +1,6 @@
 const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
-const ID = "61989c8c0aeccd72724b4abd"; //userID của người dùng đã đăng nhập
+const ID = "6183af961471cfc8166fe492"; //userID của người dùng đã đăng nhập
 class CheckoutController {
   index(req, res, next) {
     cart
@@ -18,20 +18,29 @@ class CheckoutController {
         // lọc chỉ lấy option có màu trùng đúng với color
         data = util.mutipleMongooseToObject(data);
         let result = data[0];
+        let subTotal = 0;
         for (let item of result.list) {
           item.optionID.color = item.optionID.color.filter((color) => {
             return color.name === item.color;
           });
+          subTotal += item.optionID.color[0].price * item.num;
         }
         result.userID.address = result.userID.address.split(", ").reverse();
         // render màn hình
         res.render("checkout", {
+          error: false,
           itemList: result.list,
           userInfo: result.userID,
+          subTotal: subTotal,
+          total: subTotal + 30000,
         });
         // res.send(result);
       })
-      .catch(next);
+      .catch((err) => {
+        res.render("checkout", {
+          error: true,
+        });
+      });
   }
 }
 module.exports = new CheckoutController();
