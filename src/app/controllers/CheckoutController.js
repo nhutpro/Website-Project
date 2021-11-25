@@ -1,8 +1,10 @@
 const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
-const ID = "6183af961471cfc8166fe492"; //userID của người dùng đã đăng nhập
+var ID = ""; //userID of logged-in user
+ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
 class CheckoutController {
   index(req, res, next) {
+    // ID = req.session.user._id;
     cart
       .find({ userID: ID })
       .populate("userID", "email address phone name")
@@ -15,7 +17,6 @@ class CheckoutController {
         },
       })
       .then((data) => {
-        // lọc chỉ lấy option có màu trùng đúng với color
         data = util.mutipleMongooseToObject(data);
         let result = data[0];
         let subTotal = 0;
@@ -28,19 +29,54 @@ class CheckoutController {
         result.userID.address = result.userID.address.split(", ").reverse();
         // render màn hình
         res.render("checkout", {
-          error: false,
           itemList: result.list,
+          emptyCart: !0,
           userInfo: result.userID,
           subTotal: subTotal,
           total: subTotal + 30000,
         });
-        // res.send(result);
+        // res.send(result.list);
       })
-      .catch((err) => {
+      .catch((next) => {
         res.render("checkout", {
           error: true,
         });
       });
+  }
+  addItem(req, res, next) {
+    cart
+      .updateOne(
+        {
+          userID: ID,
+          "list.optionID": req.body.itemID,
+        },
+        { $inc: { "list.$.num": 1 } }
+      )
+      .then(() => res.sendStatus(200))
+      .catch(next);
+  }
+  subtractItem(req, res, next) {
+    cart
+      .updateOne(
+        {
+          userID: ID,
+          "list.optionID": req.body.itemID,
+        },
+        { $inc: { "list.$.num": -1 } }
+      )
+      .then(() => res.sendStatus(200))
+      .catch(next);
+  }
+  removeItem(req, res, next) {
+    cart
+      .updateOne(
+        {
+          userID: ID,
+        },
+        { $pull: { list: { optionID: req.params.id } } }
+      )
+      .then(() => res.redirect("back"))
+      .catch(next);
   }
 }
 module.exports = new CheckoutController();
