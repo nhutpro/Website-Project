@@ -16,66 +16,13 @@
     </div>
 
     <div class="search">
-        <input type="text" class="searchTerm" id="searchBox"
+        <input type="text" class="searchTerm" id="searchBoxPurchase"
             placeholder=" Tìm kiếm lịch sử mua hàng theo tên, thương hiệu... của sản phẩm ">
         <button type="submit" class="searchButton">
             <i class="fa fa-search"></i>
         </button>
     </div>
+
     <p id="listProduct"></p>
-    {{!-- {{#each purchase}}
-    {{#each list}}
-    <div class="products">
-        <div class="single_product">
-            <div class="info">
-                <div class="brand_status">
-                    <div class="brand">
-
-                        <p>Thương hiệu: <strong id="brandProduct">{{this.optionID.item.brand}}</strong> | Ngày mua:
-                            <strong id="dateProduct">{{../this.date}}</strong>
-                        </p>
-                    </div>
-                    <div class="status">
-                        <p>Trạng thái: <strong id="statusProduct">{{../this.status}}</strong></p>
-                    </div>
-
-                </div>
-                <hr>
-                <a href="/phone/iphone11-256GB" class="name_price">
-                    <div class="img_name">
-                        <img id="imgProduct" src="{{this.optionID.color.[0].image}}" alt="">
-                        <div class="name_num">
-                            <p class="name" id="nameProduct">{{this.optionID.item.name}}</p>
-                            <p class="num">x<strong id="numProduct">{{this.num}}</strong></p>
-                            <p class="num">Màu: <strong id="colorProduct">{{this.color}}</strong></p>
-
-
-                        </div>
-                    </div>
-
-                    <div class="price_one_product">
-                        <p><strong id="priceProduct">{{currentChange this.optionID.color.[0].price}}</strong> </p>
-                    </div>
-                </a>
-                <hr>
-            </div>
-            <div class="price">
-                <p id="totalPrice">Tổng số tiền: <strong id="totalPriceProduct">{{currentChange (totalPrice
-                        this.optionID.color.[0].price
-                        this.num)}}</strong></p>
-            </div>
-
-            <div class="action">
-                <button class="btn btn_repurchase">Mua lại</button>
-                <button class="btn btn_delete">Xóa</button>
-            </div>
-        </div>
-
-    </div>
-    {{/each}}
-
-    {{/each}} --}}
-
-
-    <script src="js/purchase.js"></script>
 </section>
+<script src="js/purchase.js"></script>
