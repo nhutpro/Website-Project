@@ -35,11 +35,33 @@ li {
   max-width: 114rem;
   margin: 0 auto; }
 
-.section {
-  padding: 10rem 0 5rem; }
+/* .section {
+  padding: 10rem 0 5rem; } */
 
-.products {
-  margin-top: 5rem; }
+/* .products {
+  margin-top: 5rem; } */
+
+  .filter-box{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 5rem 5rem 0;
+    
+    gap: 2rem;
+    justify-content: right;
+  }
+  .asc-price{
+    background-color: #f8dede;
+    padding: 1rem ;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .desc-price{
+    background-color: #f8dede;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
 
 .product:hover {
   border-radius: 2rem;

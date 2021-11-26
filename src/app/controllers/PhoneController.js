@@ -7,7 +7,16 @@ class PhoneController {
 	index(req, res, next) {
 		let paramBrand = req.query.brand;
 		let paramPrice = req.query.price;
-
+		var sort = req.query.sort
+		var temp
+		if (sort != undefined) {
+			if (sort == "asc") {
+				temp = 1
+			}
+			else {
+				temp = -1
+			}
+		}
 		let to2 = 0;
 		let from2 = -1;
 		let to5 = 0;
@@ -140,6 +149,10 @@ class PhoneController {
 						},
 					},
 				])
+				.sort({
+					"slug.color.price": temp
+
+				})
 				.then((items) => {
 					res.render("phone", {
 						items: items,
@@ -166,6 +179,10 @@ class PhoneController {
 					//     }
 					// },
 				])
+				.sort({
+					"slug.color.price": temp
+
+				})
 				.then((items) => {
 					res.render("phone", {
 						items: items,

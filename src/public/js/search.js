@@ -6,11 +6,11 @@ var sortAsc = document.getElementById('sort-asc')
 var sortDesc = document.getElementById('sort-desc')
 
 searchProduct.onchange = () => {
-    var key = ""
+
     localStorage.setItem("count", searchProduct.value)
     console.log(searchProduct.value)
     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + searchProduct.value);
-    key = searchProduct.value
+
     window.location.reload();
 
 }
