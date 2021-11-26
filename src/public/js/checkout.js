@@ -81,8 +81,3 @@ removeBtns.forEach((item) => {
     deleteForm.submit();
   });
 });
-var emptyCart = document.querySelector(".empty-cart");
-if (emptyCart) {
-  document.querySelector(".delivery-info").style.opacity = 0;
-  document.querySelector(".cart-container").style.width = "40%";
-}

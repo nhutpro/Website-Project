@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/checkout.css">
+
 <section class="checkout-page">
   {{#if error}}
   <div class="error">
@@ -77,6 +78,13 @@
     {{/if}}
   </aside>
   <div class="box delivery-info">
+    <script>
+      var emptyCart = document.querySelector(".empty-cart");
+      if (emptyCart) {
+        document.querySelector(".delivery-info").style.opacity = 0;
+        document.querySelector(".cart-container").style.width = "40%";
+      }
+    </script>
     <div class="box__heading">
       <span>2</span>
       <h2>thông tin vận chuyển</h2>
@@ -117,6 +125,7 @@
         </div>
         <button type="submit">Thanh toán</button>
       </form>
+
     </div>
   </div>
   {{/if}}

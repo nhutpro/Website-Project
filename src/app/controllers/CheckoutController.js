@@ -81,13 +81,14 @@ class CheckoutController {
   }
   purchaseCart(req, res, next) {
     cart
-      .find({ userID: "6183af961471cfc8166fe492" })
+      .findOneAndUpdate(
+        { userID: "6183af961471cfc8166fe492" },
+        { $set: { list: [] } }
+      )
       .then((data) => {
-        var currentDate = new Date();
-        data = util.mutipleMongooseToObject(data);
-        data = data[0];
+        data = util.mongooseToObject(data);
         data.status = "Đang giao";
-        data.date = currentDate;
+        data.date = new Date();
         // res.send(data);
         const p = new purchase(data);
         p.save()
