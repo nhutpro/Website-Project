@@ -8,11 +8,21 @@ const items = require("../models/Item");
 const options = require("../models/Option");
 
 class SearchController {
-
     //search global
 
     global(req, res, next) {
         var keyword = req.query.key
+        var sort = req.query.sort
+        var temp
+        if (sort != undefined) {
+            if (sort == "asc") {
+                temp = 1
+            }
+            else {
+                temp = -1
+            }
+        }
+
         items
             .aggregate([
                 {
@@ -29,21 +39,17 @@ class SearchController {
                         as: "slug",
                     },
                 },
-                // {
-                //     $count: keyword,
 
-                // },
-
-                // {
-                //     $set: { "newField": { $count: keyword } }
-                // }
             ])
+            .sort({
+                "slug.color.price": temp
 
+            })
             .then((items) => {
                 res.render("search", {
                     items: items,
                 });
-                //  res.send(items)
+                // res.send(items)
             })
 
             .catch(next);

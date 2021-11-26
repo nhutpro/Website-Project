@@ -4,25 +4,17 @@
         {{!-- <div class="filter">
 
         </div> --}}
-        <p class="numProduct">Đã tìm thấy <strong id="count"></strong> kết quả</p>
+        <p class="numProduct">Đã tìm thấy <strong id="count"></strong> kết quả với từ khóa <strong id="key"></strong>
+        </p>
+        <div class="filter-box">
+            <div class="asc-price" id="sort-asc">
+                <a> <i class="fas fa-sort-amount-up"></i>Giá thấp</a>
+            </div>
+            <div class="desc-price" id="sort-desc">
+                <a><i class="fas fa-sort-amount-up-alt"></i>Giá cao</a>
+            </div>
+        </div>
         <div class="list-products">
-            {{! <form action="">
-                <div class="item">
-                    <label for="sort-by">Sắp xếp theo</label>
-                    <select name="sort-by" id="sort-by">
-                        <option value="title" selected="selected">Tên</option>
-                        <option value="number">Giá</option>
-
-                    </select>
-                    <div class="item">
-                        <label for="order-by">Thứ tự</label>
-                        <select name="order-by" id="sort-by">
-                            <option value="ASC" selected="selected">Thấp đến cao</option>
-                            <option value="DSC" selected="selected">Cao xuống thấp</option>
-                        </select>
-                    </div>
-                </div>
-            </form> }}
             <div class="product-layout">
                 {{#each items}}
                 <div class="product" id="countProduct">
@@ -30,17 +22,6 @@
                         <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
                             <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
                         </a>
-
-
-                        {{! <div class="addCart">
-                            <i class="fas fa-shopping-cart">
-
-                            </i>
-
-                        </div>
-                        <div class="heart">
-                            <i class="far fa-heart"></i>
-                        </div> }}
                     </div>
                     <div class="info-product">
                         <div class="product-name">
@@ -48,19 +29,7 @@
                                 <h3>{{this.name}}</h3>
                             </a>
                         </div>
-                        {{!-- <div class="rom">
 
-                            <div class="item  " onclick="ChangeRom('{{this.name}}',this)">
-                                <strong>64GB </strong>
-                            </div>
-                            <div class="item" onclick="ChangeRom('{{this.name}}',this)">
-                                <strong>128GB</strong>
-                            </div>
-                            <div class="item active" onclick="ChangeRom('{{this.name}}',this)">
-                                <strong>256GB</strong>
-                            </div>
-
-                        </div> --}}
                         <div class="price">
                             <span>{{currentChange this.slug.[0].color.[0].price}}</span>
                         </div>
