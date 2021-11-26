@@ -1,8 +1,26 @@
+// const { response } = require("express")
 
 var btnDelivered = document.getElementById('btnDelivered')
 var btnDelivering = document.getElementById('btnDelivering')
 var btnAll = document.getElementById('btnAll')
 var listProducts = document.getElementById('listProduct')
+var searchProduct = document.getElementById('searchBox')
+
+searchProduct.onchange = () => {
+    console.log(searchProduct.value)
+    var api = "http://localhost:3000/search?purchase=" + searchProduct.value
+    fetch(api, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    })
+        .then(response => response.json())
+        .then(json => {
+            listProducts.innerHTML = render(json)
+        })
+}
+
 
 window.onload = () => {
     console.log('page is fully loaded');
@@ -84,7 +102,6 @@ btnDelivering.onclick = function changBgColor() {
 
         })
 }
-
 
 
 

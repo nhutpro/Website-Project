@@ -16,6 +16,7 @@ html {
   justify-content: left;
   align-items: center;
   background-color: white;
+  cursor: pointer;
 }
 
 .status_menu a {
