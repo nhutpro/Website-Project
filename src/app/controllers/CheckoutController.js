@@ -82,7 +82,7 @@ class CheckoutController {
   purchaseCart(req, res, next) {
     cart
       .findOneAndUpdate(
-        { userID: "6183af961471cfc8166fe492" },
+        { userID: req.session.user._id },
         { $set: { list: [] } }
       )
       .then((data) => {
