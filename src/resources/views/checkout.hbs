@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="css/checkout.css">
+
 <section class="checkout-page">
   {{#if error}}
   <div class="error">
     <i class="fal fa-shopping-cart "></i>
-    <i class="fas fa-sad-tear "></i>
-    <h2 class="error__title">có vẻ giỏ hàng của bạn đang trống</h2>
-    <h3 class="error__subtitle">hãy tiếp tục mua sắm để có thể thanh toán</h3>
-    <a href="/phone" class="error__button">mua sắm ngay</a>
+    <i class="fas fa-exclamation-triangle"></i>
+    <h2 class="error__title">có vẻ giỏ hàng của bạn đang gặp vấn đề</h2>
+    <h3 class="error__subtitle">hãy liên hệ các admin để nhận hỗ trợ</h3>
   </div>
 
   {{else}}
@@ -77,6 +77,13 @@
     {{/if}}
   </aside>
   <div class="box delivery-info">
+    <script>
+      var emptyCart = document.querySelector(".empty-cart");
+      if (emptyCart) {
+        document.querySelector(".delivery-info").style.opacity = 0;
+        document.querySelector(".cart-container").style.width = "40%";
+      }
+    </script>
     <div class="box__heading">
       <span>2</span>
       <h2>thông tin vận chuyển</h2>
@@ -117,6 +124,7 @@
         </div>
         <button type="submit">Thanh toán</button>
       </form>
+
     </div>
   </div>
   {{/if}}

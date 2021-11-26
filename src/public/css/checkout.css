@@ -58,7 +58,7 @@ input[type="number"] {
   margin-right: 2rem;
 }
 .cart {
-  max-height: calc(41rem + 1px);
+  max-height: 42rem;
   overflow-y: auto;
   padding: 2rem 2rem 0;
 }
@@ -89,6 +89,9 @@ input[type="number"] {
 .item__detail .fa-times {
   font-size: 2rem;
   float: right;
+}
+.item__detail .fa-times:hover {
+  cursor: pointer;
 }
 .detail__product-options {
   margin-bottom: 1rem;
@@ -236,10 +239,10 @@ input[type="number"] {
   align-items: center;
 }
 
-.error .fa-shopping-cart {
+.error .fal {
   font-size: 20rem;
 }
-.error .fa-sad-tear {
+.error .fas {
   position: absolute;
   top: 4rem;
   right: 50%;
