@@ -239,10 +239,10 @@ input[type="number"] {
   align-items: center;
 }
 
-.error .fa-shopping-cart {
+.error .fal {
   font-size: 20rem;
 }
-.error .fa-sad-tear {
+.error .fas {
   position: absolute;
   top: 4rem;
   right: 50%;

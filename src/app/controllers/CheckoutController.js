@@ -4,6 +4,7 @@ const purchase = require("../models/Purchase");
 var ID = ""; //userID of logged-in user
 // ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
 class CheckoutController {
+  //GET /checkout
   index(req, res, next) {
     // ID = req.session.user._id;
     cart
@@ -36,7 +37,6 @@ class CheckoutController {
           subTotal: subTotal,
           total: subTotal + 30000,
         });
-        // res.send(result.list);
       })
       .catch((next) => {
         res.render("checkout", {
@@ -44,6 +44,8 @@ class CheckoutController {
         });
       });
   }
+
+  //PUT /checkout/add-items
   addItem(req, res, next) {
     cart
       .updateOne(
@@ -56,6 +58,8 @@ class CheckoutController {
       .then(() => res.sendStatus(200))
       .catch(next);
   }
+
+  //PUT /checkout/subtract-items
   subtractItem(req, res, next) {
     cart
       .updateOne(
@@ -68,6 +72,8 @@ class CheckoutController {
       .then(() => res.sendStatus(200))
       .catch(next);
   }
+
+  //DELETE /checkout/:id
   removeItem(req, res, next) {
     cart
       .updateOne(
@@ -79,6 +85,8 @@ class CheckoutController {
       .then(() => res.redirect("back"))
       .catch(next);
   }
+
+  //POST /checkout/purchase
   purchaseCart(req, res, next) {
     cart
       .findOneAndUpdate(
