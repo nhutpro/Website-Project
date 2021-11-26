@@ -1,9 +1,8 @@
-const session = require("express-session");
 const nodemailer = require("nodemailer");
-const { find } = require("../models/User");
 const user = require("../models/User");
+const cart = require("../models/Cart");
 var recoveryCode = 9450;
-var confirmCode;
+var confirmCode = 1234;
 var emailRecovery = "tnhut803@gmail.com";
 let transporter = nodemailer.createTransport({
 	service: "gmail",
@@ -48,6 +47,9 @@ class AccountController {
 	}
 
 	registerConfirm(req, res, next) {
+		console.log(confirmCode);
+		console.log(req.body.code);
+		console.log(req.body);
 		if (req.body.code === `${confirmCode}`) {
 			user
 				.create({
@@ -57,11 +59,26 @@ class AccountController {
 					name: req.body.name,
 					address: "",
 				})
-				.then((model) => {
-					res.send({
-						status: "true",
-					});
-					console.log(model);
+				.then((userItem) => {
+					console.log(userItem);
+					cart
+						.create({
+							userID: userItem._id,
+							list: [],
+						})
+						.then((cartItem) => {
+							res.send({
+								status: "true",
+							});
+							console.log(cartItem);
+						})
+						.catch((err) => {
+							console.log("Lỗi chỗ này");
+							res.send({
+								status: "false",
+								message: "Lỗi database vui lòng nhập lại mã",
+							});
+						});
 				})
 				.catch((err) => {
 					res.send({
