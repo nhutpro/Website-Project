@@ -448,14 +448,27 @@ header .account__options {
   position: absolute;
   z-index: 2;
   width: 30rem;
-  top: 40px;
-  right: 10px;
+  top: 4.5rem;
+  right: 1rem;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.2);
   padding: 0.8rem;
   display: none;
 }
+
+header .account__options::after {
+  position: absolute;
+  top: -0.7rem;
+  right: 0.65rem;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+
 header .account__options li {
   list-style-type: none;
   padding: 0.8rem;

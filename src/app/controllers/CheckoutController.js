@@ -82,7 +82,7 @@ class CheckoutController {
       .then((data) => {
         data = util.mongooseToObject(data);
         data.status = "Đang giao";
-        data.date = "Hung";
+        data.date = new Date();
         // res.send(data);
         const p = new purchase(data);
         p.save()

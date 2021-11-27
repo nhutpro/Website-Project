@@ -7,6 +7,7 @@
     <i class="fas fa-exclamation-triangle"></i>
     <h2 class="error__title">có vẻ giỏ hàng của bạn đang gặp vấn đề</h2>
     <h3 class="error__subtitle">hãy liên hệ các admin để nhận hỗ trợ</h3>
+    <a href="/" class="cancel-btn">quay về trang chủ</a>
   </div>
 
   {{else}}
@@ -21,7 +22,7 @@
       <i class="fas fa-sad-tear "></i>
       <h2 class="error__title">giỏ hàng của bạn đang trống</h2>
       <h3 class="error__subtitle">hãy tiếp tục mua sắm để có thể thanh toán</h3>
-      <a href="/phone" class="error__button">mua sắm ngay</a>
+      <a href="/phone" class="cancel-btn">mua sắm ngay</a>
     </div>
     {{else}}
     <ul class="cart">
@@ -33,7 +34,7 @@
           </a>
         </div>
         <div class="item__detail" id="{{this.optionID._id}}">
-          <i class="far fa-times remove-item"></i>
+          <i title="Xóa sản phầm" class="far fa-times remove-item"></i>
           <h2 class="detail__product-name">
             {{this.optionID.item.name}}
           </h2>
@@ -53,6 +54,7 @@
               value="{{this.num}}">
             <button class="increase-item"><i class=" fal fa-plus"></i></button>
           </div>
+          {{!-- <p class="invalid-input">số lượng không hợp lệ</p> --}}
         </div>
       </li>
       {{/each}}
@@ -123,9 +125,22 @@
           </label>
           <small id="home-number-help">VD: 24 Toà nhà 3 Dương Kỳ Hiệp</small>
         </div>
-        <button type="submit">Thanh toán</button>
+        <button type="submit" class="confirm-btn">Thanh toán</button>
       </form>
 
+    </div>
+  </div>
+  <div class="remove-modal">
+    <div class="modal-container">
+      <div class="modal__content">Xóa sản phẩm khỏi giỏ hàng?</div>
+      <div class="modal__footer">
+        <button class="modal__button--confirm confirm-btn">
+          Xoá
+        </button>
+        <button class="modal__button--cancel cancel-btn">
+          Huỷ
+        </button>
+      </div>
     </div>
   </div>
   {{/if}}
