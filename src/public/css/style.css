@@ -242,11 +242,11 @@ footer {
   border-bottom: 1px solid red !important;
 }
 .account-modal-container {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .account-modal-container .error-message {
   color: red;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-top: 3px;
 }
 .account-modal-container .heading {
@@ -267,8 +267,9 @@ footer {
   cursor: pointer;
 }
 .account-modal-container form {
+  border-radius: 2rem;
   min-width: 40rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   box-shadow: 0 0 1.7rem 2px #fff;
   padding: 2rem;
   position: relative;
@@ -348,7 +349,7 @@ footer {
   right: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   display: none;
@@ -357,6 +358,7 @@ footer {
 }
 
 .account-modal {
+  border-radius: 2rem;
   overflow-y: auto;
 }
 .account-modal .notify {
@@ -369,12 +371,11 @@ footer {
 }
 
 .account-modal-container .login-form .pw-forget {
+  /* text-align: right; */
   color: #fff;
-  text-align: right;
-  font: 1.4rem;
   padding-top: 2rem;
   display: inline-block;
-  margin-left: 70%;
+  margin-left: 68%;
 }
 .account-modal-container .login-form .pw-forget:hover {
   border-bottom: 1px solid #ccc;

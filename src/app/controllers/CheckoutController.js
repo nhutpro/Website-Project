@@ -45,29 +45,15 @@ class CheckoutController {
       });
   }
 
-  //PUT /checkout/add-items
-  addItem(req, res, next) {
+  //PUT /checkout/set-quantity
+  setQuantity(req, res, next) {
     cart
       .updateOne(
         {
           userID: req.session.user._id,
           "list.optionID": req.body.itemID,
         },
-        { $inc: { "list.$.num": 1 } }
-      )
-      .then(() => res.sendStatus(200))
-      .catch(next);
-  }
-
-  //PUT /checkout/subtract-items
-  subtractItem(req, res, next) {
-    cart
-      .updateOne(
-        {
-          userID: req.session.user._id,
-          "list.optionID": req.body.itemID,
-        },
-        { $inc: { "list.$.num": -1 } }
+        { $set: { "list.$.num": req.body.value } }
       )
       .then(() => res.sendStatus(200))
       .catch(next);
@@ -96,7 +82,7 @@ class CheckoutController {
       .then((data) => {
         data = util.mongooseToObject(data);
         data.status = "Đang giao";
-        data.date = new Date();
+        data.date = "Hung";
         // res.send(data);
         const p = new purchase(data);
         p.save()
