@@ -122,6 +122,7 @@ input[type="number"] {
   color: rgba(0, 0, 0, 0.19);
 }
 .detail__quantity button:not(:disabled):hover {
+  cursor: pointer;
   background-color: black;
   color: white;
 }

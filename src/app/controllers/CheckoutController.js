@@ -81,6 +81,7 @@ class CheckoutController {
       )
       .then((data) => {
         data = util.mongooseToObject(data);
+        delete data._id;
         data.status = "Đang giao";
         data.date = new Date();
         // res.send(data);

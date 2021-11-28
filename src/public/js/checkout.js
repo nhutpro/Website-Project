@@ -51,11 +51,6 @@ function isValid(str) {
   var n = Math.floor(Number(str));
   return n !== Infinity && String(n) === str && n > 0;
 }
-//disabled input
-subBtns.forEach((item) => {
-  if (item.parentElement.querySelector("input").value == 1)
-    item.disabled = true;
-});
 
 addBtns.forEach((item) => {
   item.addEventListener("click", function (event) {
@@ -68,6 +63,8 @@ addBtns.forEach((item) => {
 });
 
 subBtns.forEach((item) => {
+  if (item.parentElement.querySelector("input").value == 1)
+    item.disabled = true;
   item.addEventListener("click", function (event) {
     let id = event.currentTarget.parentElement.parentElement.getAttribute("id"),
       input = event.currentTarget.parentElement.querySelector("input"),
@@ -80,6 +77,10 @@ subBtns.forEach((item) => {
 });
 
 inputQuantity.forEach((field) => {
+  let unchagedInput;
+  field.addEventListener("focus", (e) => {
+    unchagedInput = e.currentTarget.value;
+  });
   field.addEventListener("change", (event) => {
     let invalid_input =
         event.currentTarget.parentElement.parentElement.querySelector(
@@ -89,9 +90,11 @@ inputQuantity.forEach((field) => {
       item_container = input.parentElement.parentElement,
       id = item_container.getAttribute("id");
     if (isValid(field.value)) {
+      unchagedInput = input.value;
       if (invalid_input) invalid_input.remove();
       setQuantity(id, input.value, input);
     } else {
+      input.value = unchagedInput;
       if (!invalid_input) {
         let invalidWarning = document.createElement("p");
         invalidWarning.classList.add("invalid-input");
