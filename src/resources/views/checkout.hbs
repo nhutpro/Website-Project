@@ -103,28 +103,29 @@
           <label for="phoneNumber">số điện thoại</label>
         </div>
         <div class=" form-group">
-          <input type="text" id="provice/city" value="{{userInfo.address.[0]}}" placeholder=" ">
+          <input type="text" id="provice/city" value="{{userInfo.address.province}}" placeholder=" ">
           <label for="provice/city">tỉnh/thành phố
           </label>
         </div>
         <div class="form-group">
-          <input type="text" id="district" value="{{userInfo.address.[1]}}" placeholder=" ">
+          <input type="text" id="district" value="{{userInfo.address.district}}" placeholder=" ">
           <label for="district">quận/huyện
           </label>
         </div>
         <div class="form-group">
-          <input type="text" id="sub-district" value="{{userInfo.address.[2]}}" placeholder=" ">
+          <input type="text" id="sub-district" value="{{userInfo.address.ward}}" placeholder=" ">
           <label for="sub-district">phường/xã
           </label>
         </div>
         <div class="form-group">
-          <input type="text" id="house-number" value="{{userInfo.address.[3]}}" placeholder=" "
+          <input type="text" id="house-number" value="{{userInfo.address.addressdetail}}" placeholder=" "
             placeholder=" Nhập số nhà, toà nhà, tên đường" aria-describedby="home-number-help">
           <label for="house-number">số nhà, toà nhà, tên đường
           </label>
           <small id="home-number-help">VD: 24 Toà nhà 3 Dương Kỳ Hiệp</small>
         </div>
         <button type="submit" class="confirm-btn">Thanh toán</button>
+        <button class="cancel-btn" formaction="/user/info" formmethod="get">Cập nhật thông tin</button>
       </form>
 
     </div>

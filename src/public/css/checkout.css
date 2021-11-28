@@ -231,7 +231,7 @@ input[type="number"] {
   padding: 0.8rem 1.8rem;
   z-index: 1;
 }
-.user-information button[type="submit"] {
+.user-information button {
   left: 37%;
 }
 .confirm-btn:after {
@@ -270,7 +270,7 @@ input[type="number"] {
   transform: scaleX(1);
 }
 
-/* empty cart */
+/* empty cart and error screens*/
 .error,
 .empty-cart {
   position: relative;
@@ -301,7 +301,6 @@ input[type="number"] {
   font-weight: normal;
   font-size: 1.8rem;
 }
-/* empty cart */
 .empty-cart {
   height: 50rem;
 }

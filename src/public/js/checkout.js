@@ -51,7 +51,9 @@ function isValid(str) {
   var n = Math.floor(Number(str));
   return n !== Infinity && String(n) === str && n > 0;
 }
-
+function updateInfo() {
+  location.href("/user/info");
+}
 addBtns.forEach((item) => {
   item.addEventListener("click", function (event) {
     let id = event.currentTarget.parentElement.parentElement.getAttribute("id"),
@@ -100,6 +102,9 @@ inputQuantity.forEach((field) => {
         invalidWarning.classList.add("invalid-input");
         invalidWarning.innerHTML = "số lượng không hợp lệ";
         item_container.append(invalidWarning);
+        setTimeout(function () {
+          item_container.removeChild(item_container.lastChild);
+        }, 3000);
       }
     }
   });

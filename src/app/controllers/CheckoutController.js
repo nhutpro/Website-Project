@@ -37,7 +37,8 @@ class CheckoutController {
 
           subTotal += item.optionID.color[0].price * item.num;
         }
-        result.userID.address = result.userID.address.split(", ").reverse();
+        // res.send(result);
+        // result.userID.address = result.userID.address.split(", ").reverse();
         // render màn hình
         res.render("checkout", {
           itemList: result.list,
