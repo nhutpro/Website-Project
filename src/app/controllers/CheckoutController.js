@@ -4,6 +4,7 @@ const purchase = require("../models/Purchase");
 var ID = ""; //userID of logged-in user
 // ID = "6183af961471cfc8166fe492"; //UserID for testing purpose, plz comment out when not needed
 class CheckoutController {
+  //GET /checkout
   index(req, res, next) {
     // ID = req.session.user._id;
     cart
@@ -36,7 +37,6 @@ class CheckoutController {
           subTotal: subTotal,
           total: subTotal + 30000,
         });
-        // res.send(result.list);
       })
       .catch((next) => {
         res.render("checkout", {
@@ -44,30 +44,22 @@ class CheckoutController {
         });
       });
   }
-  addItem(req, res, next) {
+
+  //PUT /checkout/set-quantity
+  setQuantity(req, res, next) {
     cart
       .updateOne(
         {
           userID: req.session.user._id,
           "list.optionID": req.body.itemID,
         },
-        { $inc: { "list.$.num": 1 } }
+        { $set: { "list.$.num": req.body.value } }
       )
       .then(() => res.sendStatus(200))
       .catch(next);
   }
-  subtractItem(req, res, next) {
-    cart
-      .updateOne(
-        {
-          userID: req.session.user._id,
-          "list.optionID": req.body.itemID,
-        },
-        { $inc: { "list.$.num": -1 } }
-      )
-      .then(() => res.sendStatus(200))
-      .catch(next);
-  }
+
+  //DELETE /checkout/:id
   removeItem(req, res, next) {
     cart
       .updateOne(
@@ -79,6 +71,8 @@ class CheckoutController {
       .then(() => res.redirect("back"))
       .catch(next);
   }
+
+  //POST /checkout/purchase
   purchaseCart(req, res, next) {
     cart
       .findOneAndUpdate(
@@ -87,6 +81,7 @@ class CheckoutController {
       )
       .then((data) => {
         data = util.mongooseToObject(data);
+        delete data._id;
         data.status = "Đang giao";
         data.date = new Date();
         // res.send(data);

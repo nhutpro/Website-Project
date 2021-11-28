@@ -2,9 +2,61 @@ const purchase = require("../models/Purchase")
 const util = require("../../util/mongoose");
 const { NULL } = require("node-sass");
 const ID = "61989c8c0aeccd72724b4abd"; //userID của người dùng đã đăng nhập
+const mongoose = require("../../util/mongoose");
+const { mutipleMongooseToObject } = require("../../util/mongoose");
+const items = require("../models/Item");
+const options = require("../models/Option");
 
 class SearchController {
+    //search global
 
+    global(req, res, next) {
+        var keyword = req.query.key
+        var sort = req.query.sort
+        var temp
+        if (sort != undefined) {
+            if (sort == "asc") {
+                temp = 1
+            }
+            else {
+                temp = -1
+            }
+        }
+
+        items
+            .aggregate([
+                {
+                    $match: {
+                        name: { $regex: keyword }
+                    }
+                },
+                {
+
+                    $lookup: {
+                        from: "options",
+                        localField: "slug",
+                        foreignField: "slug",
+                        as: "slug",
+                    },
+                },
+
+            ])
+            .sort({
+                "slug.color.price": temp
+
+            })
+            .then((items) => {
+                res.render("search", {
+                    items: items,
+                });
+                // res.send(items)
+            })
+
+            .catch(next);
+    }
+
+
+    // search for purchase
     index(req, res, next) {
         var queryParam = req.query.purchase;
         //res.send(req.query.purchase);

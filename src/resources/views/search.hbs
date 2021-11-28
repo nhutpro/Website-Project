@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="/css/search.css" />
+<section class="section products">
+    <div class="products-layout container">
+        {{!-- <div class="filter">
+
+        </div> --}}
+        <p class="numProduct">Đã tìm thấy <strong id="count"></strong> kết quả với từ khóa <strong id="key"></strong>
+        </p>
+        <div class="filter-box">
+            <div class="asc-price" id="sort-asc">
+                <a> <i class="fas fa-sort-amount-up-alt"></i>Giá thấp</a>
+            </div>
+            <div class="desc-price" id="sort-desc">
+                <a><i class="fas fa-sort-amount-up"></i>Giá cao</a>
+            </div>
+        </div>
+        <div class="list-products">
+            <div class="product-layout">
+                {{#each items}}
+                <div class="product" id="countProduct">
+                    <div class="img-container">
+                        <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+                            <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
+                        </a>
+                    </div>
+                    <div class="info-product">
+                        <div class="product-name">
+                            <a href="/phone">
+                                <h3>{{this.name}}</h3>
+                            </a>
+                        </div>
+
+                        <div class="price">
+                            <span>{{currentChange this.slug.[0].color.[0].price}}</span>
+                        </div>
+                        <div class="config">
+                            <div class="config-param">
+                                <span data-title="CPU">
+
+                                    <p>
+                                        <i class="fad fa-microchip"></i>
+                                        {{this.techInfo.[2].infoDetail.[0].infoNum}}
+                                    </p>
+                                </span>
+                                <span data-title="Màn hình">
+
+                                    <p>
+                                        <i class="fad fa-mobile"></i>
+                                        {{this.techInfo.[0].infoDetail.[0].infoNum}}
+                                    </p>
+                                </span>
+                                <span data-title="RAM">
+
+                                    <p>
+                                        <i class="fad fa-memory"></i>
+                                        {{this.techInfo.[3].infoDetail.[0].infoNum}}
+                                    </p>
+                                </span>
+
+                                <span data-title="ROM">
+                                    <p>
+                                        <i class="fad fa-compact-disc"></i>
+                                        {{this.slug.[0].detail}}
+
+
+                                    </p>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-buy btn-sm">
+                                <p>MUA NGAY</p>
+                            </a>
+                            <a href="#" class="btn btn-addCart btn-sm">
+                                <p>THÊM VÀO GIỎ</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                {{/each}}
+            </div>
+            <ul class="pagination">
+                <span>1</span>
+                <span>2</span>
+                <span class="icon">...</span>
+                <span class="last">Last</span>
+            </ul>
+        </div>
+    </div>
+    <script src='/js/search.js'></script>
+</section>

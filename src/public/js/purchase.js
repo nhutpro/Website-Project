@@ -4,7 +4,7 @@ var btnDelivered = document.getElementById('btnDelivered')
 var btnDelivering = document.getElementById('btnDelivering')
 var btnAll = document.getElementById('btnAll')
 var listProducts = document.getElementById('listProduct')
-var searchProduct = document.getElementById('searchBox')
+var searchProduct = document.getElementById('searchBoxPurchase')
 
 searchProduct.onchange = () => {
     console.log(searchProduct.value)
@@ -20,7 +20,6 @@ searchProduct.onchange = () => {
             listProducts.innerHTML = render(json)
         })
 }
-
 
 window.onload = () => {
     console.log('page is fully loaded');
@@ -138,18 +137,17 @@ function render(json) {
                             <p class="num">x<strong id="numProduct">`+ json[i].list[j].num + `</strong></p>
                             <p class="num">Màu: <strong id="colorProduct">`+ json[i].list[j].color + `</strong></p>
 
-
                         </div>
                     </div>
 
                     <div class="price_one_product">
-                        <p><strong id="priceProduct">`+ json[i].list[j].optionID.color[0].price + `</strong> </p>
+                        <p><strong id="priceProduct">`+ currentChange(json[i].list[j].optionID.color[0].price) + `</strong> </p>
                     </div>
                 </a>
                 <hr>
             </div>
             <div class="price">
-                <p id="totalPrice">Tổng số tiền: <strong id="totalPriceProduct"> `+ json[i].list[j].optionID.color[0].price * json[i].list[j].num + `</strong></p>
+                <p id="totalPrice">Tổng số tiền: <strong id="totalPriceProduct"> `+ currentChange(json[i].list[j].optionID.color[0].price * json[i].list[j].num) + `</strong></p>
             </div>
 
             <div class="action">
@@ -165,4 +163,10 @@ function render(json) {
     }
     return output
 }
-
+currentChange = (price) => {
+    price = new Intl.NumberFormat("vi-VN", {
+        style: "currency",
+        currency: "VND",
+    }).format(price);
+    return price;
+}

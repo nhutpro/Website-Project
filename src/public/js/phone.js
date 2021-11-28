@@ -2,11 +2,13 @@ var brandidCheckboxes = document.getElementsByName("Brandids[]");
 var checkBoxAll = document.getElementById("checkAllBrand");
 var priceidCheckboxes = document.getElementsByName("Priceids[]");
 var checkBoxAllPrice = document.getElementById("checkAllPrice");
-
+var sortAsc = document.getElementById('sort-asc-phone')
+var sortDesc = document.getElementById('sort-desc-phone')
 
 
 // check all brand
 checkBoxAll.onclick = function () {
+
   localStorage.setItem("queryParamsBrand", "apple,samsung,vsmart,oppo,xiaomi,realme,");
   history.pushState({}, "", "?brand=" + localStorage.getItem("queryParamsBrand") + "&price=" + localStorage.getItem("queryParamsPrice"));
 
@@ -94,7 +96,7 @@ for (var checkbox of priceidCheckboxes) {
     }
 
     history.pushState({}, "", "?brand=" + localStorage.getItem("queryParamsBrand") + "&price=" + queryParamsPrice);
-
+    localStorage.setItem("paramPrice", queryParamsPrice)
     window.location.reload();
   };
 }
@@ -123,4 +125,25 @@ if (document.referrer == "http://localhost:3000/phone") {
   }
 }
 
+sortAsc.onclick = () => {
 
+  if (localStorage.getItem(queryParamsPrice) != "" || localStorage.getItem(queryParamsBrand) != "") {
+    window.history.pushState({}, "", "?brand=" + localStorage.getItem("queryParamsBrand") + "&price=" + localStorage.getItem("queryParamsPrice") + "&sort=asc");
+    window.location.reload();
+
+  }
+  else {
+    window.history.pushState({}, "", "http://localhost:3000/phone?sort=asc");
+    window.location.reload();
+  }
+}
+sortDesc.onclick = () => {
+  if (localStorage.getItem(queryParamsPrice) != "" || localStorage.getItem(queryParamsBrand) != "") {
+    window.history.pushState({}, "", "?brand=" + localStorage.getItem("queryParamsBrand") + "&price=" + localStorage.getItem("queryParamsPrice") + "&sort=desc");
+    window.location.reload();
+  }
+  else {
+    window.history.pushState({}, "", "http://localhost:3000/phone?sort=desc");
+    window.location.reload();
+  }
+}
