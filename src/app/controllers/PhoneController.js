@@ -172,18 +172,14 @@ class PhoneController {
 						},
 					},
 
-					// {
 
-					//   $match:{
-					//     "slug" : {$elemMatch: { "color":   {$elemMatch:{"price": 8990000}}  }},
-					//     }
-					// },
 				])
 				.sort({
 					"slug.color.price": temp
 
 				})
 				.then((items) => {
+
 					res.render("phone", {
 						items: items,
 					});

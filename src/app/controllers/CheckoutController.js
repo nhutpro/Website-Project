@@ -22,10 +22,19 @@ class CheckoutController {
         data = util.mutipleMongooseToObject(data);
         let result = data[0];
         let subTotal = 0;
+        // hoa add
+        for (let object of data) {
+          object.list = object.list.filter((list) => {
+            return list.optionID !== null;
+          });
+        }
+        //
         for (let item of result.list) {
+
           item.optionID.color = item.optionID.color.filter((color) => {
             return color.name === item.color;
           });
+
           subTotal += item.optionID.color[0].price * item.num;
         }
         result.userID.address = result.userID.address.split(", ").reverse();

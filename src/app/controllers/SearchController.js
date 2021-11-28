@@ -1,7 +1,7 @@
 const purchase = require("../models/Purchase")
 const util = require("../../util/mongoose");
 const { NULL } = require("node-sass");
-const ID = "61989c8c0aeccd72724b4abd"; //userID của người dùng đã đăng nhập
+// const ID = "61989c8c0aeccd72724b4abd"; //userID của người dùng đã đăng nhập
 const mongoose = require("../../util/mongoose");
 const { mutipleMongooseToObject } = require("../../util/mongoose");
 const items = require("../models/Item");
@@ -61,7 +61,7 @@ class SearchController {
         var queryParam = req.query.purchase;
         //res.send(req.query.purchase);
         purchase
-            .find({ userID: ID })
+            .find({ userID: req.session.user._id })
 
             .populate('userID', 'name')
             .populate('list.optionID')

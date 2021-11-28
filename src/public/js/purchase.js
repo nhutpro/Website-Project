@@ -151,8 +151,12 @@ function render(json) {
             </div>
 
             <div class="action">
-                <button class="btn btn_repurchase">Mua lại</button>
-                <button class="btn btn_delete">Xóa</button>
+                <form class=" btn_form " method="POST" action="/purchase/repurchase?id=`+ (json[i]._id) + `&optionID=` + (json[i].list[j].optionID._id) + `">
+                  <button class="btn  " type="submit">Mua lại</button>
+                </form>
+                <form class="btn_form " >
+                  <button class="btn " >Xóa</button>
+                </form>
             </div>
         </div>
 
