@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const user = require("../models/User");
 const cart = require("../models/Cart");
+const address = require("../models/Address");
 var recoveryCode = 9450;
 var confirmCode = 1234;
 var emailRecovery = "tnhut803@gmail.com";
@@ -57,7 +58,6 @@ class AccountController {
 					password: req.body.password,
 					phone: req.body.phone,
 					name: req.body.name,
-					address: "",
 				})
 				.then((userItem) => {
 					console.log(userItem);
@@ -183,6 +183,26 @@ class AccountController {
 	}
 	signOut(req, res, next) {
 		req.session.destroy();
+	}
+	userInfo(req, res, next) {
+		address
+			.find()
+			.select("name")
+			.then((data) => {
+				data = data.map((item) => item.toObject());
+				res.render("userinfo", {
+					user: req.session.user,
+					province: data,
+				});
+			})
+			.catch((err) => {
+				console.lof(err);
+			});
+		/*
+		res.render("userinfo", {
+			user: req.session.user,
+		});
+		*/
 	}
 }
 module.exports = new AccountController();

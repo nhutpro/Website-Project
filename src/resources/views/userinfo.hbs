@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="/css/userinfo.css" />
+<div class="userinfo__container">
+	<div class="userinfo">
+		<form>
+			<h2>Thông Tin Người Dùng</h2>
+			<div class="form-group">
+				<div class="form-row">
+					<input
+						type="text"
+						id="userinfo-name"
+						value="{{user.name}}"
+						placeholder=" "
+					/>
+					<label for="userinfo-name">Họ Và Tên </label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+
+			<div class="form-group">
+				<div class="form-row">
+					<input
+						type="text"
+						id="userinfo-email"
+						value="{{user.email}}"
+						placeholder=" "
+					/>
+					<label for="userinfo-email">Email </label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+
+			<div class="form-group">
+				<div class="form-row">
+					<input
+						type="text"
+						id="userinfo-phone"
+						value="{{user.phone}}"
+						placeholder=" "
+					/>
+					<label for="userinfo-phone">Số Điện Thoại</label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+
+			<div class="form-group">
+				<div class="form-row">
+					<div id="userinfo-gender" data="{{user.gender}}">
+						<div class="gender__option">
+							<input type="radio" id="gender-male" name="gender" value="Nam" />
+							<label for="gender-male">Nam</label>
+						</div>
+
+						<div class="gender__option">
+							<input type="radio" id="gender-female" name="gender" value="Nữ" />
+							<label for="gender-female">Nữ</label>
+						</div>
+
+						<div class="gender__option">
+							<input type="radio" id="gender-LGBT" name="gender" value="Khác" />
+							<label for="gender-LGBT">Khác</label>
+						</div>
+
+					</div>
+
+					<label for="userinfo-gender">Giới Tính</label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+
+			<div class="form-group">
+				<div class="form-row row-birthday">
+					<input
+						type="date"
+						id="user-birthday"
+						name="begin"
+						value="2001-02-19"
+						min="1997-01-01"
+						max="2030-12-31"
+					/>
+					<label for="user-birthday">Ngày Sinh</label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+
+			<div class="form-group">
+				<div class="form-row row-address">
+					<div id="userinfo-address">
+						<div class="address-overall">
+							<select id="address__province">
+								<option value="">Tỉnh / Thành Phố</option>
+								{{#each province}}
+									<option value="{{this.name}}">{{this.name}}</option>
+								{{/each}}
+							</select>
+
+							<select id="address__district" disabled>
+								<option value="" id="district__default">Quận / Huyện</option>
+								<option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+								<option value="TP Hồ Chí Minh">Hà Nội</option>
+							</select>
+							<select id="address__ward" disabled>
+								<option value="" id="ward__default">Phường / Xã</option>
+								<option value="Thị Trấn Vạn Giã">Thị Trấn Vạn Giã</option>
+							</select>
+						</div>
+						<div>
+							<input type="text" placeholder="Địa chỉ cụ thể ví dụ: 31 QL 13" />
+						</div>
+					</div>
+
+					<label for="userinfo-address">Địa chỉ</label>
+				</div>
+				<p class="error-message"></p>
+			</div>
+			<input type="submit" value="Cập Nhật" />
+		</form>
+	</div>
+	<script src="/javs/userinfo.js">
+
+	</script>
+
+</div>
