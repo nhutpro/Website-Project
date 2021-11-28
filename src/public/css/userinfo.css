@@ -1,0 +1,124 @@
+.userinfo {
+	max-width: 40rem;
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
+
+.userinfo h2 {
+	font-size: 2.4rem;
+	text-align: center;
+}
+.userinfo .form-group {
+	margin-top: 2rem;
+}
+.userinfo .form-row {
+	width: 100%;
+	position: relative;
+}
+.userinfo .form-row input[type="text"] {
+	height: 4rem;
+	width: 100%;
+	padding: 1rem 1rem 1rem 1rem;
+	font-size: 1.6rem;
+	line-height: 2.8rem;
+	border-radius: 1rem;
+}
+.userinfo .form-row input[type="date"] {
+	border: 2px solid #000;
+	border-radius: 1rem;
+	height: 3rem;
+}
+.userinfo input[type="submit"] {
+	background-color: #ccc;
+	width: 24rem;
+	height: 3rem;
+	border: none;
+	border-radius: 1rem;
+	margin: 2rem auto;
+	display: block;
+	font-weight: bold;
+}
+.userinfo input[type="submit"]:hover {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+.userinfo input[type="radio"]:checked {
+	background-color: #ccc;
+}
+.userinfo .form-row > label {
+	position: absolute;
+	top: -8px;
+	left: 16px;
+	font-size: 1.4rem;
+	background-color: white;
+	padding: 0 2px;
+}
+.userinfo #userinfo-gender {
+	border: 2px solid #000;
+	padding: 2rem;
+	display: flex;
+	flex: 1;
+	border-radius: 1rem;
+	justify-content: space-around;
+}
+.userinfo input[type="date"] {
+	padding: 1rem;
+}
+.userinfo input[type="date"]:hover {
+	cursor: pointer;
+}
+.userinfo #userinfo-gender input {
+	display: none;
+}
+.userinfo #userinfo-gender label {
+	position: relative;
+}
+
+.userinfo #userinfo-gender label:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	top: 0px;
+	left: -16px;
+}
+.userinfo #userinfo-gender label:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	top: 3px;
+	left: -13px;
+	z-index: 2;
+}
+.userinfo #userinfo-gender input:checked ~ label::before {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.userinfo #userinfo-gender label:hover {
+	cursor: pointer;
+}
+
+.userinfo .row-birthday {
+	padding-top: 1.6rem;
+}
+
+.userinfo .row-address {
+	padding-top: 1.6rem;
+}
+
+#userinfo-address .address-overall {
+	display: flex;
+	justify-content: space-between;
+}
+#userinfo-address .address-overall select {
+	height: 3rem;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+#userinfo-address input {
+	margin-top: 1rem;
+}
