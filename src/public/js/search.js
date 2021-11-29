@@ -17,8 +17,8 @@ searchProduct.onchange = () => {
 
 window.onload = () => {
 
-    count.innerHTML = countProduct.length
-    key.innerHTML = "'" + localStorage.getItem("count") + "'"
+    // count.innerHTML = countProduct.length
+    // key.innerHTML = "'" + localStorage.getItem("count") + "'"
     // sort price
     sortAsc.onclick = () => {
         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");

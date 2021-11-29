@@ -222,16 +222,21 @@ li {
   opacity: 1;
   visibility: visible; }
 
-.product-btn .btn {
-  display: inline-block;
-  font-weight: 300;
-  text-align: center;
-  white-space: nowrap;
-  border-radius: 1rem;
-  padding: 0.9rem 0.9rem;
-  line-height: 16px;
-  cursor: pointer; }
+.product-btn  {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+   }
 
+  .product-btn .btn{
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 1rem;
+    padding: 0.9rem 0.9rem;
+    /* line-height: 16px; */
+    cursor: pointer;
+  }
 .product-btn .btn p {
   font-size: 1.5rem; }
 

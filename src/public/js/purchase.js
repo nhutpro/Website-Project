@@ -104,8 +104,6 @@ btnDelivering.onclick = function changBgColor() {
 
 
 
-
-
 function render(json) {
     var output;
     for (let i in json) {

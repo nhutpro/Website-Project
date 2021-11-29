@@ -159,12 +159,22 @@
               </div>
             </div>
             <div class="product-btn">
-              <a href="#" class="btn btn-buy btn-sm">
-                <p>MUA NGAY</p>
-              </a>
-              <a href="#" class="btn btn-addCart btn-sm">
-                <p>THÊM VÀO GIỎ</p>
-              </a>
+              <form method="POST" action="phone/checkout?itemID={{this._id}}">
+                <button class="btn btn-buy btn-sm" type="submit" id="buyNow">
+                  <p>MUA NGAY</p>
+                </button>
+                {{!-- <a href="#" class="btn btn-buy btn-sm">
+
+                </a> --}}
+              </form>
+              <form>
+                <button class="btn btn-addCart btn-sm" type="submit">
+                  <p>THÊM VÀO GIỎ</p>
+                </button>
+              </form>
+              {{!-- <a href="#" class="btn btn-addCart btn-sm">
+
+              </a> --}}
             </div>
           </div>
 
