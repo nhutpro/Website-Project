@@ -9,6 +9,86 @@ const util = require("../../util/mongoose");
 
 class PhoneController {
 
+	addCart(req, res, next) {
+		items
+			.aggregate([
+				{
+					$match: {
+						"_id": ObjectId(req.query.itemID)
+
+					}
+
+				},
+				{
+					$lookup: {
+						from: "options",
+						localField: "slug",
+						foreignField: "slug",
+						as: "slug",
+					},
+
+
+				},
+				{
+					$project: {
+						"slug._id": 1,
+						_id: 1,
+						"slug.color": 1,
+
+					}
+				},
+
+			])
+
+			.then((items) => {
+				// items = mongoose.mutipleMongooseToObject(items);
+				var object = { optionID: items[0].slug[0]._id, num: 1, color: items[0].slug[0].color[0].name }
+				cart.find({ userID: req.session.user._id },)
+
+					.then((data) => {
+
+						let count = 0
+						for (let item of data[0].list) {
+
+							if (item.optionID.toString() == object.optionID.toString()) {
+								cart.updateOne({
+									userID: req.session.user._id,
+									"list.optionID": object.optionID,
+
+								},
+									{
+										$inc: { "list.$.num": 1 }
+									})
+									.then((info) => {
+										res.redirect("back")
+									})
+								break;
+							}
+							++count;
+						}
+						if (count.toString() == data[0].list.length.toString()) {
+
+							cart.updateOne({ userID: req.session.user._id },
+								{
+									$push: { list: object }
+								}
+							)
+								.then((info) => {
+									res.redirect("back")
+								})
+						}
+
+					}
+
+					)
+
+
+
+				//	res.send(object)
+			})
+
+			.catch(next);
+	}
 	checkout(req, res, next) {
 
 		items
@@ -35,8 +115,6 @@ class PhoneController {
 						"slug._id": 1,
 						_id: 1,
 						"slug.color": 1,
-						// "sLug.color.name": { $arrayElemAt: ["$slug.color.name", 1] }
-						// first: { $arrayElemAt: ["$slug.color", 0] },
 
 					}
 				},
@@ -80,8 +158,6 @@ class PhoneController {
 									res.redirect("/checkout")
 								})
 						}
-
-						// res.send(object)
 
 					}
 
