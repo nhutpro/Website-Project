@@ -192,8 +192,23 @@ page4.onclick = () => {
   localStorage.setItem("page4", true)
   localStorage.setItem("pageLast", false)
 }
+var api = "http://localhost:3000/phone/totalproduct"
+var total
+fetch(api, {
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
+})
+  .then(response => response.json())
+  .then(json => {
+    total = json
+
+
+  })
 pageLast.onclick = () => {
-  window.history.pushState({}, "", "/phone?page=last")
+  total = Math.ceil(total / 5)
+  window.history.pushState({}, "", "/phone?page=" + total)
   window.location.reload()
   localStorage.setItem("page1", false)
   localStorage.setItem("page2", false)

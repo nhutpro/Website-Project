@@ -197,6 +197,28 @@ class PhoneController {
 
 			.catch(next);
 	}
+	totalproduct(req, res, next) {
+		items
+			.aggregate([
+				{
+					$lookup: {
+						from: "options",
+						localField: "slug",
+						foreignField: "slug",
+						as: "slug",
+					},
+
+				},
+
+
+			])
+
+			.then((items) => {
+				res.send(items.length.toString())
+			})
+
+			.catch(next);
+	}
 	index(req, res, next) {
 		let perPage = 5;
 		let page = req.query.page || 1;
