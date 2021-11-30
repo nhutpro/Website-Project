@@ -129,7 +129,7 @@ html {
   padding: 1rem 0 1rem 0;
 }
 /* action */
-.action{
+.action {
   display: flex;
   flex-direction: row;
 }
@@ -153,4 +153,38 @@ html {
 .btn:hover {
   color: white;
   background-color: black;
+}
+/* remove confirmation modal*/
+.remove-modal {
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.modal-container {
+  position: relative;
+  min-height: 20rem;
+  border-radius: 2rem;
+  background-color: white;
+  width: 40rem;
+}
+.modal__content {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 2.5rem;
+}
+.modal__footer {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.modal__button--cancel {
+  margin-left: 0.8rem;
 }
