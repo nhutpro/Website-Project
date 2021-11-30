@@ -198,6 +198,8 @@ class PhoneController {
 			.catch(next);
 	}
 	index(req, res, next) {
+		let perPage = 5;
+		let page = req.query.page || 1;
 		let paramBrand = req.query.brand;
 		let paramPrice = req.query.price;
 		var sort = req.query.sort
@@ -346,6 +348,8 @@ class PhoneController {
 					"slug.color.price": temp
 
 				})
+				.skip((perPage * page) - perPage)
+				.limit(perPage)
 				.then((items) => {
 					res.render("phone", {
 						items: items,
@@ -371,6 +375,8 @@ class PhoneController {
 					"slug.color.price": temp
 
 				})
+				.skip((perPage * page) - perPage)
+				.limit(perPage)
 				.then((items) => {
 
 					res.render("phone", {

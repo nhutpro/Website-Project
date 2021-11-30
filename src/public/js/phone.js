@@ -4,6 +4,12 @@ var priceidCheckboxes = document.getElementsByName("Priceids[]");
 var checkBoxAllPrice = document.getElementById("checkAllPrice");
 var sortAsc = document.getElementById('sort-asc-phone')
 var sortDesc = document.getElementById('sort-desc-phone')
+var page1 = document.getElementById('page1')
+var page2 = document.getElementById('page2')
+var page3 = document.getElementById('page3')
+var page4 = document.getElementById('page4')
+var pageLast = document.getElementById('pageLast')
+
 
 
 // check all brand
@@ -146,4 +152,88 @@ sortDesc.onclick = () => {
     window.history.pushState({}, "", "http://localhost:3000/phone?sort=desc");
     window.location.reload();
   }
+}
+
+
+page1.onclick = () => {
+  window.history.pushState({}, "", "/phone?page=1")
+  window.location.reload()
+  localStorage.setItem("page1", true)
+  localStorage.setItem("page2", false)
+  localStorage.setItem("page3", false)
+  localStorage.setItem("page4", false)
+  localStorage.setItem("pageLast", false)
+}
+page2.onclick = () => {
+  window.history.pushState({}, "", "/phone?page=2")
+  window.location.reload()
+
+  localStorage.setItem("page1", false)
+  localStorage.setItem("page2", true)
+  localStorage.setItem("page3", false)
+  localStorage.setItem("page4", false)
+  localStorage.setItem("pageLast", false)
+}
+page3.onclick = () => {
+  window.history.pushState({}, "", "/phone?page=3")
+  window.location.reload()
+  localStorage.setItem("page1", false)
+  localStorage.setItem("page2", false)
+  localStorage.setItem("page3", true)
+  localStorage.setItem("page4", false)
+  localStorage.setItem("pageLast", false)
+}
+page4.onclick = () => {
+  window.history.pushState({}, "", "/phone?page=4")
+  window.location.reload()
+  localStorage.setItem("page1", false)
+  localStorage.setItem("page2", false)
+  localStorage.setItem("page3", false)
+  localStorage.setItem("page4", true)
+  localStorage.setItem("pageLast", false)
+}
+pageLast.onclick = () => {
+  window.history.pushState({}, "", "/phone?page=last")
+  window.location.reload()
+  localStorage.setItem("page1", false)
+  localStorage.setItem("page2", false)
+  localStorage.setItem("page3", false)
+  localStorage.setItem("page4", false)
+  localStorage.setItem("pageLast", true)
+}
+
+if (localStorage.getItem("page1") == "true") {
+  page1.style.backgroundColor = "#ff4545"
+  page2.style.backgroundColor = "white"
+  page3.style.backgroundColor = "white"
+  page4.style.backgroundColor = "white"
+  pageLast.style.backgroundColor = "white"
+}
+if (localStorage.getItem("page2") == "true") {
+  page1.style.backgroundColor = "white"
+  page2.style.backgroundColor = "#ff4545"
+  page3.style.backgroundColor = "white"
+  page4.style.backgroundColor = "white"
+  pageLast.style.backgroundColor = "white"
+}
+if (localStorage.getItem("page3") == "true") {
+  page1.style.backgroundColor = "white"
+  page2.style.backgroundColor = "white"
+  page3.style.backgroundColor = "#ff4545"
+  page4.style.backgroundColor = "white"
+  pageLast.style.backgroundColor = "white"
+}
+if (localStorage.getItem("page4") == "true") {
+  page1.style.backgroundColor = "white"
+  page2.style.backgroundColor = "white"
+  page3.style.backgroundColor = "white"
+  page4.style.backgroundColor = "#ff4545"
+  pageLast.style.backgroundColor = "white"
+}
+if (localStorage.getItem("pageLast") == "true") {
+  page1.style.backgroundColor = "white"
+  page2.style.backgroundColor = "white"
+  page3.style.backgroundColor = "white"
+  page4.style.backgroundColor = "white"
+  pageLast.style.backgroundColor = "#ff4545"
 }
