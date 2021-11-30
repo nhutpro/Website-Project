@@ -1,14 +1,15 @@
-var searchProduct = document.getElementById('searchBox')
-// var countProduct = document.querySelectorAll('div[id=countProduct]')
-var count = document.getElementById('count')
-var key = document.getElementById('key')
-var sortAsc = document.getElementById('sort-asc')
-var sortDesc = document.getElementById('sort-desc')
+
 // localStorage.setItem("match", 0)
 
 
 
 window.onload = () => {
+    var searchProduct = document.getElementById('searchBox')
+    // var countProduct = document.querySelectorAll('div[id=countProduct]')
+    var count = document.getElementById('count')
+    var key = document.getElementById('key')
+    var sortAsc = document.getElementById('sort-asc')
+    var sortDesc = document.getElementById('sort-desc')
     searchProduct.onchange = () => {
         var api = "http://localhost:3000/search/match?key=" + searchProduct.value
         fetch(api, {
@@ -30,19 +31,20 @@ window.onload = () => {
 
     }
 
-    count.innerHTML = localStorage.getItem("match")
 
 
-    key.innerHTML = "'" + localStorage.getItem("count") + "'"
-    // sort price
-    sortAsc.onclick = () => {
-        window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
-        window.location.reload();
-    }
-    sortDesc.onclick = () => {
-        window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
-        window.location.reload();
-    }
+    // count.innerHTML = localStorage.getItem("match")
+
+    // key.innerHTML = "'" + localStorage.getItem("count") + "'"
+    // // sort price
+    // sortAsc.onclick = () => {
+    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
+    //     window.location.reload();
+    // }
+    // sortDesc.onclick = () => {
+    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
+    //     window.location.reload();
+    // }
 
 }
 
