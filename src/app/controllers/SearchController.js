@@ -54,6 +54,36 @@ class SearchController {
 
             .catch(next);
     }
+    match(req, res, next) {
+        var keyword = req.query.key
+
+
+        items
+            .aggregate([
+                {
+                    $match: {
+                        name: { $regex: keyword }
+                    }
+                },
+                {
+
+                    $lookup: {
+                        from: "options",
+                        localField: "slug",
+                        foreignField: "slug",
+                        as: "slug",
+                    },
+                },
+
+            ])
+
+            .then((items) => {
+
+                res.send(items.length.toString())
+            })
+
+            .catch(next);
+    }
 
 
     // search for purchase
