@@ -59,7 +59,7 @@ class SearchController {
     // search for purchase
     index(req, res, next) {
         var queryParam = req.query.purchase;
-        //res.send(req.query.purchase);
+
         purchase
             .find({ userID: req.session.user._id })
 
@@ -74,26 +74,45 @@ class SearchController {
                 }
 
             })
-            //   .find({ $eq: { "list.optionID.item": null } })
             .then((data) => {
+                // data = util.mutipleMongooseToObject(data);
                 data = util.mutipleMongooseToObject(data);
-
-                for (let result of data) {
-                    for (let item1 of result.list) {
-                        item1.optionID.color = item1.optionID.color.filter((color) => {
-                            return color.name === item1.color;
-                        });
-
-                    }
-
-                    result.list = result.list.filter((item) => {
-                        return item.optionID.item !== null
-                    })
+                let result = data[0];
+                for (let object of data) {
+                    object.list = object.list.filter((list) => {
+                        return list.optionID !== null;
+                    });
                 }
+                for (let object of data) {
+                    object.list = object.list.filter((list) => {
+                        return list.optionID.item !== null;
+                    });
+                }
+                for (let item of result.list) {
+
+                    item.optionID.color = item.optionID.color.filter((color) => {
+                        return color.name === item.color;
+                    });
+
+                }
+
+
+                // for (let result of data[0]) {
+                //     for (let item of result.list) {
+                //         item.optionID.color = item.optionID.color.filter((color) => {
+                //             return color.name === item.color;
+                //         });
+
+                //     }
+
+                //     // result.list = result.list.filter((item) => {
+                //     //     return item.optionID.item !== null
+                //     // })
+
+                // }
 
                 res.send(data)
             })
-
     }
 }
 module.exports = new SearchController();

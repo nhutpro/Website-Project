@@ -9,6 +9,8 @@ var searchProduct = document.getElementById('searchBoxPurchase')
 searchProduct.onchange = () => {
     console.log(searchProduct.value)
     var api = "http://localhost:3000/search?purchase=" + searchProduct.value
+    console.log("api: ", api)
+
     fetch(api, {
         headers: {
             'Content-Type': 'application/json',

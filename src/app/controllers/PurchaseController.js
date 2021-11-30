@@ -159,5 +159,10 @@ class PurchaseController {
             })
 
     }
+    removeItem(req, res, next) {
+        purchase
+            .updateOne({ userID: req.session.user._id },
+                { $pull: { list: { optionID: req.params } } })
+    }
 }
 module.exports = new PurchaseController();
