@@ -8,6 +8,7 @@ genderOptions.forEach((option) => {
 	}
 });
 //end sovle gender option
+
 const province = document.getElementById("address__province");
 const district = document.getElementById("address__district");
 const ward = document.getElementById("address__ward");
@@ -121,6 +122,7 @@ function checkAdress() {
 		return true;
 	}
 }
+
 Validator({
 	form: ".userinfo-form",
 	errorSelector: ".error-message",
@@ -130,7 +132,13 @@ Validator({
 		Validator.isPhone("#userinfo-phone"),
 	],
 	onSubmit: function (data) {
+		console.log(data);
 		if (checkAdress()) {
+			genderOptions.forEach((option) => {
+				if (option.checked == true) {
+					data.gender = option.value;
+				}
+			});
 			fetch("http://localhost:3000/user/update", {
 				method: "POST",
 				headers: {
