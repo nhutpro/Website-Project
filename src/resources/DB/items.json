@@ -2,15 +2,15 @@
   "_id": {
     "$oid": "615e9a23704e955f7ebb33b0"
   },
-  "name": "Iphone X VN Chính Hãng",
+  "name": "iPhone 11",
   "type": "phone",
   "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
   "image": [
-    "/image/iphone/iphone11/iphone11_black.jpg",
-    "/image/iphone/iphone11/iphone11_white.jpg",
-    "/image/iphone/iphone11/iphone11_red.jpg",
-    "/image/iphone/iphone11/iphone11_purple.jpg",
-    "/image/iphone/iphone11/iphone11_yellow.jpg"
+    "/image/apple/iphone11/iphone11_black.jpg",
+    "/image/apple/iphone11/iphone11_white.jpg",
+    "/image/apple/iphone11/iphone11_red.jpg",
+    "/image/apple/iphone11/iphone11_purple.jpg",
+    "/image/apple/iphone11/iphone11_yellow.jpg"
   ],
   "slug": "iphone11",
   "techInfo": [
@@ -85,340 +85,6 @@
 },{
   "_id": {
     "$oid": "61888834ba06602efa085d28"
-  },
-  "name": "Samsung Galaxy A72",
-  "type": "phone",
-  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
-  "image": [
-    "/image/samsung/galaxya72/galaxya72_black.jpg",
-    "/image/samsung/galaxya72/galaxya72_blue.jpg",
-    "/image/samsung/galaxya72/galaxya72_purple.jpg",
-    "/image/samsung/galaxya72/galaxya72_white.jpg"
-  ],
-  "slug": "galaxya72",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Super AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 pixels (FullHD+)"
-        }
-      ]
-    },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 720G (8 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 720G (8 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "61888fd5ba06602efa085d36"
-  },
-  "name": "Iphone X VN Chính Hãng",
-  "type": "phone",
-  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
-  "image": [
-    "/image/iphone/iphone11/iphone11_black.jpg",
-    "/image/iphone/iphone11/iphone11_white.jpg",
-    "/image/iphone/iphone11/iphone11_red.jpg",
-    "/image/iphone/iphone11/iphone11_purple.jpg",
-    "/image/iphone/iphone11/iphone11_yellow.jpg"
-  ],
-  "slug": "iphone11",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "OLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "2778 x 1284 pixel"
-        }
-      ]
-    },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "A15 Bionic"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "A15 Bionic"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "16GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61888fd8ba06602efa085d37"
-  },
-  "name": "Samsung Galaxy A72",
-  "type": "phone",
-  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
-  "image": [
-    "/image/samsung/galaxya72/galaxya72_black.jpg",
-    "/image/samsung/galaxya72/galaxya72_blue.jpg",
-    "/image/samsung/galaxya72/galaxya72_purple.jpg",
-    "/image/samsung/galaxya72/galaxya72_white.jpg"
-  ],
-  "slug": "galaxya72",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Super AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 pixels (FullHD+)"
-        }
-      ]
-    },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 720G (8 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 720G (8 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "61888fdcba06602efa085d38"
-  },
-  "name": "Iphone X VN Chính Hãng",
-  "type": "phone",
-  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
-  "image": [
-    "/image/iphone/iphone11/iphone11_black.jpg",
-    "/image/iphone/iphone11/iphone11_white.jpg",
-    "/image/iphone/iphone11/iphone11_red.jpg",
-    "/image/iphone/iphone11/iphone11_purple.jpg",
-    "/image/iphone/iphone11/iphone11_yellow.jpg"
-  ],
-  "slug": "iphone11",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "OLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "2778 x 1284 pixel"
-        }
-      ]
-    },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "A15 Bionic"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "A15 Bionic"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "16GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61888fe0ba06602efa085d39"
   },
   "name": "Samsung Galaxy A72",
   "type": "phone",
@@ -581,4 +247,576 @@
     }
   ],
   "brand": "xiaomi"
+},{
+  "_id": {
+    "$oid": "61a63cd0c0d06361a0d8a756"
+  },
+  "name": "Asus ROG Phone 5S",
+  "type": "phone",
+  "description": "Asus ROG Phone 5S là phiên bản nâng cấp từ người tiền nhiệm ROG Phone 5 với rất nhiều thay đổi đáng giá. Điểm đầu tiên, Asus ROG Phone 5S có cảm ứng nhạy hơn ROG Phone 5. Tốc độ lấy mẫu cảm ứng của Asus ROG Phone 5S là 360Hz nhanh hơn so với ROG Phone 5 là 300Hz, giúp trải nghiệm chơi game trở nên mượt mà, đã hơn.",
+  "image": [
+    "/image/asus/rog-phone-5s/rog_black.jpg",
+    "/image/asus/rog-phone-5s/rog_white.jpg"
+  ],
+  "slug": "rogphone5s",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.78 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2448 pixels (FullHD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "64 MP, f/1.8, 26mm (góc rộng), PDAF 13 MP, f/2.4, 11mm, 125˚ (góc siêu rộng) 5 MP, f/2.0, (macro)"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "8K@30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 720p@480fps; gyro-EIS"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 888+ 5G (5 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 888+ 5G (5 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "12GB"
+        }
+      ]
+    }
+  ],
+  "brand": "asus"
+},{
+  "_id": {
+    "$oid": "61a64aadc0d06361a0d8a77d"
+  },
+  "name": "Samsung Galaxy S21 Ultra",
+  "type": "phone",
+  "description": "Sự đẳng cấp được Samsung gửi gắm thông qua chiếc smartphone Galaxy S21 Ultra 5G với hàng loạt sự nâng cấp và cải tiến không chỉ ngoại hình bên ngoài mà còn sức mạnh bên trong, hứa hẹn đáp ứng trọn vẹn nhu cầu ngày càng cao của người dùng.",
+  "image": [
+    "/image/samsung/s21-ultra/s21_black.jpg",
+    "/image/samsung/s21-ultra/s21_silver.jpg"
+  ],
+  "slug": "s21ultra",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.8 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Dynamic AMOLED 2X"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1440 x 3200 pixels (2K+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Chính 108 MP & Phụ 12 MP, 10 MP, 10 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@30fps 4K 2160p@60fps 8K 4320p@24fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@960fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Exynos 2100 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "12GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Exynos 2100 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "12GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
+},{
+  "_id": {
+    "$oid": "61a652f8c0d06361a0d8a790"
+  },
+  "name": "Xiaomi Redmi K40",
+  "type": "phone",
+  "description": "Xiaomi Redmi K40 series sẽ được trang bị những con chip mới nhất hiện nay từ Qualcomm. Cụ thể, Redmi K40 Pro sẽ sử dụng chip Snapdragon 888 mạnh mẽ nhất, còn Xiaomi Redmi K40 sẽ là chip Snapdragon 870 (một phiên bản nâng cấp của Snapdragon 865). Chipset 8 lõi với công nghệ xử lý 7nm, cung cấp tần số tối đa 3.2GHz cho hiệu suất đỉnh cao vượt trội.",
+  "image": [
+    "/image/xiaomi/redmi-k40/redmi-k40_white.jpg",
+    "/image/xiaomi/redmi-k40/redmi-k40_blue.jpg",
+    "/image/xiaomi/redmi-k40/redmi-k40_black.jpg"
+  ],
+  "slug": "redmi_k40",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.67 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Super AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 pixels (Full HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "48 MP, f/1.8(góc rộng) 8 MP, 119˚(siêu rộng) 5 MP, 50mm (macro)"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K@30fps, 1080p@30/60/120/240/960fps, gyro-EIS"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 870 5G (7 nm)"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 870 5G (7 nm)"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "xiaomi"
+},{
+  "_id": {
+    "$oid": "61a6fd09af9aeae6a5bf6be6"
+  },
+  "name": "iPhone 13",
+  "type": "phone",
+  "description": "Trong khi sức hút đến từ bộ 4 phiên bản iPhone 12 vẫn chưa nguội đi, thì Apple đã mang đến cho người dùng một siêu phẩm mới iPhone 13 - điện thoại có nhiều cải tiến thú vị sẽ mang lại những trải nghiệm hấp dẫn nhất cho người dùng.",
+  "image": [
+    "/image/apple/iphone13/iphone13_black.jpg",
+    "/image/apple/iphone13/iphone13_blue.jpg",
+    "/image/apple/iphone13/iphone13_white.jpg",
+    "/image/apple/iphone13/iphone13_red.jpg",
+    "/image/apple/iphone13/iphone13_pink.jpg"
+  ],
+  "slug": "iphone13",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.1 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "OLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1170 x 2532 Pixels (Full HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "2 camera 12 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@24fps 4K 2160p@30fps 4K 2160p@60fps FullHD 1080p@120fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Apple A15 Bionic 6 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Apple A15 Bionic 6 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
+},{
+  "_id": {
+    "$oid": "61a7009eaf9aeae6a5bf6bee"
+  },
+  "name": "Galaxy Z Fold 3",
+  "type": "phone",
+  "description": "Galaxy Z Fold3 5G đánh dấu bước tiến mới của Samsung trong phân khúc điện thoại gập cao cấp khi được cải tiến về độ bền cùng những nâng cấp đáng giá về cấu hình hiệu năng, hứa hẹn sẽ mang đến trải nghiệm sử dụng đột phá cho người dùng.",
+  "image": [
+    "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+    "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+    "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg"
+  ],
+  "slug": "zfold3",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "7.6 inches & 6.2 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Dynamic AMOLED 2X"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1768 x 2208 Pixels (Full HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "3 camera 12 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@60fps, FullHD 1080p@240fps, FullHD 1080p@60fps, HD 720p@960fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 888 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "12GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 888 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "12GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
+},{
+  "_id": {
+    "$oid": "61a7040faf9aeae6a5bf6bf5"
+  },
+  "name": "OPPO A95",
+  "type": "phone",
+  "description": "Bên cạnh phiên bản 5G, OPPO còn bổ sung phiên bản OPPO A95 4G với giá thành phải chăng tập trung vào thiết kế năng động, sạc nhanh và hiệu năng đa nhiệm ấn tượng sẽ giúp cho cuộc sống của bạn thêm phần hấp dẫn, ngập tràn niềm vui.",
+  "image": [
+    "/image/oppo/a95/a95_silver.jpg",
+    "/image/oppo/a95/a95_black.jpg"
+  ],
+  "slug": "oppo_a95",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.43 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "AMOLED"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1080 x 2400 Pixels (Full HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Chính 48 MP & Phụ 2 MP, 2 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "FullHD 1080p@30fps, HD 720p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 662 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 662 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "oppo"
+},{
+  "_id": {
+    "$oid": "61a70773af9aeae6a5bf6c09"
+  },
+  "name": "Realme C11(2021)",
+  "type": "phone",
+  "description": "Realme C11 (2021) 2GB/32GB của Realme nằm trong phân khúc smartphone giá rẻ nhưng có ngoại hình khá ổn và cụm camera chất lượng tốt cùng dung lượng pin ấn tượng, sẽ là 1 lựa chọn tốt cho nhu cầu sử dụng smartphone với các tính năng cơ bản thông dụng.",
+  "image": [
+    "/image/realme/c11/c11-2021_blue.jpg",
+    "/image/realme/c11/c11-2021_gray.jpg"
+  ],
+  "slug": "realme_c11_2021",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "6.43 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "LCD"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "720 x 1600 Pixels (HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "8 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "480p@30fps, FullHD 1080p@30fps, HD 720p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Spreadtrum SC9863A 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "2GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Spreadtrum SC9863A 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "2GB"
+        }
+      ]
+    }
+  ],
+  "brand": "realme"
 }]

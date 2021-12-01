@@ -7,23 +7,23 @@
   "color": [
     {
       "name": "Đỏ",
-      "image": "/image/iphone/iphone11/iphone11_red.jpg",
+      "image": "/image/apple/iphone11/iphone11_red.jpg",
       "number": 6,
-      "price": 25600600,
+      "price": 20500000,
       "discount": 10
     },
     {
       "name": "Đen",
-      "image": "/image/iphone/iphone11/iphone11_black.jpg",
+      "image": "/image/apple/iphone11/iphone11_black.jpg",
       "number": 2,
-      "price": 25600600,
+      "price": 20500000,
       "discount": 0
     },
     {
       "name": "Vàng",
-      "image": "/image/iphone/iphone11/iphone11_yellow.jpg",
+      "image": "/image/apple/iphone11/iphone11_yellow.jpg",
       "number": 1,
-      "price": 25600600,
+      "price": 20500000,
       "discount": 0
     }
   ],
@@ -38,30 +38,30 @@
   "color": [
     {
       "name": "Tím",
-      "image": "/image/iphone/iphone11/iphone11_purple.jpg",
+      "image": "/image/apple/iphone11/iphone11_purple.jpg",
       "number": 6,
-      "price": 25600600,
+      "price": 19500000,
       "discount": 10
     },
     {
       "name": "Đỏ",
-      "image": "/image/iphone/iphone11/iphone11_red.jpg",
+      "image": "/image/apple/iphone11/iphone11_red.jpg",
       "number": 6,
-      "price": 25600600,
+      "price": 19500000,
       "discount": 10
     },
     {
       "name": "Đen",
-      "image": "/image/iphone/iphone11/iphone11_black.jpg",
+      "image": "/image/apple/iphone11/iphone11_black.jpg",
       "number": 2,
-      "price": 25600600,
+      "price": 19500000,
       "discount": 0
     },
     {
       "name": "Vàng",
-      "image": "/image/iphone/iphone11/iphone11_yellow.jpg",
+      "image": "/image/apple/iphone11/iphone11_yellow.jpg",
       "number": 1,
-      "price": 25600600,
+      "price": 19500000,
       "discount": 0
     }
   ],
@@ -111,11 +111,11 @@
   "detail": "128GB",
   "color": [
     {
-      "name": "Xanh",
-      "image ": "/image/xiaomi/mi11/mi11_blue.jpg",
-      "number": 5,
+      "name": "Xanh dương",
+      "image": "/image/xiaomi/mi11/mi11_blue.jpg",
+      "number": 6,
       "price": 8990000,
-      "discount": 20
+      "discount": 50
     },
     {
       "name": "Vàng",
@@ -142,32 +142,422 @@
   "color": [
     {
       "name": "Tím",
-      "image ": "/image/iphone/iphone11/iphone11_purple.jpg",
+      "image": "/image/apple/iphone11/iphone11_purple.jpg",
       "number": 5,
-      "price": 25600600,
-      "discount": 20
+      "price": 16800000,
+      "discount": 10
     },
     {
       "name": "Đỏ",
-      "image": "/image/iphone/iphone11/iphone11_red.jpg",
+      "image": "/image/apple/iphone11/iphone11_red.jpg",
       "number": 6,
-      "price": 25600600,
+      "price": 16800000,
       "discount": 10
     },
     {
       "name": "Đen",
-      "image": "/image/iphone/iphone11/iphone11_black.jpg",
+      "image": "/image/apple/iphone11/iphone11_black.jpg",
       "number": 2,
-      "price": 25600600,
+      "price": 16800000,
       "discount": 0
     },
     {
       "name": "Vàng",
-      "image": "/image/iphone/iphone11/iphone11_yellow.jpg",
+      "image": "/image/apple/iphone11/iphone11_yellow.jpg",
       "number": 1,
-      "price": 25600600,
+      "price": 16800000,
       "discount": 0
     }
   ],
   "item": "615e9a23704e955f7ebb33b0"
+},{
+  "_id": {
+    "$oid": "61a63e63c0d06361a0d8a759"
+  },
+  "slug": "rogphone5s",
+  "detail": "64GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/asus/rog-phone-5s/rog_black.jpg",
+      "number": 5,
+      "price": 14550000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/asus/rog-phone-5s/rog_white.jpg",
+      "number": 5,
+      "price": 14550000,
+      "discount": 10
+    }
+  ],
+  "item": "61a63cd0c0d06361a0d8a756"
+},{
+  "_id": {
+    "$oid": "61a63f83c0d06361a0d8a76a"
+  },
+  "slug": "rogphone5s",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/asus/rog-phone-5s/rog_black.jpg",
+      "number": 5,
+      "price": 15750000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/asus/rog-phone-5s/rog_white.jpg",
+      "number": 5,
+      "price": 15750000,
+      "discount": 10
+    }
+  ],
+  "item": "61a63cd0c0d06361a0d8a756"
+},{
+  "_id": {
+    "$oid": "61a64bdec0d06361a0d8a784"
+  },
+  "slug": "s21ultra",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/samsung/s21-ultra/s21_black.jpg",
+      "number": 5,
+      "price": 21990504,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/s21-ultra/s21_silver.jpg",
+      "number": 5,
+      "price": 21990504,
+      "discount": 10
+    }
+  ],
+  "item": "61a64aadc0d06361a0d8a77d"
+},{
+  "_id": {
+    "$oid": "61a64e35c0d06361a0d8a789"
+  },
+  "slug": "s21ultra",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/samsung/s21-ultra/s21_black.jpg",
+      "number": 5,
+      "price": 24950000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/s21-ultra/s21_silver.jpg",
+      "number": 5,
+      "price": 24950000,
+      "discount": 10
+    }
+  ],
+  "item": "61a64aadc0d06361a0d8a77d"
+},{
+  "_id": {
+    "$oid": "61a65433c0d06361a0d8a797"
+  },
+  "slug": "redmi_k40",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Trắng",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_white.jpg",
+      "number": 5,
+      "price": 7150000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh dương",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_blue.jpg",
+      "number": 5,
+      "price": 7150000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_black.jpg",
+      "number": 5,
+      "price": 7150000,
+      "discount": 10
+    }
+  ],
+  "item": "61a652f8c0d06361a0d8a790"
+},{
+  "_id": {
+    "$oid": "61a655c8c0d06361a0d8a79c"
+  },
+  "slug": "redmi_k40",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Trắng",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_white.jpg",
+      "number": 5,
+      "price": 7950000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh dương",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_blue.jpg",
+      "number": 5,
+      "price": 7950000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/xiaomi/redmi-k40/redmi-k40_black.jpg",
+      "number": 5,
+      "price": 7950000,
+      "discount": 10
+    }
+  ],
+  "item": "61a652f8c0d06361a0d8a790"
+},{
+  "_id": {
+    "$oid": "61a6fd3aaf9aeae6a5bf6be9"
+  },
+  "slug": "iphone13",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "number": 5,
+      "price": 24490000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh dương",
+      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "number": 5,
+      "price": 24490000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "number": 5,
+      "price": 24490000,
+      "discount": 10
+    },
+    {
+      "name": "Đỏ",
+      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "number": 5,
+      "price": 24490000,
+      "discount": 10
+    },
+    {
+      "name": "Hồng",
+      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "number": 5,
+      "price": 24490000,
+      "discount": 10
+    }
+  ],
+  "item": "61a6fd09af9aeae6a5bf6be6"
+},{
+  "_id": {
+    "$oid": "61a6fe12af9aeae6a5bf6bea"
+  },
+  "slug": "iphone13",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "number": 5,
+      "price": 27490000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh dương",
+      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "number": 5,
+      "price": 27490000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "number": 5,
+      "price": 27490000,
+      "discount": 10
+    },
+    {
+      "name": "Đỏ",
+      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "number": 5,
+      "price": 27490000,
+      "discount": 10
+    },
+    {
+      "name": "Hồng",
+      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "number": 5,
+      "price": 27490000,
+      "discount": 10
+    }
+  ],
+  "item": "61a6fd09af9aeae6a5bf6be6"
+},{
+  "_id": {
+    "$oid": "61a6fe49af9aeae6a5bf6beb"
+  },
+  "slug": "iphone13",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "number": 5,
+      "price": 33990000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh dương",
+      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "number": 5,
+      "price": 33990000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "number": 5,
+      "price": 33990000,
+      "discount": 10
+    },
+    {
+      "name": "Đỏ",
+      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "number": 5,
+      "price": 33990000,
+      "discount": 10
+    },
+    {
+      "name": "Hồng",
+      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "number": 5,
+      "price": 33990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a6fd09af9aeae6a5bf6be6"
+},{
+  "_id": {
+    "$oid": "61a7011baf9aeae6a5bf6bf1"
+  },
+  "slug": "zfold3",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xanh rêu",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+      "number": 5,
+      "price": 41990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+      "number": 5,
+      "price": 41990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
+      "number": 5,
+      "price": 4190000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7009eaf9aeae6a5bf6bee"
+},{
+  "_id": {
+    "$oid": "61a70179af9aeae6a5bf6bf2"
+  },
+  "slug": "zfold3",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Xanh rêu",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7009eaf9aeae6a5bf6bee"
+},{
+  "_id": {
+    "$oid": "61a7047eaf9aeae6a5bf6bfc"
+  },
+  "slug": "oppo_a95",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Bạc",
+      "image": "/image/oppo/a95/a95_silver.jpg",
+      "number": 15,
+      "price": 6990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/oppo/a95/a95_black.jpg",
+      "number": 25,
+      "price": 6990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7040faf9aeae6a5bf6bf5"
+},{
+  "_id": {
+    "$oid": "61a707a1af9aeae6a5bf6c0c"
+  },
+  "slug": "realme_c11_2021",
+  "detail": "32GB",
+  "color": [
+    {
+      "name": "Xanh dương",
+      "image": "/image/realme/c11/c11-2021_blue.jpg",
+      "number": 15,
+      "price": 2990000,
+      "discount": 10
+    },
+    {
+      "name": "Xám",
+      "image": "/image/realme/c11/c11-2021_gray.jpg",
+      "number": 25,
+      "price": 2990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a70773af9aeae6a5bf6c09"
 }]
