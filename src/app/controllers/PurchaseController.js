@@ -9,6 +9,15 @@ class PurchaseController {
         res.render("purchase");
     }
 
+    EmptyList(req, res, next) {
+        purchase.deleteOne({
+            userID: req.session.user._id,
+            list: { $size: 0 }
+        })
+            .then((data) => {
+                res.send(data)
+            })
+    }
 
     all(req, res, next) {
         purchase
@@ -123,40 +132,44 @@ class PurchaseController {
             })
     }
     checkout(req, res, next) {
-        purchase
-            .findOne(
-                { userID: req.session.user._id },
-                { status: 0, date: 0, _id: 0 }
-            )
-            .populate('userID', 'name')
-            .populate('list.optionID')
-            .populate({
-                path: 'list.optionID',
-                populate: {
-                    path: 'item',
-                    select: "name type brand"
 
-                },
-                match: { _id: req.query.optionID }
+        cart.find({ userID: req.session.user._id },)
 
-            })
             .then((data) => {
-                data = util.mongooseToObject(data);
+                var object = { optionID: req.query.optionID, num: req.query.num, color: req.query.color }
+                let count = 0
+                for (let item of data[0].list) {
 
-                const c = new cart(data)
-                c.save()
-                    .then(() => res.redirect("/checkout"))
-                    .catch(next);
-                // for (let result of data.list) {
+                    if (item.optionID.toString() == object.optionID.toString()) {
+                        cart.updateOne({
+                            userID: req.session.user._id,
+                            "list.optionID": object.optionID,
 
-                //     result.optionID = result.optionID.filter((item) => {
-                //         return item !== null
-                //     })
-                // }
+                        },
+                            {
+                                $inc: { "list.$.num": object.num }
+                            })
+                            .then((info) => {
+                                res.redirect("/checkout")
+                            })
+                        break;
+                    }
+                    ++count;
+                }
+                if (count.toString() == data[0].list.length.toString()) {
 
-
+                    cart.updateOne({ userID: req.session.user._id },
+                        {
+                            $push: { list: object }
+                        }
+                    )
+                        .then((info) => {
+                            res.redirect("/checkout")
+                        })
+                }
                 // res.send(data)
             })
+
 
     }
     removeItem(req, res, next) {

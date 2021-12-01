@@ -8,6 +8,7 @@ router.get("/delivered", purchase.delivered);
 router.get("/delivering", purchase.delivering);
 router.get("/all", purchase.all);
 router.delete("/:id", purchase.removeItem)
+router.get("/emptylist", purchase.EmptyList)
 router.get("/", purchase.index);
 
 module.exports = router;

@@ -21,21 +21,32 @@ searchProduct.onchange = () => {
             listProducts.innerHTML = render(json)
         })
 }
+// delete empty list
 
-window.onload = () => {
-    console.log('page is fully loaded');
-    var api = "http://localhost:3000/purchase/all"
-    fetch(api, {
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
+console.log('delete');
+var api = "http://localhost:3000/purchase/emptylist"
+fetch(api, {
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+})
+
+
+// render when reload page
+console.log('page is fully loaded');
+var api = "http://localhost:3000/purchase/all"
+fetch(api, {
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+})
+    .then(response => response.json())
+    .then(json => {
+        listProducts.innerHTML = render(json)
     })
-        .then(response => response.json())
-        .then(json => {
-            listProducts.innerHTML = render(json)
-        })
-};
+
 
 btnAll.onclick = function loadAll() {
     btnAll.style.backgroundColor = "black"
@@ -111,70 +122,74 @@ function render(json) {
         for (let j in json[i].list) {
 
             output += `
-            <div class="products">
-        <div class="single_product">
-            <div class="info">
-                <div class="brand_status">
-                    <div class="brand">
-
-                        <p>Thương hiệu: <strong id="brandProduct">`+ json[i].list[j].optionID.item.brand + `</strong> | Ngày mua:
-                            <strong id="dateProduct">`+ json[i].date + `</strong>
-                        </p>
+                <div class="products">
+            <div class="single_product">
+                <div class="info">
+                    <div class="brand_status">
+                        <div class="brand">
+    
+                            <p>Thương hiệu: <strong id="brandProduct">`+ json[i].list[j].optionID.item.brand + `</strong> | Ngày mua:
+                                <strong id="dateProduct">`+ json[i].date + `</strong>
+                            </p>
+                        </div>
+                        <div class="status">
+                            <p>Trạng thái: <strong id="statusProduct">`+ json[i].status + `</strong></p>
+                        </div>
+    
                     </div>
-                    <div class="status">
-                        <p>Trạng thái: <strong id="statusProduct">`+ json[i].status + `</strong></p>
-                    </div>
-
+                    <hr>
+                    <a href="/phone/iphone11-256GB" class="name_price">
+                        <div class="img_name">
+                        <script>
+                            var bool = true
+                        </script>
+                            <img id="imgProduct" src="`+ json[i].list[j].optionID.color[0].image + `" alt="">
+                            <div class="name_num">
+                                <p class="name" id="nameProduct">`+ json[i].list[j].optionID.item.name + `</p>
+                                <p class="num">x<strong id="numProduct">`+ json[i].list[j].num + `</strong></p>
+                                <p class="num">Màu: <strong id="colorProduct">`+ json[i].list[j].color + `</strong></p>
+    
+                            </div>
+                        </div>
+    
+                        <div class="price_one_product">
+                            <p><strong id="priceProduct">`+ currentChange(json[i].list[j].optionID.color[0].price) + `</strong> </p>
+                        </div>
+                    </a>
+                    <hr>
                 </div>
-                <hr>
-                <a href="/phone/iphone11-256GB" class="name_price">
-                    <div class="img_name">
-                        <img id="imgProduct" src="`+ json[i].list[j].optionID.color[0].image + `" alt="">
-                        <div class="name_num">
-                            <p class="name" id="nameProduct">`+ json[i].list[j].optionID.item.name + `</p>
-                            <p class="num">x<strong id="numProduct">`+ json[i].list[j].num + `</strong></p>
-                            <p class="num">Màu: <strong id="colorProduct">`+ json[i].list[j].color + `</strong></p>
-
+                <div class="price">
+                    <p id="totalPrice">Tổng số tiền: <strong id="totalPriceProduct"> `+ currentChange(json[i].list[j].optionID.color[0].price * json[i].list[j].num) + `</strong></p>
+                </div>
+    
+                <div class="action">
+                    <form class=" btn_form " method="POST" action="/purchase/repurchase?optionID=` + (json[i].list[j].optionID._id) + `&num=` + json[i].list[j].num + `&color=` + json[i].list[j].color + `">
+                      <button class="btn  " type="submit">Mua lại</button>
+                    </form>
+                    <form class="btn_form " id="btnDelete" method="POST" action="/purchase/`+ json[i].list[j].optionID._id + `?_method=DELETE">
+                      <button class="btn " >Xóa</button>
+                    
+                    </form>
+                </div>
+                <div class="remove-modal">
+                    <div class="modal-container">
+                        <div class="modal__content">Xóa sản phẩm khỏi giỏ hàng?</div>
+                        <div class="modal__footer">
+                            <button class="modal__button--confirm confirm-btn">
+                            Xoá
+                            </button>
+                            <button class="modal__button--cancel cancel-btn">
+                            Huỷ
+                            </button>
                         </div>
                     </div>
-
-                    <div class="price_one_product">
-                        <p><strong id="priceProduct">`+ currentChange(json[i].list[j].optionID.color[0].price) + `</strong> </p>
-                    </div>
-                </a>
-                <hr>
-            </div>
-            <div class="price">
-                <p id="totalPrice">Tổng số tiền: <strong id="totalPriceProduct"> `+ currentChange(json[i].list[j].optionID.color[0].price * json[i].list[j].num) + `</strong></p>
-            </div>
-
-            <div class="action">
-                <form class=" btn_form " method="POST" action="/purchase/repurchase?id=`+ (json[i]._id) + `&optionID=` + (json[i].list[j].optionID._id) + `">
-                  <button class="btn  " type="submit">Mua lại</button>
-                </form>
-                <form class="btn_form " id="btnDelete" value=`+ json[i].list[j].optionID._id + `>
-                  <button class="btn " >Xóa</button>
-                
-                </form>
-            </div>
-            <div class="remove-modal">
-                <div class="modal-container">
-                    <div class="modal__content">Xóa sản phẩm khỏi giỏ hàng?</div>
-                    <div class="modal__footer">
-                        <button class="modal__button--confirm confirm-btn">
-                        Xoá
-                        </button>
-                        <button class="modal__button--cancel cancel-btn">
-                        Huỷ
-                        </button>
-                    </div>
                 </div>
             </div>
+    
         </div>
+                 
+                `
 
-    </div>
-             
-            `
         }
     }
     return output
