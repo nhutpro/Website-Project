@@ -819,4 +819,511 @@
     }
   ],
   "brand": "realme"
+},{
+  "_id": {
+    "$oid": "61a749dfaf9aeae6a5bf6c3c"
+  },
+  "name": "Acer Aspire 7 A715",
+  "type": "laptop",
+  "description": "Laptop Acer Aspire 7 A715 42G R4ST R5 (NH.QAYSV.004) có thiết kế đơn giản, trang nhã nhưng trang bị cấu hình mạnh mẽ đáp ứng nhu cầu đồ hoạ, kỹ thuật chuyên nghiệp và chiến game mượt mà.",
+  "image": [
+    "/image/acer/aspire-7/acer-aspire-7.jpg",
+    "/image/acer/aspire-7/acer-aspire-7_back.jpg"
+  ],
+  "slug": "aspire7",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "15.6 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1920 x 1080 Pixels (Full HD+)"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "NVIDIA GeForce GTX 1650 4 GB"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "SSD 256 GB NVMe PCIe"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "Ryzen 5, 5500U, 2.1GHz"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "Ryzen 5, 5500U, 2.1GHz"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+        }
+      ]
+    }
+  ],
+  "brand": "acer"
+},{
+  "_id": {
+    "$oid": "61a7555daf9aeae6a5bf6c4e"
+  },
+  "name": "Acer Nitro 5 Gaming AN515 57 727J",
+  "type": "laptop",
+  "description": "Acer Nitro 5 Gaming AN515 57 727J i7 (NH.QD9SV.005.) sở hữu vẻ ngoài cá tính, nổi bật và được tích hợp bộ vi xử lý Intel thế hệ 11 tân tiến, card đồ hoạ rời NVIDIA GeForce RTX, hứa hẹn mang đến các trải nghiệm tuyệt vời cho người dùng.",
+  "image": [
+    "/image/acer/nitro5/nitro5.jpg",
+    "/image/acer/nitro5/nitro5_1.jpg"
+  ],
+  "slug": "nitro5",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "15.6 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1920 x 1080 Pixels (Full HD+)"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "144Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "RTX 3050Ti 4GB"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1TB), Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2TB), Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "i7, 11800H, 2.30 GHz"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "i7, 11800H, 2.30 GHz"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+        }
+      ]
+    }
+  ],
+  "brand": "acer"
+},{
+  "_id": {
+    "$oid": "61a779bfaf9aeae6a5bf6c6a"
+  },
+  "name": "Acer Aspire A315 56 308N",
+  "type": "laptop",
+  "description": "Laptop Acer Aspire A315 56 308N i3 (NX.HS5SV.00C) là mẫu laptop học tập văn phòng thuộc phân khúc giá thấp. Máy trang bị vi xử lý thế hệ mới của Intel, cho hiệu năng đủ dùng đối với các nhu cầu cơ bản, phù hợp với học sinh và sinh viên.",
+  "image": [
+    "/image/acer/a315/a315_0.jpg",
+    "/image/acer/a315/a315_1.jpg"
+  ],
+  "slug": "a315_56_308n",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "15.6 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Acer ComfyView, LED Backlit, TFT"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1920 x 1080 Pixels (Full HD)"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "60Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "Intel UHD Graphics"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "SSD 256 GB NVMe PCIe, Hỗ trợ khe cắm HDD SATA"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "Intel Core i3 Ice Lake - 1005G1, 1.20GHz"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "4GB DDR4 (On board +1 khe), 2400MHz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "i3 Ice Lake - 1005G1, 1.20GHz"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "4GB DDR4 (On board +1 khe), 2400MHz"
+        }
+      ]
+    }
+  ],
+  "brand": "acer"
+},{
+  "_id": {
+    "$oid": "61a77cfbaf9aeae6a5bf6c70"
+  },
+  "name": "HP Pavilion 15 eg0541TU",
+  "type": "laptop",
+  "description": "Laptop HP Pavilion 15 eg0541TU i3 1125G4 (4P5G8PA) sở hữu thiết kế thời thượng, hiện đại cùng cấu hình ổn định là sự chọn lựa phù hợp cho tất cả mọi người, cùng bạn hoàn thành mọi tác vụ văn phòng hiệu quả.",
+  "image": [
+    "/image/hp/pavilion15/pavilion15_0.jpg",
+    "/image/hp/pavilion15/pavilion15_1.jpg"
+  ],
+  "slug": "pavilion_15",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "15.6 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Chống chói Anti Glare, Tấm nền IPS, Wled-backlit"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1920 x 1080 Pixels (Full HD)"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "60Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "Intel UHD Graphics"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "SSD 512 GB NVMe PCIe"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "i3, 1125G4, 2GHz"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "4GB DDR4 (On board +1 khe), 3200MHz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "i3, 1125G4, 2GHz"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "4GB DDR4 (On board +1 khe), 3200MHz"
+        }
+      ]
+    }
+  ],
+  "brand": "hp"
+},{
+  "_id": {
+    "$oid": "61a7812aaf9aeae6a5bf6c82"
+  },
+  "name": "MacBook Air M1 2020",
+  "type": "laptop",
+  "description": "Laptop Apple MacBook Air M1 2020 thuộc dòng laptop cao cấp sang trọng có cấu hình mạnh mẽ, chinh phục được các tính năng văn phòng lẫn đồ hoạ mà bạn mong muốn, thời lượng pin dài, thiết kế mỏng nhẹ sẽ đáp ứng tốt các nhu cầu làm việc của bạn.",
+  "image": [
+    "/image/apple/mackbook-air-m1-2020/grey.jpg",
+    "/image/apple/mackbook-air-m1-2020/silver.jpg",
+    "/image/apple/mackbook-air-m1-2020/bronze.jpg"
+  ],
+  "slug": "macbook_air_m1_2020",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "13.3 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "400 nits, Công nghệ IPS, LED Backlit, True Tone Technology"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "Retina (2560 x 1600)"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "60Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "Card tích hợp - 7 nhân GPU"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "256GB SSD"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "Apple M1"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "Apple M1"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
+},{
+  "_id": {
+    "$oid": "61a7859faf9aeae6a5bf6c89"
+  },
+  "name": "MacBook Pro M1 2021",
+  "type": "laptop",
+  "description": "Thiết kế là nâng cấp gây chú ý đầu tiên của MacBook Pro 14 inch 2021, thiết bị ngoại hình vuông vức, mặt sau bo cong mềm mại trong khi phần viền màn hình hẹp hơn. Đáng chú ý là Apple đã áp dụng kiểu thiết kế tai thỏ cho thiết bị, tạo điểm nhấn và tăng không gian hiển thị cho màn hình.",
+  "image": [
+    "/image/apple/mackbook-pro-m1-2021/grey.png",
+    "/image/apple/mackbook-pro-m1-2021/silver.png"
+  ],
+  "slug": "macbook_pro_m1_2021",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "14 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Wide color (P3), True Tone Technology, 1 billion colors"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "Liquid Retina XDR display (3024 x 1964)"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "120Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "GPU và Ổ cứng",
+      "infoDetail": [
+        {
+          "infoName": "GPU",
+          "infoNum": "Card tích hợp - 14 nhân GPU"
+        },
+        {
+          "infoName": "Ổ cứng",
+          "infoNum": "512GB SSD"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "CPU",
+              "infoNum": "Apple M1 Pro"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "RAM",
+              "infoNum": "16GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "CPU",
+          "infoNum": "Apple M1 Pro"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "RAM",
+          "infoNum": "16GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
 }]
