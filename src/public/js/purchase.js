@@ -5,7 +5,6 @@ var btnDelivering = document.getElementById('btnDelivering')
 var btnAll = document.getElementById('btnAll')
 var listProducts = document.getElementById('listProduct')
 var searchProduct = document.getElementById('searchBoxPurchase')
-var btnDelete = document.getElementById('btnDelete')
 searchProduct.onchange = () => {
     console.log(searchProduct.value)
     var api = "http://localhost:3000/search?purchase=" + searchProduct.value
@@ -103,9 +102,6 @@ btnDelivering.onclick = function changBgColor() {
 
         })
 }
-// btnDelete.onclick = () => {
-//     console.log(btnDelete.value)
-// }
 
 
 function render(json) {
@@ -156,8 +152,9 @@ function render(json) {
                 <form class=" btn_form " method="POST" action="/purchase/repurchase?id=`+ (json[i]._id) + `&optionID=` + (json[i].list[j].optionID._id) + `">
                   <button class="btn  " type="submit">Mua lại</button>
                 </form>
-                <form class="btn_form " >
-                  <button class="btn " id="btnDelete" value=`+ json[i].list[j].optionID._id + `>Xóa</button>
+                <form class="btn_form " id="btnDelete" value=`+ json[i].list[j].optionID._id + `>
+                  <button class="btn " >Xóa</button>
+                
                 </form>
             </div>
             <div class="remove-modal">

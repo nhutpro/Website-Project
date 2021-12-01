@@ -31,36 +31,26 @@ window.onload = () => {
 
     }
 
+    if (count != null) {
+        count.innerHTML = localStorage.getItem("match")
+
+        key.innerHTML = "'" + localStorage.getItem("count") + "'"
+        // sort price
+        sortAsc.onclick = () => {
+            window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
+            window.location.reload();
+        }
+        sortDesc.onclick = () => {
+            window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
+            window.location.reload();
+        }
+
+    }
+    else {
+        var temp = "true"
+    }
 
 
-    // count.innerHTML = localStorage.getItem("match")
-
-    // key.innerHTML = "'" + localStorage.getItem("count") + "'"
-    // // sort price
-    // sortAsc.onclick = () => {
-    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
-    //     window.location.reload();
-    // }
-    // sortDesc.onclick = () => {
-    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
-    //     window.location.reload();
-    // }
 
 }
-
-
-// window.onload = () => {
-
-//     count.innerHTML = countProduct.length
-//     key.innerHTML = "'" + localStorage.getItem("count") + "'"
-//     // sort price
-//     sortAsc.onclick = () => {
-//         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
-//         window.location.reload();
-//     }
-//     sortDesc.onclick = () => {
-//         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
-//         window.location.reload();
-//     }
-// };
 
