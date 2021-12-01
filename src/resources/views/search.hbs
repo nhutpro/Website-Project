@@ -6,7 +6,7 @@
         </div> --}}
         <p class="numProduct">Đã tìm thấy <strong id="count"></strong> kết quả với từ khóa <strong id="key"></strong>
         </p>
-        <script>
+        {{!-- <script>
            var searchProduct = document.getElementById('searchBox')
     // var countProduct = document.querySelectorAll('div[id=countProduct]')
     var count = document.getElementById('count')
@@ -48,7 +48,7 @@
         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
         window.location.reload();
     }
-        </script>
+        </script> --}}
         <div class="filter-box">
             <div class="asc-price" id="sort-asc">
                 <a> <i class="fas fa-sort-amount-up-alt"></i>Giá thấp</a>
@@ -134,4 +134,4 @@
     </div>
   
 </section>
-  <script src='/js/search.js' ></script>
+  {{!-- <script src='/js/search.js' ></script> --}}

@@ -30,39 +30,34 @@ window.onload = () => {
         window.location.reload();
 
     }
+<<<<<<< HEAD
 
 	window.location.reload();
 };
 
+=======
 
-    // count.innerHTML = localStorage.getItem("match")
+    if (count != null) {
+        count.innerHTML = localStorage.getItem("match")
+>>>>>>> 26722f6a2ad06605691f2f852eb5d8dfad450d14
 
-    // key.innerHTML = "'" + localStorage.getItem("count") + "'"
-    // // sort price
-    // sortAsc.onclick = () => {
-    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
-    //     window.location.reload();
-    // }
-    // sortDesc.onclick = () => {
-    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
-    //     window.location.reload();
-    // }
+        key.innerHTML = "'" + localStorage.getItem("count") + "'"
+        // sort price
+        sortAsc.onclick = () => {
+            window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
+            window.location.reload();
+        }
+        sortDesc.onclick = () => {
+            window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
+            window.location.reload();
+        }
+
+    }
+    else {
+        var temp = "true"
+    }
+
+
 
 }
 
-
-// window.onload = () => {
-
-//     count.innerHTML = countProduct.length
-//     key.innerHTML = "'" + localStorage.getItem("count") + "'"
-//     // sort price
-//     sortAsc.onclick = () => {
-//         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
-//         window.location.reload();
-//     }
-//     sortDesc.onclick = () => {
-//         window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
-//         window.location.reload();
-//     }
-// };
-*/
