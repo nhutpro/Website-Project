@@ -2,7 +2,9 @@ function Validator(options) {
 	var formElement = document.querySelector(options.form); //Lấy form cần thực thi
 	var selectorRules = {};
 	function validate(inputElement, rule) {
+		console.log("vao day roi");
 		var errorMessage;
+
 		var formRow = inputElement.parentElement;
 		var errorElement = inputElement.parentElement.parentElement.querySelector(
 			options.errorSelector

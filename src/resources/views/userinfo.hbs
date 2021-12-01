@@ -1,15 +1,16 @@
 <link rel="stylesheet" href="/css/userinfo.css" />
 <div class="userinfo__container">
 	<div class="userinfo">
-		<form>
+		<form class="userinfo-form">
 			<h2>Thông Tin Người Dùng</h2>
 			<div class="form-group">
 				<div class="form-row">
 					<input
 						type="text"
 						id="userinfo-name"
+						name="username"
 						value="{{user.name}}"
-						placeholder=" "
+						placeholder="Tên người dùng"
 					/>
 					<label for="userinfo-name">Họ Và Tên </label>
 				</div>
@@ -20,6 +21,7 @@
 				<div class="form-row">
 					<input
 						type="text"
+						name="email"
 						id="userinfo-email"
 						value="{{user.email}}"
 						placeholder=" "
@@ -33,6 +35,7 @@
 				<div class="form-row">
 					<input
 						type="text"
+						name="phone"
 						id="userinfo-phone"
 						value="{{user.phone}}"
 						placeholder=" "
@@ -72,7 +75,7 @@
 					<input
 						type="date"
 						id="user-birthday"
-						name="begin"
+						name="birthday"
 						value="2001-02-19"
 						min="1997-01-01"
 						max="2030-12-31"
@@ -86,25 +89,49 @@
 				<div class="form-row row-address">
 					<div id="userinfo-address">
 						<div class="address-overall">
-							<select id="address__province">
+							<select
+								id="address__province"
+								name="address__province"
+								data="{{user.address.province}}"
+							>
 								<option value="">Tỉnh / Thành Phố</option>
 								{{#each province}}
 									<option value="{{this.name}}">{{this.name}}</option>
 								{{/each}}
 							</select>
 
-							<select id="address__district" disabled>
+							<select
+								id="address__district"
+								name="address__district"
+								data="{{user.address.district}}"
+								disabled
+							>
 								<option value="" id="district__default">Quận / Huyện</option>
-								<option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-								<option value="TP Hồ Chí Minh">Hà Nội</option>
+								{{#each district}}
+									<option value="{{this.name}}">{{this.name}}</option>
+								{{/each}}
 							</select>
-							<select id="address__ward" disabled>
+							<select
+								id="address__ward"
+								name="address__ward"
+								data="{{user.address.ward}}"
+								disabled
+							>
 								<option value="" id="ward__default">Phường / Xã</option>
-								<option value="Thị Trấn Vạn Giã">Thị Trấn Vạn Giã</option>
+								{{#each ward}}
+									<option value="{{this.name}}">{{this.name}}</option>
+								{{/each}}
 							</select>
 						</div>
 						<div>
-							<input type="text" placeholder="Địa chỉ cụ thể ví dụ: 31 QL 13" />
+							<input
+								id="address__detail"
+								name="address__detail"
+								type="text"
+								placeholder="Địa chỉ cụ thể ví dụ: 31 QL 13"
+								value="{{user.address.addressdetail}}"
+								disabled
+							/>
 						</div>
 					</div>
 
@@ -115,6 +142,10 @@
 			<input type="submit" value="Cập Nhật" />
 		</form>
 	</div>
+
+	<script src="/javs/validator.js">
+
+	</script>
 	<script src="/javs/userinfo.js">
 
 	</script>
