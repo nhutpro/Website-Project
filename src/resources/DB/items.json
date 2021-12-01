@@ -1163,9 +1163,9 @@
   "type": "laptop",
   "description": "Laptop Apple MacBook Air M1 2020 thuộc dòng laptop cao cấp sang trọng có cấu hình mạnh mẽ, chinh phục được các tính năng văn phòng lẫn đồ hoạ mà bạn mong muốn, thời lượng pin dài, thiết kế mỏng nhẹ sẽ đáp ứng tốt các nhu cầu làm việc của bạn.",
   "image": [
-    "/image/apple/mackbook-air-m1-2020/grey.jpg",
-    "/image/apple/mackbook-air-m1-2020/silver.jpg",
-    "/image/apple/mackbook-air-m1-2020/bronze.jpg"
+    "/image/apple/macbook-air-m1-2020/grey.jpg",
+    "/image/apple/macbook-air-m1-2020/silver.jpg",
+    "/image/apple/macbook-air-m1-2020/bronze.jpg"
   ],
   "slug": "macbook_air_m1_2020",
   "techInfo": [
@@ -1249,8 +1249,8 @@
   "type": "laptop",
   "description": "Thiết kế là nâng cấp gây chú ý đầu tiên của MacBook Pro 14 inch 2021, thiết bị ngoại hình vuông vức, mặt sau bo cong mềm mại trong khi phần viền màn hình hẹp hơn. Đáng chú ý là Apple đã áp dụng kiểu thiết kế tai thỏ cho thiết bị, tạo điểm nhấn và tăng không gian hiển thị cho màn hình.",
   "image": [
-    "/image/apple/mackbook-pro-m1-2021/grey.png",
-    "/image/apple/mackbook-pro-m1-2021/silver.png"
+    "/image/apple/macbook-pro-m1-2021/grey.png",
+    "/image/apple/macbook-pro-m1-2021/silver.png"
   ],
   "slug": "macbook_pro_m1_2021",
   "techInfo": [
