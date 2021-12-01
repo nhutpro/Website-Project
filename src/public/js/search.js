@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var searchProduct = document.getElementById("searchBox");
 var countProduct = document.querySelectorAll("div[id=countProduct]");
 var count = document.getElementById("count");
@@ -25,10 +26,45 @@ searchProduct.onchange = () => {
 		"",
 		"http://localhost:3000/search/global?key=" + searchProduct.value
 	);
+=======
+
+// localStorage.setItem("match", 0)
+
+
+
+window.onload = () => {
+    var searchProduct = document.getElementById('searchBox')
+    // var countProduct = document.querySelectorAll('div[id=countProduct]')
+    var count = document.getElementById('count')
+    var key = document.getElementById('key')
+    var sortAsc = document.getElementById('sort-asc')
+    var sortDesc = document.getElementById('sort-desc')
+    searchProduct.onchange = () => {
+        var api = "http://localhost:3000/search/match?key=" + searchProduct.value
+        fetch(api, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(json => {
+                localStorage.setItem("match", json)
+            })
+        localStorage.setItem("count", searchProduct.value)
+
+        console.log(searchProduct.value)
+        window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + searchProduct.value);
+
+        window.location.reload();
+
+    }
+>>>>>>> aaa2a7cbadf505a676681ada4cf2caf2032a4a5b
 
 	window.location.reload();
 };
 
+<<<<<<< HEAD
 count.innerHTML = localStorage.getItem("match");
 key.innerHTML = "'" + localStorage.getItem("count") + "'";
 // sort price
@@ -52,6 +88,24 @@ sortDesc.onclick = () => {
 	);
 	window.location.reload();
 };
+=======
+
+    // count.innerHTML = localStorage.getItem("match")
+
+    // key.innerHTML = "'" + localStorage.getItem("count") + "'"
+    // // sort price
+    // sortAsc.onclick = () => {
+    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=asc");
+    //     window.location.reload();
+    // }
+    // sortDesc.onclick = () => {
+    //     window.history.pushState({}, "", "http://localhost:3000/search/global?key=" + localStorage.getItem("count") + "&sort=desc");
+    //     window.location.reload();
+    // }
+
+}
+
+>>>>>>> aaa2a7cbadf505a676681ada4cf2caf2032a4a5b
 
 // window.onload = () => {
 
