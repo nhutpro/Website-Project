@@ -378,3 +378,8 @@ li {
 #page1 {
   background-color: var(--primary);
 }
+.list-products {
+  position: sticky;
+  top: 0;
+  /* display: none; */
+}

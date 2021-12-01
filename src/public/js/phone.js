@@ -20,9 +20,9 @@ checkBoxAll.onclick = function () {
     {},
     "",
     "?brand=" +
-      localStorage.getItem("queryParamsBrand") +
-      "&price=" +
-      localStorage.getItem("queryParamsPrice")
+    localStorage.getItem("queryParamsBrand") +
+    "&price=" +
+    localStorage.getItem("queryParamsPrice")
   );
 
   //window.history.pushState({}, "", "http://localhost:3000/phone");
@@ -52,9 +52,9 @@ for (var checkbox of brandidCheckboxes) {
       {},
       "",
       "?brand=" +
-        queryParamsBrand +
-        "&price=" +
-        localStorage.getItem("queryParamsPrice")
+      queryParamsBrand +
+      "&price=" +
+      localStorage.getItem("queryParamsPrice")
     );
 
     window.location.reload();
@@ -100,9 +100,9 @@ checkBoxAllPrice.onclick = function () {
     {},
     "",
     "?brand=" +
-      localStorage.getItem("queryParamsBrand") +
-      "&price=" +
-      localStorage.getItem("queryParamsPrice")
+    localStorage.getItem("queryParamsBrand") +
+    "&price=" +
+    localStorage.getItem("queryParamsPrice")
   );
 
   window.location.reload();
@@ -129,9 +129,9 @@ for (var checkbox of priceidCheckboxes) {
       {},
       "",
       "?brand=" +
-        localStorage.getItem("queryParamsBrand") +
-        "&price=" +
-        queryParamsPrice
+      localStorage.getItem("queryParamsBrand") +
+      "&price=" +
+      queryParamsPrice
     );
     localStorage.setItem("paramPrice", queryParamsPrice);
     window.location.reload();
@@ -172,10 +172,10 @@ sortAsc.onclick = () => {
       {},
       "",
       "?brand=" +
-        localStorage.getItem("queryParamsBrand") +
-        "&price=" +
-        localStorage.getItem("queryParamsPrice") +
-        "&sort=asc"
+      localStorage.getItem("queryParamsBrand") +
+      "&price=" +
+      localStorage.getItem("queryParamsPrice") +
+      "&sort=asc"
     );
     window.location.reload();
   } else {
@@ -192,10 +192,10 @@ sortDesc.onclick = () => {
       {},
       "",
       "?brand=" +
-        localStorage.getItem("queryParamsBrand") +
-        "&price=" +
-        localStorage.getItem("queryParamsPrice") +
-        "&sort=desc"
+      localStorage.getItem("queryParamsBrand") +
+      "&price=" +
+      localStorage.getItem("queryParamsPrice") +
+      "&sort=desc"
     );
     window.location.reload();
   } else {
@@ -254,15 +254,15 @@ fetch(api, {
     total = json;
   });
 pageLast.onclick = () => {
-  total = Math.ceil(total / 9);
-  window.history.pushState({}, "", "/phone?page=" + total);
-  window.location.reload();
-  localStorage.setItem("page1", false);
-  localStorage.setItem("page2", false);
-  localStorage.setItem("page3", false);
-  localStorage.setItem("page4", false);
-  localStorage.setItem("pageLast", true);
-};
+  total = Math.ceil(total / 9)
+  window.history.pushState({}, "", "/phone?page=" + total)
+  window.location.reload()
+  localStorage.setItem("page1", false)
+  localStorage.setItem("page2", false)
+  localStorage.setItem("page3", false)
+  localStorage.setItem("page4", false)
+  localStorage.setItem("pageLast", true)
+}
 
 if (localStorage.getItem("page1") == "true") {
   page1.style.backgroundColor = "#ff4545";
