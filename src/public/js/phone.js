@@ -254,7 +254,7 @@ fetch(api, {
     total = json;
   });
 pageLast.onclick = () => {
-  total = Math.ceil(total / 5);
+  total = Math.ceil(total / 9);
   window.history.pushState({}, "", "/phone?page=" + total);
   window.location.reload();
   localStorage.setItem("page1", false);
