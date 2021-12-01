@@ -200,7 +200,7 @@ class PhoneController {
       .catch(next);
   }
   index(req, res, next) {
-    let perPage = 5;
+    let perPage = 9;
     let page = req.query.page || 1;
     let paramBrand = req.query.brand;
     let paramPrice = req.query.price;
