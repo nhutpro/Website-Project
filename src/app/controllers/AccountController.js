@@ -12,6 +12,7 @@ let transporter = nodemailer.createTransport({
 		pass: "Trannhut1", // generated ethereal password
 	},
 });
+
 function getRandom(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
 }
@@ -189,20 +190,85 @@ class AccountController {
 			.find()
 			.select("name")
 			.then((data) => {
+				let district = [];
+				let ward = [];
+				let userProvince = req.session.user.address.province;
+				let userDistrict = req.session.user.address.district;
 				data = data.map((item) => item.toObject());
-				res.render("userinfo", {
-					user: req.session.user,
-					province: data,
-				});
+				if (userProvince != "") {
+					address.find({ name: userProvince }).then((districtData) => {
+						districtData = districtData.map((item) => item.toObject());
+						district = districtData[0].districts;
+
+						let districtSelected = district.filter(
+							(districtData) => districtData.name == userDistrict
+						);
+
+						ward = districtSelected[0].wards;
+						res.render("userinfo", {
+							user: req.session.user,
+							province: data,
+							district: district,
+							ward: ward,
+						});
+					});
+				} else {
+					res.render("userinfo", {
+						user: req.session.user,
+						province: data,
+						district: district,
+						ward: ward,
+					});
+				}
 			})
 			.catch((err) => {
-				console.lof(err);
+				console.log(err);
 			});
 		/*
 		res.render("userinfo", {
 			user: req.session.user,
 		});
 		*/
+	}
+	update(req, res, next) {
+		console.log("day la data gui len");
+		console.log(req.body);
+		user
+			.updateOne(
+				{
+					_id: req.session.user._id,
+				},
+				{
+					name: req.body.username,
+					phone: req.body.phone,
+					gender: req.body.gender,
+					birthday: req.body.birthday,
+					email: req.body.email,
+					address: {
+						province: req.body.province,
+						district: req.body.district,
+						ward: req.body.ward,
+						addressdetail: req.body.addressDetail,
+					},
+				}
+			)
+			.then((data) => {
+				(req.session.user.name = req.body.username),
+					(req.session.user.phone = req.body.phone),
+					(req.session.user.gender = req.body.gender),
+					(req.session.user.birthday = req.body.birthday);
+				req.session.user.email = req.body.email;
+				req.session.user.address = {
+					province: req.body.province,
+					district: req.body.district,
+					ward: req.body.ward,
+					addressdetail: req.body.addressDetail,
+				};
+				req.session.save();
+				res.send({
+					status: "true",
+				});
+			});
 	}
 }
 module.exports = new AccountController();

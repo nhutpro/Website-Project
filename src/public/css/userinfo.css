@@ -122,3 +122,8 @@
 #userinfo-address input {
 	margin-top: 1rem;
 }
+.userinfo .error-message {
+	color: red;
+	font-size: 1.4rem;
+	margin-top: 2px;
+}
