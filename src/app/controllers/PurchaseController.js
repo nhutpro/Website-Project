@@ -69,7 +69,6 @@ class PurchaseController {
                 }
                 res.send(data)
             })
-
     }
     delivered(req, res, next) {
         purchase
