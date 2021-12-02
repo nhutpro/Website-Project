@@ -201,3 +201,15 @@ currentChange = (price) => {
     }).format(price);
     return price;
 }
+dateFormat = (date) => {
+    date = new Intl.DateTimeFormat("vi-VN").format(date);
+    return date;
+}
+
+getDate = (json, i) => {
+
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    var dateFormated = new Intl.DateTimeFormat("vi-VN").format(json[i].date);
+    return dateFormated
+}

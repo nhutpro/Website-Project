@@ -1,5 +1,5 @@
 const { NULL } = require("node-sass");
-const ObjectId = require('mongodb').ObjectID;
+const ObjectId = require("mongodb").ObjectID;
 const mongoose = require("../../util/mongoose");
 const { mutipleMongooseToObject } = require("../../util/mongoose");
 const items = require("../models/Item");
@@ -8,16 +8,20 @@ const cart = require("../models/Cart");
 const util = require("../../util/mongoose");
 
 class PhoneController {
-
 	addCart(req, res, next) {
 		items
 			.aggregate([
 				{
 					$match: {
-						"_id": ObjectId(req.query.itemID)
-
-					}
-
+						$and: [
+							{
+								_id: ObjectId(req.query.itemID),
+							},
+							{
+								type: "phone"
+							}
+						]
+					},
 				},
 				{
 					$lookup: {
@@ -26,63 +30,60 @@ class PhoneController {
 						foreignField: "slug",
 						as: "slug",
 					},
-
-
 				},
 				{
 					$project: {
 						"slug._id": 1,
 						_id: 1,
 						"slug.color": 1,
-
-					}
+					},
 				},
-
 			])
 
 			.then((items) => {
 				// items = mongoose.mutipleMongooseToObject(items);
-				var object = { optionID: items[0].slug[0]._id, num: 1, color: items[0].slug[0].color[0].name }
-				cart.find({ userID: req.session.user._id },)
+				var object = {
+					optionID: items[0].slug[0]._id,
+					num: 1,
+					color: items[0].slug[0].color[0].name,
+				};
+				cart
+					.find({ userID: req.session.user._id })
 
 					.then((data) => {
-
-						let count = 0
+						let count = 0;
 						for (let item of data[0].list) {
-
 							if (item.optionID.toString() == object.optionID.toString()) {
-								cart.updateOne({
-									userID: req.session.user._id,
-									"list.optionID": object.optionID,
-
-								},
-									{
-										$inc: { "list.$.num": 1 }
-									})
+								cart
+									.updateOne(
+										{
+											userID: req.session.user._id,
+											"list.optionID": object.optionID,
+										},
+										{
+											$inc: { "list.$.num": 1 },
+										}
+									)
 									.then((info) => {
-										res.redirect("back")
-									})
+										res.redirect("back");
+									});
 								break;
 							}
 							++count;
 						}
 						if (count.toString() == data[0].list.length.toString()) {
-
-							cart.updateOne({ userID: req.session.user._id },
-								{
-									$push: { list: object }
-								}
-							)
+							cart
+								.updateOne(
+									{ userID: req.session.user._id },
+									{
+										$push: { list: object },
+									}
+								)
 								.then((info) => {
-									res.redirect("back")
-								})
+									res.redirect("back");
+								});
 						}
-
-					}
-
-					)
-
-
+					});
 
 				//	res.send(object)
 			})
@@ -90,15 +91,20 @@ class PhoneController {
 			.catch(next);
 	}
 	checkout(req, res, next) {
-
 		items
 			.aggregate([
 				{
 					$match: {
-						"_id": ObjectId(req.query.itemID)
+						$and: [
+							{
+								_id: ObjectId(req.query.itemID),
+							},
+							{
+								type: "phone"
+							}
+						]
 
-					}
-
+					},
 				},
 				{
 					$lookup: {
@@ -107,63 +113,60 @@ class PhoneController {
 						foreignField: "slug",
 						as: "slug",
 					},
-
-
 				},
 				{
 					$project: {
 						"slug._id": 1,
 						_id: 1,
 						"slug.color": 1,
-
-					}
+					},
 				},
-
 			])
 
 			.then((items) => {
 				// items = mongoose.mutipleMongooseToObject(items);
-				var object = { optionID: items[0].slug[0]._id, num: 1, color: items[0].slug[0].color[0].name }
-				cart.find({ userID: req.session.user._id },)
+				var object = {
+					optionID: items[0].slug[0]._id,
+					num: 1,
+					color: items[0].slug[0].color[0].name,
+				};
+				cart
+					.find({ userID: req.session.user._id })
 
 					.then((data) => {
-
-						let count = 0
+						let count = 0;
 						for (let item of data[0].list) {
-
 							if (item.optionID.toString() == object.optionID.toString()) {
-								cart.updateOne({
-									userID: req.session.user._id,
-									"list.optionID": object.optionID,
-
-								},
-									{
-										$inc: { "list.$.num": 1 }
-									})
+								cart
+									.updateOne(
+										{
+											userID: req.session.user._id,
+											"list.optionID": object.optionID,
+										},
+										{
+											$inc: { "list.$.num": 1 },
+										}
+									)
 									.then((info) => {
-										res.redirect("/checkout")
-									})
+										res.redirect("/checkout");
+									});
 								break;
 							}
 							++count;
 						}
 						if (count.toString() == data[0].list.length.toString()) {
-
-							cart.updateOne({ userID: req.session.user._id },
-								{
-									$push: { list: object }
-								}
-							)
+							cart
+								.updateOne(
+									{ userID: req.session.user._id },
+									{
+										$push: { list: object },
+									}
+								)
 								.then((info) => {
-									res.redirect("/checkout")
-								})
+									res.redirect("/checkout");
+								});
 						}
-
-					}
-
-					)
-
-
+					});
 
 				//	res.send(object)
 			})
@@ -171,12 +174,16 @@ class PhoneController {
 			.catch(next);
 
 		// res.send("i love u")
-
 	}
 
 	info(req, res, next) {
 		items
 			.aggregate([
+				{
+					$match: {
+						type: "phone"
+					}
+				},
 				{
 					$lookup: {
 						from: "options",
@@ -184,15 +191,11 @@ class PhoneController {
 						foreignField: "slug",
 						as: "slug",
 					},
-
 				},
-
-
 			])
 
 			.then((items) => {
-
-				res.send(items)
+				res.send(items);
 			})
 
 			.catch(next);
@@ -201,37 +204,38 @@ class PhoneController {
 		items
 			.aggregate([
 				{
+					$match: {
+						type: "phone"
+					}
+				},
+				{
 					$lookup: {
 						from: "options",
 						localField: "slug",
 						foreignField: "slug",
 						as: "slug",
 					},
-
 				},
-
-
 			])
 
 			.then((items) => {
-				res.send(items.length.toString())
+				res.send(items.length.toString());
 			})
 
 			.catch(next);
 	}
 	index(req, res, next) {
-		let perPage = 5;
+		let perPage = 9;
 		let page = req.query.page || 1;
 		let paramBrand = req.query.brand;
 		let paramPrice = req.query.price;
-		var sort = req.query.sort
-		var temp
+		var sort = req.query.sort;
+		var temp;
 		if (sort != undefined) {
 			if (sort == "asc") {
-				temp = 1
-			}
-			else {
-				temp = -1
+				temp = 1;
+			} else {
+				temp = -1;
 			}
 		}
 		let to2 = 0;
@@ -287,7 +291,7 @@ class PhoneController {
 			if (paramBrand == "" && paramPrice != "") {
 				brand1 = "apple";
 				brand2 = "samsung";
-				brand3 = "vsmart";
+				brand3 = "asus";
 				brand4 = "oppo";
 				brand5 = "xiaomi";
 				brand6 = "realme";
@@ -297,26 +301,34 @@ class PhoneController {
 				.aggregate([
 					{
 						$match: {
-							$or: [
+							$and: [
 								{
-									brand: brand1,
+									$or: [
+										{
+											brand: brand1,
+										},
+										{
+											brand: brand2,
+										},
+										{
+											brand: brand3,
+										},
+										{
+											brand: brand4,
+										},
+										{
+											brand: brand5,
+										},
+										{
+											brand: brand6,
+										},
+									],
 								},
 								{
-									brand: brand2,
-								},
-								{
-									brand: brand3,
-								},
-								{
-									brand: brand4,
-								},
-								{
-									brand: brand5,
-								},
-								{
-									brand: brand6,
-								},
-							],
+									type: "phone"
+								}
+							]
+
 						},
 					},
 
@@ -341,9 +353,6 @@ class PhoneController {
 									},
 								},
 
-								//               {"slug" : {$elemMatch: { "color":   {$elemMatch:{ "price":{$lt: to2}}}  }}, },
-
-								//        {"slug" : {$elemMatch: { "color":   {$elemMatch:{ "price": {$elemMatch: {$gte: from2,$lt: to5} } }}  }}, },
 
 								{
 									slug: {
@@ -367,10 +376,9 @@ class PhoneController {
 					},
 				])
 				.sort({
-					"slug.color.price": temp
-
+					"slug.color.price": temp,
 				})
-				.skip((perPage * page) - perPage)
+				.skip(perPage * page - perPage)
 				.limit(perPage)
 				.then((items) => {
 					res.render("phone", {
@@ -383,6 +391,11 @@ class PhoneController {
 			items
 				.aggregate([
 					{
+						$match: {
+							type: "phone"
+						}
+					},
+					{
 						$lookup: {
 							from: "options",
 							localField: "slug",
@@ -390,17 +403,13 @@ class PhoneController {
 							as: "slug",
 						},
 					},
-
-
 				])
 				.sort({
-					"slug.color.price": temp
-
+					"slug.color.price": temp,
 				})
-				.skip((perPage * page) - perPage)
+				.skip(perPage * page - perPage)
 				.limit(perPage)
 				.then((items) => {
-
 					res.render("phone", {
 						items: items,
 					});

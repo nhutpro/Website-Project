@@ -456,66 +456,6 @@
   "item": "61a6fd09af9aeae6a5bf6be6"
 },{
   "_id": {
-    "$oid": "61a7011baf9aeae6a5bf6bf1"
-  },
-  "slug": "zfold3",
-  "detail": "256GB",
-  "color": [
-    {
-      "name": "Xanh rêu",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
-      "number": 5,
-      "price": 41990000,
-      "discount": 10
-    },
-    {
-      "name": "Đen",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
-      "number": 5,
-      "price": 41990000,
-      "discount": 10
-    },
-    {
-      "name": "Bạc",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
-      "number": 5,
-      "price": 4190000,
-      "discount": 10
-    }
-  ],
-  "item": "61a7009eaf9aeae6a5bf6bee"
-},{
-  "_id": {
-    "$oid": "61a70179af9aeae6a5bf6bf2"
-  },
-  "slug": "zfold3",
-  "detail": "512GB",
-  "color": [
-    {
-      "name": "Xanh rêu",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
-      "number": 5,
-      "price": 44990000,
-      "discount": 10
-    },
-    {
-      "name": "Đen",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
-      "number": 5,
-      "price": 44990000,
-      "discount": 10
-    },
-    {
-      "name": "Bạc",
-      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
-      "number": 5,
-      "price": 44990000,
-      "discount": 10
-    }
-  ],
-  "item": "61a7009eaf9aeae6a5bf6bee"
-},{
-  "_id": {
     "$oid": "61a7047eaf9aeae6a5bf6bfc"
   },
   "slug": "oppo_a95",
@@ -560,4 +500,234 @@
     }
   ],
   "item": "61a70773af9aeae6a5bf6c09"
+},{
+  "_id": {
+    "$oid": "61a743bfaf9aeae6a5bf6c38"
+  },
+  "slug": "zfold3",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xanh rêu",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+      "number": 5,
+      "price": 41990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+      "number": 5,
+      "price": 41990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
+      "number": 5,
+      "price": 41990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7009eaf9aeae6a5bf6bee"
+},{
+  "_id": {
+    "$oid": "61a743e7af9aeae6a5bf6c39"
+  },
+  "slug": "zfold3",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Xanh rêu",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg",
+      "number": 5,
+      "price": 44990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7009eaf9aeae6a5bf6bee"
+},{
+  "_id": {
+    "$oid": "61a749feaf9aeae6a5bf6c3f"
+  },
+  "slug": "aspire7",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/acer/aspire-7/acer-aspire-7.jpg",
+      "number": 15,
+      "price": 18790000,
+      "discount": 10
+    }
+  ],
+  "item": "61a749dfaf9aeae6a5bf6c3c"
+},{
+  "_id": {
+    "$oid": "61a755ceaf9aeae6a5bf6c51"
+  },
+  "slug": "nitro5",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/acer/nitro5/nitro5.jpg",
+      "number": 15,
+      "price": 28190000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7555daf9aeae6a5bf6c4e"
+},{
+  "_id": {
+    "$oid": "61a779d1af9aeae6a5bf6c6d"
+  },
+  "slug": "a315_56_308n",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/acer/a315/a315_0.jpg",
+      "number": 15,
+      "price": 11890000,
+      "discount": 10
+    }
+  ],
+  "item": "61a779bfaf9aeae6a5bf6c6a"
+},{
+  "_id": {
+    "$oid": "61a77d51af9aeae6a5bf6c73"
+  },
+  "slug": "pavilion_15",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Vàng",
+      "image": "/image/hp/pavilion15/pavilion15_0.jpg",
+      "number": 15,
+      "price": 15790000,
+      "discount": 10
+    }
+  ],
+  "item": "61a77cfbaf9aeae6a5bf6c70"
+},{
+  "_id": {
+    "$oid": "61a781deaf9aeae6a5bf6c85"
+  },
+  "slug": "macbook_air_m1_2020",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/macbook-air-m1-2020/grey.jpg",
+      "number": 15,
+      "price": 28990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/apple/macbook-air-m1-2020/silver.jpg",
+      "number": 15,
+      "price": 28990000,
+      "discount": 10
+    },
+    {
+      "name": "Vàng Đồng",
+      "image": "/image/apple/macbook-air-m1-2020/bronze.jpg",
+      "number": 15,
+      "price": 28990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7812aaf9aeae6a5bf6c82"
+},{
+  "_id": {
+    "$oid": "61a78217af9aeae6a5bf6c86"
+  },
+  "slug": "macbook_air_m1_2020",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/macbook-air-m1-2020/grey.jpg",
+      "number": 15,
+      "price": 32990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/apple/macbook-air-m1-2020/silver.jpg",
+      "number": 15,
+      "price": 32990000,
+      "discount": 10
+    },
+    {
+      "name": "Vàng Đồng",
+      "image": "/image/apple/macbook-air-m1-2020/bronze.jpg",
+      "number": 15,
+      "price": 32990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7812aaf9aeae6a5bf6c82"
+},{
+  "_id": {
+    "$oid": "61a785ceaf9aeae6a5bf6c8c"
+  },
+  "slug": "macbook_pro_m1_2021",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/macbook-pro-m1-2021/grey.png",
+      "number": 15,
+      "price": 52990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/apple/macbook-pro-m1-2021/silver.png",
+      "number": 15,
+      "price": 52990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7859faf9aeae6a5bf6c89"
+},{
+  "_id": {
+    "$oid": "61a785eaaf9aeae6a5bf6c8d"
+  },
+  "slug": "macbook_pro_m1_2021",
+  "detail": "1TB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/macbook-pro-m1-2021/grey.png",
+      "number": 15,
+      "price": 64990000,
+      "discount": 10
+    },
+    {
+      "name": "Bạc",
+      "image": "/image/apple/macbook-pro-m1-2021/silver.png",
+      "number": 15,
+      "price": 64990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a7859faf9aeae6a5bf6c89"
 }]

@@ -217,6 +217,7 @@ li {
 .fa-microchip,
 .fa-mobile,
 .fa-memory,
+.fa-laptop,
 .fa-compact-disc {
   color: var(--grey2);
 }
@@ -377,4 +378,9 @@ li {
 
 #page1 {
   background-color: var(--primary);
+}
+.list-products {
+  position: sticky;
+  top: 0;
+  /* display: none; */
 }

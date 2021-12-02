@@ -46,18 +46,29 @@ class PurchaseController {
                             return color.name === item.color;
                         });
                     }
+                    var diff = Math.abs(new Date() - result.date);
+                    diff = diff / 60000
+                    console.log("time by milis: ", diff);
+                    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+                    var dateFormated = result.date.toLocaleDateString("vi-VN", options)
+                    result.date = dateFormated;
+                    if (diff >= 5) {
+                        purchase.updateOne({
+                            userID: req.session.user._id,
+                            _id: result._id,
+                        },
+                            {
+                                $set: { status: "Đã giao" }
+                            }
+                        )
+                            .then(() => {
 
+                            })
+
+                    }
                 }
-
-
-                // res.render("purchase", {
-                //     // itemList: result.list,
-                //     purchase: data,
-                //     // userInfo: result.userID,
-                // });
                 res.send(data)
             })
-
     }
     delivered(req, res, next) {
         purchase
@@ -86,15 +97,10 @@ class PurchaseController {
                             return color.name === item.color;
                         });
                     }
-
+                    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+                    var dateFormated = result.date.toLocaleDateString("vi-VN", options)
+                    result.date = dateFormated;
                 }
-
-
-                // res.render("purchase", {
-                //     // itemList: result.list,
-                //     purchase: data,
-                //     // userInfo: result.userID,
-                // });
                 res.send(data)
             })
     }
@@ -125,7 +131,9 @@ class PurchaseController {
                             return color.name === item.color;
                         });
                     }
-
+                    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+                    var dateFormated = result.date.toLocaleDateString("vi-VN", options)
+                    result.date = dateFormated;
                 }
 
                 res.send(data)
