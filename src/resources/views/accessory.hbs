@@ -1,0 +1,196 @@
+<link rel="stylesheet" href="css/phone.css" />
+<section class="section products">
+  <div class="filter-box">
+    <div class="asc-price" id="sort-asc-phone">
+      <a> <i class="fas fa-sort-amount-up"></i>Giá thấp</a>
+    </div>
+    <div class="desc-price" id="sort-desc-phone">
+      <a><i class="fas fa-sort-amount-up-alt"></i>Giá cao</a>
+    </div>
+  </div>
+  <div class="products-layout container">
+
+    <div class="filter">
+      <div>
+        <div class="block-title">
+          <h3>Thương hiệu</h3>
+        </div>
+        <ul class="block-content filter-brand">
+          <li>
+
+            <input type="checkbox" id="checkAllBrand" checked />
+            <label for="checkAllbrand">
+              <span>Tất cả</span>
+            </label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="Brandids[]" value="apple" />
+            <label for="">
+              <span>Apple</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Brandids[]" value="samsung" />
+            <label for="">
+              <span>Samsung</span>
+            </label>
+          </li>
+          {{!-- <li>
+            <input type="checkbox" name="Brandids[]" value="asus" />
+            <label for="">
+              <span>Asus</span>
+            </label>
+          </li> --}}
+          <li>
+            <input type="checkbox" name="Brandids[]" value="oppo" />
+            <label for="">
+              <span>Oppo</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Brandids[]" value="xiaomi" />
+            <label for="">
+              <span>Xiaomi</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Brandids[]" value="realme" />
+            <label for="">
+              <span>Realme</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="block-title">
+          <h3>Mức giá</h3>
+        </div>
+        <ul class="block-content">
+          <li>
+            <input type="checkbox" id="checkAllPrice" />
+            <label for="checkAllPrice">
+              <span>Tất cả</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Priceids[]" value="duoi-2-trieu" />
+            <label for="">
+              <span>Dưới 2 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Priceids[]" value="tu-2-5-trieu" />
+            <label for="">
+              <span>Từ 2 đến 5 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Priceids[]" value="tu-5-14-trieu" />
+            <label for="">
+              <span>Từ 5 đến 14 triệu</span>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Priceids[]" value="tren-14-trieu" />
+            <label for="">
+              <span>Trên 14 triệu</span>
+            </label>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="list-products">
+
+      <div class="product-layout">
+        {{#each items}}
+        <div class="product">
+          <div class="img-container">
+            <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+              <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
+            </a>
+
+          </div>
+          <div class="info-product">
+            <div class="product-name">
+              <a href="/phone">
+                <h3>{{this.name}}</h3>
+              </a>
+            </div>
+
+            <div class="price">
+              <span>{{currentChange this.slug.[0].color.[0].price}}</span>
+            </div>
+            <div class="config">
+              <div class="config-param">
+                <span data-title="CPU">
+
+                  <p>
+                    <i class="fad fa-microchip"></i>
+                    {{this.techInfo.[2].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+                <span data-title="Màn hình">
+
+                  <p>
+                    <i class="fad fa-mobile"></i>
+                    {{this.techInfo.[0].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+                <span data-title="RAM">
+
+                  <p>
+                    <i class="fad fa-memory"></i>
+                    {{this.techInfo.[3].infoDetail.[0].infoNum}}
+                  </p>
+                </span>
+
+                <span data-title="ROM">
+                  <p>
+                    <i class="fad fa-compact-disc"></i>
+                    {{this.slug.[0].detail}}
+
+
+                  </p>
+                </span>
+
+              </div>
+            </div>
+            <div class="product-btn">
+              <form method="POST" action="phone/checkout?itemID={{this._id}}">
+                <button class="btn btn-buy btn-sm" type="submit" >
+                  <p>MUA NGAY</p>
+                </button>
+                {{!-- <a href="#" class="btn btn-buy btn-sm">
+
+                </a> --}}
+              </form>
+              <form method="POST" action="phone/addcart?itemID={{this._id}}">
+                <button class="btn btn-addCart btn-sm" type="submit">
+                  <p>THÊM VÀO GIỎ</p>
+                </button>
+              </form>
+              {{!-- <a href="#" class="btn btn-addCart btn-sm">
+
+              </a> --}}
+            </div>
+          </div>
+
+        </div>
+        {{/each}}
+      </div>
+      <ul class="pagination">
+        <span id="page1">1</span>
+        <span id="page2">2</span>
+        <span id="page3">3</span>
+        <span id="page4">4</span>
+
+        <span class="icon">...</span>
+        <span class="last" id="pageLast">Last</span>
+      </ul>
+    </div>
+  </div>
+  <script src='js/accessory.js'></script>
+</section>

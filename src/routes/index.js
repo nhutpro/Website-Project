@@ -8,10 +8,12 @@ const userrouter = require("./user");
 const addressrouter = require("./address");
 const laptoprouter = require("./laptop");
 const tabletrouter = require("./tablet");
+const accessorytrouter = require("./accessory");
 
 function route(app) {
 	app.use("/search", searchrouter);
 	app.use("/laptop", laptoprouter);
+	app.use("/accessory", accessorytrouter);
 	app.use("/tablet", tabletrouter);
 	app.use("/address", addressrouter);
 	app.use("/purchase", purchaserouter);
