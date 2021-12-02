@@ -30,16 +30,9 @@ window.onload = () => {
         window.location.reload();
 
     }
-<<<<<<< HEAD
-
-	window.location.reload();
-};
-
-=======
 
     if (count != null) {
         count.innerHTML = localStorage.getItem("match")
->>>>>>> 26722f6a2ad06605691f2f852eb5d8dfad450d14
 
         key.innerHTML = "'" + localStorage.getItem("count") + "'"
         // sort price

@@ -10,13 +10,13 @@ const laptoprouter = require("./laptop");
 
 function route(app) {
 	app.use("/search", searchrouter);
+	app.use("/laptop", laptoprouter);
 	app.use("/address", addressrouter);
 	app.use("/purchase", purchaserouter);
 	app.use("/account", accountrouter);
 	app.use("/checkout", checkoutrouter);
 	app.use("/phone", phonerouter);
 	app.use("/user", userrouter);
-	app.use("/laptop", laptoprouter);
 	app.get("/", (req, res) => {
 		res.render("home");
 	});
