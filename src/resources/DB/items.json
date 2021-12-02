@@ -1326,4 +1326,458 @@
     }
   ],
   "brand": "apple"
+},{
+  "_id": {
+    "$oid": "61a87a0dcaa1c60e0a6fa45c"
+  },
+  "name": "iPad Mini 6",
+  "type": "tablet",
+  "description": "Sau thời gian dài chờ đợi thì tháng 09/2021 iPad mini 6 WiFi 64GB cũng đã được Apple trình làng với thiết kế vừa quen thuộc vừa mới lạ, máy có nhiều cải tiến trong cấu hình lẫn phần mềm nhằm gia tăng lợi ích sử dụng, mang lại sự hài lòng cao hơn cho người dùng khi lựa chọn.",
+  "image": [
+    "/image/apple/ipad-mini-6/grey.jpg",
+    "/image/apple/ipad-mini-6/white.jpg",
+    "/image/apple/ipad-mini-6/purple.jpg",
+    "/image/apple/ipad-mini-6/pink.jpg"
+  ],
+  "slug": "ipad_mini_6",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "8.3 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "LED-backlit IPS LCD"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1488 x 2266 Pixels"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "12 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Apple A15 Bionic"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "4GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Apple A15 Bionic"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "4GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
+},{
+  "_id": {
+    "$oid": "61a87d29caa1c60e0a6fa463"
+  },
+  "name": "iPad Pro M1 2021",
+  "type": "tablet",
+  "description": "Bạn có đang mong chờ những sản phẩm chất lượng đến từ Apple? Sau hàng loạt các sản phẩm đình đám như iPhone 12 series thì hãng đã tung ra chiếc iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) trang bị những tính năng ngày càng vượt trội và thời thượng.",
+  "image": [
+    "/image/apple/ipad-pro-m1-2021/grey.jpg",
+    "/image/apple/ipad-pro-m1-2021/white.jpg"
+  ],
+  "slug": "ipad_pro_m1_2021",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "12.9 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "Liquid Retina XDR mini-LED LCD"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "2048 x 2732 Pixels"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "120Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Chính 12 MP & Phụ 10 MP, TOF 3D LiDAR"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@120fps, FullHD 1080p@240fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps, HD 720p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Apple M1 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "8GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Apple M1 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "8GB"
+        }
+      ]
+    }
+  ],
+  "brand": "apple"
+},{
+  "_id": {
+    "$oid": "61a883cdcaa1c60e0a6fa46b"
+  },
+  "name": "Galaxy Tab S7",
+  "type": "tablet",
+  "description": "Samsung Galaxy Tab S7 chiếc máy tính bảng có thiết kế tuyệt đẹp, màn hình 120 Hz siêu mượt, camera kép ấn tượng, bút S Pen cùng một hiệu năng mạnh mẽ thuộc top đầu thị trường máy tính bảng Android.",
+  "image": [
+    "/image/samsung/galaxy-tab-s7/bronze.jpg",
+    "/image/samsung/galaxy-tab-s7/black.jpg",
+    "/image/samsung/galaxy-tab-s7/blue.jpg"
+  ],
+  "slug": "galaxy_tab_s7",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "11 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "LTPS IPS LCD"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1600 x 2560 Pixels"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "120Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "Chính 13 MP & Phụ 5 MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 865+ 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "6GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 865+ 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "6GB"
+        }
+      ]
+    }
+  ],
+  "brand": "samsung"
+},{
+  "_id": {
+    "$oid": "61a88668caa1c60e0a6fa475"
+  },
+  "name": "Xiaomi Pad 5",
+  "type": "tablet",
+  "description": "Xiaomi cho ra mắt Xiaomi Pad 5 256GB, chiếc máy tính bảng có thiết kế mỏng nhẹ, thời trang cùng cấu hình hàng đầu đáp ứng hết các nhu cầu của bạn, dù là học tập, giải trí hay làm việc đều trở nên vô cùng trơn tru.",
+  "image": [
+    "/image/xiaomi/pad5/grey.jpg",
+    "/image/xiaomi/pad5/white.jpg"
+  ],
+  "slug": "xiaomi_pad5",
+  "techInfo": [
+    {
+      "infoType": "Màn hình",
+      "infoDetail": [
+        {
+          "infoName": "kích Thước Màn Hình",
+          "infoNum": "11 inches"
+        },
+        {
+          "infoName": "Công nghệ màn hình",
+          "infoNum": "IPS LCD"
+        },
+        {
+          "infoName": "Độ phân giải màn hình",
+          "infoNum": "1600 x 2560 Pixels"
+        },
+        {
+          "infoName": "Tần số quét",
+          "infoNum": "120Hz"
+        }
+      ]
+    },
+    {
+      "infoType": "Camera sau",
+      "infoDetail": [
+        {
+          "infoName": "Camera sau",
+          "infoNum": "13MP"
+        },
+        {
+          "infoName": "Quay video",
+          "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
+        },
+        {
+          "infoType": "CPU",
+          "infoDetail": [
+            {
+              "infoName": "Chip xử lí",
+              "infoNum": "Snapdragon 860 8 nhân"
+            }
+          ]
+        },
+        {
+          "infoType": "RAM",
+          "infoDetail": [
+            {
+              "infoName": "Bộ nhớ trong",
+              "infoNum": "6GB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "CPU",
+      "infoDetail": [
+        {
+          "infoName": "Chip xử lí",
+          "infoNum": "Snapdragon 860 8 nhân"
+        }
+      ]
+    },
+    {
+      "infoType": "RAM",
+      "infoDetail": [
+        {
+          "infoName": "Bộ nhớ trong",
+          "infoNum": "6GB"
+        }
+      ]
+    }
+  ],
+  "brand": "xiaomi"
+},{
+  "_id": {
+    "$oid": "61a88eddcaa1c60e0a6fa480"
+  },
+  "name": "Sạc Dự Phòng Proda PD-P12",
+  "type": "accessory",
+  "description": "Sạc dự phòng PD-P12 sở hữu dung lượng pin lớn cùng thiết kế độc đáo đang là một trong những phụ kiện thông minh được nhiều người tin dùng.",
+  "image": [
+    "/image/remax/proda/black.jpg",
+    "/image/remax/proda/white.jpg"
+  ],
+  "slug": "proda",
+  "techInfo": [
+    {
+      "infoType": "Dung lượng",
+      "infoDetail": [
+        {
+          "infoName": "Dung lượng Pin",
+          "infoNum": "10000mAh"
+        }
+      ]
+    },
+    {
+      "infoType": "Tính năng",
+      "infoDetail": [
+        {
+          "infoType": "Cổng kết nối",
+          "infoDetail": [
+            {
+              "infoName": "Cổng sạc",
+              "infoNum": "Hỗ trợ cổng sạc 2.1A giúp sạc nhanh"
+            }
+          ]
+        },
+        {
+          "infoType": "Tính năng đặc biệt",
+          "infoDetail": [
+            {
+              "infoName": "Đèn LED",
+              "infoNum": "Tích hợp đèn led hiển thị dung lượng pin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "infoType": "Cổng kết nối",
+      "infoDetail": [
+        {
+          "infoName": "Cổng sạc",
+          "infoNum": "Hỗ trợ cổng sạc 2.1A giúp sạc nhanh"
+        }
+      ]
+    },
+    {
+      "infoType": "Tính năng đặc biệt",
+      "infoDetail": [
+        {
+          "infoName": "Đèn LED",
+          "infoNum": "Tích hợp đèn led hiển thị dung lượng pin"
+        }
+      ]
+    }
+  ],
+  "brand": "remax"
+},{
+  "_id": {
+    "$oid": "61a89e9acaa1c60e0a6fa48e"
+  },
+  "name": "Tai nghe JBL T450",
+  "type": "accessory",
+  "description": "Giới thiệu tai nghe nhét tai JBL T450. Một cặp trình điều khiển 32mm tạo ra âm trầm mạnh mẽ nghiêm túc, tái tạo âm thanh JBL Pure Bass mà bạn đã trải nghiệm trong phòng hòa nhạc, đấu trường và phòng thu âm trên toàn thế giới. Với thiết kế gọn nhẹ, bạn có thể gấp gọn tai nghe và mang theo bên mình. Với sự tiện lợi của cáp phẳng không bị rối được trang bị điều khiển từ xa và micrô, họ là người bạn đồng hành hàng ngày của bạn tại nơi làm việc, ở nhà và trên đường.",
+  "image": [
+    "/image/jbl/t450/black.webp",
+    "/image/jbl/t450/white.png",
+    "/image/jbl/t450/blue.png"
+  ],
+  "slug": "jbl_t450",
+  "techInfo": [
+    {
+      "infoType": "Driver",
+      "infoDetail": [
+        {
+          "infoName": "Kích Thước Driver",
+          "infoNum": "32mm"
+        },
+        {
+          "infoName": "Số lượng driver mỗi bên tai",
+          "infoNum": "1"
+        }
+      ]
+    },
+    {
+      "infoType": "Chi tiết",
+      "infoDetail": [
+        {
+          "infoName": "Trở kháng",
+          "infoNum": "32 ohms"
+        },
+        {
+          "infoName": "Đầu cắm",
+          "infoNum": "3.5mm"
+        },
+        {
+          "infoName": "Củ loa",
+          "infoNum": "32mm"
+        },
+        {
+          "infoName": "Tần số đáp ứng",
+          "infoNum": "20Hz - 20KHz"
+        }
+      ]
+    }
+  ],
+  "brand": "jbl"
 }]

@@ -75,10 +75,10 @@
   "color": [
     {
       "name": "Tím",
-      "image ": "/image/samsung/galaxya72/galaxya72_purple.jpg",
-      "number": 5,
+      "image": "/image/samsung/galaxya72/galaxya72_purple.jpg",
+      "number": 6,
       "price": 10100000,
-      "discount": 20
+      "discount": 10
     },
     {
       "name": "Trắng",
@@ -331,35 +331,35 @@
   "color": [
     {
       "name": "Đen",
-      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "image": "/image/apple/iphone13/iphone13_black.jpg",
       "number": 5,
       "price": 24490000,
       "discount": 10
     },
     {
       "name": "Xanh dương",
-      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "image": "/image/apple/iphone13/iphone13_blue.jpg",
       "number": 5,
       "price": 24490000,
       "discount": 10
     },
     {
       "name": "Trắng",
-      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "image": "/image/apple/iphone13/iphone13_white.jpg",
       "number": 5,
       "price": 24490000,
       "discount": 10
     },
     {
       "name": "Đỏ",
-      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "image": "/image/apple/iphone13/iphone13_red.jpg",
       "number": 5,
       "price": 24490000,
       "discount": 10
     },
     {
       "name": "Hồng",
-      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "image": "/image/apple/iphone13/iphone13_pink.jpg",
       "number": 5,
       "price": 24490000,
       "discount": 10
@@ -375,35 +375,35 @@
   "color": [
     {
       "name": "Đen",
-      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "image": "/image/apple/iphone13/iphone13_black.jpg",
       "number": 5,
       "price": 27490000,
       "discount": 10
     },
     {
       "name": "Xanh dương",
-      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "image": "/image/apple/iphone13/iphone13_blue.jpg",
       "number": 5,
       "price": 27490000,
       "discount": 10
     },
     {
       "name": "Trắng",
-      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "image": "/image/apple/iphone13/iphone13_white.jpg",
       "number": 5,
       "price": 27490000,
       "discount": 10
     },
     {
       "name": "Đỏ",
-      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "image": "/image/apple/iphone13/iphone13_red.jpg",
       "number": 5,
       "price": 27490000,
       "discount": 10
     },
     {
       "name": "Hồng",
-      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "image": "/image/apple/iphone13/iphone13_pink.jpg",
       "number": 5,
       "price": 27490000,
       "discount": 10
@@ -419,35 +419,35 @@
   "color": [
     {
       "name": "Đen",
-      "image": "/image/apple/iphone/iphone13_black.jpg",
+      "image": "/image/apple/iphone13/iphone13_black.jpg",
       "number": 5,
       "price": 33990000,
       "discount": 10
     },
     {
       "name": "Xanh dương",
-      "image": "/image/apple/iphone/iphone13_blue.jpg",
+      "image": "/image/apple/iphone13/iphone13_blue.jpg",
       "number": 5,
       "price": 33990000,
       "discount": 10
     },
     {
       "name": "Trắng",
-      "image": "/image/apple/iphone/iphone13_white.jpg",
+      "image": "/image/apple/iphone13/iphone13_white.jpg",
       "number": 5,
       "price": 33990000,
       "discount": 10
     },
     {
       "name": "Đỏ",
-      "image": "/image/apple/iphone/iphone13_red.jpg",
+      "image": "/image/apple/iphone13/iphone13_red.jpg",
       "number": 5,
       "price": 33990000,
       "discount": 10
     },
     {
       "name": "Hồng",
-      "image": "/image/apple/iphone/iphone13_pink.jpg",
+      "image": "/image/apple/iphone13/iphone13_pink.jpg",
       "number": 5,
       "price": 33990000,
       "discount": 10
@@ -730,4 +730,276 @@
     }
   ],
   "item": "61a7859faf9aeae6a5bf6c89"
+},{
+  "_id": {
+    "$oid": "61a87a8fcaa1c60e0a6fa45f"
+  },
+  "slug": "ipad_mini_6",
+  "detail": "64GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/ipad-mini-6/grey.jpg",
+      "number": 15,
+      "price": 15990000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/ipad-mini-6/white.jpg",
+      "number": 15,
+      "price": 15990000,
+      "discount": 10
+    },
+    {
+      "name": "Tím",
+      "image": "/image/apple/ipad-mini-6/purple.jpg",
+      "number": 15,
+      "price": 15990000,
+      "discount": 10
+    },
+    {
+      "name": "Hồng",
+      "image": "/image/apple/ipad-mini-6/pink.jpg",
+      "number": 15,
+      "price": 15990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a87a0dcaa1c60e0a6fa45c"
+},{
+  "_id": {
+    "$oid": "61a87b03caa1c60e0a6fa460"
+  },
+  "slug": "ipad_mini_6",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/ipad-mini-6/grey.jpg",
+      "number": 15,
+      "price": 20790000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/ipad-mini-6/white.jpg",
+      "number": 15,
+      "price": 20790000,
+      "discount": 10
+    },
+    {
+      "name": "Tím",
+      "image": "/image/apple/ipad-mini-6/purple.jpg",
+      "number": 15,
+      "price": 20790000,
+      "discount": 10
+    },
+    {
+      "name": "Hồng",
+      "image": "/image/apple/ipad-mini-6/pink.jpg",
+      "number": 15,
+      "price": 20790000,
+      "discount": 10
+    }
+  ],
+  "item": "61a87a0dcaa1c60e0a6fa45c"
+},{
+  "_id": {
+    "$oid": "61a87d3ccaa1c60e0a6fa466"
+  },
+  "slug": "ipad_pro_m1_2021",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/ipad-pro-m1-2021/grey.jpg",
+      "number": 15,
+      "price": 36490000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/ipad-pro-m1-2021/white.jpg",
+      "number": 15,
+      "price": 36490000,
+      "discount": 10
+    }
+  ],
+  "item": "61a87d29caa1c60e0a6fa463"
+},{
+  "_id": {
+    "$oid": "61a87d58caa1c60e0a6fa467"
+  },
+  "slug": "ipad_pro_m1_2021",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/ipad-pro-m1-2021/grey.jpg",
+      "number": 15,
+      "price": 39490000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/ipad-pro-m1-2021/white.jpg",
+      "number": 15,
+      "price": 39490000,
+      "discount": 10
+    }
+  ],
+  "item": "61a87d29caa1c60e0a6fa463"
+},{
+  "_id": {
+    "$oid": "61a87d87caa1c60e0a6fa468"
+  },
+  "slug": "ipad_pro_m1_2021",
+  "detail": "512GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/apple/ipad-pro-m1-2021/grey.jpg",
+      "number": 15,
+      "price": 41990000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/apple/ipad-pro-m1-2021/white.jpg",
+      "number": 15,
+      "price": 41990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a87d29caa1c60e0a6fa463"
+},{
+  "_id": {
+    "$oid": "61a88473caa1c60e0a6fa472"
+  },
+  "slug": "ipad_pro_m1_2021",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Vàng Đồng",
+      "image": "/image/samsung/galaxy-tab-s7/bronze.jpg",
+      "number": 15,
+      "price": 18990000,
+      "discount": 10
+    },
+    {
+      "name": "Đen",
+      "image": "/image/samsung/galaxy-tab-s7/black.jpg",
+      "number": 15,
+      "price": 18990000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh Dương",
+      "image": "/image/samsung/galaxy-tab-s7/blue.jpg",
+      "number": 15,
+      "price": 18990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a883cdcaa1c60e0a6fa46b"
+},{
+  "_id": {
+    "$oid": "61a88684caa1c60e0a6fa478"
+  },
+  "slug": "xiaomi_pad5",
+  "detail": "128GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/xiaomi/pad5/grey.jpg",
+      "number": 15,
+      "price": 8990000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/xiaomi/pad5/white.jpg",
+      "number": 15,
+      "price": 8990000,
+      "discount": 10
+    }
+  ],
+  "item": "61a88668caa1c60e0a6fa475"
+},{
+  "_id": {
+    "$oid": "61a886a8caa1c60e0a6fa479"
+  },
+  "slug": "xiaomi_pad5",
+  "detail": "256GB",
+  "color": [
+    {
+      "name": "Xám",
+      "image": "/image/xiaomi/pad5/grey.jpg",
+      "number": 15,
+      "price": 10490000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/xiaomi/pad5/white.jpg",
+      "number": 15,
+      "price": 10490000,
+      "discount": 10
+    }
+  ],
+  "item": "61a88668caa1c60e0a6fa475"
+},{
+  "_id": {
+    "$oid": "61a88f70caa1c60e0a6fa483"
+  },
+  "slug": "xiaomi_pad5",
+  "detail": "10000mAh",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/remax/proda/black.jpg",
+      "number": 15,
+      "price": 250000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/remax/proda/white.jpg",
+      "number": 15,
+      "price": 250000,
+      "discount": 10
+    }
+  ],
+  "item": "61a88eddcaa1c60e0a6fa480"
+},{
+  "_id": {
+    "$oid": "61a89f14caa1c60e0a6fa491"
+  },
+  "slug": "jbl_t450",
+  "detail": "Default",
+  "color": [
+    {
+      "name": "Đen",
+      "image": "/image/jbl/t450/black.webp",
+      "number": 15,
+      "price": 690000,
+      "discount": 10
+    },
+    {
+      "name": "Trắng",
+      "image": "/image/jbl/t450/white.png",
+      "number": 15,
+      "price": 690000,
+      "discount": 10
+    },
+    {
+      "name": "Xanh Dương",
+      "image": "/image/jbl/t450/blue.png",
+      "number": 15,
+      "price": 690000,
+      "discount": 10
+    }
+  ],
+  "item": "61a89e9acaa1c60e0a6fa48e"
 }]
