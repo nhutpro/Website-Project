@@ -81,7 +81,8 @@ input[type="number"] {
   margin-top: 1rem;
 }
 .item__image img {
-  height: 17rem;
+  margin-right: 1.5rem;
+  width: 17rem;
 }
 .item__detail {
   font-size: 1.3rem;
