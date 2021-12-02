@@ -10,16 +10,16 @@
 			</a>
 		</li>
 		{{#each path}}
-			<li>
-				<i class='fas fa-greater-than path-icon-next'></i>
-			</li>
-			<li>
-				<a href={{this.href}}>
+		<li>
+			<i class='fas fa-greater-than path-icon-next'></i>
+		</li>
+		<li>
+			<a href={{this.href}}>
 
-					<span>{{this.name}}</span>
+				<span>{{this.name}}</span>
 
-				</a>
-			</li>
+			</a>
+		</li>
 		{{/each}}
 
 	</ul>
@@ -30,15 +30,13 @@
 			<div class='detailItem-img col-4'>
 
 				<div class='swiper-container'>
-					<div
-						style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff'
-						class='swiper mySwiper2'
-					>
+					<div style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff'
+						class='swiper mySwiper2'>
 						<div class='swiper-wrapper'>
 							{{#each item.image}}
-								<div class='swiper-slide'>
-									<img src={{this}} />
-								</div>
+							<div class='swiper-slide'>
+								<img src={{this}} />
+							</div>
 							{{/each}}
 						</div>
 						<div class='swiper-icon-prev'>
@@ -53,9 +51,9 @@
 					<div thumbsSlider='' class='swiper mySwiper'>
 						<div class='swiper-wrapper'>
 							{{#each item.image}}
-								<div class='swiper-slide'>
-									<img src={{this}} />
-								</div>
+							<div class='swiper-slide'>
+								<img src={{this}} />
+							</div>
 							{{/each}}
 						</div>
 					</div>
@@ -64,101 +62,136 @@
 			</div>
 			<!-- start option -->
 			<div class='detailItem-option col-4'>
-				{{!  start price}}
+				{{! start price}}
 				<p class='price-container'>
 					<span class='new-price'></span>
 					<span class='old-price'></span>
 				</p>
-				{{!  end price}}
-				{{!  start capacity-option}}
-				<ul class='capacity-option'>
-					{{#each item.options}}
-						{{#if (foo this.detail ../capacity)}}
-							<li>
-								<a href='{{this.path}} ' class='capacity-option-item active'>
-									<p class='capacity-option-detail'>{{this.detail}}</p>
-									<p class='capacity-option-price'>{{currentChange this.color.0.price}}
-									</p>
-								</a>
+				{{! end price}}
+				{{! start capacity-option}}
+				<ul class='capacity-option' data={{idOption}}>
+					{{#each options}}
+					{{#if (foo this.detail ../capacity)}}
+					<li>
+						<a href='/phone/{{this.slug}}-{{this.detail}}' class='capacity-option-item active'>
+							<p class='capacity-option-detail'>{{this.detail}}</p>
+							<p class='capacity-option-price'>{{currentChange this.color.0.price}}
+							</p>
+						</a>
 
-							</li>
-						{{else}}
+					</li>
+					{{else}}
 
-							<li>
-								<a href='{{this.path}} ' class='capacity-option-item'>
-									<p class='capacity-option-detail'>{{this.detail}}</p>
-									<p class='capacity-option-price'>{{currentChange this.color.0.price}}
-									</p>
-								</a>
+					<li>
+						<a href='/{{../item.type}}/{{this.slug}}-{{this.detail}} ' class ='capacity-option-item'>
+							<p class='capacity-option-detail'>{{this.detail}}</p>
+							<p class='capacity-option-price'>{{currentChange this.color.0.price}}
+							</p>
+						</a>
 
-							</li>
-						{{/if}}
+					</li>
+					{{/if}}
 
 					{{/each}}
 
 				</ul>
-				{{!  end capacity-option}}
-				{{!  start color-option}}
+				{{! end capacity-option}}
+				{{! start color-option}}
 				<div class='color-option'>
 					<p style='margin-bottom: 10px; font-weight: bold;'>Chọn Màu </p>
 					<ul class='color-detail row'>
 						{{#each color}}
-							<li  >
-								<a class='color-detail-item row' stock="{{this.number}}">
-									<div class='col-3 row'>
-										<img
-											class='color-detail-item-img'
-											src=" {{this.image}}"
-											alt="color {{this.name}}"
-										/>
-									</div>
-									<p>
-										<strong
-											class='color-detail-item-color'
-										>{{this.name}}</strong>
-										<span class='color-detail-item-price'>{{currentChange this.price}}</span>
-									</p>
-								</a>
-							</li>
+						<li>
+							<a class='color-detail-item row' stock="{{this.number}}">
+								<div class='col-3 row'>
+									<img class='color-detail-item-img' src=" {{this.image}}"
+										alt="color {{this.name}}" />
+								</div>
+								<p>
+									<strong class='color-detail-item-color'>{{this.name}}</strong>
+									<span class='color-detail-item-price'>{{currentChange this.price}}</span>
+								</p>
+							</a>
+						</li>
 						{{/each}}
 
 					</ul>
 
 				</div>
-				{{!  end color-option}}
+				{{! end color-option}}
 				<button class='buy-button'>Mua Ngay</button>
 			</div>
 			<!-- end option -->
 			<div class='detailItem-about col-4'>
 
-				<ul class='detailItem-about-container'>
-					<li class='detailItem-about-item'>
-						<p>Thông Tin Máy</p>
-					</li>
-					<li class='detailItem-about-item row'>
-						<div class='detailItem-about-icon'>
-							<i class='fas fa-mobile-alt'></i>
+				<div>
+				<div class='technicalInfo'>
+
+					<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
+					<ul class='technicalInfo-list'>
+						{{#each demoinfo }}
+						{{#if (isEven @index) }}
+						<li class='technicalInfo-item br-gray '>
+							<p>{{this.infoName}}</p>
+							<p>{{this.infoNum}}</p>
+						</li>
+						{{else}}
+						<li class='technicalInfo-item '>
+							<p>{{this.infoName}}</p>
+							<p>{{this.infoNum}}</p>
+						</li>
+						{{/if}}
+						{{/each}}
+
+
+					</ul>
+					<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
+					<div class="modal-container">
+						<div class="modal">
+							<div class="modal-title">
+								<p>Thông số kỹ thuật</p>
+								<button>
+									<i class="far fa-times-circle"></i>
+									<span>Đóng</span>
+								</button>
+							</div>
+
+							<div class="modal-main ">
+								{{#each item.techInfo}}
+								<div class="modal-main-item">
+									<p class='TechnicalInfo-title'>{{this.infoType}}</p>
+
+
+									<ul class='technicalInfo-list'>
+										{{#each this.infoDetail}}
+										{{#if (isEven @index) }}
+										<li class="technicalInfo-item br-gray">
+											<p>{{this.infoName}}</p>
+											<p>{{this.infoNum}}</p>
+										</li>
+										{{else}}
+										<li class="technicalInfo-item ">
+											<p>{{this.infoName}}</p>
+											<p>{{this.infoNum}}</p>
+										</li>
+										{{/if}}
+										{{/each}}
+									</ul>
+
+								</div>
+								{{/each}}
+								<button class="modal-close-btn">
+									<i class="far fa-times-circle"></i>
+									<span>Đóng</span>
+								</button>
+							</div>
+
 						</div>
-						<p class='detailItem-about-des'>Máy mới 100% , chính hãng Apple Việt
-							Nam. CellphoneS hiện là đại lý bán lẻ uỷ quyền iPhone chính hãng
-							VN/A của Apple Việt Nam</p>
-					</li>
-					<li class='detailItem-about-item row'>
-						<div class='detailItem-about-icon'>
-							<i class='fas fa-mobile-alt'></i>
-						</div>
-						<p class='detailItem-about-des'>Thân máy, cáp USB-C to Lightning,
-							sách HDSD</p>
-					</li>
-					<li class='detailItem-about-item row'>
-						<div class='detailItem-about-icon'>
-							<i class='fas fa-shield-virus'></i>
-						</div>
-						<p class='detailItem-about-des'>Bảo hành 12 tháng tại trung tâm bảo
-							hành chính hãng Apple Việt Nam. 1 ĐỔI 1 trong 30 ngày nếu có lỗi
-							phần cứng nhà sản xuất. Gia hạn bảo hành thời gian giãn cách</p>
-					</li>
-				</ul>
+
+					</div>
+				</div>
+
+			</div>
 			</div>
 
 		</div>
@@ -169,214 +202,45 @@
 		<div class="same-item">
 			<p class='same-item-title'>Sản Phẩm Tương Tự</p>
 			<div class="swiper mySwiper3">
-      <div class="swiper-wrapper">
-        
-		<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
+				<div class="swiper-wrapper">
+					{{#each sameItem}}
+					<div class='swiper-slide'>
+						<div class="swiper3-slide-item">
 							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
+								<img src="{{this.options.0.color.0.image}}"  />
 							</a>
-							
+
 							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
+								<a href="#" class="swiper3-item-name">{{this.name}}</a>
 								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
+									<span class="swiper3-item-newPrice">{{currentChange this.options.0.color.0.price}}</span> <span
+										class="swiper3-item-oldPrice">24.990.000 ₫</span>
 								</p>
 							</div>
 
 						</div>
-						
-		</div>
-		<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
 
-						</div>
-						
-		</div>
-		<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
-
-						</div>
-						
-		</div>
-		<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
-
-						</div>
-						
-		</div>
-		<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
-
-						</div>
-						
-		</div>
-			<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
-
-						</div>
-						
-			</div>
-				<div class='swiper-slide'>
-						<div class= "swiper3-slide-item">
-							<a href='#' class="sameItemImg">
-							<img src='/image/iphone/iphone11/iphone11_black.jpg' />
-							</a>
-							
-							<div class="slide-item-info">
-								<a href="#" class= "swiper3-item-name">Iphone 13 Chính Hãng</a>
-								<p>
-								     <span class="swiper3-item-newPrice">23.990.000 ₫</span> <span class="swiper3-item-oldPrice">24.990.000 ₫</span>
-								</p>
-							</div>
-
-						</div>
-						
-			</div>
-		
-        
-      </div>
-
-	  <div class='same-swiper-icon-prev'>
-							<i class='fas fa-less-than'></i>
-						</div>
-						<div class='same-swiper-icon-next'>
-							<i class='fas fa-greater-than'></i>
-						</div>
-	  
-    </div>
-
-		</div>
-		 
-		
-		{{! end same items }}
-		
-		<div class='rate-technicalInfo'>
-			<div class='rate'>
-
-			</div>
-			<div>
-				<div class='technicalInfo'>
-			
-				<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
-				<ul class='technicalInfo-list' >
-					{{#each demoinfo }}
-					{{#if (isEven @index) }}
-					<li class='technicalInfo-item br-gray '>
-						<p>{{this.infoName}}</p>
-						<p>{{this.infoNum}}</p>
-					</li>
-					{{else}}
-					<li class='technicalInfo-item '>
-						<p>{{this.infoName}}</p>
-						<p>{{this.infoNum}}</p>
-					</li>
-					{{/if}}
+					</div>
 					{{/each}}
-				
-	
-				</ul>
-				<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
-				<div class="modal-container">
-						<div class="modal">
-				<div class="modal-title">
-				<p >Thông số kỹ thuật</p>
-				<button >
-					<i class="far fa-times-circle"></i>
-					<span>Đóng</span>
-				</button>
-			</div>
-		
-			<div class="modal-main">
-				{{#each item.techInfo}}
-				<div class="modal-main-item">
-					<p class='TechnicalInfo-title'>{{this.infoType}}</p>
-				
-
-				<ul class='technicalInfo-list'>
-				{{#each this.infoDetail}}
-				{{#if (isEven @index) }}
-				<li class="technicalInfo-item br-gray" >
-					<p>{{this.infoName}}</p>
-					<p>{{this.infoNum}}</p>
-				</li>
-				{{else}}
-				<li class="technicalInfo-item " >
-					<p>{{this.infoName}}</p>
-					<p>{{this.infoNum}}</p>
-				</li>
-				{{/if}}
-				{{/each}}
-			</ul>
 
 				</div>
-				{{/each}}
-				<button class="modal-close-btn">
-					<i class="far fa-times-circle"></i>
-					<span>Đóng</span>
-				</button>
-			</div>
-		
-		</div>
-		
-	</div>
-			</div>
+
+				<div class='same-swiper-icon-prev'>
+					<i class='fas fa-less-than'></i>
+				</div>
+				<div class='same-swiper-icon-next'>
+					<i class='fas fa-greater-than'></i>
+				</div>
 
 			</div>
-			
+
 		</div>
+
+
+		{{! end same items }}
+
 	</div>
-	
+
 	<!-- Swiper JS -->
 	<script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
 

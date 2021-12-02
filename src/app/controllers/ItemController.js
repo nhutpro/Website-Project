@@ -1,57 +1,65 @@
 const items = require("../models/Item");
 const options = require("../models/Option");
 class ItemController {
-  detailItem(req, res, next) {
-    let param = req.params.slug;
-    let type = param.slice(0, param.search("-"));
-    let capacity = param.slice(param.search("-") + 1, param.length);
-    items
-      .aggregate([
-        { $match: { slug: type } },
-        {
-          $lookup: {
-            from: "options",
-            localField: "slug",
-            foreignField: "slug",
-            as: "options",
-          },
-        },
-      ])
-      .then((items) => {
-        options
-          .find({ detail: capacity })
-          .then((options) => {
-            let path = [
-              { name: "Điện Thoại", href: "/phone" },
-              { name: "Apple", href: "/phone/Apple" },
-              { name: items[0].name, href: "/phone/Apple/" + items[0].name },
-            ];
-            let mainItem = options.filter((option) => {
-              return (option.detail = capacity);
-            });
-            let item = items[0];
-            let techinfo = item.techInfo;
-            let demoinfo = [];
-            let i = 0;
-            for (let infoItem of techinfo) {
-              for (let detailInfoItem of infoItem.infoDetail) {
-                demoinfo.push(detailInfoItem);
-                i++;
-                if (i === 12) break;
-              }
-            }
+	detailItem(req, res, next) {
+		let param = req.params.slug;
+		let type = param.slice(0, param.search("-"));
+		let route = "phone";
+		let capacity = param.slice(param.search("-") + 1, param.length);
+		items
+			.aggregate([
+				{ $match: { type: route } },
+				{
+					$lookup: {
+						from: "options",
+						localField: "slug",
+						foreignField: "slug",
+						as: "options",
+					},
+				},
+			])
+			.then((data) => {
+				options
+					.find({ detail: capacity, slug: type })
+					.then((options) => {
+						let path = [
+							{ name: "Điện Thoại", href: "/phone" },
+							{ name: data[0].name, href: "/phone/" + data[0].name },
+						];
+						let mainItem = options.filter((option) => {
+							return (option.detail = capacity);
+						});
 
-            res.render("detailItem", {
-              path: path,
-              item: item,
-              color: mainItem[0].color,
-              capacity: capacity,
-              demoinfo: demoinfo,
-            });
-          })
-          .catch(next);
-      })
-      .catch(next);
-  }
+						let item = data.filter((phone) => phone.slug == type)[0];
+						console.log(data);
+						let alloptions = item.options;
+						let techinfo = item.techInfo;
+						let demoinfo = [];
+						let i = 0;
+						for (let infoItem of techinfo) {
+							for (let detailInfoItem of infoItem.infoDetail) {
+								if (demoinfo.length < 7) demoinfo.push(detailInfoItem);
+								i++;
+								if (i == 6) break;
+							}
+						}
+						items.find({ type: route }).then((itemPhone) => {
+							console.log(itemPhone);
+						});
+						res.render("detailItem", {
+							path: path,
+							item: item,
+							color: mainItem[0].color,
+							idOption: mainItem[0]._id,
+							capacity: capacity,
+							demoinfo: demoinfo,
+							options: alloptions,
+							sameItem: data,
+						});
+					})
+					.catch(next);
+			})
+			.catch(next);
+	}
 }
 module.exports = new ItemController();

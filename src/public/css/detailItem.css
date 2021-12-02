@@ -64,6 +64,7 @@
 }
 .detailItem-main-container {
 	box-shadow: 0 4px 5px -2px #ccc;
+	padding-bottom: 4rem;
 }
 .detailIitem-main,
 .detailItem-sub {
@@ -124,7 +125,6 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 }
 
 .detailItem-container .swiper {
@@ -437,38 +437,38 @@
 	grid-template-columns: 2fr 1fr;
 	column-gap: 2rem;
 }
-.detailItem-sub .rate-technicalInfo .rate {
+.detailItem-about .rate-technicalInfo .rate {
 	height: 80rem;
 }
-.detailItem-sub .rate-technicalInfo .technicalInfo {
+.detailItem-about .technicalInfo {
 	font-size: 1.4rem;
 	box-shadow: rgb(60 64 67 / 10%) 0px 0px 2px 0px,
 		rgb(60 64 67 / 15%) 0px 0px 6px 2px;
-	margin: 1rem 1rem;
+
 	padding: 1rem 1rem;
 	border-radius: 2rem;
 	display: inline-block;
 	flex-grow: 0;
 	overflow: hidden;
 }
-.detailItem-sub .technicalInfo .TechnicalInfo-title {
+.detailItem-about .technicalInfo .TechnicalInfo-title {
 	font-weight: bold;
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 }
-.detailItem-sub .technicalInfo .technicalInfo-list {
+.detailItem-about .technicalInfo .technicalInfo-list {
 	border-radius: 1rem;
 	overflow: hidden;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.detailItem-sub .technicalInfo .technicalInfo-item,
+.detailItem-about .technicalInfo .technicalInfo-item,
 .modal-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	column-gap: 2rem;
 	padding: 1rem 1rem;
 }
-.detailItem-sub .technicalInfo .technicalInfo-btn {
+.detailItem-about .technicalInfo .technicalInfo-btn {
 	width: 100%;
 	border-radius: 1rem;
 	font-size: 1.8rem;
@@ -478,14 +478,14 @@
 		rgb(60 64 67 / 15%) 0px 0px 6px 2px;
 	margin-top: 2rem;
 }
-.detailItem-sub .technicalInfo .technicalInfo-btn:hover {
+.detailItem-about .technicalInfo .technicalInfo-btn:hover {
 	font-weight: bold;
 	box-shadow: rgb(60 64 67 / 30%) 0px 0px 2px 0px,
 		rgb(60 64 67 / 35%) 0px 0px 6px 2px;
 	cursor: pointer;
 }
 
-.detailItem-sub .modal-container {
+.detailItem-about .modal-container {
 	position: fixed;
 	display: none;
 	top: 0;
@@ -498,7 +498,7 @@
 	background-color: rgba(0, 0, 0, 0.1);
 	z-index: 2;
 }
-.detailItem-sub .modal {
+.detailItem-about .modal {
 	background-color: #fff;
 	width: 60rem;
 	border-radius: 1rem;
@@ -507,30 +507,30 @@
 	margin-top: 2rem;
 	animation: modal ease 1s;
 }
-.detailItem-sub .modal-title {
+.detailItem-about .modal-title {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 1rem;
 }
-.detailItem-sub .modal-title p,
-.detailItem-sub .modal-title i,
-.detailItem-sub .modal-title span {
+.detailItem-about .modal-title p,
+.detailItem-about .modal-title i,
+.detailItem-about .modal-title span {
 	font-size: 1.8rem;
 	font-weight: bold;
 	color: #fff;
 }
-.detailItem-sub .modal-title button {
+.detailItem-about .modal-title button {
 	background: none;
 	border: none;
 }
-.detailItem-sub .modal-title button :hover {
+.detailItem-about .modal-title button :hover {
 	cursor: pointer;
 }
-.detailItem-sub .modal .modal-main {
+.detailItem-about .modal .modal-main {
 	padding: 0 1rem 1rem 1rem;
 }
-.detailItem-sub .modal .modal-close-btn {
+.detailItem-about .modal .modal-close-btn {
 	background-color: #000;
 	color: #fff;
 	position: absolute;
@@ -543,7 +543,7 @@
 	border: none;
 	padding: 10px 10px;
 }
-.detailItem-sub .modal-main-item {
+.detailItem-about .modal-main-item {
 	margin-top: 1rem;
 }
 

@@ -82,14 +82,14 @@ for (let item of availableLsk) {
 
 //start solve user see technical infomation //
 const modalCloseHeadBtn = document.querySelector(
-	".detailItem-sub .modal-title button "
+	".detailItem-about .modal-title button "
 );
 const modalCoseFoodBtn = document.querySelector(
-	".detailItem-sub .modal .modal-close-btn"
+	".detailItem-about .modal .modal-close-btn"
 );
-const modal = document.querySelector(".detailItem-sub .modal-container");
+const modal = document.querySelector(".detailItem-about .modal-container");
 const modalOpenBtn = document.querySelector(
-	" .detailItem-sub .technicalInfo-btn"
+	" .detailItem-about .technicalInfo-btn"
 );
 modalCloseHeadBtn.addEventListener("click", (e) => {
 	modal.style.display = "none";
