@@ -108,14 +108,14 @@
         {{#each items}}
         <div class="product">
           <div class="img-container">
-            <a href="phone/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
-              <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
+            <a href="tablet/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+              <img src="{{this.image.[0]}}" alt="picture about mobile tablet" />
             </a>
 
           </div>
           <div class="info-product">
             <div class="product-name">
-              <a href="/phone">
+              <a href="/tablet">
                 <h3>{{this.name}}</h3>
               </a>
             </div>
@@ -159,7 +159,7 @@
               </div>
             </div>
             <div class="product-btn">
-              <form method="POST" action="phone/checkout?itemID={{this._id}}">
+              <form method="POST" action="tablet/checkout?itemID={{this._id}}">
                 <button class="btn btn-buy btn-sm" type="submit" >
                   <p>MUA NGAY</p>
                 </button>
@@ -167,7 +167,7 @@
 
                 </a> --}}
               </form>
-              <form method="POST" action="phone/addcart?itemID={{this._id}}">
+              <form method="POST" action="tablet/addcart?itemID={{this._id}}">
                 <button class="btn btn-addCart btn-sm" type="submit">
                   <p>THÊM VÀO GIỎ</p>
                 </button>
