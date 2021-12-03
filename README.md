@@ -2,16 +2,17 @@
   <img width="200px" src="./preview_images/logo.svg" >
 </p>
 
-<div align="center"><img src="./preview_images/homepage.png"> An basic E-commerce website</div>
+<div align="center">A basic E-commerce website
+<img src="./preview_images/homepage.png"> </div>
 
 ## 📜 Table of content<!-- omit in toc -->
 
 - [🎉 About our Project](#-about-our-project)
 - [✨ Feature](#-feature)
 - [🔨 Build With](#-build-with)
-- [📦 Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [🏁 Getting Started](#-getting-started)
+  - [❗ Prerequisites](#-prerequisites)
+  - [📦 Installation](#-installation)
 - [📃 License](#-license)
 - [❤️ Acknowledgments](#️-acknowledgments)
 
@@ -25,7 +26,7 @@ _It was name after our own team number designation because naming stuffs is hard
 
 ## ✨ Feature
 
-**13Team** has the basic features of any e-commerce website included but not limited to:
+**13Team** has the basic features of any e-commerce website including but not limited to:
 
 - A basic authentication system.
 - Each item has it own page to show detail information and similar products.
@@ -50,11 +51,11 @@ _It was name after our own team number designation because naming stuffs is hard
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## 📦 Getting Started
+## 🏁 Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### ❗ Prerequisites
 
 - Make sure you have installed [MongoDB](https://www.mongodb.com/) and [NodeJS](https://nodejs.org/en/).
 
@@ -66,7 +67,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Get the demo database:
 
-### Installation
+### 📦 Installation
 
 1. Clone the repo
 
@@ -97,7 +98,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## ❤️ Acknowledgments
 
-List of resources use in this project
+List of resources use in this project:
 
 - [Font Awesome](https://fontawesome.com)
 - [GlideJS](https://glidejs.com/), [Swiper](https://swiperjs.com/)
