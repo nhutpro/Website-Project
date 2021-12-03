@@ -267,7 +267,6 @@ class AccountController {
 			.then((data) => {
 				console.log(data.length);
 				if (data.length == 0) {
-					console.log("da vao day");
 					var item = {
 						optionID: req.body.idOption,
 						num: 1,
