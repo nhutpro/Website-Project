@@ -57,6 +57,11 @@ li {
   gap: 2rem;
   justify-content: right;
 }
+.filter {
+  align-self: flex-start;
+  position: sticky;
+  top: 5rem;
+}
 .asc-price {
   background-color: #f8dede;
   padding: 1rem;
