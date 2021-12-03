@@ -7,7 +7,7 @@
 	height: 10px;
 	border-radius: 1rem 0 0.5rem 0;
 	background: #d70018;
-	background-image: url(/image/iphone/checkmark.svg);
+	background-image: url(/image/apple/checkmark.svg);
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -291,7 +291,13 @@
 .detailItem-option .color-option .color-detail-item-price {
 	display: block;
 }
-.detailItem-option .buy-button {
+.detailItem-option .control-button {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1rem;
+}
+.detailItem-option .buy-button,
+.detailItem-option .add-button {
 	text-align: center;
 	width: calc(100% - 1rem);
 	display: block;
@@ -306,7 +312,8 @@
 	border: none;
 	transition: transform ease 0.2s;
 }
-.detailItem-option .buy-button:hover {
+.detailItem-option .buy-button:hover,
+.detailItem-option .add-button:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #fff;
 	cursor: pointer;
@@ -343,7 +350,7 @@
 	text-align: justify;
 }
 .detailItem-sub .mySwiper3 {
-	height: 300px;
+	height: 32rem;
 }
 .detailItem-sub .mySwiper3 .swiper-slide {
 	padding: 1rem 0.5rem;
@@ -371,6 +378,8 @@
 .detailItem-sub .mySwiper3 .swiper3-item-name {
 	color: #000;
 	font-weight: bold;
+	height: 3rem;
+	display: block;
 }
 .detailItem-sub .swiper3-slide-item {
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
@@ -387,7 +396,7 @@
 .detailItem-sub .mySwiper3 img {
 	width: 80%;
 	margin: 0 auto;
-	height: 80%;
+	height: 18rem;
 }
 .detailItem-sub .mySwiper3:hover .same-swiper-icon-next {
 	display: block;
@@ -506,6 +515,7 @@
 	position: relative;
 	margin-top: 2rem;
 	animation: modal ease 1s;
+	height: fit-content;
 }
 .detailItem-about .modal-title {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -533,8 +543,6 @@
 .detailItem-about .modal .modal-close-btn {
 	background-color: #000;
 	color: #fff;
-	position: absolute;
-	right: 1rem;
 	margin-top: 20px;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -542,6 +550,10 @@
 	border-radius: 10px;
 	border: none;
 	padding: 10px 10px;
+	margin-left: 49rem;
+}
+.detailItem-about .modal .modal-close-btn:hover {
+	cursor: pointer;
 }
 .detailItem-about .modal-main-item {
 	margin-top: 1rem;

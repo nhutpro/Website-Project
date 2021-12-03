@@ -54,6 +54,14 @@ app.engine(
 			totalPrice: (price, num) => {
 				return price * num;
 			},
+			currentChangeDiscount: (newprice, discount) => {
+				oldprice = (newprice / (100 - discount)) * 100;
+				oldprice = new Intl.NumberFormat("vi-VN", {
+					style: "currency",
+					currency: "VND",
+				}).format(oldprice);
+				return oldprice;
+			},
 		},
 	})
 );

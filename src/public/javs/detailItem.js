@@ -46,12 +46,16 @@ function transSlide(item) {
 }
 function getPrice(item) {
 	// item mean a tag //
+	/*
 	newPrice.innerHTML = item.querySelector(
 		".color-detail-item-price"
 	).textContent;
 	oldPrice.innerHTML = item.querySelector(
 		".color-detail-item-price"
 	).textContent;
+	*/
+	newPrice.innerHTML = item.getAttribute("newprice");
+	oldPrice.innerHTML = item.getAttribute("oldprice");
 }
 function clickColor(clickedColor) {
 	// item mean clicked a tag //
@@ -102,24 +106,99 @@ modalOpenBtn.addEventListener("click", (e) => {
 });
 //end solve user see technical infomation //
 //start fetch //
-function solve() {
-	fetch("http://localhost:3000/account/login", {
+function addCart() {
+	console.log("da vao day");
+	const optionId = document.querySelector(
+		".detailItem-option .capacity-option"
+	);
+	var optionIdValue = optionId.getAttribute("data");
+	var selectedElement = document.querySelector(".color-detail-item.active");
+	var selectedColor = selectedElement.getAttribute("data");
+	console.log([optionIdValue, selectedElement, selectedColor]);
+
+	fetch("http://localhost:3000/checkout/addcart", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			username: "TranNhut",
-			password: "aihii",
+			idOption: optionIdValue,
+			color: selectedColor,
 		}),
 	})
 		.then((res) => res.json())
-		.then((data) => {
-			console.log(data);
+		.then((res) => {
+			if (res.status == "true") {
+			}
 		})
 		.catch((err) => console.log(err));
 }
-const account = document.querySelectorAll("header .icon")[2];
-account.addEventListener("click", solve);
-console.log(account);
+
+const addcartBtn = document.querySelector(".detailItem-option .add-button");
+addcartBtn.addEventListener("click", (e) => {
+	const accountclick = document.querySelector("header .account");
+	fetch("http://localhost:3000/account/login/user", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then((res) => res.json())
+		.then((res) => {
+			if (res.status == "true") {
+				addCart();
+			} else {
+				accountclick.click();
+				return false;
+			}
+		});
+});
+function buyitems() {
+	console.log("da vao day");
+	const optionId = document.querySelector(
+		".detailItem-option .capacity-option"
+	);
+	var optionIdValue = optionId.getAttribute("data");
+	var selectedElement = document.querySelector(".color-detail-item.active");
+	var selectedColor = selectedElement.getAttribute("data");
+	console.log([optionIdValue, selectedElement, selectedColor]);
+
+	fetch("http://localhost:3000/checkout/addcart", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			idOption: optionIdValue,
+			color: selectedColor,
+		}),
+	})
+		.then((res) => res.json())
+		.then((res) => {
+			if (res.status == "true") {
+				window.location.href = "http://localhost:3000/checkout";
+			}
+		})
+		.catch((err) => console.log(err));
+}
+const buyItemBtn = document.querySelector(".detailItem-option .buy-button");
+buyItemBtn.addEventListener("click", (e) => {
+	const accountclick = document.querySelector("header .account");
+	fetch("http://localhost:3000/account/login/user", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then((res) => res.json())
+		.then((res) => {
+			if (res.status == "true") {
+				buyitems();
+			} else {
+				accountclick.click();
+				return false;
+			}
+		});
+});
+console.log(addcartBtn);
 //end fetch//

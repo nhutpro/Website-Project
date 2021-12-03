@@ -28,10 +28,7 @@ function sendMail(desMail, Message) {
 }
 class AccountController {
 	register(req, res, next) {
-		console.log(req.body);
 		user.find({ email: req.body.email }).then((users) => {
-			console.log(users);
-			console.log(user.length);
 			if (users.length !== 0) {
 				res.send({
 					status: "false",
@@ -49,9 +46,6 @@ class AccountController {
 	}
 
 	registerConfirm(req, res, next) {
-		console.log(confirmCode);
-		console.log(req.body.code);
-		console.log(req.body);
 		if (req.body.code === `${confirmCode}`) {
 			user
 				.create({
@@ -61,7 +55,6 @@ class AccountController {
 					name: req.body.name,
 				})
 				.then((userItem) => {
-					console.log(userItem);
 					cart
 						.create({
 							userID: userItem._id,
@@ -98,7 +91,7 @@ class AccountController {
 		const loginInfo = req.body;
 		let email = loginInfo.email;
 		let password = loginInfo.password;
-		console.log([email, password]);
+
 		user
 			.find({ email: email })
 			.then((users) => {
@@ -119,12 +112,11 @@ class AccountController {
 						else {
 							req.session.user = users[0];
 							req.session.save();
-							console.log("user id la: ");
+
 							res.send({
 								name: `${req.session.user.name}`,
 								status: "true",
 							});
-							console.log(req.session.user);
 						}
 					});
 				}
@@ -139,16 +131,13 @@ class AccountController {
 		} else {
 			res.send({ name: `${req.session.user.name}`, status: "true" });
 		}
-		console.log(req.session.user);
 	}
 	recovery(req, res, next) {
 		recoveryCode = sendMail(req.body.email, "Mã Khôi Phục Của Bạn Là: ");
-		console.log(recoveryCode);
+
 		res.send(false);
 	}
 	recoveryConfirm(req, res, next) {
-		console.log([req.body.email, recoveryCode]);
-		console.log(req.body);
 		if (req.body.code == recoveryCode) {
 			emailRecovery = req.body.email;
 			res.send({
@@ -231,8 +220,6 @@ class AccountController {
 		*/
 	}
 	update(req, res, next) {
-		console.log("day la data gui len");
-		console.log(req.body);
 		user
 			.updateOne(
 				{
@@ -268,6 +255,74 @@ class AccountController {
 				res.send({
 					status: "true",
 				});
+			});
+	}
+	addCart(req, res, next) {
+		cart
+			.find({
+				userID: req.session.user._id,
+				"list.optionID": req.body.idOption,
+				"list.color": req.body.color,
+			})
+			.then((data) => {
+				console.log(data.length);
+				if (data.length == 0) {
+					console.log("da vao day");
+					var item = {
+						optionID: req.body.idOption,
+						num: 1,
+						color: req.body.color,
+					};
+					cart
+						.updateOne(
+							{ userID: req.session.user._id },
+							{ $push: { list: item } }
+						)
+						.then((data) => {
+							res.send({
+								status: "true",
+							});
+						})
+						.catch((err) => {
+							res.send({
+								status: "false",
+							});
+						});
+				} else {
+					data = data.map((data) => data.toObject());
+					console.log(data);
+					var lists = data[0].list;
+					lists.forEach((item) => {
+						if (
+							item.optionID == req.body.idOption &&
+							item.color == req.body.color
+						) {
+							item.num = item.num + 1;
+						}
+					});
+					cart
+						.updateOne(
+							{
+								userID: req.session.user._id,
+							},
+							{
+								list: lists,
+							}
+						)
+						.then((data) => {
+							res.send({
+								status: "true",
+							});
+						})
+						.catch((err) => {
+							res.send({
+								status: "false",
+							});
+						});
+				}
+			})
+			.catch((err) => {
+				console.log(err);
 			});
 	}
 }
