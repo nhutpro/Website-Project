@@ -46,6 +46,7 @@ class ItemController {
 						items.find({ type: route }).then((itemPhone) => {
 							console.log(itemPhone);
 						});
+						data = data.filter((dataitem) => dataitem.slug != type);
 						res.render("detailItem", {
 							path: path,
 							item: item,
@@ -106,6 +107,7 @@ class ItemController {
 						items.find({ type: route }).then((itemPhone) => {
 							console.log(itemPhone);
 						});
+						data = data.filter((dataitem) => dataitem.slug != type);
 						res.render("detailItem", {
 							path: path,
 							item: item,
@@ -166,6 +168,7 @@ class ItemController {
 						items.find({ type: route }).then((itemPhone) => {
 							console.log(itemPhone);
 						});
+						data = data.filter((dataitem) => dataitem.slug != type);
 						res.render("detailItem", {
 							path: path,
 							item: item,
@@ -226,6 +229,7 @@ class ItemController {
 						items.find({ type: route }).then((itemPhone) => {
 							console.log(itemPhone);
 						});
+						data = data.filter((dataitem) => dataitem.slug != type);
 						res.render("detailItem", {
 							path: path,
 							item: item,
