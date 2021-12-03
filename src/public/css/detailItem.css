@@ -144,6 +144,7 @@
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 	border-radius: 1rem;
 	position: relative;
+	height: 39rem;
 }
 .detailItem-container .mySwiper2:hover .swiper-icon-next,
 .mySwiper2:hover .swiper-icon-prev {
