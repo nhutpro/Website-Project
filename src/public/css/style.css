@@ -348,7 +348,7 @@ footer {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 20;
 	background-color: rgba(0, 0, 0, 0.5);
 	justify-content: center;
 	align-items: center;
@@ -446,7 +446,7 @@ header .account:hover {
 }
 header .account__options {
 	position: absolute;
-	z-index: 2;
+	z-index: 5;
 	width: 30rem;
 	top: 4.5rem;
 	right: 1rem;
@@ -530,7 +530,6 @@ header .account__options li:first-child h2 {
 	position: fixed;
 	top: 90px;
 	right: 0px;
-	z-index: 999999;
 }
 
 .toast {
