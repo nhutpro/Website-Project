@@ -143,8 +143,8 @@ class ItemController {
 					.find({ detail: capacity, slug: type })
 					.then((options) => {
 						let path = [
-							{ name: "Laptop", href: "/laptop" },
-							{ name: data[0].name, href: "/laptop/" + data[0].name },
+							{ name: "Tablet", href: "/tablet" },
+							{ name: data[0].name, href: "/tablet/" + data[0].name },
 						];
 						let mainItem = options.filter((option) => {
 							return (option.detail = capacity);
@@ -203,8 +203,8 @@ class ItemController {
 					.find({ detail: capacity, slug: type })
 					.then((options) => {
 						let path = [
-							{ name: "Laptop", href: "/laptop" },
-							{ name: data[0].name, href: "/laptop/" + data[0].name },
+							{ name: "Phụ Kiện", href: "/accessory" },
+							{ name: data[0].name, href: "/accessory/" + data[0].name },
 						];
 						let mainItem = options.filter((option) => {
 							return (option.detail = capacity);
