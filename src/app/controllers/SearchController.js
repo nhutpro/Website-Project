@@ -6,10 +6,12 @@ const mongoose = require("../../util/mongoose");
 const { mutipleMongooseToObject } = require("../../util/mongoose");
 const items = require("../models/Item");
 const options = require("../models/Option");
+const cart = require("../models/Cart");
+const ObjectId = require("mongodb").ObjectID;
 
 class SearchController {
-    //search global
 
+    //search global
     global(req, res, next) {
         var keyword = req.query.key
         var sort = req.query.sort
@@ -85,7 +87,35 @@ class SearchController {
             .catch(next);
     }
 
+    info(req, res, next) {
+        var keyword = req.query.key
 
+
+        items
+            .aggregate([
+                {
+                    $match: {
+                        name: { $regex: keyword }
+                    }
+                },
+                {
+
+                    $lookup: {
+                        from: "options",
+                        localField: "slug",
+                        foreignField: "slug",
+                        as: "slug",
+                    },
+                },
+
+            ])
+
+            .then((items) => {
+                res.send(items)
+            })
+
+            .catch(next);
+    }
     // search for purchase
     index(req, res, next) {
         var queryParam = req.query.purchase;
@@ -125,22 +155,6 @@ class SearchController {
                     });
 
                 }
-
-
-                // for (let result of data[0]) {
-                //     for (let item of result.list) {
-                //         item.optionID.color = item.optionID.color.filter((color) => {
-                //             return color.name === item.color;
-                //         });
-
-                //     }
-
-                //     // result.list = result.list.filter((item) => {
-                //     //     return item.optionID.item !== null
-                //     // })
-
-                // }
-
                 res.send(data)
             })
     }

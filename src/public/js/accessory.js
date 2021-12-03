@@ -14,7 +14,7 @@ var pageLast = document.getElementById("pageLast");
 checkBoxAll.onclick = function () {
     localStorage.setItem(
         "queryParamsBrand",
-        "apple,samsung,asus,oppo,xiaomi,realme,"
+        "jbl,remax,"
     );
     history.pushState(
         {},
@@ -72,7 +72,7 @@ for (var checkbox of brandidCheckboxes) {
         checkBoxAll.checked = false;
     }
 }
-if (countChecked == 6) {
+if (countChecked == 2) {
     checkBoxAll.checked = true;
 }
 if (document.referrer == "http://localhost:3000/accessory") {
@@ -86,10 +86,9 @@ if (document.referrer == "http://localhost:3000/accessory") {
 
 // check all brand
 checkBoxAllPrice.onclick = function () {
-
     localStorage.setItem(
         "queryParamsPrice",
-        "duoi-2-trieu,tu-2-5-trieu,tu-5-14-trieu,tren-14-trieu,"
+        "duoi-2-tram,tu-2-5-tram,tu-5-1-trieu,tren-1-trieu,"
     );
     history.pushState(
         {},

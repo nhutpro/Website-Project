@@ -24,9 +24,6 @@ checkBoxAll.onclick = function () {
     "&price=" +
     localStorage.getItem("queryParamsPrice")
   );
-
-  //window.history.pushState({}, "", "http://localhost:3000/phone");
-
   window.location.reload();
 };
 
@@ -89,9 +86,6 @@ if (document.referrer == "http://localhost:3000/phone") {
 
 // check all brand
 checkBoxAllPrice.onclick = function () {
-  //window.history.pushState({}, "", "http://localhost:3000/phone");
-
-  //localStorage.setItem("queryParamsPrice", "");
   localStorage.setItem(
     "queryParamsPrice",
     "duoi-2-trieu,tu-2-5-trieu,tu-5-14-trieu,tren-14-trieu,"
