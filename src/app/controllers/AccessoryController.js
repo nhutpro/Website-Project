@@ -258,19 +258,19 @@ class AccessoryController {
             if (paramPrice == "") {
                 paramPrice = 0;
             } else {
-                if (paramPrice.search("duoi-2-trieu") >= 0) {
-                    to2 = 2000000;
+                if (paramPrice.search("duoi-2-tram") >= 0) {
+                    to2 = 200000;
                 }
-                if (paramPrice.search("tu-2-5-trieu") >= 0) {
-                    from2 = 2000000;
-                    to5 = 5000000;
+                if (paramPrice.search("tu-2-5-tram") >= 0) {
+                    from2 = 200000;
+                    to5 = 500000;
                 }
-                if (paramPrice.search("tu-5-14-trieu") >= 0) {
-                    from5 = 5000000;
-                    to14 = 14000000;
+                if (paramPrice.search("tu-5-1-trieu") >= 0) {
+                    from5 = 500000;
+                    to14 = 1000000;
                 }
-                if (paramPrice.search("tren-14-trieu") >= 0) {
-                    from14 = 14000000;
+                if (paramPrice.search("tren-1-trieu") >= 0) {
+                    from14 = 1000000;
                 }
             }
 
@@ -284,17 +284,17 @@ class AccessoryController {
             // strParam = strParam.StringSplitOptions.RemoveEmptyEntries;
             let brand1 = strParam[0];
             let brand2 = strParam[1];
-            let brand3 = strParam[2];
-            let brand4 = strParam[3];
-            let brand5 = strParam[4];
-            let brand6 = strParam[5];
+            // let brand3 = strParam[2];
+            // let brand4 = strParam[3];
+            // let brand5 = strParam[4];
+            // let brand6 = strParam[5];
             if (paramBrand == "" && paramPrice != "") {
-                brand1 = "apple";
-                brand2 = "samsung";
-                brand3 = "asus";
-                brand4 = "oppo";
-                brand5 = "xiaomi";
-                brand6 = "realme";
+                brand1 = "jbl";
+                brand2 = "remax";
+                // brand3 = "asus";
+                // brand4 = "oppo";
+                // brand5 = "xiaomi";
+                // brand6 = "realme";
             } // for paramPrice still work when paramBrand is empty
 
             items
@@ -310,18 +310,18 @@ class AccessoryController {
                                         {
                                             brand: brand2,
                                         },
-                                        {
-                                            brand: brand3,
-                                        },
-                                        {
-                                            brand: brand4,
-                                        },
-                                        {
-                                            brand: brand5,
-                                        },
-                                        {
-                                            brand: brand6,
-                                        },
+                                        // {
+                                        //     brand: brand3,
+                                        // },
+                                        // {
+                                        //     brand: brand4,
+                                        // },
+                                        // {
+                                        //     brand: brand5,
+                                        // },
+                                        // {
+                                        //     brand: brand6,
+                                        // },
                                     ],
                                 },
                                 {
@@ -352,7 +352,21 @@ class AccessoryController {
                                         },
                                     },
                                 },
+                                {
+                                    slug: {
+                                        $elemMatch: {
+                                            color: { $elemMatch: { price: { $lt: to2 } } }
+                                        }
+                                    },
+                                },
 
+                                {
+                                    slug: {
+                                        $elemMatch: {
+                                            color: { $elemMatch: { price: { $elemMatch: { $gte: from2, $lt: to5 } } } }
+                                        }
+                                    },
+                                },
 
                                 {
                                     slug: {
@@ -384,6 +398,7 @@ class AccessoryController {
                     res.render("accessory", {
                         items: items,
                     });
+                    // res.send(items)
                 })
 
                 .catch(next);
@@ -413,6 +428,7 @@ class AccessoryController {
                     res.render("accessory", {
                         items: items,
                     });
+                    // res.send(items)
                 })
 
                 .catch(next);
