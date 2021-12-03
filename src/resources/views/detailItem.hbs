@@ -73,7 +73,7 @@
 					{{#each options}}
 					{{#if (foo this.detail ../capacity)}}
 					<li>
-						<a href='/phone/{{this.slug}}-{{this.detail}}' class='capacity-option-item active'>
+						<a href='/{{../item.type}}/{{this.slug}}-{{this.detail}}' class='capacity-option-item active'>
 							<p class='capacity-option-detail'>{{this.detail}}</p>
 							<p class='capacity-option-price'>{{currentChange this.color.0.price}}
 							</p>
@@ -101,8 +101,9 @@
 					<p style='margin-bottom: 10px; font-weight: bold;'>Chọn Màu </p>
 					<ul class='color-detail row'>
 						{{#each color}}
-						<li>
-							<a class='color-detail-item row' stock="{{this.number}}">
+						<li >
+							<a class='color-detail-item row' stock="{{this.number}}" data="{{this.name}}" newprice={{currentChange this.price}}
+							oldprice ={{currentChangeDiscount this.price this.discount}}>
 								<div class='col-3 row'>
 									<img class='color-detail-item-img' src=" {{this.image}}"
 										alt="color {{this.name}}" />
@@ -119,7 +120,11 @@
 
 				</div>
 				{{! end color-option}}
-				<button class='buy-button'>Mua Ngay</button>
+				<div class="control-button">
+					<button class='buy-button'>Mua Ngay</button>
+					<button class= "add-button"> Thêm Vào Giỏ Hàng</button>
+				</div>
+				
 			</div>
 			<!-- end option -->
 			<div class='detailItem-about col-4'>
@@ -206,15 +211,15 @@
 					{{#each sameItem}}
 					<div class='swiper-slide'>
 						<div class="swiper3-slide-item">
-							<a href='#' class="sameItemImg">
+							<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="sameItemImg">
 								<img src="{{this.options.0.color.0.image}}"  />
 							</a>
 
 							<div class="slide-item-info">
-								<a href="#" class="swiper3-item-name">{{this.name}}</a>
+								<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="swiper3-item-name">{{this.name}}</a>
 								<p>
 									<span class="swiper3-item-newPrice">{{currentChange this.options.0.color.0.price}}</span> <span
-										class="swiper3-item-oldPrice">24.990.000 ₫</span>
+										class="swiper3-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price this.options.0.color.0.discount}}</span>
 								</p>
 							</div>
 
