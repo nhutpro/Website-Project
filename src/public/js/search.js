@@ -41,8 +41,8 @@ window.onload = () => {
 				{},
 				"",
 				"http://localhost:3000/search/global?key=" +
-					localStorage.getItem("count") +
-					"&sort=asc"
+				localStorage.getItem("count") +
+				"&sort=asc"
 			);
 			window.location.reload();
 		};
@@ -51,8 +51,8 @@ window.onload = () => {
 				{},
 				"",
 				"http://localhost:3000/search/global?key=" +
-					localStorage.getItem("count") +
-					"&sort=desc"
+				localStorage.getItem("count") +
+				"&sort=desc"
 			);
 			window.location.reload();
 		};

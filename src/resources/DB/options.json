@@ -877,7 +877,7 @@
   "_id": {
     "$oid": "61a88473caa1c60e0a6fa472"
   },
-  "slug": "ipad_pro_m1_2021",
+  "slug": "galaxy_tab_s7",
   "detail": "128GB",
   "color": [
     {
@@ -953,7 +953,7 @@
   "_id": {
     "$oid": "61a88f70caa1c60e0a6fa483"
   },
-  "slug": "xiaomi_pad5",
+  "slug": "proda",
   "detail": "10000mAh",
   "color": [
     {
