@@ -18,9 +18,11 @@
 
 ## 🎉 About our Project
 
-**13Team** is a e-commerce website selling tech products like smartphones, tablets,...This it our team website to show what we have learned over a semester of **Internet and Web Technology**.
+**13Team** is a e-commerce website selling tech products like smartphones, laptop, tablets,...This it our team website to show what we have learned about building a website from the ground up with HTML, CSS, JavaScript as well as using NodeJS and its dependencies to add multiple interesting features.
 
-_It was name after our own team number designation because naming stuffs is hard._
+It's also our team final project after a semester of Internet and Technology
+
+_It was name after our own team number designation in our class because naming stuffs is hard._
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -62,7 +64,7 @@ To get a local copy up and running follow these simple example steps.
 - Update to the lastest version of npm
 
   ```sh
-    npm install npm@latest -g
+  npm install npm@latest -g
   ```
 
 - Get the demo database:
@@ -72,8 +74,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/nhutpro/Website-Project.git
-   cd Website-project
+   git clone https://github.com/nhutpro/Website-Project.git && cd Website-Project
    ```
 
 2. Install NPM packages
@@ -88,6 +89,8 @@ To get a local copy up and running follow these simple example steps.
    npm start
    ```
 
+_NOTE: The website run on port 3000 on default._
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## 📃 License
@@ -100,6 +103,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 List of resources use in this project:
 
+- [Choose an Open Source License](https://choosealicense.com)
+- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+- [Malven's Grid Cheatsheet](https://grid.malven.co/)
 - [Font Awesome](https://fontawesome.com)
 - [GlideJS](https://glidejs.com/), [Swiper](https://swiperjs.com/)
 - [AOS](https://michalsnik.github.io/aos/)
