@@ -12,6 +12,7 @@ phone.onclick = () => {
         "queryParamsPrice",
         "duoi-2-trieu,tu-2-5-trieu,tu-5-14-trieu,tren-14-trieu,"
     );
+    setPagination();
 }
 laptop.onclick = () => {
     localStorage.setItem(
@@ -22,6 +23,8 @@ laptop.onclick = () => {
         "queryParamsPrice",
         "duoi-2-trieu,tu-2-5-trieu,tu-5-14-trieu,tren-14-trieu,"
     );
+    setPagination();
+
 }
 tablet.onclick = () => {
     localStorage.setItem(
@@ -32,6 +35,8 @@ tablet.onclick = () => {
         "queryParamsPrice",
         "duoi-2-trieu,tu-2-5-trieu,tu-5-14-trieu,tren-14-trieu,"
     );
+    setPagination();
+
 }
 accessory.onclick = () => {
     localStorage.setItem(
@@ -42,4 +47,13 @@ accessory.onclick = () => {
         "queryParamsPrice",
         "duoi-2-tram,tu-2-5-tram,tu-5-1-trieu,tren-1-trieu,"
     );
+    setPagination();
+
+}
+setPagination = () => {
+    localStorage.setItem("page1", true);
+    localStorage.setItem("page2", false);
+    localStorage.setItem("page3", false);
+    localStorage.setItem("page4", false);
+    localStorage.setItem("pageLast", false);
 }

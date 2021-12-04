@@ -235,28 +235,28 @@ page4.onclick = () => {
     localStorage.setItem("page4", true);
     localStorage.setItem("pageLast", false);
 };
-var api = "http://localhost:3000/accessory/totalproduct";
-var total;
-fetch(api, {
-    headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-    },
-})
-    .then((response) => response.json())
-    .then((json) => {
-        total = json;
-    });
-pageLast.onclick = () => {
-    total = Math.ceil(total / 9)
-    window.history.pushState({}, "", "/accessory?page=" + total)
-    window.location.reload()
-    localStorage.setItem("page1", false)
-    localStorage.setItem("page2", false)
-    localStorage.setItem("page3", false)
-    localStorage.setItem("page4", false)
-    localStorage.setItem("pageLast", true)
-}
+// var api = "http://localhost:3000/accessory/totalproduct";
+// var total;
+// fetch(api, {
+//     headers: {
+//         "Content-Type": "application/json",
+//         Accept: "application/json",
+//     },
+// })
+//     .then((response) => response.json())
+//     .then((json) => {
+//         total = json;
+//     });
+// pageLast.onclick = () => {
+//     total = Math.ceil(total / 9)
+//     window.history.pushState({}, "", "/accessory?page=" + total)
+//     window.location.reload()
+//     localStorage.setItem("page1", false)
+//     localStorage.setItem("page2", false)
+//     localStorage.setItem("page3", false)
+//     localStorage.setItem("page4", false)
+//     localStorage.setItem("pageLast", true)
+// }
 
 if (localStorage.getItem("page1") == "true") {
     page1.style.backgroundColor = "#ff4545";
@@ -286,10 +286,10 @@ if (localStorage.getItem("page4") == "true") {
     page4.style.backgroundColor = "#ff4545";
     pageLast.style.backgroundColor = "white";
 }
-if (localStorage.getItem("pageLast") == "true") {
-    page1.style.backgroundColor = "white";
-    page2.style.backgroundColor = "white";
-    page3.style.backgroundColor = "white";
-    page4.style.backgroundColor = "white";
-    pageLast.style.backgroundColor = "#ff4545";
-}
+// if (localStorage.getItem("pageLast") == "true") {
+//     page1.style.backgroundColor = "white";
+//     page2.style.backgroundColor = "white";
+//     page3.style.backgroundColor = "white";
+//     page4.style.backgroundColor = "white";
+//     pageLast.style.backgroundColor = "#ff4545";
+// }
