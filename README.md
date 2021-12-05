@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200px" src="./preview_images/logo.svg" >
+  <img width="200px" style="background: rgba(0, 0, 0, 0.5); padding: 15px" src="./preview_images/logo.svg" >
 </p>
 
 <div align="center">A basic E-commerce website
@@ -13,6 +13,7 @@
 - [🏁 Getting Started](#-getting-started)
   - [❗ Prerequisites](#-prerequisites)
   - [📦 Installation](#-installation)
+  - [💾 Changing default database](#-changing-default-database)
 - [📃 License](#-license)
 - [❤️ Acknowledgments](#️-acknowledgments)
 
@@ -90,6 +91,10 @@ To get a local copy up and running follow these simple steps.
    ```
 
 _NOTE: The website run on port 3000 on default._
+
+### 💾 Changing default database
+
+The website use a database named `Website_13Team` by default. You can change the database you want to use as well as connection settings by changing the `connect` function locate in `app/config/db/index.js`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

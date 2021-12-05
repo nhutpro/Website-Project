@@ -147,7 +147,7 @@
   height: 39rem;
 }
 .detailItem-container .mySwiper2 img {
-  height: unset ;
+  height: unset;
 }
 .detailItem-container .mySwiper2:hover .swiper-icon-next,
 .mySwiper2:hover .swiper-icon-prev {
@@ -363,7 +363,7 @@
 
 .detailItem-sub .mySwiper3 .slide-item-info {
   padding-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 .detailItem-sub .mySwiper3 .slide-item-info p {
   margin-top: 2rem;
@@ -373,6 +373,7 @@
   color: red;
 }
 .detailItem-sub .swiper3-item-oldPrice {
+  margin-left: 1rem;
   text-decoration: line-through;
 }
 .detailItem-sub .mySwiper3 .swiper-slide .sameItemImg {
