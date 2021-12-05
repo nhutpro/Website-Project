@@ -1,1783 +1,1414 @@
-[{
-  "_id": {
-    "$oid": "615e9a23704e955f7ebb33b0"
+[
+  {
+    "_id": {
+      "$oid": "615e9a23704e955f7ebb33b0"
+    },
+    "name": "iPhone 11",
+    "type": "phone",
+    "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
+    "image": [
+      "/image/apple/iphone11/iphone11_black.jpg",
+      "/image/apple/iphone11/iphone11_white.jpg",
+      "/image/apple/iphone11/iphone11_red.jpg",
+      "/image/apple/iphone11/iphone11_purple.jpg",
+      "/image/apple/iphone11/iphone11_yellow.jpg"
+    ],
+    "slug": "iphone11",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.7 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "OLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "2778 x 1284 pixel"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "A15 Bionic"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "16GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "iPhone 11",
-  "type": "phone",
-  "description": "Tặng ngay 1 triệu + Máy lọc không khí + BHRVMH 6 tháng + TG0%",
-  "image": [
-    "/image/apple/iphone11/iphone11_black.jpg",
-    "/image/apple/iphone11/iphone11_white.jpg",
-    "/image/apple/iphone11/iphone11_red.jpg",
-    "/image/apple/iphone11/iphone11_purple.jpg",
-    "/image/apple/iphone11/iphone11_yellow.jpg"
-  ],
-  "slug": "iphone11",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "OLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "2778 x 1284 pixel"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61888834ba06602efa085d28"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "A15 Bionic"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "A15 Bionic"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "16GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61888834ba06602efa085d28"
+    "name": "Samsung Galaxy A72",
+    "type": "phone",
+    "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
+    "image": [
+      "/image/samsung/galaxya72/galaxya72_black.jpg",
+      "/image/samsung/galaxya72/galaxya72_blue.jpg",
+      "/image/samsung/galaxya72/galaxya72_purple.jpg",
+      "/image/samsung/galaxya72/galaxya72_white.jpg"
+    ],
+    "slug": "galaxya72",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.7 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Super AMOLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1080 x 2400 pixels (FullHD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 720G (8 nm)"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "samsung"
   },
-  "name": "Samsung Galaxy A72",
-  "type": "phone",
-  "description": "Vừa mới đây Samsung vừa cho ra mắt chiếc smartphone Samsung Galaxy A72 thuộc dòng A của hãng. Có thể nói đây là con át chủ bài của thương hiệu này trong năm 2020 bởi những nâng cấp vượt trội từ thiết kế cho đến camera lẫn hiệu năng. Nếu bạn đang tìm kiếm cho mình một chiếc điện thoại Samsung mới thì có thể đây là sự lựa chọn phù hợp dành cho bạn.",
-  "image": [
-    "/image/samsung/galaxya72/galaxya72_black.jpg",
-    "/image/samsung/galaxya72/galaxya72_blue.jpg",
-    "/image/samsung/galaxya72/galaxya72_purple.jpg",
-    "/image/samsung/galaxya72/galaxya72_white.jpg"
-  ],
-  "slug": "galaxya72",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.7 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Super AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 pixels (FullHD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "618947e5d4eb20eba625d93e"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 64 MP, f/1.8, 26mm (wide), PDAF, OIS\nCamera tele: 8 MP, f/2.4, (telephoto), PDAF, OIS, Zoom quang 3X\nCamera góc siêu rộng: 12 MP, f/2.2, 123˚\nCamere macro: 5 MP, f/2.4"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "\t4K@30fps, 1080p@30/120fps; gyro-EIS"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 720G (8 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 720G (8 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "618947e5d4eb20eba625d93e"
+    "name": "Xiaomi Mi 11 Lite 5G",
+    "type": "phone",
+    "description": "Mi 11 Lite 5G và 4G là bộ đôi vừa được Xiaomi trình làng. So sánh nhanh thì cả hai máy sở hữu cùng kích thước màn hình, thông số cụm camera sau và dung lượng pin. Nhưng bên cạnh đó thì phiên bản 5G vẫn còn một số điểm khác biệt so với bản 4G.",
+    "image": [
+      "/image/xiaomi/mi11/mi11_blue.jpg",
+      "/image/xiaomi/mi11/mi11_yellow.jpg",
+      "/image/xiaomi/mi11/mi11_black.jpg"
+    ],
+    "slug": "mi11",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.55 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "AMOLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1080 x 2400 pixels (FullHD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 780G (5 nm)"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "16GB"
+          }
+        ]
+      }
+    ],
+    "brand": "xiaomi"
   },
-  "name": "Xiaomi Mi 11 Lite 5G",
-  "type": "phone",
-  "description": "Mi 11 Lite 5G và 4G là bộ đôi vừa được Xiaomi trình làng. So sánh nhanh thì cả hai máy sở hữu cùng kích thước màn hình, thông số cụm camera sau và dung lượng pin. Nhưng bên cạnh đó thì phiên bản 5G vẫn còn một số điểm khác biệt so với bản 4G.",
-  "image": [
-    "/image/xiaomi/mi11/mi11_blue.jpg",
-    "/image/xiaomi/mi11/mi11_yellow.jpg",
-    "/image/xiaomi/mi11/mi11_black.jpg"
-  ],
-  "slug": "mi11",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.55 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 pixels (FullHD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a63cd0c0d06361a0d8a756"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Camera góc rộng: 12MP, ƒ/1.5\nCamera góc siêu rộng: 12MP, ƒ/1.8\nCamera tele : 12MP, /2.8"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K @24 fps/25 fps/30 fps/ 60 fps\n1080p HD @25 fps/30 fps/60 fps\n720p HD@ 30 fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 780G (5 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 780G (5 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "16GB"
-        }
-      ]
-    }
-  ],
-  "brand": "xiaomi"
-},{
-  "_id": {
-    "$oid": "61a63cd0c0d06361a0d8a756"
+    "name": "Asus ROG Phone 5S",
+    "type": "phone",
+    "description": "Asus ROG Phone 5S là phiên bản nâng cấp từ người tiền nhiệm ROG Phone 5 với rất nhiều thay đổi đáng giá. Điểm đầu tiên, Asus ROG Phone 5S có cảm ứng nhạy hơn ROG Phone 5. Tốc độ lấy mẫu cảm ứng của Asus ROG Phone 5S là 360Hz nhanh hơn so với ROG Phone 5 là 300Hz, giúp trải nghiệm chơi game trở nên mượt mà, đã hơn.",
+    "image": [
+      "/image/asus/rog-phone-5s/rog_black.jpg",
+      "/image/asus/rog-phone-5s/rog_white.jpg"
+    ],
+    "slug": "rogphone5s",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.78 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "AMOLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1080 x 2448 pixels (FullHD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "64 MP, f/1.8, 26mm (góc rộng), PDAF 13 MP, f/2.4, 11mm, 125˚ (góc siêu rộng) 5 MP, f/2.0, (macro)"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "8K@30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 720p@480fps; gyro-EIS"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 888+ 5G (5 nm)"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "12GB"
+          }
+        ]
+      }
+    ],
+    "brand": "asus"
   },
-  "name": "Asus ROG Phone 5S",
-  "type": "phone",
-  "description": "Asus ROG Phone 5S là phiên bản nâng cấp từ người tiền nhiệm ROG Phone 5 với rất nhiều thay đổi đáng giá. Điểm đầu tiên, Asus ROG Phone 5S có cảm ứng nhạy hơn ROG Phone 5. Tốc độ lấy mẫu cảm ứng của Asus ROG Phone 5S là 360Hz nhanh hơn so với ROG Phone 5 là 300Hz, giúp trải nghiệm chơi game trở nên mượt mà, đã hơn.",
-  "image": [
-    "/image/asus/rog-phone-5s/rog_black.jpg",
-    "/image/asus/rog-phone-5s/rog_white.jpg"
-  ],
-  "slug": "rogphone5s",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.78 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2448 pixels (FullHD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a64aadc0d06361a0d8a77d"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "64 MP, f/1.8, 26mm (góc rộng), PDAF 13 MP, f/2.4, 11mm, 125˚ (góc siêu rộng) 5 MP, f/2.0, (macro)"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "8K@30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 720p@480fps; gyro-EIS"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 888+ 5G (5 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 888+ 5G (5 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "12GB"
-        }
-      ]
-    }
-  ],
-  "brand": "asus"
-},{
-  "_id": {
-    "$oid": "61a64aadc0d06361a0d8a77d"
+    "name": "Samsung Galaxy S21 Ultra",
+    "type": "phone",
+    "description": "Sự đẳng cấp được Samsung gửi gắm thông qua chiếc smartphone Galaxy S21 Ultra 5G với hàng loạt sự nâng cấp và cải tiến không chỉ ngoại hình bên ngoài mà còn sức mạnh bên trong, hứa hẹn đáp ứng trọn vẹn nhu cầu ngày càng cao của người dùng.",
+    "image": [
+      "/image/samsung/s21-ultra/s21_black.jpg",
+      "/image/samsung/s21-ultra/s21_silver.jpg"
+    ],
+    "slug": "s21ultra",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.8 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Dynamic AMOLED 2X"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1440 x 3200 pixels (2K+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Chính 108 MP & Phụ 12 MP, 10 MP, 10 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@30fps 4K 2160p@60fps 8K 4320p@24fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@960fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Exynos 2100 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "12GB"
+          }
+        ]
+      }
+    ],
+    "brand": "samsung"
   },
-  "name": "Samsung Galaxy S21 Ultra",
-  "type": "phone",
-  "description": "Sự đẳng cấp được Samsung gửi gắm thông qua chiếc smartphone Galaxy S21 Ultra 5G với hàng loạt sự nâng cấp và cải tiến không chỉ ngoại hình bên ngoài mà còn sức mạnh bên trong, hứa hẹn đáp ứng trọn vẹn nhu cầu ngày càng cao của người dùng.",
-  "image": [
-    "/image/samsung/s21-ultra/s21_black.jpg",
-    "/image/samsung/s21-ultra/s21_silver.jpg"
-  ],
-  "slug": "s21ultra",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.8 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Dynamic AMOLED 2X"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1440 x 3200 pixels (2K+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a652f8c0d06361a0d8a790"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Chính 108 MP & Phụ 12 MP, 10 MP, 10 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@30fps 4K 2160p@60fps 8K 4320p@24fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@960fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Exynos 2100 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "12GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Exynos 2100 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "12GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "61a652f8c0d06361a0d8a790"
+    "name": "Xiaomi Redmi K40",
+    "type": "phone",
+    "description": "Xiaomi Redmi K40 series sẽ được trang bị những con chip mới nhất hiện nay từ Qualcomm. Cụ thể, Redmi K40 Pro sẽ sử dụng chip Snapdragon 888 mạnh mẽ nhất, còn Xiaomi Redmi K40 sẽ là chip Snapdragon 870 (một phiên bản nâng cấp của Snapdragon 865). Chipset 8 lõi với công nghệ xử lý 7nm, cung cấp tần số tối đa 3.2GHz cho hiệu suất đỉnh cao vượt trội.",
+    "image": [
+      "/image/xiaomi/redmi-k40/redmi-k40_white.jpg",
+      "/image/xiaomi/redmi-k40/redmi-k40_blue.jpg",
+      "/image/xiaomi/redmi-k40/redmi-k40_black.jpg"
+    ],
+    "slug": "redmi_k40",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.67 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Super AMOLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1080 x 2400 pixels (Full HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "48 MP, f/1.8(góc rộng) 8 MP, 119˚(siêu rộng) 5 MP, 50mm (macro)"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K@30fps, 1080p@30/60/120/240/960fps, gyro-EIS"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 870 5G (7 nm)"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "xiaomi"
   },
-  "name": "Xiaomi Redmi K40",
-  "type": "phone",
-  "description": "Xiaomi Redmi K40 series sẽ được trang bị những con chip mới nhất hiện nay từ Qualcomm. Cụ thể, Redmi K40 Pro sẽ sử dụng chip Snapdragon 888 mạnh mẽ nhất, còn Xiaomi Redmi K40 sẽ là chip Snapdragon 870 (một phiên bản nâng cấp của Snapdragon 865). Chipset 8 lõi với công nghệ xử lý 7nm, cung cấp tần số tối đa 3.2GHz cho hiệu suất đỉnh cao vượt trội.",
-  "image": [
-    "/image/xiaomi/redmi-k40/redmi-k40_white.jpg",
-    "/image/xiaomi/redmi-k40/redmi-k40_blue.jpg",
-    "/image/xiaomi/redmi-k40/redmi-k40_black.jpg"
-  ],
-  "slug": "redmi_k40",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.67 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Super AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 pixels (Full HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a6fd09af9aeae6a5bf6be6"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "48 MP, f/1.8(góc rộng) 8 MP, 119˚(siêu rộng) 5 MP, 50mm (macro)"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K@30fps, 1080p@30/60/120/240/960fps, gyro-EIS"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 870 5G (7 nm)"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 870 5G (7 nm)"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "xiaomi"
-},{
-  "_id": {
-    "$oid": "61a6fd09af9aeae6a5bf6be6"
+    "name": "iPhone 13",
+    "type": "phone",
+    "description": "Trong khi sức hút đến từ bộ 4 phiên bản iPhone 12 vẫn chưa nguội đi, thì Apple đã mang đến cho người dùng một siêu phẩm mới iPhone 13 - điện thoại có nhiều cải tiến thú vị sẽ mang lại những trải nghiệm hấp dẫn nhất cho người dùng.",
+    "image": [
+      "/image/apple/iphone13/iphone13_black.jpg",
+      "/image/apple/iphone13/iphone13_blue.jpg",
+      "/image/apple/iphone13/iphone13_white.jpg",
+      "/image/apple/iphone13/iphone13_red.jpg",
+      "/image/apple/iphone13/iphone13_pink.jpg"
+    ],
+    "slug": "iphone13",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.1 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "OLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1170 x 2532 Pixels (Full HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "2 camera 12 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@24fps 4K 2160p@30fps 4K 2160p@60fps FullHD 1080p@120fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Apple A15 Bionic 6 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "iPhone 13",
-  "type": "phone",
-  "description": "Trong khi sức hút đến từ bộ 4 phiên bản iPhone 12 vẫn chưa nguội đi, thì Apple đã mang đến cho người dùng một siêu phẩm mới iPhone 13 - điện thoại có nhiều cải tiến thú vị sẽ mang lại những trải nghiệm hấp dẫn nhất cho người dùng.",
-  "image": [
-    "/image/apple/iphone13/iphone13_black.jpg",
-    "/image/apple/iphone13/iphone13_blue.jpg",
-    "/image/apple/iphone13/iphone13_white.jpg",
-    "/image/apple/iphone13/iphone13_red.jpg",
-    "/image/apple/iphone13/iphone13_pink.jpg"
-  ],
-  "slug": "iphone13",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.1 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "OLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1170 x 2532 Pixels (Full HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a7009eaf9aeae6a5bf6bee"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "2 camera 12 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@24fps 4K 2160p@30fps 4K 2160p@60fps FullHD 1080p@120fps FullHD 1080p@240fps FullHD 1080p@30fps FullHD 1080p@60fps HD 720p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Apple A15 Bionic 6 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Apple A15 Bionic 6 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61a7009eaf9aeae6a5bf6bee"
+    "name": "Galaxy Z Fold 3",
+    "type": "phone",
+    "description": "Galaxy Z Fold3 5G đánh dấu bước tiến mới của Samsung trong phân khúc điện thoại gập cao cấp khi được cải tiến về độ bền cùng những nâng cấp đáng giá về cấu hình hiệu năng, hứa hẹn sẽ mang đến trải nghiệm sử dụng đột phá cho người dùng.",
+    "image": [
+      "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
+      "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
+      "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg"
+    ],
+    "slug": "zfold3",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "7.6 inches & 6.2 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Dynamic AMOLED 2X"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1768 x 2208 Pixels (Full HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "3 camera 12 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@60fps, FullHD 1080p@240fps, FullHD 1080p@60fps, HD 720p@960fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 888 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "12GB"
+          }
+        ]
+      }
+    ],
+    "brand": "samsung"
   },
-  "name": "Galaxy Z Fold 3",
-  "type": "phone",
-  "description": "Galaxy Z Fold3 5G đánh dấu bước tiến mới của Samsung trong phân khúc điện thoại gập cao cấp khi được cải tiến về độ bền cùng những nâng cấp đáng giá về cấu hình hiệu năng, hứa hẹn sẽ mang đến trải nghiệm sử dụng đột phá cho người dùng.",
-  "image": [
-    "/image/samsung/galaxy-zfold-3/zfold-3_moss.jpg",
-    "/image/samsung/galaxy-zfold-3/zfold-3_black.jpg",
-    "/image/samsung/galaxy-zfold-3/zfold-3_silver.jpg"
-  ],
-  "slug": "zfold3",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "7.6 inches & 6.2 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Dynamic AMOLED 2X"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1768 x 2208 Pixels (Full HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a7040faf9aeae6a5bf6bf5"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "3 camera 12 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@60fps, FullHD 1080p@240fps, FullHD 1080p@60fps, HD 720p@960fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 888 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "12GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 888 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "12GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "61a7040faf9aeae6a5bf6bf5"
+    "name": "OPPO A95",
+    "type": "phone",
+    "description": "Bên cạnh phiên bản 5G, OPPO còn bổ sung phiên bản OPPO A95 4G với giá thành phải chăng tập trung vào thiết kế năng động, sạc nhanh và hiệu năng đa nhiệm ấn tượng sẽ giúp cho cuộc sống của bạn thêm phần hấp dẫn, ngập tràn niềm vui.",
+    "image": [
+      "/image/oppo/a95/a95_silver.jpg",
+      "/image/oppo/a95/a95_black.jpg"
+    ],
+    "slug": "oppo_a95",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.43 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "AMOLED"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1080 x 2400 Pixels (Full HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Chính 48 MP & Phụ 2 MP, 2 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "FullHD 1080p@30fps, HD 720p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 662 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "oppo"
   },
-  "name": "OPPO A95",
-  "type": "phone",
-  "description": "Bên cạnh phiên bản 5G, OPPO còn bổ sung phiên bản OPPO A95 4G với giá thành phải chăng tập trung vào thiết kế năng động, sạc nhanh và hiệu năng đa nhiệm ấn tượng sẽ giúp cho cuộc sống của bạn thêm phần hấp dẫn, ngập tràn niềm vui.",
-  "image": [
-    "/image/oppo/a95/a95_silver.jpg",
-    "/image/oppo/a95/a95_black.jpg"
-  ],
-  "slug": "oppo_a95",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.43 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "AMOLED"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1080 x 2400 Pixels (Full HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a70773af9aeae6a5bf6c09"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Chính 48 MP & Phụ 2 MP, 2 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "FullHD 1080p@30fps, HD 720p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 662 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 662 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "oppo"
-},{
-  "_id": {
-    "$oid": "61a70773af9aeae6a5bf6c09"
+    "name": "Realme C11(2021)",
+    "type": "phone",
+    "description": "Realme C11 (2021) 2GB/32GB của Realme nằm trong phân khúc smartphone giá rẻ nhưng có ngoại hình khá ổn và cụm camera chất lượng tốt cùng dung lượng pin ấn tượng, sẽ là 1 lựa chọn tốt cho nhu cầu sử dụng smartphone với các tính năng cơ bản thông dụng.",
+    "image": [
+      "/image/realme/c11/c11-2021_blue.jpg",
+      "/image/realme/c11/c11-2021_gray.jpg"
+    ],
+    "slug": "realme_c11_2021",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "6.43 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "LCD"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "720 x 1600 Pixels (HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "8 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "480p@30fps, FullHD 1080p@30fps, HD 720p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Spreadtrum SC9863A 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "2GB"
+          }
+        ]
+      }
+    ],
+    "brand": "realme"
   },
-  "name": "Realme C11(2021)",
-  "type": "phone",
-  "description": "Realme C11 (2021) 2GB/32GB của Realme nằm trong phân khúc smartphone giá rẻ nhưng có ngoại hình khá ổn và cụm camera chất lượng tốt cùng dung lượng pin ấn tượng, sẽ là 1 lựa chọn tốt cho nhu cầu sử dụng smartphone với các tính năng cơ bản thông dụng.",
-  "image": [
-    "/image/realme/c11/c11-2021_blue.jpg",
-    "/image/realme/c11/c11-2021_gray.jpg"
-  ],
-  "slug": "realme_c11_2021",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "6.43 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "LCD"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "720 x 1600 Pixels (HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a749dfaf9aeae6a5bf6c3c"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "8 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "480p@30fps, FullHD 1080p@30fps, HD 720p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Spreadtrum SC9863A 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "2GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Spreadtrum SC9863A 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "2GB"
-        }
-      ]
-    }
-  ],
-  "brand": "realme"
-},{
-  "_id": {
-    "$oid": "61a749dfaf9aeae6a5bf6c3c"
+    "name": "Acer Aspire 7 A715",
+    "type": "laptop",
+    "description": "Laptop Acer Aspire 7 A715 42G R4ST R5 (NH.QAYSV.004) có thiết kế đơn giản, trang nhã nhưng trang bị cấu hình mạnh mẽ đáp ứng nhu cầu đồ hoạ, kỹ thuật chuyên nghiệp và chiến game mượt mà.",
+    "image": [
+      "/image/acer/aspire-7/acer-aspire-7.jpg",
+      "/image/acer/aspire-7/acer-aspire-7_back.jpg"
+    ],
+    "slug": "aspire7",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "15.6 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1920 x 1080 Pixels (Full HD+)"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "NVIDIA GeForce GTX 1650 4 GB"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "SSD 256 GB NVMe PCIe"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "Ryzen 5, 5500U, 2.1GHz"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+          }
+        ]
+      }
+    ],
+    "brand": "acer"
   },
-  "name": "Acer Aspire 7 A715",
-  "type": "laptop",
-  "description": "Laptop Acer Aspire 7 A715 42G R4ST R5 (NH.QAYSV.004) có thiết kế đơn giản, trang nhã nhưng trang bị cấu hình mạnh mẽ đáp ứng nhu cầu đồ hoạ, kỹ thuật chuyên nghiệp và chiến game mượt mà.",
-  "image": [
-    "/image/acer/aspire-7/acer-aspire-7.jpg",
-    "/image/acer/aspire-7/acer-aspire-7_back.jpg"
-  ],
-  "slug": "aspire7",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "15.6 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1920 x 1080 Pixels (Full HD+)"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a7555daf9aeae6a5bf6c4e"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "NVIDIA GeForce GTX 1650 4 GB"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "SSD 256 GB NVMe PCIe"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "Ryzen 5, 5500U, 2.1GHz"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "Ryzen 5, 5500U, 2.1GHz"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
-        }
-      ]
-    }
-  ],
-  "brand": "acer"
-},{
-  "_id": {
-    "$oid": "61a7555daf9aeae6a5bf6c4e"
+    "name": "Acer Nitro 5 Gaming AN515 57 727J",
+    "type": "laptop",
+    "description": "Acer Nitro 5 Gaming AN515 57 727J i7 (NH.QD9SV.005.) sở hữu vẻ ngoài cá tính, nổi bật và được tích hợp bộ vi xử lý Intel thế hệ 11 tân tiến, card đồ hoạ rời NVIDIA GeForce RTX, hứa hẹn mang đến các trải nghiệm tuyệt vời cho người dùng.",
+    "image": [
+      "/image/acer/nitro5/nitro5.jpg",
+      "/image/acer/nitro5/nitro5_1.jpg"
+    ],
+    "slug": "nitro5",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "15.6 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1920 x 1080 Pixels (Full HD+)"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "144Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "RTX 3050Ti 4GB"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1TB), Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2TB), Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "i7, 11800H, 2.30 GHz"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
+          }
+        ]
+      }
+    ],
+    "brand": "acer"
   },
-  "name": "Acer Nitro 5 Gaming AN515 57 727J",
-  "type": "laptop",
-  "description": "Acer Nitro 5 Gaming AN515 57 727J i7 (NH.QD9SV.005.) sở hữu vẻ ngoài cá tính, nổi bật và được tích hợp bộ vi xử lý Intel thế hệ 11 tân tiến, card đồ hoạ rời NVIDIA GeForce RTX, hứa hẹn mang đến các trải nghiệm tuyệt vời cho người dùng.",
-  "image": [
-    "/image/acer/nitro5/nitro5.jpg",
-    "/image/acer/nitro5/nitro5_1.jpg"
-  ],
-  "slug": "nitro5",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "15.6 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Tấm nền IPS, Chống chói Anti Glare"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1920 x 1080 Pixels (Full HD+)"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "144Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a779bfaf9aeae6a5bf6c6a"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "RTX 3050Ti 4GB"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1TB), Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2TB), Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "i7, 11800H, 2.30 GHz"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "i7, 11800H, 2.30 GHz"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "8 GB, DDR4 2 khe (1 khe 8GB + 1 khe rời), 3200 MHz"
-        }
-      ]
-    }
-  ],
-  "brand": "acer"
-},{
-  "_id": {
-    "$oid": "61a779bfaf9aeae6a5bf6c6a"
+    "name": "Acer Aspire A315 56 308N",
+    "type": "laptop",
+    "description": "Laptop Acer Aspire A315 56 308N i3 (NX.HS5SV.00C) là mẫu laptop học tập văn phòng thuộc phân khúc giá thấp. Máy trang bị vi xử lý thế hệ mới của Intel, cho hiệu năng đủ dùng đối với các nhu cầu cơ bản, phù hợp với học sinh và sinh viên.",
+    "image": ["/image/acer/a315/a315_0.jpg", "/image/acer/a315/a315_1.jpg"],
+    "slug": "a315_56_308n",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "15.6 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Acer ComfyView, LED Backlit, TFT"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1920 x 1080 Pixels (Full HD)"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "60Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "Intel UHD Graphics"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "SSD 256 GB NVMe PCIe, Hỗ trợ khe cắm HDD SATA"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "i3 Ice Lake - 1005G1, 1.20GHz"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "4GB DDR4 (On board +1 khe), 2400MHz"
+          }
+        ]
+      }
+    ],
+    "brand": "acer"
   },
-  "name": "Acer Aspire A315 56 308N",
-  "type": "laptop",
-  "description": "Laptop Acer Aspire A315 56 308N i3 (NX.HS5SV.00C) là mẫu laptop học tập văn phòng thuộc phân khúc giá thấp. Máy trang bị vi xử lý thế hệ mới của Intel, cho hiệu năng đủ dùng đối với các nhu cầu cơ bản, phù hợp với học sinh và sinh viên.",
-  "image": [
-    "/image/acer/a315/a315_0.jpg",
-    "/image/acer/a315/a315_1.jpg"
-  ],
-  "slug": "a315_56_308n",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "15.6 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Acer ComfyView, LED Backlit, TFT"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1920 x 1080 Pixels (Full HD)"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "60Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a77cfbaf9aeae6a5bf6c70"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "Intel UHD Graphics"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "SSD 256 GB NVMe PCIe, Hỗ trợ khe cắm HDD SATA"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "Intel Core i3 Ice Lake - 1005G1, 1.20GHz"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "4GB DDR4 (On board +1 khe), 2400MHz"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "i3 Ice Lake - 1005G1, 1.20GHz"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "4GB DDR4 (On board +1 khe), 2400MHz"
-        }
-      ]
-    }
-  ],
-  "brand": "acer"
-},{
-  "_id": {
-    "$oid": "61a77cfbaf9aeae6a5bf6c70"
+    "name": "HP Pavilion 15 eg0541TU",
+    "type": "laptop",
+    "description": "Laptop HP Pavilion 15 eg0541TU i3 1125G4 (4P5G8PA) sở hữu thiết kế thời thượng, hiện đại cùng cấu hình ổn định là sự chọn lựa phù hợp cho tất cả mọi người, cùng bạn hoàn thành mọi tác vụ văn phòng hiệu quả.",
+    "image": [
+      "/image/hp/pavilion15/pavilion15_0.jpg",
+      "/image/hp/pavilion15/pavilion15_1.jpg"
+    ],
+    "slug": "pavilion_15",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "15.6 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Chống chói Anti Glare, Tấm nền IPS, Wled-backlit"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1920 x 1080 Pixels (Full HD)"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "60Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "Intel UHD Graphics"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "SSD 512 GB NVMe PCIe"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "i3, 1125G4, 2GHz"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "4GB DDR4 (On board +1 khe), 3200MHz"
+          }
+        ]
+      }
+    ],
+    "brand": "hp"
   },
-  "name": "HP Pavilion 15 eg0541TU",
-  "type": "laptop",
-  "description": "Laptop HP Pavilion 15 eg0541TU i3 1125G4 (4P5G8PA) sở hữu thiết kế thời thượng, hiện đại cùng cấu hình ổn định là sự chọn lựa phù hợp cho tất cả mọi người, cùng bạn hoàn thành mọi tác vụ văn phòng hiệu quả.",
-  "image": [
-    "/image/hp/pavilion15/pavilion15_0.jpg",
-    "/image/hp/pavilion15/pavilion15_1.jpg"
-  ],
-  "slug": "pavilion_15",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "15.6 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Chống chói Anti Glare, Tấm nền IPS, Wled-backlit"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1920 x 1080 Pixels (Full HD)"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "60Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a7812aaf9aeae6a5bf6c82"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "Intel UHD Graphics"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "SSD 512 GB NVMe PCIe"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "i3, 1125G4, 2GHz"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "4GB DDR4 (On board +1 khe), 3200MHz"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "i3, 1125G4, 2GHz"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "4GB DDR4 (On board +1 khe), 3200MHz"
-        }
-      ]
-    }
-  ],
-  "brand": "hp"
-},{
-  "_id": {
-    "$oid": "61a7812aaf9aeae6a5bf6c82"
+    "name": "MacBook Air M1 2020",
+    "type": "laptop",
+    "description": "Laptop Apple MacBook Air M1 2020 thuộc dòng laptop cao cấp sang trọng có cấu hình mạnh mẽ, chinh phục được các tính năng văn phòng lẫn đồ hoạ mà bạn mong muốn, thời lượng pin dài, thiết kế mỏng nhẹ sẽ đáp ứng tốt các nhu cầu làm việc của bạn.",
+    "image": [
+      "/image/apple/macbook-air-m1-2020/grey.jpg",
+      "/image/apple/macbook-air-m1-2020/silver.jpg",
+      "/image/apple/macbook-air-m1-2020/bronze.jpg"
+    ],
+    "slug": "macbook_air_m1_2020",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "13.3 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "400 nits, Công nghệ IPS, LED Backlit, True Tone Technology"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "Retina (2560 x 1600)"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "60Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "Card tích hợp - 7 nhân GPU"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "256GB SSD"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "Apple M1"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "MacBook Air M1 2020",
-  "type": "laptop",
-  "description": "Laptop Apple MacBook Air M1 2020 thuộc dòng laptop cao cấp sang trọng có cấu hình mạnh mẽ, chinh phục được các tính năng văn phòng lẫn đồ hoạ mà bạn mong muốn, thời lượng pin dài, thiết kế mỏng nhẹ sẽ đáp ứng tốt các nhu cầu làm việc của bạn.",
-  "image": [
-    "/image/apple/macbook-air-m1-2020/grey.jpg",
-    "/image/apple/macbook-air-m1-2020/silver.jpg",
-    "/image/apple/macbook-air-m1-2020/bronze.jpg"
-  ],
-  "slug": "macbook_air_m1_2020",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "13.3 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "400 nits, Công nghệ IPS, LED Backlit, True Tone Technology"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "Retina (2560 x 1600)"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "60Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a7859faf9aeae6a5bf6c89"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "Card tích hợp - 7 nhân GPU"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "256GB SSD"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "Apple M1"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "Apple M1"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61a7859faf9aeae6a5bf6c89"
+    "name": "MacBook Pro M1 2021",
+    "type": "laptop",
+    "description": "Thiết kế là nâng cấp gây chú ý đầu tiên của MacBook Pro 14 inch 2021, thiết bị ngoại hình vuông vức, mặt sau bo cong mềm mại trong khi phần viền màn hình hẹp hơn. Đáng chú ý là Apple đã áp dụng kiểu thiết kế tai thỏ cho thiết bị, tạo điểm nhấn và tăng không gian hiển thị cho màn hình.",
+    "image": [
+      "/image/apple/macbook-pro-m1-2021/grey.png",
+      "/image/apple/macbook-pro-m1-2021/silver.png"
+    ],
+    "slug": "macbook_pro_m1_2021",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "14 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Wide color (P3), True Tone Technology, 1 billion colors"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "Liquid Retina XDR display (3024 x 1964)"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "120Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "GPU và Ổ cứng",
+        "infoDetail": [
+          {
+            "infoName": "GPU",
+            "infoNum": "Card tích hợp - 14 nhân GPU"
+          },
+          {
+            "infoName": "Ổ cứng",
+            "infoNum": "512GB SSD"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "CPU",
+            "infoNum": "Apple M1 Pro"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "RAM",
+            "infoNum": "16GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "MacBook Pro M1 2021",
-  "type": "laptop",
-  "description": "Thiết kế là nâng cấp gây chú ý đầu tiên của MacBook Pro 14 inch 2021, thiết bị ngoại hình vuông vức, mặt sau bo cong mềm mại trong khi phần viền màn hình hẹp hơn. Đáng chú ý là Apple đã áp dụng kiểu thiết kế tai thỏ cho thiết bị, tạo điểm nhấn và tăng không gian hiển thị cho màn hình.",
-  "image": [
-    "/image/apple/macbook-pro-m1-2021/grey.png",
-    "/image/apple/macbook-pro-m1-2021/silver.png"
-  ],
-  "slug": "macbook_pro_m1_2021",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "14 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Wide color (P3), True Tone Technology, 1 billion colors"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "Liquid Retina XDR display (3024 x 1964)"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "120Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a87a0dcaa1c60e0a6fa45c"
     },
-    {
-      "infoType": "GPU và Ổ cứng",
-      "infoDetail": [
-        {
-          "infoName": "GPU",
-          "infoNum": "Card tích hợp - 14 nhân GPU"
-        },
-        {
-          "infoName": "Ổ cứng",
-          "infoNum": "512GB SSD"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "CPU",
-              "infoNum": "Apple M1 Pro"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "RAM",
-              "infoNum": "16GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "CPU",
-          "infoNum": "Apple M1 Pro"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "RAM",
-          "infoNum": "16GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61a87a0dcaa1c60e0a6fa45c"
+    "name": "iPad Mini 6",
+    "type": "tablet",
+    "description": "Sau thời gian dài chờ đợi thì tháng 09/2021 iPad mini 6 WiFi 64GB cũng đã được Apple trình làng với thiết kế vừa quen thuộc vừa mới lạ, máy có nhiều cải tiến trong cấu hình lẫn phần mềm nhằm gia tăng lợi ích sử dụng, mang lại sự hài lòng cao hơn cho người dùng khi lựa chọn.",
+    "image": [
+      "/image/apple/ipad-mini-6/grey.jpg",
+      "/image/apple/ipad-mini-6/white.jpg",
+      "/image/apple/ipad-mini-6/purple.jpg",
+      "/image/apple/ipad-mini-6/pink.jpg"
+    ],
+    "slug": "ipad_mini_6",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "8.3 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "LED-backlit IPS LCD"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1488 x 2266 Pixels"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "12 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Apple A15 Bionic"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "4GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "iPad Mini 6",
-  "type": "tablet",
-  "description": "Sau thời gian dài chờ đợi thì tháng 09/2021 iPad mini 6 WiFi 64GB cũng đã được Apple trình làng với thiết kế vừa quen thuộc vừa mới lạ, máy có nhiều cải tiến trong cấu hình lẫn phần mềm nhằm gia tăng lợi ích sử dụng, mang lại sự hài lòng cao hơn cho người dùng khi lựa chọn.",
-  "image": [
-    "/image/apple/ipad-mini-6/grey.jpg",
-    "/image/apple/ipad-mini-6/white.jpg",
-    "/image/apple/ipad-mini-6/purple.jpg",
-    "/image/apple/ipad-mini-6/pink.jpg"
-  ],
-  "slug": "ipad_mini_6",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "8.3 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "LED-backlit IPS LCD"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1488 x 2266 Pixels"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a87d29caa1c60e0a6fa463"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "12 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Apple A15 Bionic"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "4GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Apple A15 Bionic"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "4GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61a87d29caa1c60e0a6fa463"
+    "name": "iPad Pro M1 2021",
+    "type": "tablet",
+    "description": "Bạn có đang mong chờ những sản phẩm chất lượng đến từ Apple? Sau hàng loạt các sản phẩm đình đám như iPhone 12 series thì hãng đã tung ra chiếc iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) trang bị những tính năng ngày càng vượt trội và thời thượng.",
+    "image": [
+      "/image/apple/ipad-pro-m1-2021/grey.jpg",
+      "/image/apple/ipad-pro-m1-2021/white.jpg"
+    ],
+    "slug": "ipad_pro_m1_2021",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "12.9 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "Liquid Retina XDR mini-LED LCD"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "2048 x 2732 Pixels"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "120Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Chính 12 MP & Phụ 10 MP, TOF 3D LiDAR"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@120fps, FullHD 1080p@240fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps, HD 720p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Apple M1 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "8GB"
+          }
+        ]
+      }
+    ],
+    "brand": "apple"
   },
-  "name": "iPad Pro M1 2021",
-  "type": "tablet",
-  "description": "Bạn có đang mong chờ những sản phẩm chất lượng đến từ Apple? Sau hàng loạt các sản phẩm đình đám như iPhone 12 series thì hãng đã tung ra chiếc iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) trang bị những tính năng ngày càng vượt trội và thời thượng.",
-  "image": [
-    "/image/apple/ipad-pro-m1-2021/grey.jpg",
-    "/image/apple/ipad-pro-m1-2021/white.jpg"
-  ],
-  "slug": "ipad_pro_m1_2021",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "12.9 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "Liquid Retina XDR mini-LED LCD"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "2048 x 2732 Pixels"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "120Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a883cdcaa1c60e0a6fa46b"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Chính 12 MP & Phụ 10 MP, TOF 3D LiDAR"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@24fps, 4K 2160p@25fps, 4K 2160p@30fps, 4K 2160p@60fps, FullHD 1080p@120fps, FullHD 1080p@240fps, FullHD 1080p@25fps, FullHD 1080p@30fps, FullHD 1080p@60fps, HD 720p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Apple M1 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "8GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Apple M1 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "8GB"
-        }
-      ]
-    }
-  ],
-  "brand": "apple"
-},{
-  "_id": {
-    "$oid": "61a883cdcaa1c60e0a6fa46b"
+    "name": "Galaxy Tab S7",
+    "type": "tablet",
+    "description": "Samsung Galaxy Tab S7 chiếc máy tính bảng có thiết kế tuyệt đẹp, màn hình 120 Hz siêu mượt, camera kép ấn tượng, bút S Pen cùng một hiệu năng mạnh mẽ thuộc top đầu thị trường máy tính bảng Android.",
+    "image": [
+      "/image/samsung/galaxy-tab-s7/bronze.jpg",
+      "/image/samsung/galaxy-tab-s7/black.jpg",
+      "/image/samsung/galaxy-tab-s7/blue.jpg"
+    ],
+    "slug": "galaxy_tab_s7",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "11 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "LTPS IPS LCD"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1600 x 2560 Pixels"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "120Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "Chính 13 MP & Phụ 5 MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 865+ 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "6GB"
+          }
+        ]
+      }
+    ],
+    "brand": "samsung"
   },
-  "name": "Galaxy Tab S7",
-  "type": "tablet",
-  "description": "Samsung Galaxy Tab S7 chiếc máy tính bảng có thiết kế tuyệt đẹp, màn hình 120 Hz siêu mượt, camera kép ấn tượng, bút S Pen cùng một hiệu năng mạnh mẽ thuộc top đầu thị trường máy tính bảng Android.",
-  "image": [
-    "/image/samsung/galaxy-tab-s7/bronze.jpg",
-    "/image/samsung/galaxy-tab-s7/black.jpg",
-    "/image/samsung/galaxy-tab-s7/blue.jpg"
-  ],
-  "slug": "galaxy_tab_s7",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "11 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "LTPS IPS LCD"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1600 x 2560 Pixels"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "120Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a88668caa1c60e0a6fa475"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "Chính 13 MP & Phụ 5 MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 865+ 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "6GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 865+ 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "6GB"
-        }
-      ]
-    }
-  ],
-  "brand": "samsung"
-},{
-  "_id": {
-    "$oid": "61a88668caa1c60e0a6fa475"
+    "name": "Xiaomi Pad 5",
+    "type": "tablet",
+    "description": "Xiaomi cho ra mắt Xiaomi Pad 5 256GB, chiếc máy tính bảng có thiết kế mỏng nhẹ, thời trang cùng cấu hình hàng đầu đáp ứng hết các nhu cầu của bạn, dù là học tập, giải trí hay làm việc đều trở nên vô cùng trơn tru.",
+    "image": ["/image/xiaomi/pad5/grey.jpg", "/image/xiaomi/pad5/white.jpeg"],
+    "slug": "xiaomi_pad5",
+    "techInfo": [
+      {
+        "infoType": "Màn hình",
+        "infoDetail": [
+          {
+            "infoName": "kích Thước Màn Hình",
+            "infoNum": "11 inches"
+          },
+          {
+            "infoName": "Công nghệ màn hình",
+            "infoNum": "IPS LCD"
+          },
+          {
+            "infoName": "Độ phân giải màn hình",
+            "infoNum": "1600 x 2560 Pixels"
+          },
+          {
+            "infoName": "Tần số quét",
+            "infoNum": "120Hz"
+          }
+        ]
+      },
+      {
+        "infoType": "Camera sau",
+        "infoDetail": [
+          {
+            "infoName": "Camera sau",
+            "infoNum": "13MP"
+          },
+          {
+            "infoName": "Quay video",
+            "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
+          }
+        ]
+      },
+      {
+        "infoType": "CPU",
+        "infoDetail": [
+          {
+            "infoName": "Chip xử lí",
+            "infoNum": "Snapdragon 860 8 nhân"
+          }
+        ]
+      },
+      {
+        "infoType": "RAM",
+        "infoDetail": [
+          {
+            "infoName": "Bộ nhớ trong",
+            "infoNum": "6GB"
+          }
+        ]
+      }
+    ],
+    "brand": "xiaomi"
   },
-  "name": "Xiaomi Pad 5",
-  "type": "tablet",
-  "description": "Xiaomi cho ra mắt Xiaomi Pad 5 256GB, chiếc máy tính bảng có thiết kế mỏng nhẹ, thời trang cùng cấu hình hàng đầu đáp ứng hết các nhu cầu của bạn, dù là học tập, giải trí hay làm việc đều trở nên vô cùng trơn tru.",
-  "image": [
-    "/image/xiaomi/pad5/grey.jpg",
-    "/image/xiaomi/pad5/white.jpeg"
-  ],
-  "slug": "xiaomi_pad5",
-  "techInfo": [
-    {
-      "infoType": "Màn hình",
-      "infoDetail": [
-        {
-          "infoName": "kích Thước Màn Hình",
-          "infoNum": "11 inches"
-        },
-        {
-          "infoName": "Công nghệ màn hình",
-          "infoNum": "IPS LCD"
-        },
-        {
-          "infoName": "Độ phân giải màn hình",
-          "infoNum": "1600 x 2560 Pixels"
-        },
-        {
-          "infoName": "Tần số quét",
-          "infoNum": "120Hz"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a88eddcaa1c60e0a6fa480"
     },
-    {
-      "infoType": "Camera sau",
-      "infoDetail": [
-        {
-          "infoName": "Camera sau",
-          "infoNum": "13MP"
-        },
-        {
-          "infoName": "Quay video",
-          "infoNum": "4K 2160p@30fps, FullHD 1080p@30fps"
-        },
-        {
-          "infoType": "CPU",
-          "infoDetail": [
-            {
-              "infoName": "Chip xử lí",
-              "infoNum": "Snapdragon 860 8 nhân"
-            }
-          ]
-        },
-        {
-          "infoType": "RAM",
-          "infoDetail": [
-            {
-              "infoName": "Bộ nhớ trong",
-              "infoNum": "6GB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "CPU",
-      "infoDetail": [
-        {
-          "infoName": "Chip xử lí",
-          "infoNum": "Snapdragon 860 8 nhân"
-        }
-      ]
-    },
-    {
-      "infoType": "RAM",
-      "infoDetail": [
-        {
-          "infoName": "Bộ nhớ trong",
-          "infoNum": "6GB"
-        }
-      ]
-    }
-  ],
-  "brand": "xiaomi"
-},{
-  "_id": {
-    "$oid": "61a88eddcaa1c60e0a6fa480"
+    "name": "Sạc Dự Phòng Proda PD-P12",
+    "type": "accessory",
+    "description": "Sạc dự phòng PD-P12 sở hữu dung lượng pin lớn cùng thiết kế độc đáo đang là một trong những phụ kiện thông minh được nhiều người tin dùng.",
+    "image": ["/image/remax/proda/black.jpg", "/image/remax/proda/white.jpg"],
+    "slug": "proda",
+    "techInfo": [
+      {
+        "infoType": "Dung lượng",
+        "infoDetail": [
+          {
+            "infoName": "Dung lượng Pin",
+            "infoNum": "10000mAh"
+          }
+        ]
+      },
+      {
+        "infoType": "Cổng kết nối",
+        "infoDetail": [
+          {
+            "infoName": "Cổng sạc",
+            "infoNum": "Hỗ trợ cổng sạc 2.1A giúp sạc nhanh"
+          }
+        ]
+      },
+      {
+        "infoType": "Tính năng đặc biệt",
+        "infoDetail": [
+          {
+            "infoName": "Đèn LED",
+            "infoNum": "Tích hợp đèn led hiển thị dung lượng pin"
+          }
+        ]
+      }
+    ],
+    "brand": "remax"
   },
-  "name": "Sạc Dự Phòng Proda PD-P12",
-  "type": "accessory",
-  "description": "Sạc dự phòng PD-P12 sở hữu dung lượng pin lớn cùng thiết kế độc đáo đang là một trong những phụ kiện thông minh được nhiều người tin dùng.",
-  "image": [
-    "/image/remax/proda/black.jpg",
-    "/image/remax/proda/white.jpg"
-  ],
-  "slug": "proda",
-  "techInfo": [
-    {
-      "infoType": "Dung lượng",
-      "infoDetail": [
-        {
-          "infoName": "Dung lượng Pin",
-          "infoNum": "10000mAh"
-        }
-      ]
+  {
+    "_id": {
+      "$oid": "61a89e9acaa1c60e0a6fa48e"
     },
-    {
-      "infoType": "Tính năng",
-      "infoDetail": [
-        {
-          "infoType": "Cổng kết nối",
-          "infoDetail": [
-            {
-              "infoName": "Cổng sạc",
-              "infoNum": "Hỗ trợ cổng sạc 2.1A giúp sạc nhanh"
-            }
-          ]
-        },
-        {
-          "infoType": "Tính năng đặc biệt",
-          "infoDetail": [
-            {
-              "infoName": "Đèn LED",
-              "infoNum": "Tích hợp đèn led hiển thị dung lượng pin"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "infoType": "Cổng kết nối",
-      "infoDetail": [
-        {
-          "infoName": "Cổng sạc",
-          "infoNum": "Hỗ trợ cổng sạc 2.1A giúp sạc nhanh"
-        }
-      ]
-    },
-    {
-      "infoType": "Tính năng đặc biệt",
-      "infoDetail": [
-        {
-          "infoName": "Đèn LED",
-          "infoNum": "Tích hợp đèn led hiển thị dung lượng pin"
-        }
-      ]
-    }
-  ],
-  "brand": "remax"
-},{
-  "_id": {
-    "$oid": "61a89e9acaa1c60e0a6fa48e"
-  },
-  "name": "Tai nghe JBL T450",
-  "type": "accessory",
-  "description": "Giới thiệu tai nghe nhét tai JBL T450. Một cặp trình điều khiển 32mm tạo ra âm trầm mạnh mẽ nghiêm túc, tái tạo âm thanh JBL Pure Bass mà bạn đã trải nghiệm trong phòng hòa nhạc, đấu trường và phòng thu âm trên toàn thế giới. Với thiết kế gọn nhẹ, bạn có thể gấp gọn tai nghe và mang theo bên mình. Với sự tiện lợi của cáp phẳng không bị rối được trang bị điều khiển từ xa và micrô, họ là người bạn đồng hành hàng ngày của bạn tại nơi làm việc, ở nhà và trên đường.",
-  "image": [
-    "/image/jbl/t450/black.webp",
-    "/image/jbl/t450/white.png",
-    "/image/jbl/t450/blue.png"
-  ],
-  "slug": "jbl_t450",
-  "techInfo": [
-    {
-      "infoType": "Driver",
-      "infoDetail": [
-        {
-          "infoName": "Kích Thước Driver",
-          "infoNum": "32mm"
-        },
-        {
-          "infoName": "Số lượng driver mỗi bên tai",
-          "infoNum": "1"
-        }
-      ]
-    },
-    {
-      "infoType": "Chi tiết",
-      "infoDetail": [
-        {
-          "infoName": "Trở kháng",
-          "infoNum": "32 ohms"
-        },
-        {
-          "infoName": "Đầu cắm",
-          "infoNum": "3.5mm"
-        },
-        {
-          "infoName": "Củ loa",
-          "infoNum": "32mm"
-        },
-        {
-          "infoName": "Tần số đáp ứng",
-          "infoNum": "20Hz - 20KHz"
-        }
-      ]
-    }
-  ],
-  "brand": "jbl"
-}]
+    "name": "Tai nghe JBL T450",
+    "type": "accessory",
+    "description": "Giới thiệu tai nghe nhét tai JBL T450. Một cặp trình điều khiển 32mm tạo ra âm trầm mạnh mẽ nghiêm túc, tái tạo âm thanh JBL Pure Bass mà bạn đã trải nghiệm trong phòng hòa nhạc, đấu trường và phòng thu âm trên toàn thế giới. Với thiết kế gọn nhẹ, bạn có thể gấp gọn tai nghe và mang theo bên mình. Với sự tiện lợi của cáp phẳng không bị rối được trang bị điều khiển từ xa và micrô, họ là người bạn đồng hành hàng ngày của bạn tại nơi làm việc, ở nhà và trên đường.",
+    "image": [
+      "/image/jbl/t450/black.webp",
+      "/image/jbl/t450/white.png",
+      "/image/jbl/t450/blue.png"
+    ],
+    "slug": "jbl_t450",
+    "techInfo": [
+      {
+        "infoType": "Driver",
+        "infoDetail": [
+          {
+            "infoName": "Kích Thước Driver",
+            "infoNum": "32mm"
+          },
+          {
+            "infoName": "Số lượng driver mỗi bên tai",
+            "infoNum": "1"
+          }
+        ]
+      },
+      {
+        "infoType": "Chi tiết",
+        "infoDetail": [
+          {
+            "infoName": "Trở kháng",
+            "infoNum": "32 ohms"
+          },
+          {
+            "infoName": "Đầu cắm",
+            "infoNum": "3.5mm"
+          },
+          {
+            "infoName": "Củ loa",
+            "infoNum": "32mm"
+          },
+          {
+            "infoName": "Tần số đáp ứng",
+            "infoNum": "20Hz - 20KHz"
+          }
+        ]
+      }
+    ],
+    "brand": "jbl"
+  }
+]

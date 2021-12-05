@@ -55,7 +55,7 @@ _It was name after our own team number designation in our class because naming s
 
 ## 🏁 Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### ❗ Prerequisites
 
