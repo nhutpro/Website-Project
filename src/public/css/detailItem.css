@@ -146,6 +146,9 @@
   position: relative;
   height: 39rem;
 }
+.detailItem-container .mySwiper2 img {
+  height: unset ;
+}
 .detailItem-container .mySwiper2:hover .swiper-icon-next,
 .mySwiper2:hover .swiper-icon-prev {
   display: block;
@@ -375,6 +378,7 @@
 .detailItem-sub .mySwiper3 .swiper-slide .sameItemImg {
   display: block;
   padding-top: 2rem;
+  height: 18rem;
 }
 .detailItem-sub .mySwiper3 .swiper3-item-name {
   color: #000;
@@ -397,7 +401,7 @@
 .detailItem-sub .mySwiper3 img {
   width: 80%;
   margin: 0 auto;
-  height: 18rem;
+  height: unset;
 }
 .detailItem-sub .mySwiper3:hover .same-swiper-icon-next {
   display: block;
