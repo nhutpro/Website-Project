@@ -2,16 +2,15 @@
   border: 1px solid #ff0000 !important;
 }
 .active:after {
-  content: "";
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  text-align: center;
+  font-size: 1rem;
   width: 15px;
   height: 10px;
   border-radius: 1rem 0 0.5rem 0;
   background: #d70018;
-  background-image: url(/image/apple/checkmark.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: -1px;
   left: -1px;
