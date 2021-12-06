@@ -159,22 +159,16 @@
               </div>
             </div>
             <div class="product-btn">
-              <form method="POST" action="accessory/checkout?itemID={{this._id}}">
+              <form method="POST" action="accessory/checkout?itemID={{this._id}}" class="buy-btn" data="{{this._id}}">
                 <button class="btn btn-buy btn-sm" type="submit" >
                   <p>MUA NGAY</p>
                 </button>
-                {{!-- <a href="#" class="btn btn-buy btn-sm">
-
-                </a> --}}
               </form>
-              <form method="POST" action="accessory/addcart?itemID={{this._id}}">
+              <form method="POST" action="accessory/addcart?itemID={{this._id}}" class="add-btn" data="{{this._id}}">
                 <button class="btn btn-addCart btn-sm" type="submit">
                   <p>THÊM VÀO GIỎ</p>
                 </button>
               </form>
-              {{!-- <a href="#" class="btn btn-addCart btn-sm">
-
-              </a> --}}
             </div>
           </div>
 
