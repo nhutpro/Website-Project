@@ -295,32 +295,61 @@ if (localStorage.getItem("pageLast") == "true") {
 }
 const buyBtn = document.querySelectorAll(".buy-btn");
 const addBtn = document.querySelectorAll(".add-btn");
-buyBtn.forEach((buyBtnitem)=>{
-	buyBtnitem.onsubmit = function(e){
-		e.preventDefault();
-		const accountclick = document.querySelector("header .account");
-		fetch("http://localhost:3000/account/login/user", {
-		method: "GET",
-		headers: {
-			"Content-Type": "application/json",
-		},
-	})
-		.then((res) => res.json())
-		.then((res) => {
-			if (res.status == "true") {
-				fetch("http://localhost:3000/phone/checkout?itemID="+buyBtnitem.getAttribute("data"), {
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-				})
-				window.location ="http://localhost:3000/checkout";
-				
-			} else {
-				accountclick.click();
-				return false;
-			}
-		});
+buyBtn.forEach((buyBtnitem) => {
+  buyBtnitem.onsubmit = function (e) {
+    e.preventDefault();
+    const accountclick = document.querySelector("header .account");
+    fetch("http://localhost:3000/account/login/user", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status == "true") {
+          fetch("http://localhost:3000/phone/checkout?itemID=" + buyBtnitem.getAttribute("data"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+          window.location = "http://localhost:3000/checkout";
 
-	}
+        } else {
+          accountclick.click();
+          return false;
+        }
+      });
+
+  }
+})
+addBtn.forEach((addBtnitem) => {
+  addBtnitem.onsubmit = function (e) {
+    e.preventDefault();
+    const accountclick = document.querySelector("header .account");
+    fetch("http://localhost:3000/account/login/user", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status == "true") {
+          fetch("http://localhost:3000/phone/checkout?itemID=" + addBtnitem.getAttribute("data"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+          // window.location ="http://localhost:3000/checkout";
+
+        } else {
+          accountclick.click();
+          return false;
+        }
+      });
+
+  }
 })

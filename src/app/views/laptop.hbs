@@ -42,24 +42,6 @@
               <span>HP</span>
             </label>
           </li>
-          {{!-- <li>
-            <input type="checkbox" name="Brandids[]" value="oppo" />
-            <label for="">
-              <span>Oppo</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="Brandids[]" value="xiaomi" />
-            <label for="">
-              <span>Xiaomi</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="Brandids[]" value="realme" />
-            <label for="">
-              <span>Realme</span>
-            </label>
-          </li> --}}
         </ul>
       </div>
 
@@ -159,22 +141,16 @@
               </div>
             </div>
             <div class="product-btn">
-              <form method="POST" action="laptop/checkout?itemID={{this._id}}">
+              <form method="POST" action="laptop/checkout?itemID={{this._id}}" class="buy-btn" data="{{this._id}}">
                 <button class="btn btn-buy btn-sm" type="submit" >
                   <p>MUA NGAY</p>
                 </button>
-                {{!-- <a href="#" class="btn btn-buy btn-sm">
-
-                </a> --}}
               </form>
-              <form method="POST" action="laptop/addcart?itemID={{this._id}}">
+              <form method="POST" action="laptop/addcart?itemID={{this._id}}" class="add-btn" data="{{this._id}}">
                 <button class="btn btn-addCart btn-sm" type="submit">
                   <p>THÊM VÀO GIỎ</p>
                 </button>
               </form>
-              {{!-- <a href="#" class="btn btn-addCart btn-sm">
-
-              </a> --}}
             </div>
           </div>
 

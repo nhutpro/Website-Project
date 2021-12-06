@@ -83,6 +83,8 @@ fetch("http://localhost:3000/account/login/user", {
   .then((res) => {
     if (res.status == "true") {
       logIn(res.name);
+      let checkoutIco = document.querySelector(".header__utility .checkoutIco");
+      checkoutIco.setAttribute("href", "/checkout");
     } else {
       signOut();
     }
@@ -473,8 +475,6 @@ function checkoutIco() {
           accountclick.click();
           return false;
         }
-      } else {
-        checkoutIco.setAttribute("href", "/checkout");
       }
     });
 }
