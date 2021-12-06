@@ -20,9 +20,9 @@ checkBoxAll.onclick = function () {
     {},
     "",
     "?brand=" +
-    localStorage.getItem("queryParamsBrand") +
-    "&price=" +
-    localStorage.getItem("queryParamsPrice")
+      localStorage.getItem("queryParamsBrand") +
+      "&price=" +
+      localStorage.getItem("queryParamsPrice")
   );
   window.location.reload();
 };
@@ -49,9 +49,9 @@ for (var checkbox of brandidCheckboxes) {
       {},
       "",
       "?brand=" +
-      queryParamsBrand +
-      "&price=" +
-      localStorage.getItem("queryParamsPrice")
+        queryParamsBrand +
+        "&price=" +
+        localStorage.getItem("queryParamsPrice")
     );
 
     window.location.reload();
@@ -75,7 +75,7 @@ for (var checkbox of brandidCheckboxes) {
 if (countChecked == 6) {
   checkBoxAll.checked = true;
 }
-if (document.referrer == "http://localhost:3000/phone") {
+if (document.referrer == "http://team-13.herokuapp.com/phone") {
   checkBoxAll.checked = true;
   for (var checkbox of brandidCheckboxes) {
     checkbox.checked = true;
@@ -94,9 +94,9 @@ checkBoxAllPrice.onclick = function () {
     {},
     "",
     "?brand=" +
-    localStorage.getItem("queryParamsBrand") +
-    "&price=" +
-    localStorage.getItem("queryParamsPrice")
+      localStorage.getItem("queryParamsBrand") +
+      "&price=" +
+      localStorage.getItem("queryParamsPrice")
   );
 
   window.location.reload();
@@ -123,9 +123,9 @@ for (var checkbox of priceidCheckboxes) {
       {},
       "",
       "?brand=" +
-      localStorage.getItem("queryParamsBrand") +
-      "&price=" +
-      queryParamsPrice
+        localStorage.getItem("queryParamsBrand") +
+        "&price=" +
+        queryParamsPrice
     );
     localStorage.setItem("paramPrice", queryParamsPrice);
     window.location.reload();
@@ -150,7 +150,7 @@ for (var checkbox of priceidCheckboxes) {
 if (countCheckedPrice == 4) {
   checkBoxAllPrice.checked = true;
 }
-if (document.referrer == "http://localhost:3000/phone") {
+if (document.referrer == "http://team-13.herokuapp.com/phone") {
   checkBoxAllPrice.checked = true;
   for (var checkbox of priceidCheckboxes) {
     checkbox.checked = true;
@@ -166,14 +166,18 @@ sortAsc.onclick = () => {
       {},
       "",
       "?brand=" +
-      localStorage.getItem("queryParamsBrand") +
-      "&price=" +
-      localStorage.getItem("queryParamsPrice") +
-      "&sort=asc"
+        localStorage.getItem("queryParamsBrand") +
+        "&price=" +
+        localStorage.getItem("queryParamsPrice") +
+        "&sort=asc"
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/phone?sort=asc");
+    window.history.pushState(
+      {},
+      "",
+      "http://team-13.herokuapp.com/phone?sort=asc"
+    );
     window.location.reload();
   }
 };
@@ -186,14 +190,18 @@ sortDesc.onclick = () => {
       {},
       "",
       "?brand=" +
-      localStorage.getItem("queryParamsBrand") +
-      "&price=" +
-      localStorage.getItem("queryParamsPrice") +
-      "&sort=desc"
+        localStorage.getItem("queryParamsBrand") +
+        "&price=" +
+        localStorage.getItem("queryParamsPrice") +
+        "&sort=desc"
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/phone?sort=desc");
+    window.history.pushState(
+      {},
+      "",
+      "http://team-13.herokuapp.com/phone?sort=desc"
+    );
     window.location.reload();
   }
 };
@@ -235,7 +243,7 @@ page4.onclick = () => {
   localStorage.setItem("page4", true);
   localStorage.setItem("pageLast", false);
 };
-var api = "http://localhost:3000/phone/totalproduct";
+var api = "http://team-13.herokuapp.com/phone/totalproduct";
 var total;
 fetch(api, {
   headers: {
@@ -248,15 +256,15 @@ fetch(api, {
     total = json;
   });
 pageLast.onclick = () => {
-  total = Math.ceil(total / 9)
-  window.history.pushState({}, "", "/phone?page=" + total)
-  window.location.reload()
-  localStorage.setItem("page1", false)
-  localStorage.setItem("page2", false)
-  localStorage.setItem("page3", false)
-  localStorage.setItem("page4", false)
-  localStorage.setItem("pageLast", true)
-}
+  total = Math.ceil(total / 9);
+  window.history.pushState({}, "", "/phone?page=" + total);
+  window.location.reload();
+  localStorage.setItem("page1", false);
+  localStorage.setItem("page2", false);
+  localStorage.setItem("page3", false);
+  localStorage.setItem("page4", false);
+  localStorage.setItem("pageLast", true);
+};
 
 if (localStorage.getItem("page1") == "true") {
   page1.style.backgroundColor = "#ff4545";
@@ -299,7 +307,7 @@ buyBtn.forEach((buyBtnitem) => {
   buyBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("http://team-13.herokuapp.com/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -308,27 +316,29 @@ buyBtn.forEach((buyBtnitem) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.status == "true") {
-          fetch("http://localhost:3000/phone/checkout?itemID=" + buyBtnitem.getAttribute("data"), {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
-          window.location = "http://localhost:3000/checkout";
-
+          fetch(
+            "http://team-13.herokuapp.com/phone/checkout?itemID=" +
+              buyBtnitem.getAttribute("data"),
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          window.location = "http://team-13.herokuapp.com/checkout";
         } else {
           accountclick.click();
           return false;
         }
       });
-
-  }
-})
+  };
+});
 addBtn.forEach((addBtnitem) => {
   addBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("http://team-13.herokuapp.com/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -337,19 +347,21 @@ addBtn.forEach((addBtnitem) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.status == "true") {
-          fetch("http://localhost:3000/phone/checkout?itemID=" + addBtnitem.getAttribute("data"), {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
-          // window.location ="http://localhost:3000/checkout";
-
+          fetch(
+            "http://team-13.herokuapp.com/phone/checkout?itemID=" +
+              addBtnitem.getAttribute("data"),
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          // window.location ="http://team-13.herokuapp.com/checkout";
         } else {
           accountclick.click();
           return false;
         }
       });
-
-  }
-})
+  };
+});
