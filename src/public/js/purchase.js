@@ -8,7 +8,7 @@ var searchProduct = document.getElementById("searchBoxPurchase");
 searchProduct.onchange = () => {
   console.log(searchProduct.value);
   var api =
-    "http://team-13.herokuapp.com/search?purchase=" + searchProduct.value;
+    "https://team-13.herokuapp.com/search?purchase=" + searchProduct.value;
   console.log("api: ", api);
 
   fetch(api, {
@@ -25,7 +25,7 @@ searchProduct.onchange = () => {
 // delete empty list
 
 console.log("delete");
-var api = "http://team-13.herokuapp.com/purchase/emptylist";
+var api = "https://team-13.herokuapp.com/purchase/emptylist";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -35,7 +35,7 @@ fetch(api, {
 
 // render when reload page
 console.log("page is fully loaded");
-var api = "http://team-13.herokuapp.com/purchase/all";
+var api = "https://team-13.herokuapp.com/purchase/all";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -54,7 +54,7 @@ btnAll.onclick = function loadAll() {
   document.getElementById("tagaDelivered").style.color = "black";
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
-  var api = "http://team-13.herokuapp.com/purchase/all";
+  var api = "https://team-13.herokuapp.com/purchase/all";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -76,7 +76,7 @@ btnDelivered.onclick = function changBgColor() {
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
 
-  var api = "http://team-13.herokuapp.com/purchase/delivered";
+  var api = "https://team-13.herokuapp.com/purchase/delivered";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -97,7 +97,7 @@ btnDelivering.onclick = function changBgColor() {
   btnAll.style.backgroundColor = "white";
   document.getElementById("tagaAll").style.color = "black";
 
-  var api = "http://team-13.herokuapp.com/purchase/delivering";
+  var api = "https://team-13.herokuapp.com/purchase/delivering";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",

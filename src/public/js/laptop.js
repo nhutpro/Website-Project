@@ -22,7 +22,7 @@ checkBoxAll.onclick = function () {
       localStorage.getItem("queryParamsPrice")
   );
 
-  //window.history.pushState({}, "", "http://team-13.herokuapp.com/phone");
+  //window.history.pushState({}, "", "https://team-13.herokuapp.com/phone");
 
   window.location.reload();
 };
@@ -75,7 +75,7 @@ for (var checkbox of brandidCheckboxes) {
 if (countChecked == 3) {
   checkBoxAll.checked = true;
 }
-if (document.referrer == "http://team-13.herokuapp.com/laptop") {
+if (document.referrer == "https://team-13.herokuapp.com/laptop") {
   checkBoxAll.checked = true;
   for (var checkbox of brandidCheckboxes) {
     checkbox.checked = true;
@@ -86,7 +86,7 @@ if (document.referrer == "http://team-13.herokuapp.com/laptop") {
 
 // check all brand
 checkBoxAllPrice.onclick = function () {
-  //window.history.pushState({}, "", "http://team-13.herokuapp.com/phone");
+  //window.history.pushState({}, "", "https://team-13.herokuapp.com/phone");
 
   //localStorage.setItem("queryParamsPrice", "");
   localStorage.setItem(
@@ -153,7 +153,7 @@ for (var checkbox of priceidCheckboxes) {
 if (countCheckedPrice == 4) {
   checkBoxAllPrice.checked = true;
 }
-if (document.referrer == "http://team-13.herokuapp.com/laptop") {
+if (document.referrer == "https://team-13.herokuapp.com/laptop") {
   checkBoxAllPrice.checked = true;
   for (var checkbox of priceidCheckboxes) {
     checkbox.checked = true;
@@ -179,7 +179,7 @@ sortAsc.onclick = () => {
     window.history.pushState(
       {},
       "",
-      "http://team-13.herokuapp.com/laptop?sort=asc"
+      "https://team-13.herokuapp.com/laptop?sort=asc"
     );
     window.location.reload();
   }
@@ -203,7 +203,7 @@ sortDesc.onclick = () => {
     window.history.pushState(
       {},
       "",
-      "http://team-13.herokuapp.com/laptop?sort=desc"
+      "https://team-13.herokuapp.com/laptop?sort=desc"
     );
     window.location.reload();
   }
@@ -246,7 +246,7 @@ page4.onclick = () => {
   localStorage.setItem("page4", true);
   localStorage.setItem("pageLast", false);
 };
-var api = "http://team-13.herokuapp.com/laptop/totalproduct";
+var api = "https://team-13.herokuapp.com/laptop/totalproduct";
 var total;
 fetch(api, {
   headers: {
@@ -310,7 +310,7 @@ buyBtn.forEach((buyBtnitem) => {
   buyBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://team-13.herokuapp.com/account/login/user", {
+    fetch("https://team-13.herokuapp.com/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -320,7 +320,7 @@ buyBtn.forEach((buyBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "http://team-13.herokuapp.com/laptop/checkout?itemID=" +
+            "https://team-13.herokuapp.com/laptop/checkout?itemID=" +
               buyBtnitem.getAttribute("data"),
             {
               method: "POST",
@@ -329,7 +329,7 @@ buyBtn.forEach((buyBtnitem) => {
               },
             }
           );
-          window.location = "http://team-13.herokuapp.com/checkout";
+          window.location = "https://team-13.herokuapp.com/checkout";
         } else {
           accountclick.click();
           return false;
@@ -341,7 +341,7 @@ addBtn.forEach((addBtnitem) => {
   addBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://team-13.herokuapp.com/account/login/user", {
+    fetch("https://team-13.herokuapp.com/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -351,7 +351,7 @@ addBtn.forEach((addBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "http://team-13.herokuapp.com/laptop/checkout?itemID=" +
+            "https://team-13.herokuapp.com/laptop/checkout?itemID=" +
               addBtnitem.getAttribute("data"),
             {
               method: "POST",
@@ -360,7 +360,7 @@ addBtn.forEach((addBtnitem) => {
               },
             }
           );
-          // window.location ="http://team-13.herokuapp.com/checkout";
+          // window.location ="https://team-13.herokuapp.com/checkout";
         } else {
           accountclick.click();
           return false;
