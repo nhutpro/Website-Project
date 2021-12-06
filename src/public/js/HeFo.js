@@ -53,6 +53,8 @@ function logIn(name) {
   const userName = document.querySelector(
     "header .account__options li:first-child h2"
   );
+  let checkoutIco = document.querySelector(".header__utility .checkoutIco");
+  checkoutIco.setAttribute("href", "/checkout");
   userName.innerText = name;
   accountIcon.addEventListener("mouseover", mouseOver);
   accountIcon.addEventListener("mouseout", (e) => {
@@ -83,8 +85,6 @@ fetch("https://team-13.herokuapp.com/account/login/user", {
   .then((res) => {
     if (res.status == "true") {
       logIn(res.name);
-      let checkoutIco = document.querySelector(".header__utility .checkoutIco");
-      checkoutIco.setAttribute("href", "/checkout");
     } else {
       signOut();
     }
