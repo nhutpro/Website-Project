@@ -421,7 +421,11 @@ Validator({
   errorSelector: ".error-message",
   rules: [
     Validator.isRequired("#recovery-confirmPassword"),
+    Validator.isMinLength("#recovery-password", 6),
     Validator.isRequired("#recovery-password"),
+    Validator.isConfirm("#recovery-confirmPassword", function () {
+      return document.querySelector("#recovery-password").value;
+    }),
   ],
   onSubmit: function (password) {
     ChangePassSubmit(password);
@@ -440,7 +444,6 @@ icons.forEach((icon) => {
 });
 
 const toast = document.getElementById("toast");
-console.log(toast);
 function opentoast(message) {
   toast.innerHTML = `
   <div class="toast">
