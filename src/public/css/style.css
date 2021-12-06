@@ -543,7 +543,7 @@ header .account__options li:first-child h2 {
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
   border-color: #47d864;
-  animation: slideInLeft ease 0.3s, fadeOut ease 1s 2s forwards;
+  animation: slideInLeft ease 0.3s, fadeOut ease 1s 1s forwards;
 }
 .toast + .toast {
   margin-top: 24px;
