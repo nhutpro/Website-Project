@@ -52,7 +52,7 @@ class PurchaseController {
                     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
                     var dateFormated = result.date.toLocaleDateString("vi-VN", options)
                     result.date = dateFormated;
-                    if (diff >= 5) {
+                    if (diff >= 1) {
                         purchase.updateOne({
                             userID: req.session.user._id,
                             _id: result._id,
