@@ -78,13 +78,19 @@ To get a local copy up and running follow these simple steps.
    git clone https://github.com/nhutpro/Website-Project.git && cd Website-Project
    ```
 
-2. Install NPM packages
+2. Switch to branch `local`
+
+   ```sh
+   git switch local
+   ```
+
+3. Install NPM packages
 
    ```sh
    npm install
    ```
 
-3. Start the website
+4. Start the website
 
    ```sh
    npm start
