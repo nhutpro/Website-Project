@@ -1,5 +1,4 @@
 User-Agent: *
-Site
 Crawl-delay: 5
 Disallow: /account
 Disallow: /account/*
