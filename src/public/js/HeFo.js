@@ -39,7 +39,7 @@ const signOutBtn = document.querySelector("header .account #signOut");
 signOutBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   signOut();
-  fetch("http://localhost:3000/account/signout", {
+  fetch("/account/signout", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -75,7 +75,7 @@ function signOut() {
   accountIcon.removeEventListener("mouseover", mouseOver);
 }
 
-fetch("http://localhost:3000/account/login/user", {
+fetch("/account/login/user", {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
@@ -197,7 +197,7 @@ function errSever(input, message) {
 
 //start solve submit signUp form //
 function signUpSubmit(data) {
-  fetch("http://localhost:3000/account/register", {
+  fetch("/account/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -217,7 +217,7 @@ function signUpSubmit(data) {
           errorSelector: ".error-message",
           rules: [Validator.isRequired("#signUp-code")],
           onSubmit: function (code) {
-            fetch("http://localhost:3000/account/register/confirm", {
+            fetch("/account/register/confirm", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -284,7 +284,7 @@ Validator({
 /*star solve login form*/
 //start solve submit login form //
 function loginSubmit(data) {
-  fetch("http://localhost:3000/account/login", {
+  fetch("/account/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -338,7 +338,7 @@ getCodeBtn.addEventListener("click", (e) => {
   if (errorMessage) {
     recoveryMessageError.innerText = errorMessage;
   } else {
-    fetch("http://localhost:3000/account/recovery", {
+    fetch("/account/recovery", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -362,7 +362,7 @@ getCodeBtn.addEventListener("click", (e) => {
 /*start sovle recoveryform submit */
 
 function recoverySubmit(recoveryData) {
-  fetch("http://localhost:3000/account/recovery/confirm", {
+  fetch("/account/recovery/confirm", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -399,7 +399,7 @@ Validator({
 });
 
 function ChangePassSubmit(password) {
-  fetch("http://localhost:3000/account/recovery/update", {
+  fetch("/account/recovery/update", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -462,7 +462,7 @@ function opentoast(message) {
 function checkoutIco() {
   let checkoutIco = document.querySelector(".header__utility .checkoutIco");
   let accountclick = document.querySelector("header .account");
-  fetch("http://localhost:3000/account/login/user", {
+  fetch("/account/login/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

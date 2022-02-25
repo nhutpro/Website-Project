@@ -8,7 +8,7 @@ window.onload = () => {
   var sortAsc = document.getElementById("sort-asc");
   var sortDesc = document.getElementById("sort-desc");
   searchProduct.onchange = () => {
-    var api = "http://localhost:3000/search/match?key=" + searchProduct.value;
+    var api = "/search/match?key=" + searchProduct.value;
     fetch(api, {
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ window.onload = () => {
     window.history.pushState(
       {},
       "",
-      "http://localhost:3000/search/global?key=" + searchProduct.value
+      "/search/global?key=" + searchProduct.value
     );
 
     window.location.reload();
@@ -40,9 +40,7 @@ window.onload = () => {
       window.history.pushState(
         {},
         "",
-        "http://localhost:3000/search/global?key=" +
-          localStorage.getItem("count") +
-          "&sort=asc"
+        "/search/global?key=" + localStorage.getItem("count") + "&sort=asc"
       );
       window.location.reload();
     };
@@ -50,9 +48,7 @@ window.onload = () => {
       window.history.pushState(
         {},
         "",
-        "http://localhost:3000/search/global?key=" +
-          localStorage.getItem("count") +
-          "&sort=desc"
+        "/search/global?key=" + localStorage.getItem("count") + "&sort=desc"
       );
       window.location.reload();
     };
@@ -62,7 +58,7 @@ window.onload = () => {
       buyBtnitem.onsubmit = function (e) {
         e.preventDefault();
         const accountclick = document.querySelector("header .account");
-        fetch("http://localhost:3000/account/login/user", {
+        fetch("/account/login/user", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -72,7 +68,7 @@ window.onload = () => {
           .then((res) => {
             if (res.status == "true") {
               fetch(
-                "http://localhost:3000/" +
+                "/" +
                   buyBtnitem.id +
                   "/checkout?itemID=" +
                   buyBtnitem.getAttribute("data"),
@@ -83,7 +79,7 @@ window.onload = () => {
                   },
                 }
               );
-              window.location = "http://localhost:3000/checkout";
+              window.location = "/checkout";
             } else {
               accountclick.click();
               return false;
@@ -95,7 +91,7 @@ window.onload = () => {
       addBtnitem.onsubmit = function (e) {
         e.preventDefault();
         const accountclick = document.querySelector("header .account");
-        fetch("http://localhost:3000/account/login/user", {
+        fetch("/account/login/user", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -105,7 +101,7 @@ window.onload = () => {
           .then((res) => {
             if (res.status == "true") {
               fetch(
-                "http://localhost:3000/" +
+                "/" +
                   addBtnitem.id +
                   "/checkout?itemID=" +
                   addBtnitem.getAttribute("data"),
@@ -116,7 +112,7 @@ window.onload = () => {
                   },
                 }
               );
-              // window.location ="http://localhost:3000/checkout";
+              // window.location ="/checkout";
             } else {
               accountclick.click();
               return false;

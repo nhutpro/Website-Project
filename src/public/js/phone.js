@@ -75,7 +75,7 @@ for (var checkbox of brandidCheckboxes) {
 if (countChecked == 6) {
   checkBoxAll.checked = true;
 }
-if (document.referrer == "http://localhost:3000/phone") {
+if (document.referrer == "/phone") {
   checkBoxAll.checked = true;
   for (var checkbox of brandidCheckboxes) {
     checkbox.checked = true;
@@ -150,7 +150,7 @@ for (var checkbox of priceidCheckboxes) {
 if (countCheckedPrice == 4) {
   checkBoxAllPrice.checked = true;
 }
-if (document.referrer == "http://localhost:3000/phone") {
+if (document.referrer == "/phone") {
   checkBoxAllPrice.checked = true;
   for (var checkbox of priceidCheckboxes) {
     checkbox.checked = true;
@@ -173,7 +173,7 @@ sortAsc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/phone?sort=asc");
+    window.history.pushState({}, "", "/phone?sort=asc");
     window.location.reload();
   }
 };
@@ -193,7 +193,7 @@ sortDesc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/phone?sort=desc");
+    window.history.pushState({}, "", "/phone?sort=desc");
     window.location.reload();
   }
 };
@@ -235,7 +235,7 @@ page4.onclick = () => {
   localStorage.setItem("page4", true);
   localStorage.setItem("pageLast", false);
 };
-var api = "http://localhost:3000/phone/totalproduct";
+var api = "/phone/totalproduct";
 var total;
 fetch(api, {
   headers: {
@@ -299,7 +299,7 @@ buyBtn.forEach((buyBtnitem) => {
   buyBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -309,7 +309,7 @@ buyBtn.forEach((buyBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "http://localhost:3000/phone/checkout?itemID=" +
+            "/phone/checkout?itemID=" +
               buyBtnitem.getAttribute("data"),
             {
               method: "POST",
@@ -318,7 +318,7 @@ buyBtn.forEach((buyBtnitem) => {
               },
             }
           );
-          window.location = "http://localhost:3000/checkout";
+          window.location = "/checkout";
         } else {
           accountclick.click();
           return false;
@@ -330,7 +330,7 @@ addBtn.forEach((addBtnitem) => {
   addBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -340,7 +340,7 @@ addBtn.forEach((addBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "http://localhost:3000/phone/checkout?itemID=" +
+            "/phone/checkout?itemID=" +
               addBtnitem.getAttribute("data"),
             {
               method: "POST",
@@ -349,7 +349,7 @@ addBtn.forEach((addBtnitem) => {
               },
             }
           );
-          // window.location ="http://localhost:3000/checkout";
+          // window.location ="/checkout";
         } else {
           accountclick.click();
           return false;

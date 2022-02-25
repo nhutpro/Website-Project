@@ -116,7 +116,7 @@ function addCart() {
   var selectedColor = selectedElement.getAttribute("data");
   console.log([optionIdValue, selectedElement, selectedColor]);
 
-  fetch("http://localhost:3000/checkout/addcart", {
+  fetch("/checkout/addcart", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -138,7 +138,7 @@ function addCart() {
 const addcartBtn = document.querySelector(".detailItem-option .add-button");
 addcartBtn.addEventListener("click", (e) => {
   const accountclick = document.querySelector("header .account");
-  fetch("http://localhost:3000/account/login/user", {
+  fetch("/account/login/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -164,7 +164,7 @@ function buyitems() {
   var selectedColor = selectedElement.getAttribute("data");
   console.log([optionIdValue, selectedElement, selectedColor]);
 
-  fetch("http://localhost:3000/checkout/addcart", {
+  fetch("/checkout/addcart", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -177,7 +177,7 @@ function buyitems() {
     .then((res) => res.json())
     .then((res) => {
       if (res.status == "true") {
-        window.location.href = "http://localhost:3000/checkout";
+        window.location.href = "/checkout";
       }
     })
     .catch((err) => console.log(err));
@@ -185,7 +185,7 @@ function buyitems() {
 const buyItemBtn = document.querySelector(".detailItem-option .buy-button");
 buyItemBtn.addEventListener("click", (e) => {
   const accountclick = document.querySelector("header .account");
-  fetch("http://localhost:3000/account/login/user", {
+  fetch("/account/login/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

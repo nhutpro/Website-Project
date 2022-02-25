@@ -7,7 +7,7 @@ var listProducts = document.getElementById("listProduct");
 var searchProduct = document.getElementById("searchBoxPurchase");
 searchProduct.onchange = () => {
   console.log(searchProduct.value);
-  var api = "http://localhost:3000/search?purchase=" + searchProduct.value;
+  var api = "/search?purchase=" + searchProduct.value;
   console.log("api: ", api);
 
   fetch(api, {
@@ -24,7 +24,7 @@ searchProduct.onchange = () => {
 // delete empty list
 
 console.log("delete");
-var api = "http://localhost:3000/purchase/emptylist";
+var api = "/purchase/emptylist";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -34,7 +34,7 @@ fetch(api, {
 
 // render when reload page
 console.log("page is fully loaded");
-var api = "http://localhost:3000/purchase/all";
+var api = "/purchase/all";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -53,7 +53,7 @@ btnAll.onclick = function loadAll() {
   document.getElementById("tagaDelivered").style.color = "black";
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
-  var api = "http://localhost:3000/purchase/all";
+  var api = "/purchase/all";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -75,7 +75,7 @@ btnDelivered.onclick = function changBgColor() {
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
 
-  var api = "http://localhost:3000/purchase/delivered";
+  var api = "/purchase/delivered";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -96,7 +96,7 @@ btnDelivering.onclick = function changBgColor() {
   btnAll.style.backgroundColor = "white";
   document.getElementById("tagaAll").style.color = "black";
 
-  var api = "http://localhost:3000/purchase/delivering";
+  var api = "/purchase/delivering";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",

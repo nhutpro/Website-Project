@@ -66,7 +66,7 @@ province.addEventListener("change", () => {
     addressdetail.disabled = true;
   } else {
     district.disabled = false;
-    fetch("http://localhost:3000/address/district/?province=" + province.value)
+    fetch("/address/district/?province=" + province.value)
       .then((districts) => districts.json())
       .then((districts) => {
         console.log(districts);
@@ -91,7 +91,7 @@ district.addEventListener("change", () => {
   } else {
     ward.disabled = false;
     fetch(
-      `http://localhost:3000/address/district/ward?province=${province.value}&district=${district.value}`
+      `/address/district/ward?province=${province.value}&district=${district.value}`
     )
       .then((wards) => wards.json())
       .then((wards) => {
@@ -139,7 +139,7 @@ Validator({
           data.gender = option.value;
         }
       });
-      fetch("http://localhost:3000/user/update", {
+      fetch("/user/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

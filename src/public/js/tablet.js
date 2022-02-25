@@ -25,7 +25,7 @@ checkBoxAll.onclick = function () {
       localStorage.getItem("queryParamsPrice")
   );
 
-  //window.history.pushState({}, "", "http://localhost:3000/phone");
+  //window.history.pushState({}, "", "/phone");
 
   window.location.reload();
 };
@@ -78,7 +78,7 @@ for (var checkbox of brandidCheckboxes) {
 if (countChecked == 6) {
   checkBoxAll.checked = true;
 }
-if (document.referrer == "http://localhost:3000/tablet") {
+if (document.referrer == "/tablet") {
   checkBoxAll.checked = true;
   for (var checkbox of brandidCheckboxes) {
     checkbox.checked = true;
@@ -153,7 +153,7 @@ for (var checkbox of priceidCheckboxes) {
 if (countCheckedPrice == 4) {
   checkBoxAllPrice.checked = true;
 }
-if (document.referrer == "http://localhost:3000/tablet") {
+if (document.referrer == "/tablet") {
   checkBoxAllPrice.checked = true;
   for (var checkbox of priceidCheckboxes) {
     checkbox.checked = true;
@@ -176,7 +176,7 @@ sortAsc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/tablet?sort=asc");
+    window.history.pushState({}, "", "/tablet?sort=asc");
     window.location.reload();
   }
 };
@@ -196,7 +196,7 @@ sortDesc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState({}, "", "http://localhost:3000/tablet?sort=desc");
+    window.history.pushState({}, "", "/tablet?sort=desc");
     window.location.reload();
   }
 };
@@ -238,7 +238,7 @@ page4.onclick = () => {
   localStorage.setItem("page4", true);
   localStorage.setItem("pageLast", false);
 };
-var api = "http://localhost:3000/tablet/totalproduct";
+var api = "/tablet/totalproduct";
 var total;
 fetch(api, {
   headers: {
@@ -302,7 +302,7 @@ buyBtn.forEach((buyBtnitem) => {
   buyBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -311,17 +311,13 @@ buyBtn.forEach((buyBtnitem) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.status == "true") {
-          fetch(
-            "http://localhost:3000/tablet/checkout?itemID=" +
-              buyBtnitem.getAttribute("data"),
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-            }
-          );
-          window.location = "http://localhost:3000/checkout";
+          fetch("/tablet/checkout?itemID=" + buyBtnitem.getAttribute("data"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+          window.location = "/checkout";
         } else {
           accountclick.click();
           return false;
@@ -333,7 +329,7 @@ addBtn.forEach((addBtnitem) => {
   addBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("http://localhost:3000/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -342,17 +338,13 @@ addBtn.forEach((addBtnitem) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.status == "true") {
-          fetch(
-            "http://localhost:3000/tablet/checkout?itemID=" +
-              addBtnitem.getAttribute("data"),
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-            }
-          );
-          // window.location ="http://localhost:3000/checkout";
+          fetch("/tablet/checkout?itemID=" + addBtnitem.getAttribute("data"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+          // window.location ="/checkout";
         } else {
           accountclick.click();
           return false;
