@@ -1,3 +1,22 @@
+{{!-- Head session --}}
+{{#section 'head'}}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/image/13team.ico" type="image/x-icon">
+<link rel="icon" href="/image/13team.ico" type="image/x-icon">
+{{!-- Fonts Awsome --}}
+<link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet"
+	type="text/css" />
+
+{{!-- Style --}}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/grid.css">
+<meta>
+<title>13 Team</title>
+{{/section}}
+
 <link rel="stylesheet" href="/css/userinfo.css" />
 <div class="userinfo__container">
 	<div class="userinfo">
@@ -5,13 +24,7 @@
 			<h2>Thông Tin Người Dùng</h2>
 			<div class="form-group">
 				<div class="form-row">
-					<input
-						type="text"
-						id="userinfo-name"
-						name="username"
-						value="{{user.name}}"
-						placeholder="Tên người dùng"
-					/>
+					<input type="text" id="userinfo-name" name="username" value="{{user.name}}" placeholder="Tên người dùng" />
 					<label for="userinfo-name">Họ Và Tên </label>
 				</div>
 				<p class="error-message"></p>
@@ -19,13 +32,7 @@
 
 			<div class="form-group">
 				<div class="form-row">
-					<input
-						type="text"
-						name="email"
-						id="userinfo-email"
-						value="{{user.email}}"
-						placeholder=" "
-					/>
+					<input type="text" name="email" id="userinfo-email" value="{{user.email}}" placeholder=" " />
 					<label for="userinfo-email">Email </label>
 				</div>
 				<p class="error-message"></p>
@@ -33,13 +40,7 @@
 
 			<div class="form-group">
 				<div class="form-row">
-					<input
-						type="text"
-						name="phone"
-						id="userinfo-phone"
-						value="{{user.phone}}"
-						placeholder=" "
-					/>
+					<input type="text" name="phone" id="userinfo-phone" value="{{user.phone}}" placeholder=" " />
 					<label for="userinfo-phone">Số Điện Thoại</label>
 				</div>
 				<p class="error-message"></p>
@@ -72,14 +73,8 @@
 
 			<div class="form-group">
 				<div class="form-row row-birthday">
-					<input
-						type="date"
-						id="user-birthday"
-						name="birthday"
-						value="{{user.birthday}}"
-						min="1997-01-01"
-						max="2030-12-31"
-					/>
+					<input type="date" id="user-birthday" name="birthday" value="{{user.birthday}}" min="1997-01-01"
+						max="2030-12-31" />
 					<label for="user-birthday">Ngày Sinh</label>
 				</div>
 				<p class="error-message"></p>
@@ -89,49 +84,29 @@
 				<div class="form-row row-address">
 					<div id="userinfo-address">
 						<div class="address-overall">
-							<select
-								id="address__province"
-								name="address__province"
-								data="{{user.address.province}}"
-							>
+							<select id="address__province" name="address__province" data="{{user.address.province}}">
 								<option value="">Tỉnh / Thành Phố</option>
 								{{#each province}}
-									<option value="{{this.name}}">{{this.name}}</option>
+								<option value="{{this.name}}">{{this.name}}</option>
 								{{/each}}
 							</select>
 
-							<select
-								id="address__district"
-								name="address__district"
-								data="{{user.address.district}}"
-								disabled
-							>
+							<select id="address__district" name="address__district" data="{{user.address.district}}" disabled>
 								<option value="" id="district__default">Quận / Huyện</option>
 								{{#each district}}
-									<option value="{{this.name}}">{{this.name}}</option>
+								<option value="{{this.name}}">{{this.name}}</option>
 								{{/each}}
 							</select>
-							<select
-								id="address__ward"
-								name="address__ward"
-								data="{{user.address.ward}}"
-								disabled
-							>
+							<select id="address__ward" name="address__ward" data="{{user.address.ward}}" disabled>
 								<option value="" id="ward__default">Phường / Xã</option>
 								{{#each ward}}
-									<option value="{{this.name}}">{{this.name}}</option>
+								<option value="{{this.name}}">{{this.name}}</option>
 								{{/each}}
 							</select>
 						</div>
 						<div>
-							<input
-								id="address__detail"
-								name="address__detail"
-								type="text"
-								placeholder="Địa chỉ cụ thể ví dụ: 31 QL 13"
-								value="{{user.address.addressdetail}}"
-								disabled
-							/>
+							<input id="address__detail" name="address__detail" type="text"
+								placeholder="Địa chỉ cụ thể ví dụ: 31 QL 13" value="{{user.address.addressdetail}}" disabled />
 						</div>
 					</div>
 

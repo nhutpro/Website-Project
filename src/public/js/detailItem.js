@@ -116,7 +116,7 @@ function addCart() {
   var selectedColor = selectedElement.getAttribute("data");
   console.log([optionIdValue, selectedElement, selectedColor]);
 
-  fetch("https://team-13.herokuapp.com/checkout/addcart", {
+  fetch("http://localhost:3000/checkout/addcart", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -138,7 +138,7 @@ function addCart() {
 const addcartBtn = document.querySelector(".detailItem-option .add-button");
 addcartBtn.addEventListener("click", (e) => {
   const accountclick = document.querySelector("header .account");
-  fetch("https://team-13.herokuapp.com/account/login/user", {
+  fetch("http://localhost:3000/account/login/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -164,7 +164,7 @@ function buyitems() {
   var selectedColor = selectedElement.getAttribute("data");
   console.log([optionIdValue, selectedElement, selectedColor]);
 
-  fetch("https://team-13.herokuapp.com/checkout/addcart", {
+  fetch("http://localhost:3000/checkout/addcart", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -177,7 +177,7 @@ function buyitems() {
     .then((res) => res.json())
     .then((res) => {
       if (res.status == "true") {
-        window.location.href = "https://team-13.herokuapp.com/checkout";
+        window.location.href = "http://localhost:3000/checkout";
       }
     })
     .catch((err) => console.log(err));
@@ -185,7 +185,7 @@ function buyitems() {
 const buyItemBtn = document.querySelector(".detailItem-option .buy-button");
 buyItemBtn.addEventListener("click", (e) => {
   const accountclick = document.querySelector("header .account");
-  fetch("https://team-13.herokuapp.com/account/login/user", {
+  fetch("http://localhost:3000/account/login/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

@@ -7,8 +7,7 @@ var listProducts = document.getElementById("listProduct");
 var searchProduct = document.getElementById("searchBoxPurchase");
 searchProduct.onchange = () => {
   console.log(searchProduct.value);
-  var api =
-    "https://team-13.herokuapp.com/search?purchase=" + searchProduct.value;
+  var api = "http://localhost:3000/search?purchase=" + searchProduct.value;
   console.log("api: ", api);
 
   fetch(api, {
@@ -25,7 +24,7 @@ searchProduct.onchange = () => {
 // delete empty list
 
 console.log("delete");
-var api = "https://team-13.herokuapp.com/purchase/emptylist";
+var api = "http://localhost:3000/purchase/emptylist";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -35,7 +34,7 @@ fetch(api, {
 
 // render when reload page
 console.log("page is fully loaded");
-var api = "https://team-13.herokuapp.com/purchase/all";
+var api = "http://localhost:3000/purchase/all";
 fetch(api, {
   headers: {
     "Content-Type": "application/json",
@@ -54,7 +53,7 @@ btnAll.onclick = function loadAll() {
   document.getElementById("tagaDelivered").style.color = "black";
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
-  var api = "https://team-13.herokuapp.com/purchase/all";
+  var api = "http://localhost:3000/purchase/all";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -76,7 +75,7 @@ btnDelivered.onclick = function changBgColor() {
   btnDelivering.style.backgroundColor = "white";
   document.getElementById("tagaDelivering").style.color = "black";
 
-  var api = "https://team-13.herokuapp.com/purchase/delivered";
+  var api = "http://localhost:3000/purchase/delivered";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",
@@ -97,7 +96,7 @@ btnDelivering.onclick = function changBgColor() {
   btnAll.style.backgroundColor = "white";
   document.getElementById("tagaAll").style.color = "black";
 
-  var api = "https://team-13.herokuapp.com/purchase/delivering";
+  var api = "http://localhost:3000/purchase/delivering";
   fetch(api, {
     headers: {
       "Content-Type": "application/json",

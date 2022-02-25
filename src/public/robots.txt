@@ -1,0 +1,15 @@
+User-Agent: *
+Site
+Crawl-delay: 5
+Disallow: /account
+Disallow: /account/*
+Disallow: /address
+Disallow: /address/*
+Disallow: /user
+Disallow: /user/*
+Disallow: /purchase
+Disallow: /purchase/*
+Disallow: /checkout
+Disallow: /checkout/*
+Disallow: /search
+Disallow: /search/*

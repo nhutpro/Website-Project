@@ -8,8 +8,7 @@ window.onload = () => {
   var sortAsc = document.getElementById("sort-asc");
   var sortDesc = document.getElementById("sort-desc");
   searchProduct.onchange = () => {
-    var api =
-      "https://team-13.herokuapp.com/search/match?key=" + searchProduct.value;
+    var api = "http://localhost:3000/search/match?key=" + searchProduct.value;
     fetch(api, {
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +25,7 @@ window.onload = () => {
     window.history.pushState(
       {},
       "",
-      "https://team-13.herokuapp.com/search/global?key=" + searchProduct.value
+      "http://localhost:3000/search/global?key=" + searchProduct.value
     );
 
     window.location.reload();
@@ -41,7 +40,7 @@ window.onload = () => {
       window.history.pushState(
         {},
         "",
-        "https://team-13.herokuapp.com/search/global?key=" +
+        "http://localhost:3000/search/global?key=" +
           localStorage.getItem("count") +
           "&sort=asc"
       );
@@ -51,7 +50,7 @@ window.onload = () => {
       window.history.pushState(
         {},
         "",
-        "https://team-13.herokuapp.com/search/global?key=" +
+        "http://localhost:3000/search/global?key=" +
           localStorage.getItem("count") +
           "&sort=desc"
       );
@@ -63,7 +62,7 @@ window.onload = () => {
       buyBtnitem.onsubmit = function (e) {
         e.preventDefault();
         const accountclick = document.querySelector("header .account");
-        fetch("https://team-13.herokuapp.com/account/login/user", {
+        fetch("http://localhost:3000/account/login/user", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -73,7 +72,7 @@ window.onload = () => {
           .then((res) => {
             if (res.status == "true") {
               fetch(
-                "https://team-13.herokuapp.com/" +
+                "http://localhost:3000/" +
                   buyBtnitem.id +
                   "/checkout?itemID=" +
                   buyBtnitem.getAttribute("data"),
@@ -84,7 +83,7 @@ window.onload = () => {
                   },
                 }
               );
-              window.location = "https://team-13.herokuapp.com/checkout";
+              window.location = "http://localhost:3000/checkout";
             } else {
               accountclick.click();
               return false;
@@ -96,7 +95,7 @@ window.onload = () => {
       addBtnitem.onsubmit = function (e) {
         e.preventDefault();
         const accountclick = document.querySelector("header .account");
-        fetch("https://team-13.herokuapp.com/account/login/user", {
+        fetch("http://localhost:3000/account/login/user", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -106,7 +105,7 @@ window.onload = () => {
           .then((res) => {
             if (res.status == "true") {
               fetch(
-                "https://team-13.herokuapp.com/" +
+                "http://localhost:3000/" +
                   addBtnitem.id +
                   "/checkout?itemID=" +
                   addBtnitem.getAttribute("data"),
@@ -117,7 +116,7 @@ window.onload = () => {
                   },
                 }
               );
-              // window.location ="https://team-13.herokuapp.com/checkout";
+              // window.location ="http://localhost:3000/checkout";
             } else {
               accountclick.click();
               return false;

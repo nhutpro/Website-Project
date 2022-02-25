@@ -66,10 +66,7 @@ province.addEventListener("change", () => {
     addressdetail.disabled = true;
   } else {
     district.disabled = false;
-    fetch(
-      "https://team-13.herokuapp.com/address/district/?province=" +
-        province.value
-    )
+    fetch("http://localhost:3000/address/district/?province=" + province.value)
       .then((districts) => districts.json())
       .then((districts) => {
         console.log(districts);
@@ -94,7 +91,7 @@ district.addEventListener("change", () => {
   } else {
     ward.disabled = false;
     fetch(
-      `https://team-13.herokuapp.com/address/district/ward?province=${province.value}&district=${district.value}`
+      `http://localhost:3000/address/district/ward?province=${province.value}&district=${district.value}`
     )
       .then((wards) => wards.json())
       .then((wards) => {
@@ -142,7 +139,7 @@ Validator({
           data.gender = option.value;
         }
       });
-      fetch("https://team-13.herokuapp.com/user/update", {
+      fetch("http://localhost:3000/user/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,3 +1,22 @@
+{{!-- Head session --}}
+{{#section 'head'}}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/image/13team.ico" type="image/x-icon">
+<link rel="icon" href="/image/13team.ico" type="image/x-icon">
+{{!-- Fonts Awsome --}}
+<link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet"
+	type="text/css" />
+
+{{!-- Style --}}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/grid.css">
+<meta>
+<title>13 Team</title>
+{{/section}}
+
 <link rel='stylesheet' href='/css/detailItem.css' />
 <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css' />
 <div class='detailItem-container'>
@@ -30,8 +49,7 @@
 			<div class='detailItem-img col-4'>
 
 				<div class='swiper-container'>
-					<div style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff'
-						class='swiper mySwiper2'>
+					<div style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff' class='swiper mySwiper2'>
 						<div class='swiper-wrapper'>
 							{{#each item.image}}
 							<div class='swiper-slide'>
@@ -83,7 +101,7 @@
 					{{else}}
 
 					<li>
-						<a href='/{{../item.type}}/{{this.slug}}-{{this.detail}} ' class ='capacity-option-item'>
+						<a href='/{{../item.type}}/{{this.slug}}-{{this.detail}} ' class='capacity-option-item'>
 							<p class='capacity-option-detail'>{{this.detail}}</p>
 							<p class='capacity-option-price'>{{currentChange this.color.0.price}}
 							</p>
@@ -101,12 +119,11 @@
 					<p style='margin-bottom: 10px; font-weight: bold;'>Chọn Màu </p>
 					<ul class='color-detail row'>
 						{{#each color}}
-						<li >
-							<a class='color-detail-item row' stock="{{this.number}}" data="{{this.name}}" newprice={{currentChange this.price}}
-							oldprice ={{currentChangeDiscount this.price this.discount}}>
+						<li>
+							<a class='color-detail-item row' stock="{{this.number}}" data="{{this.name}}" newprice={{currentChange
+								this.price}} oldprice={{currentChangeDiscount this.price this.discount}}>
 								<div class='col-3 row'>
-									<img class='color-detail-item-img' src=" {{this.image}}"
-										alt="color {{this.name}}" />
+									<img class='color-detail-item-img' src=" {{this.image}}" alt="color {{this.name}}" />
 								</div>
 								<p>
 									<strong class='color-detail-item-color'>{{this.name}}</strong>
@@ -122,81 +139,81 @@
 				{{! end color-option}}
 				<div class="control-button">
 					<button class='buy-button'>Mua Ngay</button>
-					<button class= "add-button"> Thêm Vào Giỏ Hàng</button>
+					<button class="add-button"> Thêm Vào Giỏ Hàng</button>
 				</div>
-				
+
 			</div>
 			<!-- end option -->
 			<div class='detailItem-about col-4'>
 
 				<div>
-				<div class='technicalInfo'>
+					<div class='technicalInfo'>
 
-					<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
-					<ul class='technicalInfo-list'>
-						{{#each demoinfo }}
-						{{#if (isEven @index) }}
-						<li class='technicalInfo-item br-gray '>
-							<p>{{this.infoName}}</p>
-							<p>{{this.infoNum}}</p>
-						</li>
-						{{else}}
-						<li class='technicalInfo-item '>
-							<p>{{this.infoName}}</p>
-							<p>{{this.infoNum}}</p>
-						</li>
-						{{/if}}
-						{{/each}}
-
-
-					</ul>
-					<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
-					<div class="modal-container">
-						<div class="modal">
-							<div class="modal-title">
-								<p>Thông số kỹ thuật</p>
-								<button>
-									<i class="far fa-times-circle"></i>
-									<span>Đóng</span>
-								</button>
-							</div>
-
-							<div class="modal-main ">
-								{{#each item.techInfo}}
-								<div class="modal-main-item">
-									<p class='TechnicalInfo-title'>{{this.infoType}}</p>
+						<p class='TechnicalInfo-title'>Thông Số Kĩ Thuật</p>
+						<ul class='technicalInfo-list'>
+							{{#each demoinfo }}
+							{{#if (isEven @index) }}
+							<li class='technicalInfo-item br-gray '>
+								<p>{{this.infoName}}</p>
+								<p>{{this.infoNum}}</p>
+							</li>
+							{{else}}
+							<li class='technicalInfo-item '>
+								<p>{{this.infoName}}</p>
+								<p>{{this.infoNum}}</p>
+							</li>
+							{{/if}}
+							{{/each}}
 
 
-									<ul class='technicalInfo-list'>
-										{{#each this.infoDetail}}
-										{{#if (isEven @index) }}
-										<li class="technicalInfo-item br-gray">
-											<p>{{this.infoName}}</p>
-											<p>{{this.infoNum}}</p>
-										</li>
-										{{else}}
-										<li class="technicalInfo-item ">
-											<p>{{this.infoName}}</p>
-											<p>{{this.infoNum}}</p>
-										</li>
-										{{/if}}
-										{{/each}}
-									</ul>
-
+						</ul>
+						<button class='technicalInfo-btn'>Xem Cấu Hình Chi Tiết</button>
+						<div class="modal-container">
+							<div class="modal">
+								<div class="modal-title">
+									<p>Thông số kỹ thuật</p>
+									<button>
+										<i class="far fa-times-circle"></i>
+										<span>Đóng</span>
+									</button>
 								</div>
-								{{/each}}
-								<button class="modal-close-btn">
-									<i class="far fa-times-circle"></i>
-									<span>Đóng</span>
-								</button>
+
+								<div class="modal-main ">
+									{{#each item.techInfo}}
+									<div class="modal-main-item">
+										<p class='TechnicalInfo-title'>{{this.infoType}}</p>
+
+
+										<ul class='technicalInfo-list'>
+											{{#each this.infoDetail}}
+											{{#if (isEven @index) }}
+											<li class="technicalInfo-item br-gray">
+												<p>{{this.infoName}}</p>
+												<p>{{this.infoNum}}</p>
+											</li>
+											{{else}}
+											<li class="technicalInfo-item ">
+												<p>{{this.infoName}}</p>
+												<p>{{this.infoNum}}</p>
+											</li>
+											{{/if}}
+											{{/each}}
+										</ul>
+
+									</div>
+									{{/each}}
+									<button class="modal-close-btn">
+										<i class="far fa-times-circle"></i>
+										<span>Đóng</span>
+									</button>
+								</div>
+
 							</div>
 
 						</div>
-
 					</div>
-				</div>
 
-			</div>
+				</div>
 			</div>
 
 		</div>
@@ -212,14 +229,16 @@
 					<div class='swiper-slide'>
 						<div class="swiper3-slide-item">
 							<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="sameItemImg">
-								<img src="{{this.options.0.color.0.image}}"  />
+								<img src="{{this.options.0.color.0.image}}" />
 							</a>
 
 							<div class="slide-item-info">
-								<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="swiper3-item-name">{{this.name}}</a>
+								<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}"
+									class="swiper3-item-name">{{this.name}}</a>
 								<p>
 									<span class="swiper3-item-newPrice">{{currentChange this.options.0.color.0.price}}</span> <span
-										class="swiper3-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price this.options.0.color.0.discount}}</span>
+										class="swiper3-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price
+										this.options.0.color.0.discount}}</span>
 								</p>
 							</div>
 

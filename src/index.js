@@ -8,8 +8,7 @@ const path = require("path");
 const app = express();
 const port = 3000;
 const route = require("./routes");
-const db = require("./config/db");
-db.connect();
+require("dotenv").config();
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json({ limit: "1mb" }));
@@ -22,6 +21,8 @@ app.use(
     secret: "secret",
   })
 );
+const db = require("./config/db");
+db.connect();
 // Method override
 app.use(methodOverride("_method"));
 //HTTP logger
@@ -61,6 +62,11 @@ app.engine(
           currency: "VND",
         }).format(oldprice);
         return oldprice;
+      },
+      section: function (name, options) {
+        if (!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this);
+        return null;
       },
     },
   })
