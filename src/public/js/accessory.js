@@ -72,7 +72,7 @@ for (var checkbox of brandidCheckboxes) {
 if (countChecked == 2) {
   checkBoxAll.checked = true;
 }
-if (document.referrer == "https://team-13.herokuapp.com/accessory") {
+if (document.referrer == "/accessory") {
   checkBoxAll.checked = true;
   for (var checkbox of brandidCheckboxes) {
     checkbox.checked = true;
@@ -147,7 +147,7 @@ for (var checkbox of priceidCheckboxes) {
 if (countCheckedPrice == 4) {
   checkBoxAllPrice.checked = true;
 }
-if (document.referrer == "https://team-13.herokuapp.com/accessory") {
+if (document.referrer == "/accessory") {
   checkBoxAllPrice.checked = true;
   for (var checkbox of priceidCheckboxes) {
     checkbox.checked = true;
@@ -170,11 +170,7 @@ sortAsc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState(
-      {},
-      "",
-      "https://team-13.herokuapp.com/accessory?sort=asc"
-    );
+    window.history.pushState({}, "", "/accessory?sort=asc");
     window.location.reload();
   }
 };
@@ -194,11 +190,7 @@ sortDesc.onclick = () => {
     );
     window.location.reload();
   } else {
-    window.history.pushState(
-      {},
-      "",
-      "https://team-13.herokuapp.com/accessory?sort=desc"
-    );
+    window.history.pushState({}, "", "/accessory?sort=desc");
     window.location.reload();
   }
 };
@@ -240,7 +232,7 @@ page4.onclick = () => {
   localStorage.setItem("page4", true);
   localStorage.setItem("pageLast", false);
 };
-// var api = "https://team-13.herokuapp.com/accessory/totalproduct";
+// var api = "/accessory/totalproduct";
 // var total;
 // fetch(api, {
 //     headers: {
@@ -304,7 +296,7 @@ buyBtn.forEach((buyBtnitem) => {
   buyBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("https://team-13.herokuapp.com/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -314,8 +306,7 @@ buyBtn.forEach((buyBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "https://team-13.herokuapp.com/accessory/checkout?itemID=" +
-              buyBtnitem.getAttribute("data"),
+            "/accessory/checkout?itemID=" + buyBtnitem.getAttribute("data"),
             {
               method: "POST",
               headers: {
@@ -323,7 +314,7 @@ buyBtn.forEach((buyBtnitem) => {
               },
             }
           );
-          window.location = "https://team-13.herokuapp.com/checkout";
+          window.location = "/checkout";
         } else {
           accountclick.click();
           return false;
@@ -335,7 +326,7 @@ addBtn.forEach((addBtnitem) => {
   addBtnitem.onsubmit = function (e) {
     e.preventDefault();
     const accountclick = document.querySelector("header .account");
-    fetch("https://team-13.herokuapp.com/account/login/user", {
+    fetch("/account/login/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -345,8 +336,7 @@ addBtn.forEach((addBtnitem) => {
       .then((res) => {
         if (res.status == "true") {
           fetch(
-            "https://team-13.herokuapp.com/accessory/checkout?itemID=" +
-              addBtnitem.getAttribute("data"),
+            "/accessory/checkout?itemID=" + addBtnitem.getAttribute("data"),
             {
               method: "POST",
               headers: {
@@ -354,7 +344,7 @@ addBtn.forEach((addBtnitem) => {
               },
             }
           );
-          // window.location ="https://team-13.herokuapp.com/checkout";
+          // window.location ="/checkout";
         } else {
           accountclick.click();
           return false;

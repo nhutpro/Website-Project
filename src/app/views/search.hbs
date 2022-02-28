@@ -1,3 +1,8 @@
+{{!-- Head session --}}
+{{#section 'head'}}
+<title>13 Team</title>
+{{/section}}
+
 <link rel="stylesheet" href="/css/search.css" />
 <section class="section products">
     <div class="products-layout container">
@@ -19,8 +24,7 @@
                 {{#each items}}
                 <div class="product" id="countProduct">
                     <div class="img-container">
-                        <a
-                            href="https://team-13.herokuapp.com/{{this.type}}/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
+                        <a href="/{{this.type}}/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
                             <img src="{{this.image.[0]}}" alt="picture about mobile phone" />
                         </a>
                     </div>
@@ -70,16 +74,14 @@
                             </div>
                         </div>
                         <div class="product-btn">
-                            <form method="POST"
-                                action="https://team-13.herokuapp.com/{{this.type}}/checkout?itemID={{this._id}}"
-                                class="buy-btn" data="{{this._id}}" id="{{this.type}}">
+                            <form method="POST" action="/{{this.type}}/checkout?itemID={{this._id}}" class="buy-btn"
+                                data="{{this._id}}" id="{{this.type}}">
                                 <button class="btn btn-buy btn-sm" type="submit">
                                     <p>MUA NGAY</p>
                                 </button>
                             </form>
-                            <form method="POST"
-                                action="https://team-13.herokuapp.com/{{this.type}}/addcart?itemID={{this._id}}"
-                                class="add-btn" data="{{this._id}}" id="{{this.type}}">
+                            <form method="POST" action="/{{this.type}}/addcart?itemID={{this._id}}" class="add-btn"
+                                data="{{this._id}}" id="{{this.type}}">
                                 <button class="btn btn-addCart btn-sm" type="submit">
                                     <p>THÊM VÀO GIỎ</p>
                                 </button>
