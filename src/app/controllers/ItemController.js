@@ -24,7 +24,7 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Điện Thoại", href: "/phone" },
-              { name: data[0].name, href: ""},
+              { name: data[0].name, href: "" },
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
@@ -85,7 +85,7 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Laptop", href: "/laptop" },
-              { name: data[0].name, href: ""},
+              { name: data[0].name, href: "" },
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
@@ -146,7 +146,7 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Tablet", href: "/tablet" },
-              { name: data[0].name, href: ""},
+              { name: data[0].name, href: "" },
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
@@ -207,7 +207,7 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Phụ Kiện", href: "/accessory" },
-              { name: data[0].name, href: ""},
+              { name: data[0].name, href: "" },
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);

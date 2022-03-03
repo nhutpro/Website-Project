@@ -203,3 +203,5 @@ buyItemBtn.addEventListener("click", (e) => {
 });
 console.log(addcartBtn);
 //end fetch//
+document.head.querySelector("[property~='og:url']").content =
+  window.location.href;
