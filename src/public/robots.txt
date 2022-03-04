@@ -12,9 +12,3 @@ Disallow: /checkout
 Disallow: /checkout/*
 Disallow: /search
 Disallow: /search/*
-Disallow: /css
-Disallow: /css/*
-Disallow: /js
-Disallow: /js/*
-Disallow: /image
-Disallow: /image/*
