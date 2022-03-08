@@ -5,13 +5,14 @@ const address = require("../models/Address");
 var recoveryCode = 9450;
 var confirmCode = 1234;
 var emailRecovery = "tnhut80312@outlook.com.vn";
+var password = "Trannhut1"
 let transporter = nodemailer.createTransport({
 	host: 'smtp-mail.outlook.com',
     port: 587,
     secureConnection: false,
 	auth: {
 		user: `${emailRecovery}`, // generated ethereal user
-		pass: "Trannhut1", // generated ethereal password
+		pass: `${password}`, // generated ethereal password
 	},
 	tls: {
         ciphers:'SSLv3'
