@@ -4,19 +4,19 @@ const cart = require("../models/Cart");
 const address = require("../models/Address");
 var recoveryCode = 9450;
 var confirmCode = 1234;
-var emailRecovery = "tnhut80312@outlook.com.vn";
+var emailRecovery = "tnhut80567@outlook.com";
 var password = "Trannhut1"
 let transporter = nodemailer.createTransport({
 	host: 'smtp-mail.outlook.com',
-    port: 587,
-    secureConnection: false,
+	port: 587,
+	secureConnection: false,
 	auth: {
 		user: `${emailRecovery}`, // generated ethereal user
 		pass: `${password}`, // generated ethereal password
 	},
 	tls: {
-        ciphers:'SSLv3'
-    }
+		ciphers: 'SSLv3'
+	}
 });
 
 function getRandom(min, max) {
