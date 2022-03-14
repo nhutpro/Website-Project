@@ -4,13 +4,19 @@ const cart = require("../models/Cart");
 const address = require("../models/Address");
 var recoveryCode = 9450;
 var confirmCode = 1234;
-var emailRecovery = "tnhut803@gmail.com";
+var emailRecovery = "tnhut80567@outlook.com";
+var password = "Trannhut1"
 let transporter = nodemailer.createTransport({
-	service: "gmail",
+	host: 'smtp-mail.outlook.com',
+	port: 587,
+	secureConnection: false,
 	auth: {
-		user: "nhutt460@gmail.com", // generated ethereal user
-		pass: "Trannhut1", // generated ethereal password
+		user: `${emailRecovery}`, // generated ethereal user
+		pass: `${password}`, // generated ethereal password
 	},
+	tls: {
+		ciphers: 'SSLv3'
+	}
 });
 
 function getRandom(min, max) {
@@ -19,7 +25,7 @@ function getRandom(min, max) {
 function sendMail(desMail, Message) {
 	var code = getRandom(1000, 10000);
 	transporter.sendMail({
-		from: "nhutt460@gmail.com", // sender address
+		from: `${emailRecovery}`, // sender address
 		to: `${desMail}`, // list of receivers
 		subject: "Mã Xác Thực Gmail", // Subject line
 		text: `${Message} ${code}`, // plain text body

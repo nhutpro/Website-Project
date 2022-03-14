@@ -24,12 +24,15 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Điện Thoại", href: "/phone" },
+<<<<<<< HEAD
               { name: data[0].name, href: "/phone/" + data[0].name },
+=======
+              { name: data[0].name, href: "" },
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
             });
-
+            console.log(path);
             let item = data.filter((phone) => phone.slug == type)[0];
             console.log(data);
             let alloptions = item.options;
@@ -85,7 +88,8 @@ class ItemController {
           .then((options) => {
             let path = [
               { name: "Laptop", href: "/laptop" },
-              { name: data[0].name, href: "/laptop/" + data[0].name },
+              { name: data[0].name, href: "" },
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
@@ -123,10 +127,17 @@ class ItemController {
       })
       .catch(next);
   }
+<<<<<<< HEAD
+  detailItemLaptop(req, res, next) {
+    let param = req.params.slug;
+    let type = param.slice(0, param.search("-"));
+    let route = "laptop";
+=======
   detailItemTablet(req, res, next) {
     let param = req.params.slug;
     let type = param.slice(0, param.search("-"));
     let route = "tablet";
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
     let capacity = param.slice(param.search("-") + 1, param.length);
     items
       .aggregate([
@@ -145,8 +156,13 @@ class ItemController {
           .find({ detail: capacity, slug: type })
           .then((options) => {
             let path = [
+<<<<<<< HEAD
+              { name: "Laptop", href: "/laptop" },
+              { name: data[0].name, href: "/laptop/" + data[0].name },
+=======
               { name: "Tablet", href: "/tablet" },
-              { name: data[0].name, href: "/tablet/" + data[0].name },
+              { name: data[0].name, href: "" },
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
             ];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
@@ -184,6 +200,80 @@ class ItemController {
       })
       .catch(next);
   }
+<<<<<<< HEAD
+  detailItemTablet(req, res, next) {
+    let param = req.params.slug;
+    let type = param.slice(0, param.search("-"));
+    let route = "tablet";
+=======
+  detailItemAccessory(req, res, next) {
+    let param = req.params.slug;
+    let type = param.slice(0, param.search("-"));
+    let route = "accessory";
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
+    let capacity = param.slice(param.search("-") + 1, param.length);
+    items
+      .aggregate([
+        { $match: { type: route } },
+        {
+          $lookup: {
+            from: "options",
+            localField: "slug",
+            foreignField: "slug",
+            as: "options",
+          },
+        },
+      ])
+      .then((data) => {
+        options
+          .find({ detail: capacity, slug: type })
+          .then((options) => {
+            let path = [
+<<<<<<< HEAD
+              { name: "Tablet", href: "/tablet" },
+              { name: data[0].name, href: "/tablet/" + data[0].name },
+=======
+              { name: "Phụ Kiện", href: "/accessory" },
+              { name: data[0].name, href: "" },
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
+            ];
+            let mainItem = options.filter((option) => {
+              return (option.detail = capacity);
+            });
+
+            let item = data.filter((phone) => phone.slug == type)[0];
+            console.log(data);
+            let alloptions = item.options;
+            let techinfo = item.techInfo;
+            let demoinfo = [];
+            let i = 0;
+            for (let infoItem of techinfo) {
+              for (let detailInfoItem of infoItem.infoDetail) {
+                if (demoinfo.length < 7) demoinfo.push(detailInfoItem);
+                i++;
+                if (i == 6) break;
+              }
+            }
+            items.find({ type: route }).then((itemPhone) => {
+              console.log(itemPhone);
+            });
+            data = data.filter((dataitem) => dataitem.slug != type);
+            res.render("detailItem", {
+              path: path,
+              item: item,
+              color: mainItem[0].color,
+              idOption: mainItem[0]._id,
+              capacity: capacity,
+              demoinfo: demoinfo,
+              options: alloptions,
+              sameItem: data,
+            });
+          })
+          .catch(next);
+      })
+      .catch(next);
+  }
+<<<<<<< HEAD
   detailItemAccessory(req, res, next) {
     let param = req.params.slug;
     let type = param.slice(0, param.search("-"));
@@ -245,5 +335,7 @@ class ItemController {
       })
       .catch(next);
   }
+=======
+>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
 }
 module.exports = new ItemController();

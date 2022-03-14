@@ -1,6 +1,22 @@
 {{!-- Head session --}}
 {{#section 'head'}}
-<title>13 Team</title>
+<title>Mua {{item.name}} giá rẻ, trả góp 0% </title>
+<meta name="description"
+	content="Mua {{item.name}} ở 13Team trả góp 0%, tiết kiệm chi phí, giao hàng giá rẻ. Đảm bảo sản phẩm uy tín, chính hãng 100%">
+<meta name="keywords"
+	content="13Team, 13 Team, {{item.name}}, mua {{item.name}} giá rẻ, {{item.name}} chính hãng, mua {{item.name}}, khuyến mãi {{item.name}}">
+{{!-- Canonical Links | Để link là link sản phẩm gốc là được --}}
+<link rel="canonical" href="https://team-13.herokuapp.com/{{item.type}}/{{item.slug}}-{{capacity}}" />
+{{!-- OpenGraph tags --}}
+<meta property="og:title" content="Mua {{item.name}} giá rẻ, trả góp 0% ">
+<meta property="og:description"
+	content="Mua {{item.name}} ở 13Team trả góp 0%, tiết kiệm chi phí, giao hàng giá rẻ. Đảm bảo sản phẩm uy tín, chính hãng 100%">
+<meta property="og:url" content="">
+<meta property="og:image" content="https://team-13.herokuapp.com{{item.image.[0]}}">
+<meta property="og:image:secure_url" content="https://team-13.herokuapp.com{{item.image.[0]}}">
+<meta property="og:image:alt" content="Ảnh {{item.name}}">
+<meta property="og:type" content="product">
+
 {{/section}}
 
 <link rel='stylesheet' href='/css/detailItem.css' />
@@ -29,7 +45,7 @@
 
 	</ul>
 	<div class='detailItem-main-container'>
-		<p class='item-name'>{{item.name}}</p>
+		<h1 class='item-name'>{{item.name}}</h1>
 		<div class='detailIitem-main row'>
 
 			<div class='detailItem-img col-4'>
@@ -39,7 +55,7 @@
 						<div class='swiper-wrapper'>
 							{{#each item.image}}
 							<div class='swiper-slide'>
-								<img src={{this}} />
+								<img src={{this}} alt="{{../item.name}}" />
 							</div>
 							{{/each}}
 						</div>
@@ -56,7 +72,7 @@
 						<div class='swiper-wrapper'>
 							{{#each item.image}}
 							<div class='swiper-slide'>
-								<img src={{this}} />
+								<img src={{this}} alt={{../item.name}} />
 							</div>
 							{{/each}}
 						</div>
@@ -215,7 +231,10 @@
 					<div class='swiper-slide'>
 						<div class="swiper3-slide-item">
 							<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="sameItemImg">
-								<img src="{{this.options.0.color.0.image}}" />
+								<<<<<<< HEAD <img src="{{this.options.0.color.0.image}}" />
+								=======
+								<img src="{{this.options.0.color.0.image}}" alt="{{this.name}}" />
+								>>>>>>> ff42e509d3e02ea0e661da65f60dd4fe77d9cc26
 							</a>
 
 							<div class="slide-item-info">

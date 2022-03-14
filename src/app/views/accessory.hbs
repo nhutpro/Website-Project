@@ -1,6 +1,20 @@
 {{!-- Head session --}}
 {{#section 'head'}}
-<title>13 Team</title>
+<title>13 Team - Phụ kiện giá rẻ, chính hãng, bảo hành lâu dài</title>
+<meta name="description"
+  content="Phụ kiện điện thoại, laptop chính hãng, giá rẻ, bảo hành lâu dài, giao hàng giá rẻ, khuyến mãi quà tặng cực lớn. Trả góp 0%, đảm bảo quyền lợi khách hàng.">
+<meta name="keywords" content="tai nghe, cốc sạc, pin, airpod, coc sac, phu kien laptop, phụ kiện điện thoại">
+{{!-- Canonical Links --}}
+<link rel="canonical" href="https://team-13.herokuapp.com/accessory" />
+{{!-- OpenGraph tags --}}
+<meta property="og:title" content="13 Team - Phụ kiện giá rẻ, chính hãng, bảo hành lâu dài">
+<meta property="og:description"
+  content="Phụ kiện điện thoại, laptop chính hãng, giá rẻ, bảo hành lâu dài, giao hàng giá rẻ, khuyến mãi quà tặng cực lớn. Trả góp 0%, đảm bảo quyền lợi khách hàng.">
+<meta property="og:url" content="https://team-13.herokuapp.com/accessory">
+<meta property="og:image" content="https://team-13.herokuapp.com/image/logo-s.png">
+<meta property="og:image:secure_url" content="https://team-13.herokuapp.com/image/logo-s.png">
+<meta property="og:image:alt" content="13Team Brand's logo">
+<meta property="og:type" content="product.group">
 {{/section}}
 
 
@@ -115,7 +129,7 @@
         <div class="product">
           <div class="img-container">
             <a href="accessory/{{this.slug.[0].slug}}-{{this.slug.[0].detail}}">
-              <img src="{{this.image.[0]}}" alt="picture about mobile accessory" />
+              <img src="{{this.image.[0]}}" alt="{{this.name}}" />
             </a>
 
           </div>
