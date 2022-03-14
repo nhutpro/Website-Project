@@ -4,28 +4,24 @@ const option = require("./Option");
 
 const Schema = mongoose.Schema;
 const Purchase = new Schema(
-	{
-		userID: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: "user",
-		},
-		list: [
-			{
-				optionID: {
-					type: mongoose.Schema.Types.ObjectId,
-					ref: "Option",
-				},
-				num: Number,
-				color: String,
-				// image: String,
-				// price: Number,
-
-			},
-		],
-		status: String,
-		date: Date,
-
-	},
-	{ collection: "purchases" }
+  {
+    userID: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "user",
+    },
+    list: [
+      {
+        optionID: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Option",
+        },
+        num: Number,
+        color: String,
+      },
+    ],
+    status: String,
+    date: Date,
+  },
+  { collection: "purchases" }
 );
 module.exports = mongoose.model("Purchase", Purchase);
